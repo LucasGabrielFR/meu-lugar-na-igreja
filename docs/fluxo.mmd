@@ -1,0 +1,21 @@
+flowchart TD
+    IG["Instagram: campanha autorizada"] --> IN["Receber e persistir comentario"]
+    FORM["Formulario ou entrada manual"] --> IN
+    IN --> JOB["Worker: normalizar e evitar duplicidades"]
+    JOB --> GEO{"Cidade e paroquia identificadas?"}
+    GEO -->|Nao| FIX["Completar ou corrigir cadastro"]
+    FIX --> JOB
+    GEO -->|Sim| JOIN["Confirmar participacao, identidade e visibilidade"]
+    JOIN --> HOME["Criar uma casa no lote virtual"]
+    HOME --> MAP["Brasil 3D: cidade, paroquia e casa"]
+    JOIN --> ROLES["Escolher funcoes paroquiais e civis"]
+    POINTS["Eventos unicos de pontuacao"] --> LEVEL["Calcular nivel e desbloqueios"]
+    LEVEL --> ROLES
+    PRIEST["Indicacao de padre"] --> HUMAN["Revisao humana: sacerdocio, perfil e vinculo"]
+    HUMAN --> CLERGY["Paroco ou vigario confirmado"]
+    CLERGY --> MAP
+    ADMIN["Painel AcutisTech"] --> FIX
+    ADMIN --> HUMAN
+    ADMIN --> CONFIG["Catalogo, trilhas e regras de pontos"]
+    CONFIG --> LEVEL
+    CONFIG --> ROLES

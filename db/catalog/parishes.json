@@ -1,0 +1,2800 @@
+{
+  "fetched_at": "2026-10-24T04:53:44.724Z",
+  "coverage": "Catálogo parcial: fontes oficiais da Arquidiocese de São Paulo e Diocese de Uruaçu. Não representa todas as paróquias do Brasil.",
+  "jurisdictions": [
+    {
+      "key": "arquisp",
+      "name": "Arquidiocese de São Paulo",
+      "type": "archdiocese",
+      "website": "https://arquisp.org.br/"
+    },
+    {
+      "key": "uruacu",
+      "name": "Diocese de Uruaçu",
+      "type": "diocese",
+      "website": "https://diocesedeuruacu.com.br/"
+    }
+  ],
+  "parishes": [
+    {
+      "key": "arquisp:19003",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Carmo – Jardim Roseli",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-do-carmo-jardim-roseli/",
+      "source_updated_at": "2026-08-22T16:53:57Z"
+    },
+    {
+      "key": "arquisp:19000",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio de Pádua – Parque Nações Unidas",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santo-antonio-de-padua-parque-nacoes-unidas/",
+      "source_updated_at": "2026-08-22T16:51:02Z"
+    },
+    {
+      "key": "arquisp:18997",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Paulo II",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-joao-paulo-ii/",
+      "source_updated_at": "2026-08-10T14:18:32Z"
+    },
+    {
+      "key": "arquisp:18781",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Gaspar Bertoni",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-gaspar-bertoni/",
+      "source_updated_at": "2026-07-08T14:55:20Z"
+    },
+    {
+      "key": "arquisp:17643",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Bom Jesus do Brás",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-bom-jesus-do-bras/",
+      "source_updated_at": "2026-01-22T10:21:52Z"
+    },
+    {
+      "key": "arquisp:17642",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Casaluce",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-de-casaluce/",
+      "source_updated_at": "2026-01-22T10:19:12Z"
+    },
+    {
+      "key": "arquisp:17644",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Januário",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-januario/",
+      "source_updated_at": "2026-01-22T10:17:49Z"
+    },
+    {
+      "key": "arquisp:17645",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Vito Mártir",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-vito-martir/",
+      "source_updated_at": "2026-01-22T10:16:30Z"
+    },
+    {
+      "key": "arquisp:17639",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Francisca Xavier Cabrini",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-francisca-xavier-cabrini/",
+      "source_updated_at": "2026-01-22T10:07:48Z"
+    },
+    {
+      "key": "arquisp:17637",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Cristóvão",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-cristovao/",
+      "source_updated_at": "2026-01-22T10:05:34Z"
+    },
+    {
+      "key": "arquisp:17634",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Eduardo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santo-eduardo/",
+      "source_updated_at": "2026-01-22T10:01:51Z"
+    },
+    {
+      "key": "arquisp:17633",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio do Pari",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santo-antonio-do-pari/",
+      "source_updated_at": "2026-01-22T09:56:09Z"
+    },
+    {
+      "key": "arquisp:17631",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio da Barra Funda",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santo-antonio-da-barra-funda/",
+      "source_updated_at": "2026-01-22T09:54:12Z"
+    },
+    {
+      "key": "arquisp:17629",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sagrado Coração de Jesus em Sufrágio das Almas",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sagrado-coracao-de-jesus-em-sufragio-das-almas/",
+      "source_updated_at": "2026-01-22T09:50:51Z"
+    },
+    {
+      "key": "arquisp:17626",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sagrado Coração de Jesus – Campos Elísios",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sagrado-coracao-de-jesus-campos-elisios/",
+      "source_updated_at": "2026-01-22T09:48:43Z"
+    },
+    {
+      "key": "arquisp:17624",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Angústias",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-das-angustias/",
+      "source_updated_at": "2026-01-22T09:45:10Z"
+    },
+    {
+      "key": "arquisp:17623",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Auxiliadora – Bom Retiro",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-auxiliadora-bom-retiro/",
+      "source_updated_at": "2026-01-22T09:43:46Z"
+    },
+    {
+      "key": "arquisp:17621",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Teresinha – Higienópolis",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-teresinha-higienopolis/",
+      "source_updated_at": "2026-01-22T09:28:35Z"
+    },
+    {
+      "key": "arquisp:17619",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Divino Espírito Santo – Bela Vista",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-divino-espirito-santo-bela-vista/",
+      "source_updated_at": "2026-01-22T09:25:04Z"
+    },
+    {
+      "key": "arquisp:17617",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Rosário de Fátima – Sumaré",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-do-rosario-de-fatima-sumare/",
+      "source_updated_at": "2026-01-22T09:23:10Z"
+    },
+    {
+      "key": "arquisp:17614",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Luís Gonzaga – Cerqueira César",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-luis-gonzaga-cerqueira-cesar/",
+      "source_updated_at": "2026-01-22T09:20:38Z"
+    },
+    {
+      "key": "arquisp:17613",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Imaculada Conceição – Bela Vista",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-imaculada-conceicao-bela-vista/",
+      "source_updated_at": "2026-01-22T09:17:41Z"
+    },
+    {
+      "key": "arquisp:17609",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Inácio de Loyola e São Paulo Apóstolo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santo-inacio-de-loyola-e-sao-paulo-apostolo/",
+      "source_updated_at": "2026-01-22T09:11:57Z"
+    },
+    {
+      "key": "arquisp:17607",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Agostinho",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santo-agostinho/",
+      "source_updated_at": "2026-01-22T09:07:12Z"
+    },
+    {
+      "key": "arquisp:17604",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santíssimo Sacramento",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santissimo-sacramento/",
+      "source_updated_at": "2026-01-22T09:05:50Z"
+    },
+    {
+      "key": "arquisp:17601",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rita de Cássia – Vila Mariana",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-rita-de-cassia-vila-mariana/",
+      "source_updated_at": "2026-01-22T09:04:22Z"
+    },
+    {
+      "key": "arquisp:17599",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Generosa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-generosa/",
+      "source_updated_at": "2026-01-22T08:59:50Z"
+    },
+    {
+      "key": "arquisp:17597",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Pessoal Alemã São Bonifácio",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-pesoal-alema-sao-bonifacio/",
+      "source_updated_at": "2026-01-22T08:57:53Z"
+    },
+    {
+      "key": "arquisp:17595",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Joaquim",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-joaquim/",
+      "source_updated_at": "2026-01-22T09:59:00Z"
+    },
+    {
+      "key": "arquisp:17593",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Margarida Maria",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-margarida-maria/",
+      "source_updated_at": "2026-01-22T08:51:59Z"
+    },
+    {
+      "key": "arquisp:17591",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Pessoal Coreana São Kim Degun",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-pessoal-coreana-sao-kim-degun/",
+      "source_updated_at": "2026-01-22T08:50:16Z"
+    },
+    {
+      "key": "arquisp:17590",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora dos Remédios",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-dos-remedios/",
+      "source_updated_at": "2026-01-22T08:43:04Z"
+    },
+    {
+      "key": "arquisp:17587",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Carmo – Aclimação",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-do-carmo-aclimacao/",
+      "source_updated_at": "2026-01-22T08:22:06Z"
+    },
+    {
+      "key": "arquisp:17543",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Pessoal Universitária Imaculado Coração de Maria",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-pessoal-universitaria-imaculado-coracao-de-maria/",
+      "source_updated_at": "2026-01-20T21:31:08Z"
+    },
+    {
+      "key": "arquisp:17544",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Imaculado Coração de Maria – Perdizes",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-imaculado-coracao-de-maria-perdizes/",
+      "source_updated_at": "2026-01-20T21:27:42Z"
+    },
+    {
+      "key": "arquisp:17541",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Imaculado Coração de Maria – Vila Buarque",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-imaculado-coracao-de-maria-vila-buarque/",
+      "source_updated_at": "2026-01-20T21:12:28Z"
+    },
+    {
+      "key": "arquisp:17542",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Assunção e São Paulo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-da-assuncao-e-sao-paulo/",
+      "source_updated_at": "2026-01-20T21:07:15Z"
+    },
+    {
+      "key": "arquisp:17537",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rosa de Lima – Perdizes",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-rosa-de-lima-perdizes/",
+      "source_updated_at": "2026-01-20T18:16:58Z"
+    },
+    {
+      "key": "arquisp:17535",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Domingos – Perdizes",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-domingos-perdizes/",
+      "source_updated_at": "2026-01-20T18:14:32Z"
+    },
+    {
+      "key": "arquisp:17532",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Lourdes – Vila Pompéia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-de-lourdes-vila-pompeia/",
+      "source_updated_at": "2026-01-20T18:08:14Z"
+    },
+    {
+      "key": "arquisp:17530",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Cecília",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-cecilia/",
+      "source_updated_at": "2026-01-20T18:02:08Z"
+    },
+    {
+      "key": "arquisp:17528",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Achiropita",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-achiropita/",
+      "source_updated_at": "2026-01-20T17:58:37Z"
+    },
+    {
+      "key": "arquisp:17525",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Carmo – Bela Vista",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-do-carmo-bela-vista/",
+      "source_updated_at": "2026-01-20T17:56:00Z"
+    },
+    {
+      "key": "arquisp:17523",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Geraldo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-geraldo/",
+      "source_updated_at": "2026-01-20T17:53:48Z"
+    },
+    {
+      "key": "arquisp:17516",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Pessoal Nipo-Brasileira São Gonçalo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-pessoal-nipo-brasileira-sao-goncalo/",
+      "source_updated_at": "2026-01-20T17:34:56Z"
+    },
+    {
+      "key": "arquisp:17513",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Francisco de Assis – Lg. São Francisco",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-francisco-de-assis-largo-sao-francisco/",
+      "source_updated_at": "2026-01-20T17:21:55Z"
+    },
+    {
+      "key": "arquisp:17511",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Rosário de Pompéia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-do-rosario-de-pompeia/",
+      "source_updated_at": "2026-01-20T17:17:26Z"
+    },
+    {
+      "key": "arquisp:17508",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Consolação",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-da-consolacao/",
+      "source_updated_at": "2026-01-22T10:20:28Z"
+    },
+    {
+      "key": "arquisp:17498",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Pessoal dos Fiéis Latino-Americanos",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-pessoal-dos-fieis-latino-americanos/",
+      "source_updated_at": "2026-01-20T16:48:10Z"
+    },
+    {
+      "key": "arquisp:17497",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Pessoal Italiana São Francisco de Assis e Santa Catarina de Sena",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-pessoal-italiana-sao-francisco-de-assis-e-santa-catarina-de-sena/",
+      "source_updated_at": "2026-01-20T16:51:21Z"
+    },
+    {
+      "key": "arquisp:17495",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Paz – Glicério",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-da-paz-glicerio/",
+      "source_updated_at": "2026-01-20T16:48:07Z"
+    },
+    {
+      "key": "arquisp:17493",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Conceição – Santa Ifigênia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-da-conceicao-santa-ifigenia/",
+      "source_updated_at": "2026-01-20T16:30:15Z"
+    },
+    {
+      "key": "arquisp:17489",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Divino Salvador",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-divino-salvador/",
+      "source_updated_at": "2026-01-20T15:42:56Z"
+    },
+    {
+      "key": "arquisp:17487",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Perpétuo Socorro – Jd. Paulistano",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-do-perpetuo-socorro-jardim-paulistano/",
+      "source_updated_at": "2026-01-20T15:36:13Z"
+    },
+    {
+      "key": "arquisp:17485",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Teresa de Jesus – Itaim Bibi",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-teresa-de-jesus-itaim-bibi/",
+      "source_updated_at": "2026-01-20T15:32:12Z"
+    },
+    {
+      "key": "arquisp:17483",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Dimas",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-dimas/",
+      "source_updated_at": "2026-01-20T15:54:39Z"
+    },
+    {
+      "key": "arquisp:17481",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Gabriel Arcanjo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-gabriel-arcanjo/",
+      "source_updated_at": "2026-01-20T15:20:29Z"
+    },
+    {
+      "key": "arquisp:17478",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Assunção de Nossa Senhora",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-assuncao-de-nossa-senhora/",
+      "source_updated_at": "2026-01-20T15:18:21Z"
+    },
+    {
+      "key": "arquisp:17476",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Mãe da Igreja",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-mae-da-igreja/",
+      "source_updated_at": "2026-01-20T11:40:38Z"
+    },
+    {
+      "key": "arquisp:17474",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Maria Madalena e São Miguel Arcanjo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-santa-maria-madalena-e-sao-miguel-arcanjo/",
+      "source_updated_at": "2026-01-20T15:54:34Z"
+    },
+    {
+      "key": "arquisp:17472",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Paulo da Cruz – Calvário",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-paulo-da-cruz-calvario/",
+      "source_updated_at": "2026-01-20T11:35:09Z"
+    },
+    {
+      "key": "arquisp:17470",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Pessoal Chinesa Sagrada Família",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-pessoal-chinesa-sagrada-familia/",
+      "source_updated_at": "2026-01-20T15:52:38Z"
+    },
+    {
+      "key": "arquisp:17462",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José – Jd. Europa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-sao-jose-jardim-europa/",
+      "source_updated_at": "2026-01-20T11:41:39Z"
+    },
+    {
+      "key": "arquisp:17458",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Senhor Bom Jesus dos Passos – Jd. América",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-senhor-bom-jesus-dos-passos-jardim-america/",
+      "source_updated_at": "2026-01-20T11:17:34Z"
+    },
+    {
+      "key": "arquisp:17457",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Brasil",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-se/paroquia-nossa-senhora-do-brasil/",
+      "source_updated_at": "2026-01-20T11:15:45Z"
+    },
+    {
+      "key": "arquisp:17441",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sagrado Coração de Jesus – Pq. Vitória",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sagrado-coracao-de-jesus-parque-vitoria/",
+      "source_updated_at": "2026-01-17T17:06:32Z"
+    },
+    {
+      "key": "arquisp:17439",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Joana d’Arc",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-joana-darc/",
+      "source_updated_at": "2026-01-17T17:05:16Z"
+    },
+    {
+      "key": "arquisp:17438",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio – Tucuruvi",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santo-antonio-tucuruvi/",
+      "source_updated_at": "2026-01-17T17:02:55Z"
+    },
+    {
+      "key": "arquisp:17436",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Menino Jesus – Vila Mazzei",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-menino-jesus-vila-mazzei/",
+      "source_updated_at": "2026-01-17T17:01:45Z"
+    },
+    {
+      "key": "arquisp:17434",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Luz",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-da-luz/",
+      "source_updated_at": "2026-01-17T16:59:58Z"
+    },
+    {
+      "key": "arquisp:17432",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Neves",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-das-neves/",
+      "source_updated_at": "2026-01-17T16:58:31Z"
+    },
+    {
+      "key": "arquisp:17430",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Camilo de Léllis",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-camilo-de-lellis/",
+      "source_updated_at": "2026-01-17T16:57:18Z"
+    },
+    {
+      "key": "arquisp:17428",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Luzia – Vila Santa Luzia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-luzia-vila-santa-luzia/",
+      "source_updated_at": "2026-01-17T16:54:34Z"
+    },
+    {
+      "key": "arquisp:17426",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Loreto",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-de-loreto/",
+      "source_updated_at": "2026-01-17T16:53:21Z"
+    },
+    {
+      "key": "arquisp:17424",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Terezinha do Menino Jesus – Jaçanã",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-terezinha-do-menino-jesus-jacana/",
+      "source_updated_at": "2026-01-17T16:51:59Z"
+    },
+    {
+      "key": "arquisp:17421",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora dos Prazeres",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-dos-prazeres/",
+      "source_updated_at": "2026-01-17T16:50:27Z"
+    },
+    {
+      "key": "arquisp:17418",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Domingos Sávio – Vila Aurora",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-domingos-savio-vila-aurora/",
+      "source_updated_at": "2026-01-17T16:49:11Z"
+    },
+    {
+      "key": "arquisp:17416",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Roque",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-roque/",
+      "source_updated_at": "2026-01-17T16:40:59Z"
+    },
+    {
+      "key": "arquisp:17414",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Inês",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-ines/",
+      "source_updated_at": "2026-01-17T16:39:46Z"
+    },
+    {
+      "key": "arquisp:17412",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida e São Matias",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-aparecida-e-sao-matias/",
+      "source_updated_at": "2026-01-17T16:38:28Z"
+    },
+    {
+      "key": "arquisp:17410",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Vila Albertina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-aparecida-vila-albertina/",
+      "source_updated_at": "2026-01-17T16:36:36Z"
+    },
+    {
+      "key": "arquisp:17408",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José do Mandaqui",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-jose-mandaqui/",
+      "source_updated_at": "2026-01-17T16:35:10Z"
+    },
+    {
+      "key": "arquisp:17406",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio do Lausanne",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santo-antonio-lausanne/",
+      "source_updated_at": "2026-01-17T16:33:33Z"
+    },
+    {
+      "key": "arquisp:17404",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio – Bancários",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santo-antonio-bancarios/",
+      "source_updated_at": "2026-01-17T16:31:52Z"
+    },
+    {
+      "key": "arquisp:17402",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Cruz – Parque Modelo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-cruz-parque-modelo/",
+      "source_updated_at": "2026-01-17T16:29:56Z"
+    },
+    {
+      "key": "arquisp:17399",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Penha",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-da-penha/",
+      "source_updated_at": "2026-01-17T16:28:23Z"
+    },
+    {
+      "key": "arquisp:17396",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Marcos Evangelista – Pedra Branca",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-marcos-evangelista-pedra-branca/",
+      "source_updated_at": "2026-01-17T16:25:07Z"
+    },
+    {
+      "key": "arquisp:17394",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Pedro Apóstolo – Tremembé",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-pedro-apostolo-tremembe/",
+      "source_updated_at": "2026-01-17T16:23:39Z"
+    },
+    {
+      "key": "arquisp:17392",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rosa de Lima – Jd. Tremembé",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-rosa-de-lima-jardim-tremembe/",
+      "source_updated_at": "2026-01-17T16:21:59Z"
+    },
+    {
+      "key": "arquisp:17388",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Edu Chaves",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-aparecida-edu-chaves/",
+      "source_updated_at": "2026-01-17T16:18:55Z"
+    },
+    {
+      "key": "arquisp:17389",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Luiz Gonzaga – Jaçanã",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-luiz-gonzaga-jacana/",
+      "source_updated_at": "2026-01-17T16:17:40Z"
+    },
+    {
+      "key": "arquisp:17386",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio – Vila Mazzei",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santo-antonio-vila-mazzei/",
+      "source_updated_at": "2026-01-17T16:15:20Z"
+    },
+    {
+      "key": "arquisp:17384",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Carmo – Vila Paulistana",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-do-carmo-vila-paulistana/",
+      "source_updated_at": "2026-10-01T19:30:09Z"
+    },
+    {
+      "key": "arquisp:17382",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Benedito – Vila Nilo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-benedito-vila-nilo/",
+      "source_updated_at": "2026-01-17T16:12:27Z"
+    },
+    {
+      "key": "arquisp:17380",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Gabriel da Virgem Dolorosa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-gabriel-da-virgem-dolorosa/",
+      "source_updated_at": "2026-01-17T16:11:06Z"
+    },
+    {
+      "key": "arquisp:17378",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Piedade",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-da-piedade/",
+      "source_updated_at": "2026-01-17T16:09:13Z"
+    },
+    {
+      "key": "arquisp:17376",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José Operário – Vila Nova Galvão",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-jose-operario-vila-nova-galvao/",
+      "source_updated_at": "2026-01-17T16:07:44Z"
+    },
+    {
+      "key": "arquisp:17374",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Natividade do Senhor – Jd. Fontalis",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-natividade-do-senhor-jardim-fontalis/",
+      "source_updated_at": "2026-01-17T16:06:24Z"
+    },
+    {
+      "key": "arquisp:17372",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Dulce dos Pobres",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-dulce-dos-pobres/",
+      "source_updated_at": "2026-01-17T16:04:02Z"
+    },
+    {
+      "key": "arquisp:17370",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Livração",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-da-livracao/",
+      "source_updated_at": "2026-05-14T14:43:33Z"
+    },
+    {
+      "key": "arquisp:17368",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima – Tremembé",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-de-fatima-tremembe/",
+      "source_updated_at": "2026-01-17T15:44:22Z"
+    },
+    {
+      "key": "arquisp:17364",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Sebastião – Vila Guilherme",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-sebastiao-vila-guilherme/",
+      "source_updated_at": "2026-01-17T15:32:41Z"
+    },
+    {
+      "key": "arquisp:17363",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio de Lisboa – Vila Ede",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santo-antonio-de-lisboa-vila-ede/",
+      "source_updated_at": "2026-01-17T15:31:07Z"
+    },
+    {
+      "key": "arquisp:17361",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Zita e Nossa Senhora do Caminho",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-zita-e-nossa-senhora-do-caminho/",
+      "source_updated_at": "2026-01-17T15:29:29Z"
+    },
+    {
+      "key": "arquisp:17359",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Candelária",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-da-candelaria/",
+      "source_updated_at": "2026-04-13T18:33:58Z"
+    },
+    {
+      "key": "arquisp:17357",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida da Boa Viagem",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-aparecida-da-boa-viagem/",
+      "source_updated_at": "2026-01-17T15:24:46Z"
+    },
+    {
+      "key": "arquisp:17355",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rita de Cássia – Pq. Novo Mundo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-rita-de-cassia-parque-novo-mundo/",
+      "source_updated_at": "2026-01-17T15:21:42Z"
+    },
+    {
+      "key": "arquisp:17327",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Anunciação",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-da-anunciacao/",
+      "source_updated_at": "2026-01-17T15:11:22Z"
+    },
+    {
+      "key": "arquisp:17325",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Francisco Xavier – Jardim Japão",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-francisco-xavier-jardim-japao/",
+      "source_updated_at": "2026-01-17T14:44:18Z"
+    },
+    {
+      "key": "arquisp:17323",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima – Vila Sabrina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-de-fatima-vila-sabrina/",
+      "source_updated_at": "2026-01-17T14:37:30Z"
+    },
+    {
+      "key": "arquisp:17321",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José Esposo da Virgem Maria",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-jose-esposo-da-virgem-maria/",
+      "source_updated_at": "2026-01-17T14:34:14Z"
+    },
+    {
+      "key": "arquisp:17319",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Jesus no Horto das Oliveiras",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-jesus-no-horto-das-oliveiras/",
+      "source_updated_at": "2026-01-17T14:32:18Z"
+    },
+    {
+      "key": "arquisp:17317",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Paulo Apóstolo – Parada Inglesa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-paulo-apostolo-parada-inglesa/",
+      "source_updated_at": "2026-01-17T14:30:04Z"
+    },
+    {
+      "key": "arquisp:17315",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santíssima Trindade – Casa Verde",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santissima-trindade-casa-verde/",
+      "source_updated_at": "2026-01-17T14:26:48Z"
+    },
+    {
+      "key": "arquisp:17313",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Teresinha do Menino Jesus",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santa-teresinha-do-menino-jesus/",
+      "source_updated_at": "2026-01-17T14:24:53Z"
+    },
+    {
+      "key": "arquisp:17311",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Salette",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-da-salette/",
+      "source_updated_at": "2026-01-17T14:22:57Z"
+    },
+    {
+      "key": "arquisp:17309",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sant’Ana",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-santana/",
+      "source_updated_at": "2026-01-17T14:18:29Z"
+    },
+    {
+      "key": "arquisp:17307",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Consolata",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-da-consolata/",
+      "source_updated_at": "2026-01-17T14:13:20Z"
+    },
+    {
+      "key": "arquisp:17304",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José Operário – Imirim",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-jose-operario-imirim/",
+      "source_updated_at": "2026-01-17T14:11:05Z"
+    },
+    {
+      "key": "arquisp:17302",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Francisco de Paula e São Benedito",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-francisco-de-paula-e-sao-benedito/",
+      "source_updated_at": "2026-01-17T14:08:28Z"
+    },
+    {
+      "key": "arquisp:17300",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Evangelista",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-sao-joao-evangelista/",
+      "source_updated_at": "2026-01-17T14:06:12Z"
+    },
+    {
+      "key": "arquisp:17298",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Rainha Santa Isabel – Casa Verde",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-rainha-santa-isabel-casa-verde/",
+      "source_updated_at": "2026-01-17T14:03:45Z"
+    },
+    {
+      "key": "arquisp:17294",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Dores – Casa Verde",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-das-dores-casa-verde/",
+      "source_updated_at": "2026-01-17T14:01:20Z"
+    },
+    {
+      "key": "arquisp:17290",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Jd. São Paulo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-aparecida-jardim-sao-paulo/",
+      "source_updated_at": "2026-01-17T14:20:45Z"
+    },
+    {
+      "key": "arquisp:17287",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima – Imirim",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-santana/paroquia-nossa-senhora-de-fatima-imirim/",
+      "source_updated_at": "2026-01-17T13:37:34Z"
+    },
+    {
+      "key": "arquisp:17282",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Glória",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-da-gloria/",
+      "source_updated_at": "2026-01-17T11:08:51Z"
+    },
+    {
+      "key": "arquisp:17281",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Pilar",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-do-pilar/",
+      "source_updated_at": "2026-01-17T11:06:14Z"
+    },
+    {
+      "key": "arquisp:17278",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Teresinha do Menino Jesus – Bosque da Saúde",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santa-teresinha-do-menino-jesus-bosque-saude/",
+      "source_updated_at": "2026-01-17T11:01:43Z"
+    },
+    {
+      "key": "arquisp:17277",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio – Vila Carioca",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santo-antonio-vila-carioca/",
+      "source_updated_at": "2026-01-17T10:59:56Z"
+    },
+    {
+      "key": "arquisp:17271",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Sião",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-de-siao/",
+      "source_updated_at": "2026-01-17T10:58:31Z"
+    },
+    {
+      "key": "arquisp:17257",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Dores e São Peregrino",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-das-dores-e-sao-peregrino/",
+      "source_updated_at": "2026-05-28T13:38:03Z"
+    },
+    {
+      "key": "arquisp:17262",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rita de Cássia – Mirandópolis",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santa-rita-de-cassia-mirandopolis/",
+      "source_updated_at": "2026-01-17T10:24:42Z"
+    },
+    {
+      "key": "arquisp:17259",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Ivo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santo-ivo/",
+      "source_updated_at": "2026-01-17T10:19:55Z"
+    },
+    {
+      "key": "arquisp:17251",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Graças – Cidade Vargas",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-das-gracas-cidade-vargas/",
+      "source_updated_at": "2026-01-17T10:02:31Z"
+    },
+    {
+      "key": "arquisp:17249",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima – Vila Guarani",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-de-fatima-vila-guarani/",
+      "source_updated_at": "2026-01-17T09:56:32Z"
+    },
+    {
+      "key": "arquisp:17247",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Batista – Ipiranga",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-joao-batista-ipiranga/",
+      "source_updated_at": "2026-01-17T09:52:56Z"
+    },
+    {
+      "key": "arquisp:17244",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Francisco de Sales – Vila Gumercindo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-francisco-de-sales/",
+      "source_updated_at": "2026-01-17T10:37:53Z"
+    },
+    {
+      "key": "arquisp:17241",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Pessoal Francesa São Francisco de Sales",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-pessoal-francesa-sao-francisco-de-sales/",
+      "source_updated_at": "2026-01-17T09:29:54Z"
+    },
+    {
+      "key": "arquisp:17238",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Mãe de Jesus",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-mae-de-jesus/",
+      "source_updated_at": "2026-01-17T09:15:09Z"
+    },
+    {
+      "key": "arquisp:17236",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima – Jd. Maria Estela",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-de-fatima-jardim-maria-estela/",
+      "source_updated_at": "2026-01-17T09:07:44Z"
+    },
+    {
+      "key": "arquisp:17234",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Afonso Maria de Ligório",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santo-afonso-maria-de-ligorio/",
+      "source_updated_at": "2026-01-17T09:04:20Z"
+    },
+    {
+      "key": "arquisp:17231",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Bernardo de Claraval",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-bernardo-de-claraval/",
+      "source_updated_at": "2026-01-17T10:27:00Z"
+    },
+    {
+      "key": "arquisp:17229",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Francisco de Assis",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-francisco-de-assis/",
+      "source_updated_at": "2026-01-17T08:56:32Z"
+    },
+    {
+      "key": "arquisp:17227",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Batista",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-joao-batista/",
+      "source_updated_at": "2026-01-17T10:55:11Z"
+    },
+    {
+      "key": "arquisp:17226",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José – Ipiranga",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-jose-ipiranga/",
+      "source_updated_at": "2026-01-17T10:56:11Z"
+    },
+    {
+      "key": "arquisp:17224",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sagrada Família – Jd. da Saúde",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sagrada-familia/",
+      "source_updated_at": "2026-01-17T10:34:35Z"
+    },
+    {
+      "key": "arquisp:17201",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Agnelo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santo-agnelo/",
+      "source_updated_at": "2026-01-17T08:45:40Z"
+    },
+    {
+      "key": "arquisp:17199",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Judas Tadeu",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-judas-tadeu-jabaquara/",
+      "source_updated_at": "2026-01-17T08:30:30Z"
+    },
+    {
+      "key": "arquisp:17197",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Ângela e São Serapião",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santa-angela-e-sao-serapiao/",
+      "source_updated_at": "2026-01-17T08:26:52Z"
+    },
+    {
+      "key": "arquisp:17195",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Rainha dos Apóstolos",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-rainha-dos-apostolos/",
+      "source_updated_at": "2026-01-17T08:23:57Z"
+    },
+    {
+      "key": "arquisp:17193",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Lourdes – Planalto Paulista",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-de-lourdes-planalto-paulista/",
+      "source_updated_at": "2026-01-17T10:31:59Z"
+    },
+    {
+      "key": "arquisp:17191",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Cristina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santa-cristina/",
+      "source_updated_at": "2026-01-17T08:18:39Z"
+    },
+    {
+      "key": "arquisp:17189",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Cândida",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santa-candida/",
+      "source_updated_at": "2026-01-17T08:17:06Z"
+    },
+    {
+      "key": "arquisp:17187",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Clímaco",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-joao-climaco/",
+      "source_updated_at": "2026-01-17T08:14:01Z"
+    },
+    {
+      "key": "arquisp:17185",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Vicente de Paulo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-vicente-de-paulo/",
+      "source_updated_at": "2026-01-17T13:52:51Z"
+    },
+    {
+      "key": "arquisp:17183",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Emídio",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santo-emidio/",
+      "source_updated_at": "2026-01-17T08:06:21Z"
+    },
+    {
+      "key": "arquisp:17181",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José – Vila Zelina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-sao-jose-vila-zelina/",
+      "source_updated_at": "2026-01-17T08:02:37Z"
+    },
+    {
+      "key": "arquisp:17179",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Paulina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santa-paulina/",
+      "source_updated_at": "2026-01-17T09:49:40Z"
+    },
+    {
+      "key": "arquisp:17177",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Edwiges",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-santa-edwiges/",
+      "source_updated_at": "2026-01-17T09:59:26Z"
+    },
+    {
+      "key": "arquisp:17175",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Mercês",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-das-merces/",
+      "source_updated_at": "2026-01-17T07:54:47Z"
+    },
+    {
+      "key": "arquisp:17172",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Saúde",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-da-saude/",
+      "source_updated_at": "2026-01-17T07:52:29Z"
+    },
+    {
+      "key": "arquisp:17170",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Esperança",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-da-esperanca/",
+      "source_updated_at": "2026-01-17T07:47:29Z"
+    },
+    {
+      "key": "arquisp:17168",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Vila Arapuá",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-aparecida-vila-arapua/",
+      "source_updated_at": "2026-01-17T10:22:10Z"
+    },
+    {
+      "key": "arquisp:17166",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Moema",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-aparecida-moema/",
+      "source_updated_at": "2026-01-17T10:54:10Z"
+    },
+    {
+      "key": "arquisp:17164",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Ipiranga",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-nossa-senhora-aparecida-ipiranga/",
+      "source_updated_at": "2026-01-17T07:35:45Z"
+    },
+    {
+      "key": "arquisp:17162",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Imaculada Conceição – Ipiranga",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-ipiranga/paroquia-imaculada-conceicao-ipiranga/",
+      "source_updated_at": "2026-01-17T07:32:47Z"
+    },
+    {
+      "key": "arquisp:17154",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Gualberto",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-joao-gualberto/",
+      "source_updated_at": "2026-01-16T22:20:20Z"
+    },
+    {
+      "key": "arquisp:17155",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José – Jardim Monte Alegre",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-jose-jardim-monte-alegre/",
+      "source_updated_at": "2026-01-16T22:19:10Z"
+    },
+    {
+      "key": "arquisp:17153",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Bosco",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-joao-bosco/",
+      "source_updated_at": "2026-01-16T22:17:22Z"
+    },
+    {
+      "key": "arquisp:17152",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José Operário – Jd. Sarah",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-jose-operario-jardim-sarah/",
+      "source_updated_at": "2026-01-16T22:15:32Z"
+    },
+    {
+      "key": "arquisp:17148",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Mateus – Jd. Esmeralda",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-mateus-jardim-esmeralda/",
+      "source_updated_at": "2026-01-16T22:13:54Z"
+    },
+    {
+      "key": "arquisp:17146",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Batista – Vila Mangalot",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-joao-batista-vila-mangalot/",
+      "source_updated_at": "2026-01-16T21:48:06Z"
+    },
+    {
+      "key": "arquisp:17140",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Domingos Sávio",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-domingos-savio/",
+      "source_updated_at": "2026-01-16T21:46:15Z"
+    },
+    {
+      "key": "arquisp:17138",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Estêvão Rei",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santo-estevao-rei/",
+      "source_updated_at": "2026-01-16T21:36:59Z"
+    },
+    {
+      "key": "arquisp:17135",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio de Pádua – Jd. Bonfiglioli",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santo-antonio-de-padua-jardim-bonfiglioli/",
+      "source_updated_at": "2026-01-16T21:35:19Z"
+    },
+    {
+      "key": "arquisp:17133",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Alberto Magno",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santo-alberto-magno/",
+      "source_updated_at": "2026-01-16T21:55:25Z"
+    },
+    {
+      "key": "arquisp:17130",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santíssima Trindade – Vila São Domingos",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santissima-trindade-vila-sao-domingos/",
+      "source_updated_at": "2026-01-16T22:01:44Z"
+    },
+    {
+      "key": "arquisp:17129",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Terezinha – Jardim Regina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santa-terezinha-jardim-regina/",
+      "source_updated_at": "2026-01-16T21:30:02Z"
+    },
+    {
+      "key": "arquisp:17127",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Mônica",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santa-monica/",
+      "source_updated_at": "2026-09-02T12:52:19Z"
+    },
+    {
+      "key": "arquisp:17125",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Luzia – Vila Jaguari",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santa-luzia-vila-jaguari/",
+      "source_updated_at": "2026-01-16T21:26:49Z"
+    },
+    {
+      "key": "arquisp:17123",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Domitila",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santa-domitila/",
+      "source_updated_at": "2026-01-16T21:25:08Z"
+    },
+    {
+      "key": "arquisp:17121",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sagrado Coração de Jesus – Parque Continental",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sagrado-coracao-de-jesus-parque-continental/",
+      "source_updated_at": "2026-01-16T15:53:49Z"
+    },
+    {
+      "key": "arquisp:17119",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Rainha da Paz",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-rainha-da-paz/",
+      "source_updated_at": "2026-01-22T09:59:43Z"
+    },
+    {
+      "key": "arquisp:17115",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Líbano",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-do-libano/",
+      "source_updated_at": "2026-01-16T15:50:32Z"
+    },
+    {
+      "key": "arquisp:17113",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Pedro Apóstolo – Central Parque",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-pedro-apostolo-central-parque/",
+      "source_updated_at": "2026-01-16T15:38:14Z"
+    },
+    {
+      "key": "arquisp:17111",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Tomás More",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-tomas-more/",
+      "source_updated_at": "2026-01-16T15:36:22Z"
+    },
+    {
+      "key": "arquisp:17109",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Lourdes – Vila Hamburguesa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-de-lourdes-vila-hamburguesa/",
+      "source_updated_at": "2026-01-16T15:34:14Z"
+    },
+    {
+      "key": "arquisp:17107",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Maria Goretti",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-santa-maria-goretti/",
+      "source_updated_at": "2026-01-16T15:31:50Z"
+    },
+    {
+      "key": "arquisp:17105",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Batista – Vila Ipojuca",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-joao-batista-vila-ipojuca/",
+      "source_updated_at": "2026-01-16T15:29:20Z"
+    },
+    {
+      "key": "arquisp:17103",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Francisco de Assis – Jaguaré",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-francisco-de-assis-jaguare/",
+      "source_updated_at": "2026-01-16T15:27:23Z"
+    },
+    {
+      "key": "arquisp:17101",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Maria Vianney",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-joao-maria-vianney/",
+      "source_updated_at": "2026-01-16T22:01:20Z"
+    },
+    {
+      "key": "arquisp:17098",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José – Jaguaré",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-jose-jaguare/",
+      "source_updated_at": "2026-01-16T15:20:43Z"
+    },
+    {
+      "key": "arquisp:17096",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Patrício",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-sao-patricio/",
+      "source_updated_at": "2026-01-22T20:24:43Z"
+    },
+    {
+      "key": "arquisp:17094",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora dos Pobres",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-dos-pobres/",
+      "source_updated_at": "2026-01-16T22:02:16Z"
+    },
+    {
+      "key": "arquisp:17092",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Monte Serrate – Pinheiros",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-do-monte-serrate-pinheiros/",
+      "source_updated_at": "2026-01-16T15:13:45Z"
+    },
+    {
+      "key": "arquisp:17090",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima – Vila Leopoldina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-de-fatima-vila-leopoldina/",
+      "source_updated_at": "2026-01-16T15:10:50Z"
+    },
+    {
+      "key": "arquisp:17087",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Graças – Jd. Anhanguera",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-das-gracas-jardim-anhanguera/",
+      "source_updated_at": "2026-01-16T15:08:24Z"
+    },
+    {
+      "key": "arquisp:17084",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Lapa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-da-lapa/",
+      "source_updated_at": "2026-01-16T15:06:20Z"
+    },
+    {
+      "key": "arquisp:17082",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Imaculada Conceição Aparecida",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-da-imaculada-conceicao-aparecida/",
+      "source_updated_at": "2026-01-16T15:04:13Z"
+    },
+    {
+      "key": "arquisp:17080",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Assunção – Jardim Felicidade",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-da-assuncao-jardim-felicidade/",
+      "source_updated_at": "2026-01-16T14:07:56Z"
+    },
+    {
+      "key": "arquisp:17078",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Auxiliadora – Pirituba",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-auxiliadora-pirituba/",
+      "source_updated_at": "2026-01-16T14:05:20Z"
+    },
+    {
+      "key": "arquisp:17076",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Vila Beatriz",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-aparecida-vila-beatriz/",
+      "source_updated_at": "2026-01-16T14:03:05Z"
+    },
+    {
+      "key": "arquisp:17074",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Vila Anglo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-nossa-senhora-aparecida-vila-anglo/",
+      "source_updated_at": "2026-01-16T14:01:11Z"
+    },
+    {
+      "key": "arquisp:17072",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Mãe do Salvador – Pinheiros",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-mae-do-salvador-pinheiros/",
+      "source_updated_at": "2026-01-16T13:59:21Z"
+    },
+    {
+      "key": "arquisp:17070",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Cristo Rei – Jd. Britânia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-cristo-rei-jardim-britania/",
+      "source_updated_at": "2026-01-16T13:56:44Z"
+    },
+    {
+      "key": "arquisp:17068",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Cristo Jovem",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-lapa/paroquia-cristo-jovem/",
+      "source_updated_at": "2026-01-16T22:00:29Z"
+    },
+    {
+      "key": "arquisp:16513",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José Operário – Jd. Damasceno",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-jose-operario-jardim-damasceno/",
+      "source_updated_at": "2026-01-16T21:51:27Z"
+    },
+    {
+      "key": "arquisp:16511",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Bom Pastor",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-bom-pastor/",
+      "source_updated_at": "2026-01-15T20:29:59Z"
+    },
+    {
+      "key": "arquisp:16509",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Terezinha – Vila Terezinha",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santa-terezinha-vila-terezinha/",
+      "source_updated_at": "2026-01-15T20:30:20Z"
+    },
+    {
+      "key": "arquisp:16507",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rita de Cássia – Vila Progresso",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santa-rita-de-cassia-vila-progresso/",
+      "source_updated_at": "2026-01-16T22:08:32Z"
+    },
+    {
+      "key": "arquisp:16502",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Francisco de Assis – Jd. Guarani",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-francisco-de-assis-jardim-guarani/",
+      "source_updated_at": "2026-01-15T20:30:35Z"
+    },
+    {
+      "key": "arquisp:16499",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Carmo – Vila Cruz das Almas",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-do-carmo-cruz-das-almas/",
+      "source_updated_at": "2026-01-16T22:08:00Z"
+    },
+    {
+      "key": "arquisp:16497",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Miguel Arcanjo – Vila Prado",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-miguel-arcanjo-vila-prado/",
+      "source_updated_at": "2026-01-16T21:53:36Z"
+    },
+    {
+      "key": "arquisp:16495",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Luiz Gonzaga – Vila Santa Maria",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-luiz-gonzaga-vila-santa-maria/",
+      "source_updated_at": "2026-01-15T20:30:53Z"
+    },
+    {
+      "key": "arquisp:16493",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José – Vila Palmeiras",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-jose-vila-palmeiras/",
+      "source_updated_at": "2026-01-16T21:51:23Z"
+    },
+    {
+      "key": "arquisp:16490",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Cruz de Itaberaba",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santa-cruz-de-itaberaba/",
+      "source_updated_at": "2026-01-15T20:31:03Z"
+    },
+    {
+      "key": "arquisp:16488",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Mãe de Deus",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-mae-de-deus/",
+      "source_updated_at": "2026-01-15T20:31:08Z"
+    },
+    {
+      "key": "arquisp:16484",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Luís Maria Grignion de Montfort",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-luis-maria-grignion-de-montfort/",
+      "source_updated_at": "2026-01-15T20:31:16Z"
+    },
+    {
+      "key": "arquisp:16478",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Luís Gonzaga – Vila Pereira Barreto",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-luis-gonzaga-pereira-barreto/",
+      "source_updated_at": "2026-01-16T22:04:16Z"
+    },
+    {
+      "key": "arquisp:16476",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Judas Tadeu – Morada do Sol",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-judas-tadeu-morada-do-sol/",
+      "source_updated_at": "2026-01-15T20:31:25Z"
+    },
+    {
+      "key": "arquisp:16474",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Judas Tadeu – Vila Miriam",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-judas-tadeu-vila-miriam/",
+      "source_updated_at": "2026-01-16T22:05:26Z"
+    },
+    {
+      "key": "arquisp:16472",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José – Perus",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sao-jose-perus/",
+      "source_updated_at": "2026-01-15T20:31:37Z"
+    },
+    {
+      "key": "arquisp:16470",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio do Limão",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santo-antonio-limao/",
+      "source_updated_at": "2026-01-15T20:31:42Z"
+    },
+    {
+      "key": "arquisp:16459",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio da Brasilândia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santo-antonio-da-brasilandia/",
+      "source_updated_at": "2026-01-15T20:31:46Z"
+    },
+    {
+      "key": "arquisp:16457",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Terezinha do Menino Jesus – Jd. Sydney",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santa-terezinha-do-menino-jesus-jardim-sydney/",
+      "source_updated_at": "2026-01-15T20:31:51Z"
+    },
+    {
+      "key": "arquisp:16455",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Cruz – Jd. Santa Cruz",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santa-cruz-jardim-santa-cruz/",
+      "source_updated_at": "2026-01-15T20:31:56Z"
+    },
+    {
+      "key": "arquisp:16453",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Graças – Vila Carolina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-das-gracas-vila-carolina/",
+      "source_updated_at": "2026-01-15T20:32:00Z"
+    },
+    {
+      "key": "arquisp:16451",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Bom Jesus dos Passos – Nossa Senhora do Ó",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-bom-jesus-dos-passos-nossa-senhora-o/",
+      "source_updated_at": "2026-03-09T23:18:59Z"
+    },
+    {
+      "key": "arquisp:16449",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Luzia – Jd. Primavera",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santa-luzia-jardim-primavera/",
+      "source_updated_at": "2026-01-16T21:53:08Z"
+    },
+    {
+      "key": "arquisp:16447",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sagrada Família – Jd. Peri",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-sagrada-familia-jardim-peri/",
+      "source_updated_at": "2026-01-15T20:32:23Z"
+    },
+    {
+      "key": "arquisp:16445",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Retiro",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-do-retiro/",
+      "source_updated_at": "2026-01-15T20:32:28Z"
+    },
+    {
+      "key": "arquisp:16443",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima – Vila Dionísia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-de-fatima-vila-dionisia/",
+      "source_updated_at": "2026-01-15T20:32:32Z"
+    },
+    {
+      "key": "arquisp:16441",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Paz",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-da-paz/",
+      "source_updated_at": "2026-01-15T20:32:37Z"
+    },
+    {
+      "key": "arquisp:16439",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Dores – Morro Grande",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-das-dores-morro-grande/",
+      "source_updated_at": "2026-01-16T22:07:03Z"
+    },
+    {
+      "key": "arquisp:16436",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santíssima Trindade – Perus",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santissima-trindade-perus/",
+      "source_updated_at": "2026-03-09T23:20:06Z"
+    },
+    {
+      "key": "arquisp:16434",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Mãe Rainha",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-mae-rainha/",
+      "source_updated_at": "2026-01-15T20:32:50Z"
+    },
+    {
+      "key": "arquisp:16432",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima – Pirituba",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-de-fatima-pirituba/",
+      "source_updated_at": "2026-01-15T20:32:55Z"
+    },
+    {
+      "key": "arquisp:16430",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Expectação",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-da-expectacao/",
+      "source_updated_at": "2026-01-15T20:33:01Z"
+    },
+    {
+      "key": "arquisp:16427",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Conceição – Jaraguá",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-da-conceicao-jaragua/",
+      "source_updated_at": "2026-01-15T20:33:07Z"
+    },
+    {
+      "key": "arquisp:16425",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Graças – Vila dos Andrades",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-das-gracas-vila-dos-andrades/",
+      "source_updated_at": "2026-01-15T20:33:14Z"
+    },
+    {
+      "key": "arquisp:16423",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Vila Zatt",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-aparecida-vila-zatt/",
+      "source_updated_at": "2026-01-15T20:33:16Z"
+    },
+    {
+      "key": "arquisp:16418",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Vila Souza",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-nossa-senhora-aparecida-vila-souza/",
+      "source_updated_at": "2026-01-15T20:33:21Z"
+    },
+    {
+      "key": "arquisp:16420",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santos Apóstolos",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santos-apostolos/",
+      "source_updated_at": "2026-01-15T20:33:25Z"
+    },
+    {
+      "key": "arquisp:16416",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Imaculado Coração de Maria – Jd. Princesa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-imaculado-coracao-de-maria-jardim-princesa/",
+      "source_updated_at": "2026-01-15T20:33:30Z"
+    },
+    {
+      "key": "arquisp:16412",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Espírito Santo – Vila Penteado",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-espirito-santo-vila-penteado/",
+      "source_updated_at": "2026-01-16T21:49:04Z"
+    },
+    {
+      "key": "arquisp:16408",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Cristo Libertador",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-cristo-libertador/",
+      "source_updated_at": "2026-01-15T20:33:48Z"
+    },
+    {
+      "key": "arquisp:15478",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rosa de Lima",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-brasilandia/paroquia-santa-rosa-de-lima/",
+      "source_updated_at": "2026-01-15T20:33:52Z"
+    },
+    {
+      "key": "arquisp:12397",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Miguel Arcanjo – Jardim da Conquista",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-miguel-arcanjo-jardim-da-conquista/",
+      "source_updated_at": "2026-01-15T20:33:56Z"
+    },
+    {
+      "key": "arquisp:12394",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo André Apóstolo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santo-andre-apostolo/",
+      "source_updated_at": "2026-01-15T20:34:01Z"
+    },
+    {
+      "key": "arquisp:12392",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Imaculado Coração de Maria – Jardim Rodolfo Pirani",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-imaculado-coracao-de-maria-jardim-rodolfo-pirani/",
+      "source_updated_at": "2026-01-15T20:34:06Z"
+    },
+    {
+      "key": "arquisp:12390",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Jesus Ressuscitado",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-jesus-ressuscitado/",
+      "source_updated_at": "2026-08-13T18:22:28Z"
+    },
+    {
+      "key": "arquisp:12388",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Marcos Evangelista – Parque São Rafael",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-marcos-evangelista-parque-sao-rafael/",
+      "source_updated_at": "2026-01-15T20:34:14Z"
+    },
+    {
+      "key": "arquisp:12384",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Paulo Apóstolo – IV Centenário",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-paulo-apostolo-iv-centenario/",
+      "source_updated_at": "2026-01-15T20:48:20Z"
+    },
+    {
+      "key": "arquisp:12380",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Teresa de Calcutá",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-teresa-de-calcuta/",
+      "source_updated_at": "2026-01-15T20:34:23Z"
+    },
+    {
+      "key": "arquisp:12378",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santíssima Trindade – Jardim Alto Alegre",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santissima-trindade-jardim-alto-alegre/",
+      "source_updated_at": "2026-01-15T20:34:27Z"
+    },
+    {
+      "key": "arquisp:12375",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Batista – Jardim Colonial",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-joao-batista-jardim-colonial/",
+      "source_updated_at": "2026-01-15T20:36:03Z"
+    },
+    {
+      "key": "arquisp:12372",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Mateus Apóstolo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-mateus-apostolo/",
+      "source_updated_at": "2026-01-15T20:36:08Z"
+    },
+    {
+      "key": "arquisp:12369",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José de Anchieta",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-jose-de-anchieta/",
+      "source_updated_at": "2026-01-15T20:36:14Z"
+    },
+    {
+      "key": "arquisp:12366",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Graças – Vila Antonieta",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-das-gracas-vila-antonieta/",
+      "source_updated_at": "2026-01-15T20:36:18Z"
+    },
+    {
+      "key": "arquisp:12364",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Cruz – Vila Rica",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-cruz-vila-rica/",
+      "source_updated_at": "2026-01-15T20:36:23Z"
+    },
+    {
+      "key": "arquisp:12363",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Adélia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-adelia/",
+      "source_updated_at": "2026-01-15T20:36:27Z"
+    },
+    {
+      "key": "arquisp:12358",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Imaculada Conceição – Jardim Sapopemba",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-imaculada-conceicao-jardim-sapopemba/",
+      "source_updated_at": "2026-01-15T20:36:31Z"
+    },
+    {
+      "key": "arquisp:12356",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Divino Espírito Santo – COHAB Teotônio Vilela",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-divino-espirito-santo-cohab-teotonio-vilela/",
+      "source_updated_at": "2026-01-15T20:36:37Z"
+    },
+    {
+      "key": "arquisp:12341",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Flores",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-das-flores/",
+      "source_updated_at": "2026-01-15T20:36:42Z"
+    },
+    {
+      "key": "arquisp:12332",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Sebastião – Mascarenhas de Moraes",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-sebastiao-mascarenhas-de-moraes/",
+      "source_updated_at": "2026-08-20T13:44:41Z"
+    },
+    {
+      "key": "arquisp:12329",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Graças – Jardim Elba",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-das-gracas-jardim-elba/",
+      "source_updated_at": "2026-01-15T20:36:52Z"
+    },
+    {
+      "key": "arquisp:12315",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Esperança – Parque dos Bancários",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-da-esperanca-parque-dos-bancarios/",
+      "source_updated_at": "2026-01-15T20:36:55Z"
+    },
+    {
+      "key": "arquisp:12311",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Maria Madalena",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-maria-madalena/",
+      "source_updated_at": "2026-01-15T20:36:59Z"
+    },
+    {
+      "key": "arquisp:12308",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Fátima e São Roque",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-de-fatima-e-sao-roque/",
+      "source_updated_at": "2026-01-15T20:37:03Z"
+    },
+    {
+      "key": "arquisp:12306",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Menino Deus – Jardim Vila Formosa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-menino-deus-jardim-vila-formosa/",
+      "source_updated_at": "2026-01-15T20:37:08Z"
+    },
+    {
+      "key": "arquisp:12289",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rosa de Lima – Vila Alpina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-rosa-de-lima-vila-alpina/",
+      "source_updated_at": "2026-01-16T22:11:29Z"
+    },
+    {
+      "key": "arquisp:12290",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Pedro Apóstolo – Vila Industrial",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-pedro-apostolo-vila-industrial/",
+      "source_updated_at": "2026-01-15T20:37:16Z"
+    },
+    {
+      "key": "arquisp:12287",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Filipe Neri",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-filipe-neri/",
+      "source_updated_at": "2026-01-15T20:37:21Z"
+    },
+    {
+      "key": "arquisp:12284",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Pedro Apóstolo – Jd. Independência",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-pedro-apostolo-jd-independencia/",
+      "source_updated_at": "2026-01-15T20:37:34Z"
+    },
+    {
+      "key": "arquisp:12278",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Clara",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-clara/",
+      "source_updated_at": "2026-01-15T20:37:38Z"
+    },
+    {
+      "key": "arquisp:12274",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio de Pádua – Chácara Mafalda",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santo-antonio-de-padua-chacara-mafalda/",
+      "source_updated_at": "2026-01-15T20:37:42Z"
+    },
+    {
+      "key": "arquisp:12271",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Perpétuo Socorro – Vila Diva",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-do-perpetuo-socorro-vila-diva/",
+      "source_updated_at": "2026-01-15T20:37:47Z"
+    },
+    {
+      "key": "arquisp:12269",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida e São Luciano",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-aparecida-e-sao-luciano/",
+      "source_updated_at": "2026-01-15T20:37:52Z"
+    },
+    {
+      "key": "arquisp:12265",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Pio X e Santa Luzia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-pio-x-e-santa-luzia/",
+      "source_updated_at": "2026-01-15T20:37:56Z"
+    },
+    {
+      "key": "arquisp:12195",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Vila Formosa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-aparecida-vila-formosa/",
+      "source_updated_at": "2026-01-15T20:38:00Z"
+    },
+    {
+      "key": "arquisp:12194",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sagrada Família – Vila Carrão",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sagrada-familia-vila-carrao/",
+      "source_updated_at": "2026-01-15T20:38:05Z"
+    },
+    {
+      "key": "arquisp:12192",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Isabel Rainha",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-isabel-rainha/",
+      "source_updated_at": "2026-05-14T14:47:31Z"
+    },
+    {
+      "key": "arquisp:12182",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Coração Eucarístico de Jesus e Santa Marina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-coracao-eucaristico-de-jesus-e-santa-marina/",
+      "source_updated_at": "2026-01-15T20:38:15Z"
+    },
+    {
+      "key": "arquisp:12181",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Sagrado Coração",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-do-sagrado-coracao/",
+      "source_updated_at": "2026-01-15T20:38:21Z"
+    },
+    {
+      "key": "arquisp:12180",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Judas Tadeu",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-judas-tadeu/",
+      "source_updated_at": "2026-01-15T20:38:26Z"
+    },
+    {
+      "key": "arquisp:12177",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Batista – Chácara Califórnia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-joao-batista-chacara-california/",
+      "source_updated_at": "2026-01-15T20:38:30Z"
+    },
+    {
+      "key": "arquisp:12176",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santo Antônio de Lisboa",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santo-antonio-de-lisboa/",
+      "source_updated_at": "2026-01-15T20:38:34Z"
+    },
+    {
+      "key": "arquisp:12175",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Vicente Pallotti e São Pedro Apóstolo",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-vicente-pallotti-e-sao-pedro-apostolo/",
+      "source_updated_at": "2026-01-15T20:38:38Z"
+    },
+    {
+      "key": "arquisp:12173",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Benedito das Vitórias",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-benedito-das-vitorias/",
+      "source_updated_at": "2026-01-15T20:38:43Z"
+    },
+    {
+      "key": "arquisp:12171",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora da Conceição",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-da-conceicao/",
+      "source_updated_at": "2026-01-15T20:38:47Z"
+    },
+    {
+      "key": "arquisp:12169",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José do Maranhão",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-jose-do-maranhao/",
+      "source_updated_at": "2026-01-15T20:38:52Z"
+    },
+    {
+      "key": "arquisp:12166",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Bom Parto",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-do-bom-parto/",
+      "source_updated_at": "2026-01-16T22:10:41Z"
+    },
+    {
+      "key": "arquisp:12165",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Cristo Rei",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-cristo-rei/",
+      "source_updated_at": "2026-01-15T20:39:10Z"
+    },
+    {
+      "key": "arquisp:12157",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida dos Ferroviários",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-aparecida-ferroviarios/",
+      "source_updated_at": "2026-01-15T20:39:15Z"
+    },
+    {
+      "key": "arquisp:12155",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Carlos Borromeu – Vila Prudente",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-carlos-borromeu-vila-prudente/",
+      "source_updated_at": "2026-01-15T20:39:19Z"
+    },
+    {
+      "key": "arquisp:12153",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Pedro Apóstolo – Mooca",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-pedro-apostolo-mooca/",
+      "source_updated_at": "2026-01-15T20:39:24Z"
+    },
+    {
+      "key": "arquisp:12152",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Bom Conselho",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-do-bom-conselho/",
+      "source_updated_at": "2026-01-15T20:39:28Z"
+    },
+    {
+      "key": "arquisp:12151",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Miguel Arcanjo – Belém",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-miguel-arcanjo-belem/",
+      "source_updated_at": "2026-01-15T20:39:32Z"
+    },
+    {
+      "key": "arquisp:12149",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Carlos Borromeu – Belém",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-carlos-borromeu-belem/",
+      "source_updated_at": "2026-01-15T20:39:37Z"
+    },
+    {
+      "key": "arquisp:12148",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora de Lourdes",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-de-lourdes/",
+      "source_updated_at": "2026-01-15T20:39:43Z"
+    },
+    {
+      "key": "arquisp:12146",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Paulo Apóstolo – Belém",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-paulo-apostolo-belem/",
+      "source_updated_at": "2026-01-15T20:39:45Z"
+    },
+    {
+      "key": "arquisp:12145",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Rita de Cássia – Pari",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-rita-de-cassia-pari/",
+      "source_updated_at": "2026-01-15T20:39:51Z"
+    },
+    {
+      "key": "arquisp:12144",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São Rafael",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-rafael/",
+      "source_updated_at": "2026-01-15T20:39:55Z"
+    },
+    {
+      "key": "arquisp:12143",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São João Batista – Brás",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-joao-batista-bras/",
+      "source_updated_at": "2026-01-15T20:40:00Z"
+    },
+    {
+      "key": "arquisp:12098",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Sagrada Face",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sagrada-face/",
+      "source_updated_at": "2026-01-15T20:40:05Z"
+    },
+    {
+      "key": "arquisp:12097",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Santa Bernadette",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-santa-bernadette/",
+      "source_updated_at": "2026-01-15T20:40:10Z"
+    },
+    {
+      "key": "arquisp:12094",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora das Graças – Vila Califórnia",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-das-gracas-vila-california/",
+      "source_updated_at": "2026-01-15T20:40:14Z"
+    },
+    {
+      "key": "arquisp:12092",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora Aparecida – Vila Nova York",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-aparecida-vila-nova-york/",
+      "source_updated_at": "2026-01-15T20:40:19Z"
+    },
+    {
+      "key": "arquisp:11987",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Nossa Senhora do Carmo – Vila Alpina",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-nossa-senhora-do-carmo-vila-alpina/",
+      "source_updated_at": "2026-01-15T20:40:23Z"
+    },
+    {
+      "key": "arquisp:11986",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia Natividade do Senhor – Vila Guarani",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-natividade-do-senhor-vila-guarani/",
+      "source_updated_at": "2026-01-16T22:10:20Z"
+    },
+    {
+      "key": "arquisp:11876",
+      "jurisdiction": "arquisp",
+      "name": "Paróquia São José do Belém",
+      "municipality_code": 3550308,
+      "source_url": "https://arquisp.org.br/regiao-belem/paroquia-sao-jose-belem/",
+      "source_updated_at": "2026-01-15T20:40:44Z"
+    },
+    {
+      "key": "uruacu:1594",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia São José Operário",
+      "municipality_code": 5221601,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sao-jose-operario/",
+      "source_updated_at": "2025-04-22T00:03:53Z"
+    },
+    {
+      "key": "uruacu:1595",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia São Francisco de Assis",
+      "municipality_code": 5214606,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sao-francisco-de-assis/",
+      "source_updated_at": "2025-08-03T19:10:50Z"
+    },
+    {
+      "key": "uruacu:1597",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora d’Abadia",
+      "municipality_code": 5214606,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-dabadia-niquelandia/",
+      "source_updated_at": "2025-04-21T19:26:57Z"
+    },
+    {
+      "key": "uruacu:1596",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora da Abadia",
+      "municipality_code": 5203203,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-da-abadia-barro-alto/",
+      "source_updated_at": "2026-02-01T23:35:20Z"
+    },
+    {
+      "key": "uruacu:1599",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia São Sebastião",
+      "municipality_code": 5221601,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sao-sebastiao-uruacu/",
+      "source_updated_at": "2026-02-01T23:32:30Z"
+    },
+    {
+      "key": "uruacu:1604",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santa Ana – Catedral",
+      "municipality_code": 5221601,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santa-ana-catedral/",
+      "source_updated_at": "2025-04-21T19:25:21Z"
+    },
+    {
+      "key": "uruacu:1603",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santuário São José",
+      "municipality_code": 5214606,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santuario-sao-jose/",
+      "source_updated_at": "2025-04-21T19:16:10Z"
+    },
+    {
+      "key": "uruacu:1602",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia e Santuário Nossa Senhora da Penha",
+      "municipality_code": 5209457,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-e-santuario-nossa-senhora-da-penha/",
+      "source_updated_at": "2025-04-21T23:07:30Z"
+    },
+    {
+      "key": "uruacu:1601",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santo Antônio de Pádua",
+      "municipality_code": 5204953,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santo-antonio-de-padua-campos-verdes/",
+      "source_updated_at": "2025-04-21T22:49:41Z"
+    },
+    {
+      "key": "uruacu:1600",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia São Luiz Gonzaga",
+      "municipality_code": 5220157,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sao-luiz-gonzaga/",
+      "source_updated_at": "2025-04-21T22:48:44Z"
+    },
+    {
+      "key": "uruacu:1616",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santo Antônio Maria Claret",
+      "municipality_code": 5209804,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santo-antonio-maria-claret/",
+      "source_updated_at": "2025-04-21T22:51:05Z"
+    },
+    {
+      "key": "uruacu:1614",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santa Terezinha",
+      "municipality_code": 5219704,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santa-terezinha/",
+      "source_updated_at": "2025-06-28T11:44:55Z"
+    },
+    {
+      "key": "uruacu:1606",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Imaculado Coração de Maria",
+      "municipality_code": 5210901,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-imaculado-coracao-de-maria/",
+      "source_updated_at": "2025-08-03T19:09:16Z"
+    },
+    {
+      "key": "uruacu:1605",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora do Pilar",
+      "municipality_code": 5216908,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-do-pilar/",
+      "source_updated_at": "2025-04-21T23:00:43Z"
+    },
+    {
+      "key": "uruacu:1607",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora das Graças",
+      "municipality_code": 5218607,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-das-gracas-rialma/",
+      "source_updated_at": "2026-02-01T23:22:15Z"
+    },
+    {
+      "key": "uruacu:1608",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora da Abadia",
+      "municipality_code": 5208608,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-da-abadia/",
+      "source_updated_at": "2026-05-31T18:25:59Z"
+    },
+    {
+      "key": "uruacu:1609",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santa Isabel",
+      "municipality_code": 5219357,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santa-isabel/",
+      "source_updated_at": "2025-08-03T19:18:35Z"
+    },
+    {
+      "key": "uruacu:1610",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Sagrado Coração de Jesus",
+      "municipality_code": 5208608,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sagrado-coracao-de-jesus/",
+      "source_updated_at": "2025-04-22T00:03:17Z"
+    },
+    {
+      "key": "uruacu:1611",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia São Sebastião",
+      "municipality_code": 5218706,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sao-sebastiao-rianapolis/",
+      "source_updated_at": "2025-04-21T23:08:57Z"
+    },
+    {
+      "key": "uruacu:1612",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santa Rita de Cássia",
+      "municipality_code": 5219456,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santa-rita-de-cassia/",
+      "source_updated_at": "2026-05-31T18:27:10Z"
+    },
+    {
+      "key": "uruacu:1613",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora de Fátima",
+      "municipality_code": 5208608,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-de-fatima/",
+      "source_updated_at": "2026-05-31T18:26:11Z"
+    },
+    {
+      "key": "uruacu:1615",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Sagrada Família",
+      "municipality_code": 5208608,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sagrada-familia/",
+      "source_updated_at": "2025-11-07T02:04:18Z"
+    },
+    {
+      "key": "uruacu:1627",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santo Antônio de Pádua",
+      "municipality_code": 5212808,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santo-antonio-de-padua-mara-rosa/",
+      "source_updated_at": "2026-05-31T18:18:10Z"
+    },
+    {
+      "key": "uruacu:1625",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora da Guia",
+      "municipality_code": 5204706,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-da-guia/",
+      "source_updated_at": "2025-11-07T02:06:14Z"
+    },
+    {
+      "key": "uruacu:1624",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora Aparecida",
+      "municipality_code": 5207501,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-aparecida-estrela-do-norte/",
+      "source_updated_at": "2026-05-31T18:17:58Z"
+    },
+    {
+      "key": "uruacu:1623",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia São Sebastião",
+      "municipality_code": 5200555,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sao-sebastiao-alto-horizonte/",
+      "source_updated_at": "2024-10-01T00:39:02Z"
+    },
+    {
+      "key": "uruacu:1622",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora Aparecida",
+      "municipality_code": 5214879,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-aparecida-nova-iguacu/",
+      "source_updated_at": "2026-05-31T18:17:46Z"
+    },
+    {
+      "key": "uruacu:1621",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia São João Maria Vianney",
+      "municipality_code": 5208103,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sao-joao-maria-vianney/",
+      "source_updated_at": "2026-05-31T18:07:48Z"
+    },
+    {
+      "key": "uruacu:1620",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santa Tereza",
+      "municipality_code": 5219605,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santa-tereza/",
+      "source_updated_at": "2026-06-30T17:37:29Z"
+    },
+    {
+      "key": "uruacu:1619",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora Aparecida",
+      "municipality_code": 5213087,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-aparecida-minacu/",
+      "source_updated_at": "2026-05-31T18:06:54Z"
+    },
+    {
+      "key": "uruacu:1618",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Santo Antônio de Pádua",
+      "municipality_code": 5221452,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-santo-antonio-de-padua/",
+      "source_updated_at": "2026-05-31T18:07:35Z"
+    },
+    {
+      "key": "uruacu:1617",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora Aparecida",
+      "municipality_code": 5213772,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-aparecida/",
+      "source_updated_at": "2026-05-31T18:04:12Z"
+    },
+    {
+      "key": "uruacu:1626",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora das Graças",
+      "municipality_code": 5213087,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-das-gracas/",
+      "source_updated_at": "2026-05-31T18:08:10Z"
+    },
+    {
+      "key": "uruacu:1518",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia Nossa Senhora d’Abadia",
+      "municipality_code": 5204656,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-nossa-senhora-dabadia/",
+      "source_updated_at": "2026-05-31T18:07:07Z"
+    },
+    {
+      "key": "uruacu:1461",
+      "jurisdiction": "uruacu",
+      "name": "Paróquia de Paróquia São João Batista",
+      "municipality_code": 5200829,
+      "source_url": "https://diocesedeuruacu.com.br/paroquias/paroquia-sao-joao-batista/",
+      "source_updated_at": "2026-05-31T18:17:31Z"
+    }
+  ],
+  "skipped": [
+    {
+      "key": "arquisp:17018",
+      "reason": "Ficha não identificada explicitamente como paróquia",
+      "name": "Catedral da Sé"
+    },
+    {
+      "key": "uruacu:1598",
+      "reason": "Município sem correspondência inequívoca nas tags oficiais",
+      "name": "Santuário Diocesano Nossa Senhora d’Abadia do Muquém"
+    }
+  ]
+}

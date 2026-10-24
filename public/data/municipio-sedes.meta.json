@@ -1,0 +1,9 @@
+{
+  "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/localidades/Localidades_do_Brasil/2022/Localidades_Brasil_gpkg.zip",
+  "dataset": "IBGE · Localidades do Brasil 2022 · arquivo publicado em novembro de 2025",
+  "crs": "SIRGAS 2000 (EPSG:4674)",
+  "kind": "sede municipal; capital estadual/federal priorizada; Distrito Estadual de Fernando de Noronha incluído",
+  "sha256_gpkg": "d057a1638b16257f17338ea2b8a4fc1e0b4b4b93012c5a7fa294f44e401e2704",
+  "retrieved_at": "2026-10-24T05:39:50.004Z",
+  "count": 5571
+}
