@@ -1,4 +1,5 @@
 import {normalizeCatalogName,parishIdentity} from './catalog-normalization.mjs';
+import {loadParishResolutions} from './parish-reconciliation.mjs';
 
 // Only presentation suffixes and explicit abbreviations are normalized; no fuzzy patron matching.
 export function referenceIdentity(name,municipality){
@@ -10,9 +11,17 @@ export function referenceIdentity(name,municipality){
   return `${municipality.code}:${value}`;
 }
 
-export function planReferenceCatalog(snapshot,catalog,municipalities){
+export function reviewName(name){return normalizeCatalogName(name.replace(/\([^)]*\)/g,'')).replace(/^paroquia\s*/,'').replace(/\bn sra\b|\bn s\b|\bns\b|\bnossa sra\b/g,'nossa senhora').replace(/\bsta\b/g,'santa').replace(/\bsto\b/g,'santo').replace(/\bs\b/g,'sao').replace(/\bfco\b/g,'francisco').replace(/\b(?:de|do|da|das|dos)\b/g,'').replace(/\s+/g,' ').trim();}
+function nearName(a,b){
+  if(a===b)return true;
+  if(Math.min(a.length,b.length)<12||Math.abs(a.length-b.length)>2)return false;
+  let previous=Array.from({length:b.length+1},(_,i)=>i);
+  for(let i=1;i<=a.length;i++){const next=[i];for(let j=1;j<=b.length;j++)next[j]=Math.min(next[j-1]+1,previous[j]+1,previous[j-1]+(a[i-1]===b[j-1]?0:1));previous=next;}
+  return previous[b.length]<=2&&previous[b.length]/Math.max(a.length,b.length)<=.1;
+}
+export function planReferenceCatalog(snapshot,catalog,municipalities,knownSourceKeys=new Set(),resolutions=loadParishResolutions()){
   const byCode=new Map(municipalities.map(m=>[m.code,m])),existing=new Map(),groups=new Map(),skipped=[],records=[];
-  for(const parish of catalog){const city=byCode.get(parish.municipality_code);if(!city)continue;const key=referenceIdentity(parish.name,city);existing.set(key,[...(existing.get(key)??[]),parish]);}
+  for(const parish of catalog){const city=byCode.get(parish.municipality_code);if(!city||parish.active===false)continue;const key=referenceIdentity(parish.name,city);existing.set(key,[...(existing.get(key)??[]),parish]);}
   for(const row of snapshot.records){
     const city=byCode.get(row.municipality_code);
     if(row.kind!=='parish'||!city){skipped.push({...row,reason:row.kind!=='parish'?'Ficha sem nomenclatura paroquial':'Município não resolvido'});continue;}
@@ -21,26 +30,17 @@ export function planReferenceCatalog(snapshot,catalog,municipalities){
   }
   for(const [key,rows] of groups){
     const matches=existing.get(key)??[];
+    const reviewed=rows.length===1?resolutions.merges.find(m=>m.municipality_code===rows[0].municipality_code&&m.duplicate_key===rows[0].key):null;
+    const canonical=reviewed?catalog.find(p=>p.source_key===reviewed.canonical_key):null;
+    if(canonical){records.push({...rows[0],catalog_id:canonical.id});continue;}
     if(rows.length>1||matches.length>1){skipped.push(...rows.map(row=>({...row,reason:'Homônimas ou correspondências múltiplas no mesmo município; revisar antes de vincular'})));continue;}
+    if(!matches.length&&!knownSourceKeys.has(rows[0].key)){
+      const normalized=reviewName(rows[0].name),candidates=catalog.filter(p=>p.active!==false&&p.municipality_code===rows[0].municipality_code&&nearName(normalized,reviewName(p.name)));
+      if(candidates.length){skipped.push({...rows[0],reason:'Possível variação de nome; revisar as fontes antes de publicar outro bairro.',candidates:candidates.map(p=>p.id)});continue;}
+    }
     records.push({...rows[0],catalog_id:matches[0]?.id??null});
   }
   return {records,skipped};
-}
-
-async function reconcileReferenceDuplicates(client,catalog,municipalities){
-  const byCode=new Map(municipalities.map(m=>[m.code,m])),groups=new Map();
-  for(const row of catalog){const key=referenceIdentity(row.name,byCode.get(row.municipality_code));groups.set(key,[...(groups.get(key)??[]),row]);}
-  for(const group of groups.values()){
-    const official=group.filter(p=>p.source_kind==='institutional'),references=group.filter(p=>p.source_kind==='reference');
-    if(official.length!==1||references.length!==1)continue;
-    const duplicate=references[0],target=official[0];
-    // Archive only an empty imported duplicate; occupied neighborhoods always need human review.
-    const occupied=await client.query('SELECT 1 FROM houses h JOIN parishes p ON p.id=h.parish_id WHERE p.catalog_id=$1 LIMIT 1',[duplicate.id]);
-    if(occupied.rowCount)continue;
-    await client.query(`UPDATE parish_catalog_sources SET catalog_id=$2 WHERE catalog_id=$1 AND source_kind='reference'`,[duplicate.id,target.id]);
-    await client.query('UPDATE parish_catalog SET active=false WHERE id=$1',[duplicate.id]);
-    await client.query('UPDATE parishes SET active=false WHERE catalog_id=$1',[duplicate.id]);
-  }
 }
 
 export async function importReferenceCatalog(client){
@@ -49,11 +49,12 @@ export async function importReferenceCatalog(client){
   const snapshot=JSON.parse(readFileSync(file,'utf8'));
   if(snapshot.source_kind!=='reference'||!Array.isArray(snapshot.records)||!snapshot.records.length)throw Error('Snapshot de referência inválido');
   const municipalities=(await client.query('SELECT code,name,uf FROM municipalities')).rows;
-  await reconcileReferenceDuplicates(client,(await client.query('SELECT * FROM parish_catalog')).rows,municipalities);
   const sourceIds=new Map((await client.query('SELECT source_key,catalog_id FROM parish_catalog_sources')).rows.map(r=>[r.source_key,r.catalog_id]));
   const linkedIds=new Set(sourceIds.values());
   const catalog=(await client.query('SELECT * FROM parish_catalog')).rows.filter(p=>p.source_kind==='institutional'||p.active||linkedIds.has(p.id));
-  const plan=planReferenceCatalog(snapshot,catalog,municipalities);
+  const plan=planReferenceCatalog(snapshot,catalog,municipalities,new Set([...sourceIds.keys(),...(loadParishResolutions().retained_source_keys??[])]));
+  for(const row of plan.skipped.filter(r=>r.candidates?.length))await client.query(`INSERT INTO parish_catalog_review_queue(source_key,municipality_code,name,source_url,candidates,reason) VALUES($1,$2,$3,$4,$5,$6)
+    ON CONFLICT(source_key) DO UPDATE SET candidates=EXCLUDED.candidates,reason=EXCLUDED.reason,updated_at=now(),resolved_at=NULL`,[row.key,row.municipality_code,row.name,row.source_url,JSON.stringify(row.candidates),row.reason]);
   for(const row of plan.records){
     let id=sourceIds.get(row.key)??row.catalog_id;
     if(!id)id=(await client.query(`INSERT INTO parish_catalog(source_key,jurisdiction_id,municipality_code,name,source_url,retrieved_at,source_kind)
@@ -62,6 +63,7 @@ export async function importReferenceCatalog(client){
     await client.query(`INSERT INTO parish_catalog_sources(source_key,catalog_id,source_url,retrieved_at,source_kind) VALUES($1,$2,$3,$4,'reference')
       ON CONFLICT(source_key) DO UPDATE SET source_url=EXCLUDED.source_url,retrieved_at=EXCLUDED.retrieved_at`,[row.key,id,row.source_url,snapshot.fetched_at]);
   }
+  await client.query('UPDATE parish_catalog_review_queue q SET resolved_at=now() FROM parish_catalog_sources s WHERE q.source_key=s.source_key AND q.resolved_at IS NULL');
   await client.query(`INSERT INTO catalog_imports(source_key,retrieved_at,description,imported,skipped) VALUES('acervo-reference',$1,$2,$3,$4)
     ON CONFLICT(source_key) DO UPDATE SET retrieved_at=EXCLUDED.retrieved_at,description=EXCLUDED.description,imported=EXCLUDED.imported,skipped=EXCLUDED.skipped`,[snapshot.fetched_at,'Acervo Católico: fonte independente de referência, com diocese em aberto nos novos registros. Correspondências únicas preservam a fonte institucional; homônimas ficam para revisão.',plan.records.length,plan.skipped.length]);
   console.log(`Reference catalog: ${plan.records.length} source records linked/published; ${plan.skipped.length} skipped for classification, geography or ambiguity.`);

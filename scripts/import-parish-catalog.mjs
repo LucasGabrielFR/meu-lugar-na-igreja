@@ -22,7 +22,7 @@ export async function importParishCatalog(client) {
     const byId=new Map(existing.map(p=>[p.id,p]));
     const municipalities=new Map((await client.query('SELECT code,name FROM municipalities')).rows.map(m=>[m.code,m]));
     const references=new Map();
-    for(const row of existing.filter(p=>p.source_kind==='reference')){
+    for(const row of existing.filter(p=>p.active&&p.source_kind==='reference')){
       const key=referenceIdentity(row.name,municipalities.get(row.municipality_code));
       references.set(key,[...(references.get(key)??[]),row]);
     }
@@ -49,7 +49,7 @@ export async function importParishCatalog(client) {
         const provider=parish.key.split(':')[0];
         let stored=bySource.get(parish.key);
         if(stored&&stored.source_key!==parish.key&&stored.source_key.split(':')[0]===provider&&!reviewedKeys.has(parish.key))stored=null;
-        const crossSource=(byIdentity.get(naturalKey)??[]).filter(p=>p.source_key.split(':')[0]!==provider);
+        const crossSource=(byIdentity.get(naturalKey)??[]).filter(p=>p.active&&p.source_key.split(':')[0]!==provider);
         if(!stored&&crossSource.length===1)stored=crossSource[0];
         if(!stored){
           const candidateKey=referenceIdentity(parish.name,municipalities.get(parish.municipality_code));

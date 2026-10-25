@@ -9,14 +9,17 @@ export function validateMerge(a,b){
   if(a.jurisdiction_id&&b.jurisdiction_id&&a.jurisdiction_id!==b.jurisdiction_id)throw Error('Dioceses diferentes exigem revisão');
 }
 export async function applyParishResolutions(client,resolutions=loadParishResolutions()){
+  const removedKeys=new Set(resolutions.merges.map(m=>m.duplicate_key));
+  if(resolutions.merges.some(m=>removedKeys.has(m.canonical_key)))throw Error('Conciliação encadeada ou circular não permitida');
   for(const correction of resolutions.corrections){
     const row=(await client.query('SELECT * FROM parish_catalog WHERE source_key=$1',[correction.source_key])).rows[0];if(!row)continue;
     if(correction.municipality_code&&row.municipality_code!==correction.municipality_code){
       const occupied=await client.query('SELECT 1 FROM houses h JOIN parishes p ON p.id=h.parish_id WHERE p.catalog_id=$1 LIMIT 1',[row.id]);
-      if(occupied.rowCount)throw Error('Correção geográfica com moradores exige transferência específica');
+      const requests=await client.query('SELECT 1 FROM participation_requests r JOIN parishes p ON p.id=r.parish_id WHERE p.catalog_id=$1 LIMIT 1',[row.id]);
+      if(occupied.rowCount||requests.rowCount)throw Error('Correção geográfica com moradores ou pedidos exige transferência específica');
       await client.query('INSERT INTO cities(code) VALUES($1) ON CONFLICT DO NOTHING',[correction.municipality_code]);
       const neighborhoods=(await client.query('SELECT id FROM parishes WHERE catalog_id=$1 ORDER BY id',[row.id])).rows;
-      for(const p of neighborhoods)await client.query(`UPDATE parishes SET city_code=$2,slot=(SELECT coalesce(max(slot)+1,0) FROM parishes WHERE city_code=$2) WHERE id=$1`,[p.id,correction.municipality_code]);
+      for(const p of neighborhoods)await client.query(`UPDATE parishes SET city_code=$2,name=coalesce($3,name),slot=(SELECT coalesce(max(slot)+1,0) FROM parishes WHERE city_code=$2) WHERE id=$1`,[p.id,correction.municipality_code,correction.name??null]);
     }
     await client.query('UPDATE parish_catalog SET name=coalesce($2,name),municipality_code=coalesce($3,municipality_code) WHERE id=$1',[row.id,correction.name??null,correction.municipality_code??null]);
     if(correction.name)await client.query('UPDATE parishes SET name=$2 WHERE catalog_id=$1',[row.id,correction.name]);
@@ -24,7 +27,14 @@ export async function applyParishResolutions(client,resolutions=loadParishResolu
   for(const merge of resolutions.merges){
     const target=(await client.query('SELECT * FROM parish_catalog WHERE source_key=$1',[merge.canonical_key])).rows[0];
     const duplicate=(await client.query('SELECT * FROM parish_catalog WHERE source_key=$1',[merge.duplicate_key])).rows[0];
-    if(!target||!duplicate)continue;
+    if(!target)continue;
+    if(!duplicate){
+      await client.query(`INSERT INTO parish_catalog_sources(source_key,catalog_id,source_url,retrieved_at,source_kind) VALUES($1,$2,$3,now(),$4)
+        ON CONFLICT(source_key) DO UPDATE SET catalog_id=EXCLUDED.catalog_id`,[merge.duplicate_key,target.id,merge.evidence?.records?.[1]?.url??target.source_url,merge.duplicate_key.startsWith('acervo:')?'reference':target.source_kind]);
+      await client.query('UPDATE parish_catalog SET name=$2 WHERE id=$1',[target.id,merge.name]);
+      await client.query('UPDATE parishes SET name=$2 WHERE catalog_id=$1',[target.id,merge.name]);
+      continue;
+    }
     validateMerge(target,duplicate);
     const redirect=(await client.query('SELECT canonical_id FROM parish_catalog_redirects WHERE duplicate_id=$1',[duplicate.id])).rows[0];
     if(redirect&&redirect.canonical_id!==target.id)throw Error('Redirecionamento conflitante');

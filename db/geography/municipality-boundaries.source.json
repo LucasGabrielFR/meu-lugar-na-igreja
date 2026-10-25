@@ -1,0 +1,13 @@
+{
+  "source_url": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?intrarregiao=municipio&formato=application/vnd.geo%2Bjson&qualidade=maxima",
+  "retrieved_at": "2026-10-25T05:13:42.411Z",
+  "features": 5570,
+  "missing": [
+    {
+      "name": "Boa Esperança do Norte",
+      "code": 5101837,
+      "uf": "MT",
+      "reason": "HTTP 500"
+    }
+  ]
+}

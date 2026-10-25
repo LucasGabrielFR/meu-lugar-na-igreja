@@ -1,36 +1,132 @@
 {
-  "generated_at": "2026-10-24T20:31:57.707Z",
+  "generated_at": "2026-10-25T04:58:06.186Z",
   "source_kind": "reference",
   "publication_enabled": true,
   "warning": "Referências publicadas não comprovam estatuto canônico. Homônimas e municípios não resolvidos permanecem em revisão.",
   "linked": [
     {
-      "source_key": "acervo:1584",
-      "catalog_id": 4509
+      "source_key": "acervo:1898",
+      "catalog_id": 4381
     },
     {
-      "source_key": "acervo:8217",
-      "catalog_id": 5932
+      "source_key": "acervo:12172",
+      "catalog_id": 5264
     },
     {
-      "source_key": "acervo:1557",
-      "catalog_id": 7633
+      "source_key": "acervo:11078",
+      "catalog_id": 5430
+    },
+    {
+      "source_key": "acervo:3145",
+      "catalog_id": 5840
+    },
+    {
+      "source_key": "acervo:9802",
+      "catalog_id": 6182
+    },
+    {
+      "source_key": "acervo:3935",
+      "catalog_id": 6359
+    },
+    {
+      "source_key": "acervo:7499",
+      "catalog_id": 6377
+    },
+    {
+      "source_key": "acervo:9341",
+      "catalog_id": 6523
+    },
+    {
+      "source_key": "acervo:6148",
+      "catalog_id": 6601
+    },
+    {
+      "source_key": "acervo:5958",
+      "catalog_id": 6703
+    },
+    {
+      "source_key": "acervo:10643",
+      "catalog_id": 2549
+    },
+    {
+      "source_key": "acervo:4054",
+      "catalog_id": 8007
+    },
+    {
+      "source_key": "acervo:2551",
+      "catalog_id": 8203
+    },
+    {
+      "source_key": "acervo:6878",
+      "catalog_id": 8248
+    },
+    {
+      "source_key": "acervo:1563",
+      "catalog_id": 8295
+    },
+    {
+      "source_key": "acervo:1630",
+      "catalog_id": 8381
+    },
+    {
+      "source_key": "acervo:1989",
+      "catalog_id": 2739
+    },
+    {
+      "source_key": "acervo:5100",
+      "catalog_id": 8946
+    },
+    {
+      "source_key": "acervo:2257",
+      "catalog_id": 8999
+    },
+    {
+      "source_key": "acervo:1476",
+      "catalog_id": 7246
+    },
+    {
+      "source_key": "acervo:4042",
+      "catalog_id": 9520
+    },
+    {
+      "source_key": "acervo:7492",
+      "catalog_id": 9580
+    },
+    {
+      "source_key": "acervo:3340",
+      "catalog_id": 9844
+    },
+    {
+      "source_key": "acervo:7755",
+      "catalog_id": 3715
     },
     {
       "source_key": "acervo:213",
       "catalog_id": 10822
     },
     {
-      "source_key": "acervo:9702",
-      "catalog_id": 10841
+      "source_key": "acervo:9509",
+      "catalog_id": 10913
     },
     {
-      "source_key": "acervo:1952",
-      "catalog_id": 4391
+      "source_key": "acervo:6671",
+      "catalog_id": 10983
     },
     {
-      "source_key": "acervo:4877",
-      "catalog_id": 4179
+      "source_key": "acervo:564",
+      "catalog_id": 11242
+    },
+    {
+      "source_key": "acervo:3836",
+      "catalog_id": 11567
+    },
+    {
+      "source_key": "acervo:1483",
+      "catalog_id": 11622
+    },
+    {
+      "source_key": "acervo:1005",
+      "catalog_id": 11672
     },
     {
       "source_key": "acervo:1",
@@ -57,10 +153,6 @@
       "catalog_id": 4360
     },
     {
-      "source_key": "acervo:6125",
-      "catalog_id": 4361
-    },
-    {
       "source_key": "acervo:5943",
       "catalog_id": 4362
     },
@@ -79,10 +171,6 @@
     {
       "source_key": "acervo:757",
       "catalog_id": 254
-    },
-    {
-      "source_key": "acervo:2028",
-      "catalog_id": 4366
     },
     {
       "source_key": "acervo:7330",
@@ -153,10 +241,6 @@
       "catalog_id": 4380
     },
     {
-      "source_key": "acervo:1898",
-      "catalog_id": 4381
-    },
-    {
       "source_key": "acervo:5738",
       "catalog_id": 3089
     },
@@ -195,6 +279,10 @@
     {
       "source_key": "acervo:2972",
       "catalog_id": 4390
+    },
+    {
+      "source_key": "acervo:1952",
+      "catalog_id": 4391
     },
     {
       "source_key": "acervo:8879",
@@ -239,10 +327,6 @@
     {
       "source_key": "acervo:11609",
       "catalog_id": 4400
-    },
-    {
-      "source_key": "acervo:2089",
-      "catalog_id": 4401
     },
     {
       "source_key": "acervo:12042",
@@ -291,14 +375,6 @@
     {
       "source_key": "acervo:6927",
       "catalog_id": 4412
-    },
-    {
-      "source_key": "acervo:7909",
-      "catalog_id": 4413
-    },
-    {
-      "source_key": "acervo:1901",
-      "catalog_id": 4414
     },
     {
       "source_key": "acervo:10679",
@@ -705,14 +781,6 @@
       "catalog_id": 4496
     },
     {
-      "source_key": "acervo:5567",
-      "catalog_id": 4497
-    },
-    {
-      "source_key": "acervo:7871",
-      "catalog_id": 4498
-    },
-    {
       "source_key": "acervo:2014",
       "catalog_id": 2496
     },
@@ -765,6 +833,10 @@
       "catalog_id": 4508
     },
     {
+      "source_key": "acervo:1584",
+      "catalog_id": 4509
+    },
+    {
       "source_key": "acervo:7738",
       "catalog_id": 3115
     },
@@ -789,116 +861,12 @@
       "catalog_id": 4514
     },
     {
-      "source_key": "acervo:5460",
-      "catalog_id": 4515
-    },
-    {
-      "source_key": "acervo:3930",
-      "catalog_id": 4516
-    },
-    {
-      "source_key": "acervo:5472",
-      "catalog_id": 4517
-    },
-    {
-      "source_key": "acervo:6759",
-      "catalog_id": 4518
-    },
-    {
-      "source_key": "acervo:3689",
-      "catalog_id": 3118
-    },
-    {
-      "source_key": "acervo:2157",
-      "catalog_id": 4519
-    },
-    {
-      "source_key": "acervo:1646",
-      "catalog_id": 4520
-    },
-    {
-      "source_key": "acervo:3438",
-      "catalog_id": 4521
-    },
-    {
-      "source_key": "acervo:4466",
-      "catalog_id": 4522
-    },
-    {
-      "source_key": "acervo:7802",
-      "catalog_id": 2173
-    },
-    {
-      "source_key": "acervo:9342",
-      "catalog_id": 4523
-    },
-    {
-      "source_key": "acervo:4991",
-      "catalog_id": 4524
-    },
-    {
-      "source_key": "acervo:4740",
-      "catalog_id": 4525
-    },
-    {
-      "source_key": "acervo:1675",
-      "catalog_id": 4526
-    },
-    {
-      "source_key": "acervo:2702",
-      "catalog_id": 4527
-    },
-    {
-      "source_key": "acervo:9109",
-      "catalog_id": 2213
-    },
-    {
-      "source_key": "acervo:7323",
-      "catalog_id": 4528
-    },
-    {
-      "source_key": "acervo:2717",
-      "catalog_id": 4529
-    },
-    {
-      "source_key": "acervo:5297",
-      "catalog_id": 3940
-    },
-    {
-      "source_key": "acervo:5561",
-      "catalog_id": 4530
-    },
-    {
-      "source_key": "acervo:9427",
-      "catalog_id": 4354
-    },
-    {
-      "source_key": "acervo:12244",
-      "catalog_id": 4531
-    },
-    {
-      "source_key": "acervo:2005",
-      "catalog_id": 2708
-    },
-    {
-      "source_key": "acervo:4822",
-      "catalog_id": 4532
-    },
-    {
       "source_key": "acervo:6358",
       "catalog_id": 4533
     },
     {
       "source_key": "acervo:7902",
       "catalog_id": 4534
-    },
-    {
-      "source_key": "acervo:5092",
-      "catalog_id": 4535
-    },
-    {
-      "source_key": "acervo:8686",
-      "catalog_id": 3112
     },
     {
       "source_key": "acervo:9204",
@@ -935,14 +903,6 @@
     {
       "source_key": "acervo:8047",
       "catalog_id": 4544
-    },
-    {
-      "source_key": "acervo:4709",
-      "catalog_id": 4545
-    },
-    {
-      "source_key": "acervo:10400",
-      "catalog_id": 4546
     },
     {
       "source_key": "acervo:11168",
@@ -1003,10 +963,6 @@
     {
       "source_key": "acervo:3717",
       "catalog_id": 4560
-    },
-    {
-      "source_key": "acervo:6778",
-      "catalog_id": 4561
     },
     {
       "source_key": "acervo:7035",
@@ -1109,16 +1065,8 @@
       "catalog_id": 4585
     },
     {
-      "source_key": "acervo:3633",
-      "catalog_id": 4586
-    },
-    {
       "source_key": "acervo:11060",
       "catalog_id": 4587
-    },
-    {
-      "source_key": "acervo:7223",
-      "catalog_id": 4588
     },
     {
       "source_key": "acervo:11583",
@@ -1127,78 +1075,6 @@
     {
       "source_key": "acervo:10100",
       "catalog_id": 4100
-    },
-    {
-      "source_key": "acervo:9083",
-      "catalog_id": 4590
-    },
-    {
-      "source_key": "acervo:7594",
-      "catalog_id": 4591
-    },
-    {
-      "source_key": "acervo:2992",
-      "catalog_id": 4592
-    },
-    {
-      "source_key": "acervo:2225",
-      "catalog_id": 4593
-    },
-    {
-      "source_key": "acervo:10163",
-      "catalog_id": 4108
-    },
-    {
-      "source_key": "acervo:185",
-      "catalog_id": 4594
-    },
-    {
-      "source_key": "acervo:5069",
-      "catalog_id": 4595
-    },
-    {
-      "source_key": "acervo:10975",
-      "catalog_id": 4596
-    },
-    {
-      "source_key": "acervo:2224",
-      "catalog_id": 4597
-    },
-    {
-      "source_key": "acervo:10024",
-      "catalog_id": 4598
-    },
-    {
-      "source_key": "acervo:11920",
-      "catalog_id": 4599
-    },
-    {
-      "source_key": "acervo:690",
-      "catalog_id": 4600
-    },
-    {
-      "source_key": "acervo:11126",
-      "catalog_id": 4601
-    },
-    {
-      "source_key": "acervo:3700",
-      "catalog_id": 3124
-    },
-    {
-      "source_key": "acervo:4766",
-      "catalog_id": 4602
-    },
-    {
-      "source_key": "acervo:8355",
-      "catalog_id": 4603
-    },
-    {
-      "source_key": "acervo:7648",
-      "catalog_id": 2957
-    },
-    {
-      "source_key": "acervo:10261",
-      "catalog_id": 4604
     },
     {
       "source_key": "acervo:12056",
@@ -1233,10 +1109,6 @@
       "catalog_id": 4612
     },
     {
-      "source_key": "acervo:10614",
-      "catalog_id": 4613
-    },
-    {
       "source_key": "acervo:10113",
       "catalog_id": 4614
     },
@@ -1269,10 +1141,6 @@
       "catalog_id": 4620
     },
     {
-      "source_key": "acervo:7659",
-      "catalog_id": 4621
-    },
-    {
       "source_key": "acervo:10743",
       "catalog_id": 4622
     },
@@ -1285,14 +1153,6 @@
       "catalog_id": 3061
     },
     {
-      "source_key": "acervo:10457",
-      "catalog_id": 4624
-    },
-    {
-      "source_key": "acervo:4864",
-      "catalog_id": 4625
-    },
-    {
       "source_key": "acervo:1804",
       "catalog_id": 4626
     },
@@ -1301,16 +1161,8 @@
       "catalog_id": 4627
     },
     {
-      "source_key": "acervo:4201",
-      "catalog_id": 4628
-    },
-    {
       "source_key": "acervo:1130",
       "catalog_id": 4629
-    },
-    {
-      "source_key": "acervo:9125",
-      "catalog_id": 4630
     },
     {
       "source_key": "acervo:8403",
@@ -1625,20 +1477,8 @@
       "catalog_id": 4703
     },
     {
-      "source_key": "acervo:10425",
-      "catalog_id": 4704
-    },
-    {
       "source_key": "acervo:8144",
       "catalog_id": 4705
-    },
-    {
-      "source_key": "acervo:10423",
-      "catalog_id": 4706
-    },
-    {
-      "source_key": "acervo:4691",
-      "catalog_id": 4707
     },
     {
       "source_key": "acervo:8119",
@@ -1837,10 +1677,6 @@
       "catalog_id": 4754
     },
     {
-      "source_key": "acervo:3637",
-      "catalog_id": 4755
-    },
-    {
       "source_key": "acervo:8542",
       "catalog_id": 4756
     },
@@ -1857,56 +1693,8 @@
       "catalog_id": 4759
     },
     {
-      "source_key": "acervo:3649",
-      "catalog_id": 4760
-    },
-    {
-      "source_key": "acervo:12294",
-      "catalog_id": 4761
-    },
-    {
-      "source_key": "acervo:12298",
-      "catalog_id": 4762
-    },
-    {
-      "source_key": "acervo:11049",
-      "catalog_id": 4763
-    },
-    {
-      "source_key": "acervo:11056",
-      "catalog_id": 4764
-    },
-    {
-      "source_key": "acervo:11057",
-      "catalog_id": 4765
-    },
-    {
-      "source_key": "acervo:11062",
-      "catalog_id": 4766
-    },
-    {
       "source_key": "acervo:8549",
       "catalog_id": 4767
-    },
-    {
-      "source_key": "acervo:7864",
-      "catalog_id": 4768
-    },
-    {
-      "source_key": "acervo:9245",
-      "catalog_id": 4769
-    },
-    {
-      "source_key": "acervo:7249",
-      "catalog_id": 4770
-    },
-    {
-      "source_key": "acervo:7843",
-      "catalog_id": 4771
-    },
-    {
-      "source_key": "acervo:12295",
-      "catalog_id": 4772
     },
     {
       "source_key": "acervo:7837",
@@ -1915,10 +1703,6 @@
     {
       "source_key": "acervo:12296",
       "catalog_id": 4774
-    },
-    {
-      "source_key": "acervo:1816",
-      "catalog_id": 4775
     },
     {
       "source_key": "acervo:991",
@@ -1933,10 +1717,6 @@
       "catalog_id": 4778
     },
     {
-      "source_key": "acervo:11380",
-      "catalog_id": 4779
-    },
-    {
       "source_key": "acervo:7838",
       "catalog_id": 4780
     },
@@ -1947,10 +1727,6 @@
     {
       "source_key": "acervo:7855",
       "catalog_id": 4782
-    },
-    {
-      "source_key": "acervo:3645",
-      "catalog_id": 4783
     },
     {
       "source_key": "acervo:8179",
@@ -1971,10 +1747,6 @@
     {
       "source_key": "acervo:7586",
       "catalog_id": 4788
-    },
-    {
-      "source_key": "acervo:3627",
-      "catalog_id": 4789
     },
     {
       "source_key": "acervo:1248",
@@ -2031,10 +1803,6 @@
     {
       "source_key": "acervo:8543",
       "catalog_id": 4803
-    },
-    {
-      "source_key": "acervo:11572",
-      "catalog_id": 4804
     },
     {
       "source_key": "acervo:10527",
@@ -2107,10 +1875,6 @@
     {
       "source_key": "acervo:8224",
       "catalog_id": 4822
-    },
-    {
-      "source_key": "acervo:6433",
-      "catalog_id": 4823
     },
     {
       "source_key": "acervo:3623",
@@ -2293,10 +2057,6 @@
       "catalog_id": 4863
     },
     {
-      "source_key": "acervo:3662",
-      "catalog_id": 3222
-    },
-    {
       "source_key": "acervo:81",
       "catalog_id": 4864
     },
@@ -2307,10 +2067,6 @@
     {
       "source_key": "acervo:8220",
       "catalog_id": 4866
-    },
-    {
-      "source_key": "acervo:826",
-      "catalog_id": 4867
     },
     {
       "source_key": "acervo:9011",
@@ -2375,6 +2131,10 @@
     {
       "source_key": "acervo:184",
       "catalog_id": 4880
+    },
+    {
+      "source_key": "acervo:2089",
+      "catalog_id": 4401
     },
     {
       "source_key": "acervo:9969",
@@ -2789,6 +2549,14 @@
       "catalog_id": 4963
     },
     {
+      "source_key": "acervo:5567",
+      "catalog_id": 4497
+    },
+    {
+      "source_key": "acervo:7871",
+      "catalog_id": 4498
+    },
+    {
       "source_key": "acervo:11046",
       "catalog_id": 4964
     },
@@ -2989,6 +2757,18 @@
       "catalog_id": 5004
     },
     {
+      "source_key": "acervo:4709",
+      "catalog_id": 4545
+    },
+    {
+      "source_key": "acervo:10400",
+      "catalog_id": 4546
+    },
+    {
+      "source_key": "acervo:6778",
+      "catalog_id": 4561
+    },
+    {
       "source_key": "acervo:1815",
       "catalog_id": 5005
     },
@@ -3145,10 +2925,6 @@
       "catalog_id": 5033
     },
     {
-      "source_key": "acervo:7700",
-      "catalog_id": 5034
-    },
-    {
       "source_key": "acervo:11394",
       "catalog_id": 5035
     },
@@ -3183,6 +2959,38 @@
     {
       "source_key": "acervo:77",
       "catalog_id": 5043
+    },
+    {
+      "source_key": "acervo:2224",
+      "catalog_id": 4597
+    },
+    {
+      "source_key": "acervo:10024",
+      "catalog_id": 4598
+    },
+    {
+      "source_key": "acervo:11920",
+      "catalog_id": 4599
+    },
+    {
+      "source_key": "acervo:690",
+      "catalog_id": 4600
+    },
+    {
+      "source_key": "acervo:11126",
+      "catalog_id": 4601
+    },
+    {
+      "source_key": "acervo:3700",
+      "catalog_id": 3124
+    },
+    {
+      "source_key": "acervo:4766",
+      "catalog_id": 4602
+    },
+    {
+      "source_key": "acervo:7648",
+      "catalog_id": 2957
     },
     {
       "source_key": "acervo:2130",
@@ -3553,6 +3361,10 @@
       "catalog_id": 5118
     },
     {
+      "source_key": "acervo:10425",
+      "catalog_id": 4704
+    },
+    {
       "source_key": "acervo:11762",
       "catalog_id": 5119
     },
@@ -3753,6 +3565,30 @@
       "catalog_id": 5156
     },
     {
+      "source_key": "acervo:12294",
+      "catalog_id": 4761
+    },
+    {
+      "source_key": "acervo:12298",
+      "catalog_id": 4762
+    },
+    {
+      "source_key": "acervo:11049",
+      "catalog_id": 4763
+    },
+    {
+      "source_key": "acervo:11056",
+      "catalog_id": 4764
+    },
+    {
+      "source_key": "acervo:11057",
+      "catalog_id": 4765
+    },
+    {
+      "source_key": "acervo:11062",
+      "catalog_id": 4766
+    },
+    {
       "source_key": "acervo:5337",
       "catalog_id": 5157
     },
@@ -3775,10 +3611,6 @@
     {
       "source_key": "acervo:10462",
       "catalog_id": 5161
-    },
-    {
-      "source_key": "acervo:1638",
-      "catalog_id": 5162
     },
     {
       "source_key": "acervo:6552",
@@ -3819,10 +3651,6 @@
     {
       "source_key": "acervo:11996",
       "catalog_id": 5172
-    },
-    {
-      "source_key": "acervo:3653",
-      "catalog_id": 3452
     },
     {
       "source_key": "acervo:10961",
@@ -3905,10 +3733,6 @@
       "catalog_id": 3468
     },
     {
-      "source_key": "acervo:10180",
-      "catalog_id": 5187
-    },
-    {
       "source_key": "acervo:2052",
       "catalog_id": 5188
     },
@@ -3939,10 +3763,6 @@
     {
       "source_key": "acervo:2048",
       "catalog_id": 5195
-    },
-    {
-      "source_key": "acervo:7785",
-      "catalog_id": 5196
     },
     {
       "source_key": "acervo:75",
@@ -3991,18 +3811,6 @@
     {
       "source_key": "acervo:8553",
       "catalog_id": 5207
-    },
-    {
-      "source_key": "acervo:12072",
-      "catalog_id": 5208
-    },
-    {
-      "source_key": "acervo:9945",
-      "catalog_id": 5209
-    },
-    {
-      "source_key": "acervo:10428",
-      "catalog_id": 5210
     },
     {
       "source_key": "acervo:573",
@@ -4055,14 +3863,6 @@
     {
       "source_key": "acervo:1942",
       "catalog_id": 5223
-    },
-    {
-      "source_key": "acervo:1943",
-      "catalog_id": 5224
-    },
-    {
-      "source_key": "acervo:2226",
-      "catalog_id": 5225
     },
     {
       "source_key": "acervo:9936",
@@ -4133,10 +3933,6 @@
       "catalog_id": 5242
     },
     {
-      "source_key": "acervo:3628",
-      "catalog_id": 5243
-    },
-    {
       "source_key": "acervo:12076",
       "catalog_id": 5244
     },
@@ -4177,6 +3973,10 @@
       "catalog_id": 5253
     },
     {
+      "source_key": "acervo:3662",
+      "catalog_id": 3222
+    },
+    {
       "source_key": "acervo:12136",
       "catalog_id": 5254
     },
@@ -4215,10 +4015,6 @@
     {
       "source_key": "acervo:5476",
       "catalog_id": 5263
-    },
-    {
-      "source_key": "acervo:12172",
-      "catalog_id": 5264
     },
     {
       "source_key": "acervo:10904",
@@ -4267,10 +4063,6 @@
     {
       "source_key": "acervo:12238",
       "catalog_id": 5276
-    },
-    {
-      "source_key": "acervo:10982",
-      "catalog_id": 5277
     },
     {
       "source_key": "acervo:10476",
@@ -4451,18 +4243,6 @@
     {
       "source_key": "acervo:3131",
       "catalog_id": 5316
-    },
-    {
-      "source_key": "acervo:11020",
-      "catalog_id": 5317
-    },
-    {
-      "source_key": "acervo:8200",
-      "catalog_id": 5318
-    },
-    {
-      "source_key": "acervo:6419",
-      "catalog_id": 5319
     },
     {
       "source_key": "acervo:5658",
@@ -4769,22 +4549,6 @@
       "catalog_id": 5387
     },
     {
-      "source_key": "acervo:562",
-      "catalog_id": 5388
-    },
-    {
-      "source_key": "acervo:2896",
-      "catalog_id": 5389
-    },
-    {
-      "source_key": "acervo:3665",
-      "catalog_id": 3561
-    },
-    {
-      "source_key": "acervo:10094",
-      "catalog_id": 4090
-    },
-    {
       "source_key": "acervo:6768",
       "catalog_id": 5390
     },
@@ -4905,38 +4669,6 @@
       "catalog_id": 5416
     },
     {
-      "source_key": "acervo:294",
-      "catalog_id": 5417
-    },
-    {
-      "source_key": "acervo:10431",
-      "catalog_id": 2814
-    },
-    {
-      "source_key": "acervo:10123",
-      "catalog_id": 4091
-    },
-    {
-      "source_key": "acervo:6563",
-      "catalog_id": 5418
-    },
-    {
-      "source_key": "acervo:12216",
-      "catalog_id": 5419
-    },
-    {
-      "source_key": "acervo:10178",
-      "catalog_id": 4124
-    },
-    {
-      "source_key": "acervo:11986",
-      "catalog_id": 5420
-    },
-    {
-      "source_key": "acervo:10752",
-      "catalog_id": 5421
-    },
-    {
       "source_key": "acervo:3150",
       "catalog_id": 5422
     },
@@ -4961,24 +4693,12 @@
       "catalog_id": 5426
     },
     {
-      "source_key": "acervo:7235",
-      "catalog_id": 5427
-    },
-    {
       "source_key": "acervo:3616",
       "catalog_id": 3583
     },
     {
       "source_key": "acervo:2085",
       "catalog_id": 5428
-    },
-    {
-      "source_key": "acervo:3128",
-      "catalog_id": 5429
-    },
-    {
-      "source_key": "acervo:11078",
-      "catalog_id": 5430
     },
     {
       "source_key": "acervo:343",
@@ -5005,10 +4725,6 @@
       "catalog_id": 5435
     },
     {
-      "source_key": "acervo:10963",
-      "catalog_id": 5436
-    },
-    {
       "source_key": "acervo:6426",
       "catalog_id": 5437
     },
@@ -5019,30 +4735,6 @@
     {
       "source_key": "acervo:6442",
       "catalog_id": 5439
-    },
-    {
-      "source_key": "acervo:10660",
-      "catalog_id": 5440
-    },
-    {
-      "source_key": "acervo:10720",
-      "catalog_id": 5441
-    },
-    {
-      "source_key": "acervo:10464",
-      "catalog_id": 5442
-    },
-    {
-      "source_key": "acervo:10482",
-      "catalog_id": 5443
-    },
-    {
-      "source_key": "acervo:8212",
-      "catalog_id": 5444
-    },
-    {
-      "source_key": "acervo:5653",
-      "catalog_id": 5445
     },
     {
       "source_key": "acervo:8213",
@@ -5089,16 +4781,8 @@
       "catalog_id": 5456
     },
     {
-      "source_key": "acervo:10940",
-      "catalog_id": 5457
-    },
-    {
       "source_key": "acervo:10189",
       "catalog_id": 5458
-    },
-    {
-      "source_key": "acervo:10957",
-      "catalog_id": 5459
     },
     {
       "source_key": "acervo:7376",
@@ -5129,10 +4813,6 @@
       "catalog_id": 5466
     },
     {
-      "source_key": "acervo:5347",
-      "catalog_id": 5467
-    },
-    {
       "source_key": "acervo:12196",
       "catalog_id": 5468
     },
@@ -5157,10 +4837,6 @@
       "catalog_id": 5473
     },
     {
-      "source_key": "acervo:10139",
-      "catalog_id": 5474
-    },
-    {
       "source_key": "acervo:269",
       "catalog_id": 5475
     },
@@ -5183,6 +4859,10 @@
     {
       "source_key": "acervo:7426",
       "catalog_id": 5478
+    },
+    {
+      "source_key": "acervo:7700",
+      "catalog_id": 5034
     },
     {
       "source_key": "acervo:2051",
@@ -5857,6 +5537,10 @@
       "catalog_id": 5624
     },
     {
+      "source_key": "acervo:1638",
+      "catalog_id": 5162
+    },
+    {
       "source_key": "acervo:10154",
       "catalog_id": 4102
     },
@@ -6041,10 +5725,6 @@
       "catalog_id": 5662
     },
     {
-      "source_key": "acervo:8336",
-      "catalog_id": 5663
-    },
-    {
       "source_key": "acervo:9983",
       "catalog_id": 5664
     },
@@ -6079,6 +5759,18 @@
     {
       "source_key": "acervo:5536",
       "catalog_id": 5672
+    },
+    {
+      "source_key": "acervo:12072",
+      "catalog_id": 5208
+    },
+    {
+      "source_key": "acervo:9945",
+      "catalog_id": 5209
+    },
+    {
+      "source_key": "acervo:10428",
+      "catalog_id": 5210
     },
     {
       "source_key": "acervo:12231",
@@ -6173,10 +5865,6 @@
       "catalog_id": 5691
     },
     {
-      "source_key": "acervo:5324",
-      "catalog_id": 5692
-    },
-    {
       "source_key": "acervo:8400",
       "catalog_id": 5693
     },
@@ -6253,14 +5941,6 @@
       "catalog_id": 5711
     },
     {
-      "source_key": "acervo:12266",
-      "catalog_id": 5712
-    },
-    {
-      "source_key": "acervo:12182",
-      "catalog_id": 5713
-    },
-    {
       "source_key": "acervo:8166",
       "catalog_id": 5714
     },
@@ -6287,6 +5967,10 @@
     {
       "source_key": "acervo:7307",
       "catalog_id": 5719
+    },
+    {
+      "source_key": "acervo:5460",
+      "catalog_id": 4515
     },
     {
       "source_key": "acervo:3071",
@@ -6319,10 +6003,6 @@
     {
       "source_key": "acervo:6439",
       "catalog_id": 5725
-    },
-    {
-      "source_key": "acervo:11563",
-      "catalog_id": 5726
     },
     {
       "source_key": "acervo:8215",
@@ -6499,6 +6179,18 @@
     {
       "source_key": "acervo:5784",
       "catalog_id": 5761
+    },
+    {
+      "source_key": "acervo:11020",
+      "catalog_id": 5317
+    },
+    {
+      "source_key": "acervo:8200",
+      "catalog_id": 5318
+    },
+    {
+      "source_key": "acervo:6419",
+      "catalog_id": 5319
     },
     {
       "source_key": "acervo:6553",
@@ -6697,10 +6389,6 @@
       "catalog_id": 5807
     },
     {
-      "source_key": "acervo:9304",
-      "catalog_id": 5808
-    },
-    {
       "source_key": "acervo:10965",
       "catalog_id": 5809
     },
@@ -6845,10 +6533,6 @@
       "catalog_id": 5839
     },
     {
-      "source_key": "acervo:3145",
-      "catalog_id": 5840
-    },
-    {
       "source_key": "acervo:7252",
       "catalog_id": 5841
     },
@@ -6929,10 +6613,6 @@
       "catalog_id": 5857
     },
     {
-      "source_key": "acervo:10686",
-      "catalog_id": 5858
-    },
-    {
       "source_key": "acervo:193",
       "catalog_id": 5859
     },
@@ -6943,6 +6623,38 @@
     {
       "source_key": "acervo:10433",
       "catalog_id": 2809
+    },
+    {
+      "source_key": "acervo:294",
+      "catalog_id": 5417
+    },
+    {
+      "source_key": "acervo:10431",
+      "catalog_id": 2814
+    },
+    {
+      "source_key": "acervo:10123",
+      "catalog_id": 4091
+    },
+    {
+      "source_key": "acervo:6563",
+      "catalog_id": 5418
+    },
+    {
+      "source_key": "acervo:12216",
+      "catalog_id": 5419
+    },
+    {
+      "source_key": "acervo:10178",
+      "catalog_id": 4124
+    },
+    {
+      "source_key": "acervo:11986",
+      "catalog_id": 5420
+    },
+    {
+      "source_key": "acervo:10752",
+      "catalog_id": 5421
     },
     {
       "source_key": "acervo:10435",
@@ -7107,6 +6819,10 @@
     {
       "source_key": "acervo:9820",
       "catalog_id": 5894
+    },
+    {
+      "source_key": "acervo:5347",
+      "catalog_id": 5467
     },
     {
       "source_key": "acervo:8163",
@@ -7281,6 +6997,10 @@
       "catalog_id": 5931
     },
     {
+      "source_key": "acervo:8217",
+      "catalog_id": 5932
+    },
+    {
       "source_key": "acervo:6441",
       "catalog_id": 5933
     },
@@ -7319,10 +7039,6 @@
     {
       "source_key": "acervo:598",
       "catalog_id": 5941
-    },
-    {
-      "source_key": "acervo:172",
-      "catalog_id": 5942
     },
     {
       "source_key": "acervo:10461",
@@ -7379,10 +7095,6 @@
     {
       "source_key": "acervo:2291",
       "catalog_id": 5954
-    },
-    {
-      "source_key": "acervo:7679",
-      "catalog_id": 3806
     },
     {
       "source_key": "acervo:10138",
@@ -7471,10 +7183,6 @@
     {
       "source_key": "acervo:10749",
       "catalog_id": 5972
-    },
-    {
-      "source_key": "acervo:10112",
-      "catalog_id": 5973
     },
     {
       "source_key": "acervo:7258",
@@ -7611,10 +7319,6 @@
     {
       "source_key": "acervo:8394",
       "catalog_id": 6002
-    },
-    {
-      "source_key": "acervo:8399",
-      "catalog_id": 6003
     },
     {
       "source_key": "acervo:10997",
@@ -7837,10 +7541,6 @@
       "catalog_id": 6051
     },
     {
-      "source_key": "acervo:8210",
-      "catalog_id": 6052
-    },
-    {
       "source_key": "acervo:11033",
       "catalog_id": 6053
     },
@@ -8027,6 +7727,10 @@
     {
       "source_key": "acervo:7371",
       "catalog_id": 6094
+    },
+    {
+      "source_key": "acervo:8336",
+      "catalog_id": 5663
     },
     {
       "source_key": "acervo:10955",
@@ -8245,6 +7949,14 @@
       "catalog_id": 6139
     },
     {
+      "source_key": "acervo:12266",
+      "catalog_id": 5712
+    },
+    {
+      "source_key": "acervo:12182",
+      "catalog_id": 5713
+    },
+    {
       "source_key": "acervo:3492",
       "catalog_id": 6140
     },
@@ -8437,10 +8149,6 @@
       "catalog_id": 6181
     },
     {
-      "source_key": "acervo:9802",
-      "catalog_id": 6182
-    },
-    {
       "source_key": "acervo:1946",
       "catalog_id": 6183
     },
@@ -8457,6 +8165,10 @@
       "catalog_id": 6186
     },
     {
+      "source_key": "acervo:3930",
+      "catalog_id": 4516
+    },
+    {
       "source_key": "acervo:4820",
       "catalog_id": 6187
     },
@@ -8471,18 +8183,6 @@
     {
       "source_key": "acervo:10246",
       "catalog_id": 6190
-    },
-    {
-      "source_key": "acervo:10251",
-      "catalog_id": 6191
-    },
-    {
-      "source_key": "acervo:297",
-      "catalog_id": 6192
-    },
-    {
-      "source_key": "acervo:345",
-      "catalog_id": 6193
     },
     {
       "source_key": "acervo:1665",
@@ -8539,10 +8239,6 @@
     {
       "source_key": "acervo:11230",
       "catalog_id": 6206
-    },
-    {
-      "source_key": "acervo:257",
-      "catalog_id": 6207
     },
     {
       "source_key": "acervo:8451",
@@ -8607,10 +8303,6 @@
     {
       "source_key": "acervo:7268",
       "catalog_id": 6222
-    },
-    {
-      "source_key": "acervo:1893",
-      "catalog_id": 6223
     },
     {
       "source_key": "acervo:9322",
@@ -8689,8 +8381,8 @@
       "catalog_id": 6238
     },
     {
-      "source_key": "acervo:2218",
-      "catalog_id": 6239
+      "source_key": "acervo:9304",
+      "catalog_id": 5808
     },
     {
       "source_key": "acervo:9131",
@@ -8705,18 +8397,6 @@
       "catalog_id": 6242
     },
     {
-      "source_key": "acervo:3520",
-      "catalog_id": 6243
-    },
-    {
-      "source_key": "acervo:2761",
-      "catalog_id": 6244
-    },
-    {
-      "source_key": "acervo:2250",
-      "catalog_id": 6245
-    },
-    {
       "source_key": "acervo:10700",
       "catalog_id": 6246
     },
@@ -8727,10 +8407,6 @@
     {
       "source_key": "acervo:9435",
       "catalog_id": 4347
-    },
-    {
-      "source_key": "acervo:229",
-      "catalog_id": 6248
     },
     {
       "source_key": "acervo:7141",
@@ -8845,14 +8521,6 @@
       "catalog_id": 6268
     },
     {
-      "source_key": "acervo:7781",
-      "catalog_id": 6269
-    },
-    {
-      "source_key": "acervo:9084",
-      "catalog_id": 6270
-    },
-    {
       "source_key": "acervo:664",
       "catalog_id": 6271
     },
@@ -8921,6 +8589,14 @@
       "catalog_id": 6286
     },
     {
+      "source_key": "acervo:9084",
+      "catalog_id": 2242
+    },
+    {
+      "source_key": "acervo:10686",
+      "catalog_id": 5858
+    },
+    {
       "source_key": "acervo:9268",
       "catalog_id": 6287
     },
@@ -8933,54 +8609,6 @@
       "catalog_id": 6289
     },
     {
-      "source_key": "acervo:8522",
-      "catalog_id": 6290
-    },
-    {
-      "source_key": "acervo:5268",
-      "catalog_id": 6291
-    },
-    {
-      "source_key": "acervo:10467",
-      "catalog_id": 6292
-    },
-    {
-      "source_key": "acervo:8192",
-      "catalog_id": 6293
-    },
-    {
-      "source_key": "acervo:8195",
-      "catalog_id": 6294
-    },
-    {
-      "source_key": "acervo:3077",
-      "catalog_id": 6295
-    },
-    {
-      "source_key": "acervo:8198",
-      "catalog_id": 6296
-    },
-    {
-      "source_key": "acervo:5385",
-      "catalog_id": 6297
-    },
-    {
-      "source_key": "acervo:1809",
-      "catalog_id": 6298
-    },
-    {
-      "source_key": "acervo:3092",
-      "catalog_id": 6299
-    },
-    {
-      "source_key": "acervo:5146",
-      "catalog_id": 6300
-    },
-    {
-      "source_key": "acervo:541",
-      "catalog_id": 6301
-    },
-    {
       "source_key": "acervo:2079",
       "catalog_id": 6302
     },
@@ -8991,10 +8619,6 @@
     {
       "source_key": "acervo:1834",
       "catalog_id": 6304
-    },
-    {
-      "source_key": "acervo:4412",
-      "catalog_id": 6305
     },
     {
       "source_key": "acervo:331",
@@ -9121,10 +8745,6 @@
       "catalog_id": 6335
     },
     {
-      "source_key": "acervo:8857",
-      "catalog_id": 6336
-    },
-    {
       "source_key": "acervo:8027",
       "catalog_id": 6337
     },
@@ -9157,64 +8777,8 @@
       "catalog_id": 6344
     },
     {
-      "source_key": "acervo:8858",
-      "catalog_id": 6345
-    },
-    {
       "source_key": "acervo:8371",
       "catalog_id": 6346
-    },
-    {
-      "source_key": "acervo:8641",
-      "catalog_id": 6347
-    },
-    {
-      "source_key": "acervo:8147",
-      "catalog_id": 6348
-    },
-    {
-      "source_key": "acervo:10745",
-      "catalog_id": 6349
-    },
-    {
-      "source_key": "acervo:895",
-      "catalog_id": 6350
-    },
-    {
-      "source_key": "acervo:4199",
-      "catalog_id": 6351
-    },
-    {
-      "source_key": "acervo:10247",
-      "catalog_id": 6352
-    },
-    {
-      "source_key": "acervo:8032",
-      "catalog_id": 6353
-    },
-    {
-      "source_key": "acervo:136",
-      "catalog_id": 6354
-    },
-    {
-      "source_key": "acervo:10775",
-      "catalog_id": 6355
-    },
-    {
-      "source_key": "acervo:3117",
-      "catalog_id": 6356
-    },
-    {
-      "source_key": "acervo:239",
-      "catalog_id": 6357
-    },
-    {
-      "source_key": "acervo:6947",
-      "catalog_id": 6358
-    },
-    {
-      "source_key": "acervo:3935",
-      "catalog_id": 6359
     },
     {
       "source_key": "acervo:3",
@@ -9261,14 +8825,6 @@
       "catalog_id": 6370
     },
     {
-      "source_key": "acervo:10278",
-      "catalog_id": 6371
-    },
-    {
-      "source_key": "acervo:4909",
-      "catalog_id": 6372
-    },
-    {
       "source_key": "acervo:46",
       "catalog_id": 6373
     },
@@ -9283,10 +8839,6 @@
     {
       "source_key": "acervo:11071",
       "catalog_id": 6376
-    },
-    {
-      "source_key": "acervo:7499",
-      "catalog_id": 6377
     },
     {
       "source_key": "acervo:6733",
@@ -9369,10 +8921,6 @@
       "catalog_id": 6395
     },
     {
-      "source_key": "acervo:10458",
-      "catalog_id": 6396
-    },
-    {
       "source_key": "acervo:6625",
       "catalog_id": 6397
     },
@@ -9385,10 +8933,6 @@
       "catalog_id": 6399
     },
     {
-      "source_key": "acervo:4853",
-      "catalog_id": 6400
-    },
-    {
       "source_key": "acervo:11659",
       "catalog_id": 6401
     },
@@ -9397,76 +8941,12 @@
       "catalog_id": 6402
     },
     {
-      "source_key": "acervo:10493",
-      "catalog_id": 6403
-    },
-    {
-      "source_key": "acervo:9954",
-      "catalog_id": 6404
-    },
-    {
-      "source_key": "acervo:10814",
-      "catalog_id": 6405
-    },
-    {
-      "source_key": "acervo:5360",
-      "catalog_id": 6406
-    },
-    {
-      "source_key": "acervo:1287",
-      "catalog_id": 6407
-    },
-    {
       "source_key": "acervo:4232",
       "catalog_id": 6408
     },
     {
-      "source_key": "acervo:8904",
-      "catalog_id": 6409
-    },
-    {
       "source_key": "acervo:11134",
       "catalog_id": 6410
-    },
-    {
-      "source_key": "acervo:203",
-      "catalog_id": 6411
-    },
-    {
-      "source_key": "acervo:5611",
-      "catalog_id": 6412
-    },
-    {
-      "source_key": "acervo:8481",
-      "catalog_id": 6413
-    },
-    {
-      "source_key": "acervo:7202",
-      "catalog_id": 6414
-    },
-    {
-      "source_key": "acervo:11758",
-      "catalog_id": 6415
-    },
-    {
-      "source_key": "acervo:3121",
-      "catalog_id": 6416
-    },
-    {
-      "source_key": "acervo:4250",
-      "catalog_id": 6417
-    },
-    {
-      "source_key": "acervo:8204",
-      "catalog_id": 6418
-    },
-    {
-      "source_key": "acervo:527",
-      "catalog_id": 6419
-    },
-    {
-      "source_key": "acervo:2323",
-      "catalog_id": 6420
     },
     {
       "source_key": "acervo:10802",
@@ -9499,6 +8979,10 @@
     {
       "source_key": "acervo:6763",
       "catalog_id": 6428
+    },
+    {
+      "source_key": "acervo:7679",
+      "catalog_id": 3806
     },
     {
       "source_key": "acervo:9077",
@@ -9553,16 +9037,8 @@
       "catalog_id": 6441
     },
     {
-      "source_key": "acervo:7671",
-      "catalog_id": 6442
-    },
-    {
       "source_key": "acervo:516",
       "catalog_id": 6443
-    },
-    {
-      "source_key": "acervo:7784",
-      "catalog_id": 6444
     },
     {
       "source_key": "acervo:3891",
@@ -9605,52 +9081,12 @@
       "catalog_id": 6454
     },
     {
-      "source_key": "acervo:10449",
-      "catalog_id": 6455
-    },
-    {
       "source_key": "acervo:1876",
       "catalog_id": 6456
     },
     {
       "source_key": "acervo:11587",
       "catalog_id": 6457
-    },
-    {
-      "source_key": "acervo:12147",
-      "catalog_id": 6458
-    },
-    {
-      "source_key": "acervo:10678",
-      "catalog_id": 6459
-    },
-    {
-      "source_key": "acervo:11002",
-      "catalog_id": 6460
-    },
-    {
-      "source_key": "acervo:11773",
-      "catalog_id": 6461
-    },
-    {
-      "source_key": "acervo:11765",
-      "catalog_id": 6462
-    },
-    {
-      "source_key": "acervo:2015",
-      "catalog_id": 6463
-    },
-    {
-      "source_key": "acervo:1652",
-      "catalog_id": 6464
-    },
-    {
-      "source_key": "acervo:11375",
-      "catalog_id": 6465
-    },
-    {
-      "source_key": "acervo:7496",
-      "catalog_id": 6466
     },
     {
       "source_key": "acervo:682",
@@ -9665,36 +9101,8 @@
       "catalog_id": 6469
     },
     {
-      "source_key": "acervo:8617",
-      "catalog_id": 6470
-    },
-    {
       "source_key": "acervo:2439",
       "catalog_id": 6471
-    },
-    {
-      "source_key": "acervo:10984",
-      "catalog_id": 6472
-    },
-    {
-      "source_key": "acervo:4885",
-      "catalog_id": 6473
-    },
-    {
-      "source_key": "acervo:8485",
-      "catalog_id": 6474
-    },
-    {
-      "source_key": "acervo:12204",
-      "catalog_id": 6475
-    },
-    {
-      "source_key": "acervo:10727",
-      "catalog_id": 6476
-    },
-    {
-      "source_key": "acervo:3667",
-      "catalog_id": 6477
     },
     {
       "source_key": "acervo:5326",
@@ -9715,10 +9123,6 @@
     {
       "source_key": "acervo:4823",
       "catalog_id": 6482
-    },
-    {
-      "source_key": "acervo:2009",
-      "catalog_id": 6483
     },
     {
       "source_key": "acervo:1973",
@@ -9761,12 +9165,12 @@
       "catalog_id": 6493
     },
     {
-      "source_key": "acervo:149",
-      "catalog_id": 6494
+      "source_key": "acervo:8399",
+      "catalog_id": 6003
     },
     {
-      "source_key": "acervo:45",
-      "catalog_id": 6495
+      "source_key": "acervo:149",
+      "catalog_id": 6494
     },
     {
       "source_key": "acervo:348",
@@ -9841,14 +9245,6 @@
       "catalog_id": 6512
     },
     {
-      "source_key": "acervo:5709",
-      "catalog_id": 6513
-    },
-    {
-      "source_key": "acervo:9807",
-      "catalog_id": 6514
-    },
-    {
       "source_key": "acervo:3927",
       "catalog_id": 6515
     },
@@ -9879,10 +9275,6 @@
     {
       "source_key": "acervo:5241",
       "catalog_id": 6522
-    },
-    {
-      "source_key": "acervo:9341",
-      "catalog_id": 6523
     },
     {
       "source_key": "acervo:2956",
@@ -9917,14 +9309,6 @@
       "catalog_id": 6531
     },
     {
-      "source_key": "acervo:4514",
-      "catalog_id": 6532
-    },
-    {
-      "source_key": "acervo:1955",
-      "catalog_id": 6533
-    },
-    {
       "source_key": "acervo:3235",
       "catalog_id": 6534
     },
@@ -9935,10 +9319,6 @@
     {
       "source_key": "acervo:9637",
       "catalog_id": 6536
-    },
-    {
-      "source_key": "acervo:2215",
-      "catalog_id": 6537
     },
     {
       "source_key": "acervo:6315",
@@ -9985,10 +9365,6 @@
       "catalog_id": 6548
     },
     {
-      "source_key": "acervo:3797",
-      "catalog_id": 2301
-    },
-    {
       "source_key": "acervo:12249",
       "catalog_id": 6549
     },
@@ -10003,6 +9379,10 @@
     {
       "source_key": "acervo:227",
       "catalog_id": 6552
+    },
+    {
+      "source_key": "acervo:8210",
+      "catalog_id": 6052
     },
     {
       "source_key": "acervo:4837",
@@ -10065,14 +9445,6 @@
       "catalog_id": 6565
     },
     {
-      "source_key": "acervo:11849",
-      "catalog_id": 6566
-    },
-    {
-      "source_key": "acervo:713",
-      "catalog_id": 6567
-    },
-    {
       "source_key": "acervo:5955",
       "catalog_id": 6568
     },
@@ -10121,10 +9493,6 @@
       "catalog_id": 6576
     },
     {
-      "source_key": "acervo:8510",
-      "catalog_id": 6577
-    },
-    {
       "source_key": "acervo:9279",
       "catalog_id": 6578
     },
@@ -10147,10 +9515,6 @@
     {
       "source_key": "acervo:2646",
       "catalog_id": 6582
-    },
-    {
-      "source_key": "acervo:7004",
-      "catalog_id": 6583
     },
     {
       "source_key": "acervo:8547",
@@ -10233,20 +9597,12 @@
       "catalog_id": 6597
     },
     {
-      "source_key": "acervo:10972",
-      "catalog_id": 6598
-    },
-    {
       "source_key": "acervo:11602",
       "catalog_id": 6599
     },
     {
       "source_key": "acervo:867",
       "catalog_id": 6600
-    },
-    {
-      "source_key": "acervo:6148",
-      "catalog_id": 6601
     },
     {
       "source_key": "acervo:1560",
@@ -10283,14 +9639,6 @@
     {
       "source_key": "acervo:8703",
       "catalog_id": 3160
-    },
-    {
-      "source_key": "acervo:6382",
-      "catalog_id": 6609
-    },
-    {
-      "source_key": "acervo:5515",
-      "catalog_id": 6610
     },
     {
       "source_key": "acervo:2903",
@@ -10385,14 +9733,6 @@
       "catalog_id": 6627
     },
     {
-      "source_key": "acervo:11812",
-      "catalog_id": 6628
-    },
-    {
-      "source_key": "acervo:1432",
-      "catalog_id": 6629
-    },
-    {
       "source_key": "acervo:8796",
       "catalog_id": 3168
     },
@@ -10439,10 +9779,6 @@
     {
       "source_key": "acervo:4518",
       "catalog_id": 6639
-    },
-    {
-      "source_key": "acervo:693",
-      "catalog_id": 6640
     },
     {
       "source_key": "acervo:6119",
@@ -10511,14 +9847,6 @@
     {
       "source_key": "acervo:1600",
       "catalog_id": 6653
-    },
-    {
-      "source_key": "acervo:8896",
-      "catalog_id": 6654
-    },
-    {
-      "source_key": "acervo:4206",
-      "catalog_id": 2641
     },
     {
       "source_key": "acervo:10818",
@@ -10617,10 +9945,6 @@
       "catalog_id": 6674
     },
     {
-      "source_key": "acervo:1601",
-      "catalog_id": 6675
-    },
-    {
       "source_key": "acervo:6899",
       "catalog_id": 6676
     },
@@ -10717,6 +10041,30 @@
       "catalog_id": 6699
     },
     {
+      "source_key": "acervo:5472",
+      "catalog_id": 4517
+    },
+    {
+      "source_key": "acervo:6759",
+      "catalog_id": 4518
+    },
+    {
+      "source_key": "acervo:3689",
+      "catalog_id": 3118
+    },
+    {
+      "source_key": "acervo:2157",
+      "catalog_id": 4519
+    },
+    {
+      "source_key": "acervo:1646",
+      "catalog_id": 4520
+    },
+    {
+      "source_key": "acervo:3438",
+      "catalog_id": 4521
+    },
+    {
       "source_key": "acervo:8951",
       "catalog_id": 3174
     },
@@ -10737,32 +10085,8 @@
       "catalog_id": 6702
     },
     {
-      "source_key": "acervo:5958",
-      "catalog_id": 6703
-    },
-    {
       "source_key": "acervo:9835",
       "catalog_id": 6704
-    },
-    {
-      "source_key": "acervo:5266",
-      "catalog_id": 3943
-    },
-    {
-      "source_key": "acervo:11160",
-      "catalog_id": 6705
-    },
-    {
-      "source_key": "acervo:3256",
-      "catalog_id": 6706
-    },
-    {
-      "source_key": "acervo:2547",
-      "catalog_id": 6707
-    },
-    {
-      "source_key": "acervo:2240",
-      "catalog_id": 6708
     },
     {
       "source_key": "acervo:3494",
@@ -10779,10 +10103,6 @@
     {
       "source_key": "acervo:10704",
       "catalog_id": 6712
-    },
-    {
-      "source_key": "acervo:6089",
-      "catalog_id": 6713
     },
     {
       "source_key": "acervo:8528",
@@ -10873,46 +10193,6 @@
       "catalog_id": 6735
     },
     {
-      "source_key": "acervo:4865",
-      "catalog_id": 6736
-    },
-    {
-      "source_key": "acervo:5964",
-      "catalog_id": 6737
-    },
-    {
-      "source_key": "acervo:5965",
-      "catalog_id": 6738
-    },
-    {
-      "source_key": "acervo:10774",
-      "catalog_id": 6739
-    },
-    {
-      "source_key": "acervo:12321",
-      "catalog_id": 6740
-    },
-    {
-      "source_key": "acervo:6463",
-      "catalog_id": 6741
-    },
-    {
-      "source_key": "acervo:6476",
-      "catalog_id": 6742
-    },
-    {
-      "source_key": "acervo:10342",
-      "catalog_id": 6743
-    },
-    {
-      "source_key": "acervo:6256",
-      "catalog_id": 6744
-    },
-    {
-      "source_key": "acervo:11383",
-      "catalog_id": 6745
-    },
-    {
       "source_key": "acervo:6272",
       "catalog_id": 6746
     },
@@ -10941,10 +10221,6 @@
       "catalog_id": 6752
     },
     {
-      "source_key": "acervo:4900",
-      "catalog_id": 6753
-    },
-    {
       "source_key": "acervo:5976",
       "catalog_id": 6754
     },
@@ -10953,8 +10229,16 @@
       "catalog_id": 6755
     },
     {
-      "source_key": "acervo:4851",
-      "catalog_id": 6756
+      "source_key": "acervo:4466",
+      "catalog_id": 4522
+    },
+    {
+      "source_key": "acervo:7802",
+      "catalog_id": 2173
+    },
+    {
+      "source_key": "acervo:9342",
+      "catalog_id": 4523
     },
     {
       "source_key": "acervo:6489",
@@ -10965,36 +10249,12 @@
       "catalog_id": 6758
     },
     {
-      "source_key": "acervo:4863",
-      "catalog_id": 6759
-    },
-    {
       "source_key": "acervo:5980",
       "catalog_id": 6760
     },
     {
       "source_key": "acervo:5981",
       "catalog_id": 6761
-    },
-    {
-      "source_key": "acervo:9570",
-      "catalog_id": 6762
-    },
-    {
-      "source_key": "acervo:5982",
-      "catalog_id": 6763
-    },
-    {
-      "source_key": "acervo:6278",
-      "catalog_id": 6764
-    },
-    {
-      "source_key": "acervo:5983",
-      "catalog_id": 6765
-    },
-    {
-      "source_key": "acervo:6260",
-      "catalog_id": 6766
     },
     {
       "source_key": "acervo:6561",
@@ -11037,6 +10297,10 @@
       "catalog_id": 6776
     },
     {
+      "source_key": "acervo:3797",
+      "catalog_id": 2301
+    },
+    {
       "source_key": "acervo:11054",
       "catalog_id": 6777
     },
@@ -11071,10 +10335,6 @@
     {
       "source_key": "acervo:5995",
       "catalog_id": 6785
-    },
-    {
-      "source_key": "acervo:4866",
-      "catalog_id": 6786
     },
     {
       "source_key": "acervo:12327",
@@ -11113,10 +10373,6 @@
       "catalog_id": 6795
     },
     {
-      "source_key": "acervo:4895",
-      "catalog_id": 6796
-    },
-    {
       "source_key": "acervo:6000",
       "catalog_id": 6797
     },
@@ -11127,18 +10383,6 @@
     {
       "source_key": "acervo:4850",
       "catalog_id": 6799
-    },
-    {
-      "source_key": "acervo:6002",
-      "catalog_id": 6800
-    },
-    {
-      "source_key": "acervo:9561",
-      "catalog_id": 6801
-    },
-    {
-      "source_key": "acervo:9703",
-      "catalog_id": 6802
     },
     {
       "source_key": "acervo:6478",
@@ -11189,32 +10433,28 @@
       "catalog_id": 6814
     },
     {
-      "source_key": "acervo:4905",
-      "catalog_id": 6815
+      "source_key": "acervo:8198",
+      "catalog_id": 6296
+    },
+    {
+      "source_key": "acervo:5385",
+      "catalog_id": 6297
+    },
+    {
+      "source_key": "acervo:1809",
+      "catalog_id": 6298
+    },
+    {
+      "source_key": "acervo:3092",
+      "catalog_id": 6299
     },
     {
       "source_key": "acervo:6010",
       "catalog_id": 6816
     },
     {
-      "source_key": "acervo:10345",
-      "catalog_id": 6817
-    },
-    {
-      "source_key": "acervo:6269",
-      "catalog_id": 6818
-    },
-    {
-      "source_key": "acervo:5979",
-      "catalog_id": 6819
-    },
-    {
       "source_key": "acervo:8372",
       "catalog_id": 6820
-    },
-    {
-      "source_key": "acervo:3364",
-      "catalog_id": 6821
     },
     {
       "source_key": "acervo:1947",
@@ -11365,18 +10605,6 @@
       "catalog_id": 6857
     },
     {
-      "source_key": "acervo:10040",
-      "catalog_id": 6858
-    },
-    {
-      "source_key": "acervo:1980",
-      "catalog_id": 6859
-    },
-    {
-      "source_key": "acervo:12163",
-      "catalog_id": 6860
-    },
-    {
       "source_key": "acervo:11182",
       "catalog_id": 6861
     },
@@ -11399,6 +10627,26 @@
     {
       "source_key": "acervo:592",
       "catalog_id": 6866
+    },
+    {
+      "source_key": "acervo:895",
+      "catalog_id": 6350
+    },
+    {
+      "source_key": "acervo:10247",
+      "catalog_id": 6352
+    },
+    {
+      "source_key": "acervo:8032",
+      "catalog_id": 6353
+    },
+    {
+      "source_key": "acervo:136",
+      "catalog_id": 6354
+    },
+    {
+      "source_key": "acervo:10775",
+      "catalog_id": 6355
     },
     {
       "source_key": "acervo:8063",
@@ -11427,10 +10675,6 @@
     {
       "source_key": "acervo:9767",
       "catalog_id": 6873
-    },
-    {
-      "source_key": "acervo:4701",
-      "catalog_id": 6874
     },
     {
       "source_key": "acervo:10360",
@@ -11525,10 +10769,6 @@
       "catalog_id": 6897
     },
     {
-      "source_key": "acervo:8373",
-      "catalog_id": 6898
-    },
-    {
       "source_key": "acervo:10854",
       "catalog_id": 6899
     },
@@ -11583,6 +10823,26 @@
     {
       "source_key": "acervo:850",
       "catalog_id": 6912
+    },
+    {
+      "source_key": "acervo:10493",
+      "catalog_id": 6403
+    },
+    {
+      "source_key": "acervo:9954",
+      "catalog_id": 6404
+    },
+    {
+      "source_key": "acervo:10814",
+      "catalog_id": 6405
+    },
+    {
+      "source_key": "acervo:5360",
+      "catalog_id": 6406
+    },
+    {
+      "source_key": "acervo:1287",
+      "catalog_id": 6407
     },
     {
       "source_key": "acervo:4096",
@@ -11773,6 +11033,38 @@
       "catalog_id": 6955
     },
     {
+      "source_key": "acervo:12147",
+      "catalog_id": 6458
+    },
+    {
+      "source_key": "acervo:10678",
+      "catalog_id": 6459
+    },
+    {
+      "source_key": "acervo:11002",
+      "catalog_id": 6460
+    },
+    {
+      "source_key": "acervo:11773",
+      "catalog_id": 6461
+    },
+    {
+      "source_key": "acervo:11765",
+      "catalog_id": 6462
+    },
+    {
+      "source_key": "acervo:1652",
+      "catalog_id": 6464
+    },
+    {
+      "source_key": "acervo:11375",
+      "catalog_id": 6465
+    },
+    {
+      "source_key": "acervo:7496",
+      "catalog_id": 6466
+    },
+    {
       "source_key": "acervo:2612",
       "catalog_id": 6956
     },
@@ -11935,6 +11227,14 @@
     {
       "source_key": "acervo:5461",
       "catalog_id": 6989
+    },
+    {
+      "source_key": "acervo:5709",
+      "catalog_id": 6513
+    },
+    {
+      "source_key": "acervo:9807",
+      "catalog_id": 6514
     },
     {
       "source_key": "acervo:5717",
@@ -12149,6 +11449,14 @@
       "catalog_id": 2152
     },
     {
+      "source_key": "acervo:11849",
+      "catalog_id": 6566
+    },
+    {
+      "source_key": "acervo:713",
+      "catalog_id": 6567
+    },
+    {
       "source_key": "acervo:12430",
       "catalog_id": 7028
     },
@@ -12361,6 +11669,14 @@
       "catalog_id": 7078
     },
     {
+      "source_key": "acervo:6382",
+      "catalog_id": 6609
+    },
+    {
+      "source_key": "acervo:5515",
+      "catalog_id": 6610
+    },
+    {
       "source_key": "acervo:3024",
       "catalog_id": 7079
     },
@@ -12441,10 +11757,6 @@
       "catalog_id": 7093
     },
     {
-      "source_key": "acervo:2022",
-      "catalog_id": 2733
-    },
-    {
       "source_key": "acervo:3816",
       "catalog_id": 2290
     },
@@ -12517,10 +11829,6 @@
       "catalog_id": 7108
     },
     {
-      "source_key": "acervo:1289",
-      "catalog_id": 7109
-    },
-    {
       "source_key": "acervo:11534",
       "catalog_id": 7110
     },
@@ -12573,12 +11881,12 @@
       "catalog_id": 7121
     },
     {
-      "source_key": "acervo:3742",
-      "catalog_id": 7122
-    },
-    {
       "source_key": "acervo:1752",
       "catalog_id": 7123
+    },
+    {
+      "source_key": "acervo:4206",
+      "catalog_id": 2641
     },
     {
       "source_key": "acervo:1745",
@@ -12649,10 +11957,6 @@
       "catalog_id": 7136
     },
     {
-      "source_key": "acervo:875",
-      "catalog_id": 7137
-    },
-    {
       "source_key": "acervo:3563",
       "catalog_id": 7138
     },
@@ -12667,10 +11971,6 @@
     {
       "source_key": "acervo:10312",
       "catalog_id": 7141
-    },
-    {
-      "source_key": "acervo:640",
-      "catalog_id": 7142
     },
     {
       "source_key": "acervo:2863",
@@ -12729,10 +12029,6 @@
       "catalog_id": 7155
     },
     {
-      "source_key": "acervo:9286",
-      "catalog_id": 7156
-    },
-    {
       "source_key": "acervo:2887",
       "catalog_id": 7157
     },
@@ -12785,12 +12081,32 @@
       "catalog_id": 7169
     },
     {
-      "source_key": "acervo:10120",
-      "catalog_id": 7170
-    },
-    {
       "source_key": "acervo:9356",
       "catalog_id": 7171
+    },
+    {
+      "source_key": "acervo:5266",
+      "catalog_id": 3943
+    },
+    {
+      "source_key": "acervo:11160",
+      "catalog_id": 6705
+    },
+    {
+      "source_key": "acervo:3256",
+      "catalog_id": 6706
+    },
+    {
+      "source_key": "acervo:2547",
+      "catalog_id": 6707
+    },
+    {
+      "source_key": "acervo:2240",
+      "catalog_id": 6708
+    },
+    {
+      "source_key": "acervo:6089",
+      "catalog_id": 6713
     },
     {
       "source_key": "acervo:8846",
@@ -12897,10 +12213,6 @@
       "catalog_id": 7192
     },
     {
-      "source_key": "acervo:8577",
-      "catalog_id": 7193
-    },
-    {
       "source_key": "acervo:5715",
       "catalog_id": 3229
     },
@@ -12969,6 +12281,30 @@
       "catalog_id": 344
     },
     {
+      "source_key": "acervo:9570",
+      "catalog_id": 6762
+    },
+    {
+      "source_key": "acervo:5982",
+      "catalog_id": 6763
+    },
+    {
+      "source_key": "acervo:6278",
+      "catalog_id": 6764
+    },
+    {
+      "source_key": "acervo:5983",
+      "catalog_id": 6765
+    },
+    {
+      "source_key": "acervo:6260",
+      "catalog_id": 6766
+    },
+    {
+      "source_key": "acervo:5979",
+      "catalog_id": 6819
+    },
+    {
       "source_key": "acervo:5756",
       "catalog_id": 7202
     },
@@ -13007,10 +12343,6 @@
     {
       "source_key": "acervo:9139",
       "catalog_id": 7206
-    },
-    {
-      "source_key": "acervo:9142",
-      "catalog_id": 7207
     },
     {
       "source_key": "acervo:2247",
@@ -13153,6 +12485,10 @@
       "catalog_id": 7238
     },
     {
+      "source_key": "acervo:3364",
+      "catalog_id": 6821
+    },
+    {
       "source_key": "acervo:264",
       "catalog_id": 7239
     },
@@ -13167,6 +12503,10 @@
     {
       "source_key": "acervo:11811",
       "catalog_id": 7241
+    },
+    {
+      "source_key": "acervo:2022",
+      "catalog_id": 2733
     },
     {
       "source_key": "acervo:6912",
@@ -13191,10 +12531,6 @@
     {
       "source_key": "acervo:4258",
       "catalog_id": 3244
-    },
-    {
-      "source_key": "acervo:1476",
-      "catalog_id": 7246
     },
     {
       "source_key": "acervo:6877",
@@ -13363,6 +12699,10 @@
     {
       "source_key": "acervo:11308",
       "catalog_id": 7285
+    },
+    {
+      "source_key": "acervo:4701",
+      "catalog_id": 6874
     },
     {
       "source_key": "acervo:7470",
@@ -14449,6 +13789,10 @@
       "catalog_id": 7524
     },
     {
+      "source_key": "acervo:3742",
+      "catalog_id": 7122
+    },
+    {
       "source_key": "acervo:4112",
       "catalog_id": 7525
     },
@@ -14655,6 +13999,10 @@
     {
       "source_key": "acervo:3237",
       "catalog_id": 7567
+    },
+    {
+      "source_key": "acervo:10120",
+      "catalog_id": 7170
     },
     {
       "source_key": "acervo:11174",
@@ -14873,6 +14221,10 @@
       "catalog_id": 2497
     },
     {
+      "source_key": "acervo:9142",
+      "catalog_id": 7207
+    },
+    {
       "source_key": "acervo:8140",
       "catalog_id": 7606
     },
@@ -14929,18 +14281,6 @@
       "catalog_id": 7619
     },
     {
-      "source_key": "acervo:2659",
-      "catalog_id": 7620
-    },
-    {
-      "source_key": "acervo:1534",
-      "catalog_id": 7621
-    },
-    {
-      "source_key": "acervo:1119",
-      "catalog_id": 7622
-    },
-    {
       "source_key": "acervo:8701",
       "catalog_id": 3305
     },
@@ -14975,22 +14315,6 @@
     {
       "source_key": "acervo:4753",
       "catalog_id": 7630
-    },
-    {
-      "source_key": "acervo:9491",
-      "catalog_id": 7631
-    },
-    {
-      "source_key": "acervo:3122",
-      "catalog_id": 2996
-    },
-    {
-      "source_key": "acervo:2920",
-      "catalog_id": 7632
-    },
-    {
-      "source_key": "acervo:3866",
-      "catalog_id": 7634
     },
     {
       "source_key": "acervo:3873",
@@ -15149,56 +14473,8 @@
       "catalog_id": 7668
     },
     {
-      "source_key": "acervo:8993",
-      "catalog_id": 7669
-    },
-    {
-      "source_key": "acervo:10273",
-      "catalog_id": 7670
-    },
-    {
-      "source_key": "acervo:898",
-      "catalog_id": 7671
-    },
-    {
-      "source_key": "acervo:649",
-      "catalog_id": 7672
-    },
-    {
-      "source_key": "acervo:698",
-      "catalog_id": 7673
-    },
-    {
-      "source_key": "acervo:2643",
-      "catalog_id": 7674
-    },
-    {
-      "source_key": "acervo:696",
-      "catalog_id": 7675
-    },
-    {
-      "source_key": "acervo:704",
-      "catalog_id": 7676
-    },
-    {
-      "source_key": "acervo:857",
-      "catalog_id": 7677
-    },
-    {
       "source_key": "acervo:7451",
       "catalog_id": 7678
-    },
-    {
-      "source_key": "acervo:775",
-      "catalog_id": 7679
-    },
-    {
-      "source_key": "acervo:737",
-      "catalog_id": 7680
-    },
-    {
-      "source_key": "acervo:919",
-      "catalog_id": 7681
     },
     {
       "source_key": "acervo:10266",
@@ -15215,22 +14491,6 @@
     {
       "source_key": "acervo:10293",
       "catalog_id": 7685
-    },
-    {
-      "source_key": "acervo:10294",
-      "catalog_id": 7686
-    },
-    {
-      "source_key": "acervo:9081",
-      "catalog_id": 7687
-    },
-    {
-      "source_key": "acervo:792",
-      "catalog_id": 7688
-    },
-    {
-      "source_key": "acervo:10295",
-      "catalog_id": 7689
     },
     {
       "source_key": "acervo:9849",
@@ -15829,10 +15089,6 @@
       "catalog_id": 2164
     },
     {
-      "source_key": "acervo:10643",
-      "catalog_id": 2549
-    },
-    {
       "source_key": "acervo:9108",
       "catalog_id": 2204
     },
@@ -16201,10 +15457,6 @@
       "catalog_id": 7894
     },
     {
-      "source_key": "acervo:10302",
-      "catalog_id": 7895
-    },
-    {
       "source_key": "acervo:1521",
       "catalog_id": 7896
     },
@@ -16469,10 +15721,6 @@
       "catalog_id": 7957
     },
     {
-      "source_key": "acervo:12366",
-      "catalog_id": 3342
-    },
-    {
       "source_key": "acervo:10326",
       "catalog_id": 3356
     },
@@ -16713,10 +15961,6 @@
       "catalog_id": 8006
     },
     {
-      "source_key": "acervo:4054",
-      "catalog_id": 8007
-    },
-    {
       "source_key": "acervo:11479",
       "catalog_id": 8008
     },
@@ -16921,6 +16165,26 @@
       "catalog_id": 8051
     },
     {
+      "source_key": "acervo:9491",
+      "catalog_id": 7631
+    },
+    {
+      "source_key": "acervo:3122",
+      "catalog_id": 2996
+    },
+    {
+      "source_key": "acervo:2920",
+      "catalog_id": 7632
+    },
+    {
+      "source_key": "acervo:1557",
+      "catalog_id": 7633
+    },
+    {
+      "source_key": "acervo:3866",
+      "catalog_id": 7634
+    },
+    {
       "source_key": "acervo:1381",
       "catalog_id": 8052
     },
@@ -17101,6 +16365,10 @@
       "catalog_id": 8088
     },
     {
+      "source_key": "acervo:919",
+      "catalog_id": 7681
+    },
+    {
       "source_key": "acervo:4437",
       "catalog_id": 8089
     },
@@ -17169,10 +16437,6 @@
       "catalog_id": 8104
     },
     {
-      "source_key": "acervo:3995",
-      "catalog_id": 8105
-    },
-    {
       "source_key": "acervo:8871",
       "catalog_id": 3371
     },
@@ -17195,6 +16459,10 @@
     {
       "source_key": "acervo:6594",
       "catalog_id": 8110
+    },
+    {
+      "source_key": "acervo:12366",
+      "catalog_id": 3342
     },
     {
       "source_key": "acervo:10697",
@@ -17269,20 +16537,12 @@
       "catalog_id": 8124
     },
     {
-      "source_key": "acervo:5140",
-      "catalog_id": 8125
-    },
-    {
       "source_key": "acervo:12433",
       "catalog_id": 8126
     },
     {
       "source_key": "acervo:5759",
       "catalog_id": 8127
-    },
-    {
-      "source_key": "acervo:5118",
-      "catalog_id": 8128
     },
     {
       "source_key": "acervo:5381",
@@ -17389,20 +16649,8 @@
       "catalog_id": 8151
     },
     {
-      "source_key": "acervo:6456",
-      "catalog_id": 8152
-    },
-    {
-      "source_key": "acervo:6884",
-      "catalog_id": 8153
-    },
-    {
       "source_key": "acervo:7174",
       "catalog_id": 8154
-    },
-    {
-      "source_key": "acervo:1971",
-      "catalog_id": 8155
     },
     {
       "source_key": "acervo:7788",
@@ -17411,26 +16659,6 @@
     {
       "source_key": "acervo:1633",
       "catalog_id": 8157
-    },
-    {
-      "source_key": "acervo:10280",
-      "catalog_id": 8158
-    },
-    {
-      "source_key": "acervo:10289",
-      "catalog_id": 8159
-    },
-    {
-      "source_key": "acervo:739",
-      "catalog_id": 8160
-    },
-    {
-      "source_key": "acervo:836",
-      "catalog_id": 8161
-    },
-    {
-      "source_key": "acervo:2971",
-      "catalog_id": 8162
     },
     {
       "source_key": "acervo:816",
@@ -17609,10 +16837,6 @@
       "catalog_id": 8202
     },
     {
-      "source_key": "acervo:2551",
-      "catalog_id": 8203
-    },
-    {
       "source_key": "acervo:7809",
       "catalog_id": 2171
     },
@@ -17623,26 +16847,6 @@
     {
       "source_key": "acervo:5125",
       "catalog_id": 8205
-    },
-    {
-      "source_key": "acervo:4224",
-      "catalog_id": 8206
-    },
-    {
-      "source_key": "acervo:5081",
-      "catalog_id": 8207
-    },
-    {
-      "source_key": "acervo:4350",
-      "catalog_id": 8208
-    },
-    {
-      "source_key": "acervo:3524",
-      "catalog_id": 8209
-    },
-    {
-      "source_key": "acervo:4561",
-      "catalog_id": 8210
     },
     {
       "source_key": "acervo:265",
@@ -17847,10 +17051,6 @@
     {
       "source_key": "acervo:7122",
       "catalog_id": 8247
-    },
-    {
-      "source_key": "acervo:6878",
-      "catalog_id": 8248
     },
     {
       "source_key": "acervo:11743",
@@ -18063,10 +17263,6 @@
     {
       "source_key": "acervo:9449",
       "catalog_id": 8294
-    },
-    {
-      "source_key": "acervo:1563",
-      "catalog_id": 8295
     },
     {
       "source_key": "acervo:319",
@@ -18289,10 +17485,6 @@
       "catalog_id": 8343
     },
     {
-      "source_key": "acervo:5733",
-      "catalog_id": 8344
-    },
-    {
       "source_key": "acervo:11878",
       "catalog_id": 8345
     },
@@ -18489,26 +17681,6 @@
       "catalog_id": 8380
     },
     {
-      "source_key": "acervo:1630",
-      "catalog_id": 8381
-    },
-    {
-      "source_key": "acervo:10795",
-      "catalog_id": 8382
-    },
-    {
-      "source_key": "acervo:5463",
-      "catalog_id": 8383
-    },
-    {
-      "source_key": "acervo:6743",
-      "catalog_id": 8384
-    },
-    {
-      "source_key": "acervo:8818",
-      "catalog_id": 333
-    },
-    {
       "source_key": "acervo:1924",
       "catalog_id": 8385
     },
@@ -18621,10 +17793,6 @@
       "catalog_id": 3444
     },
     {
-      "source_key": "acervo:4916",
-      "catalog_id": 8406
-    },
-    {
       "source_key": "acervo:5440",
       "catalog_id": 8407
     },
@@ -18723,10 +17891,6 @@
     {
       "source_key": "acervo:8315",
       "catalog_id": 8429
-    },
-    {
-      "source_key": "acervo:4220",
-      "catalog_id": 8430
     },
     {
       "source_key": "acervo:10623",
@@ -18925,32 +18089,8 @@
       "catalog_id": 8474
     },
     {
-      "source_key": "acervo:9475",
-      "catalog_id": 8475
-    },
-    {
-      "source_key": "acervo:4357",
-      "catalog_id": 8476
-    },
-    {
-      "source_key": "acervo:557",
-      "catalog_id": 8477
-    },
-    {
-      "source_key": "acervo:1587",
-      "catalog_id": 8478
-    },
-    {
-      "source_key": "acervo:8506",
-      "catalog_id": 8479
-    },
-    {
       "source_key": "acervo:5695",
       "catalog_id": 8480
-    },
-    {
-      "source_key": "acervo:837",
-      "catalog_id": 8481
     },
     {
       "source_key": "acervo:6214",
@@ -18959,22 +18099,6 @@
     {
       "source_key": "acervo:11603",
       "catalog_id": 8483
-    },
-    {
-      "source_key": "acervo:1379",
-      "catalog_id": 8484
-    },
-    {
-      "source_key": "acervo:1387",
-      "catalog_id": 8485
-    },
-    {
-      "source_key": "acervo:8586",
-      "catalog_id": 3447
-    },
-    {
-      "source_key": "acervo:8380",
-      "catalog_id": 8486
     },
     {
       "source_key": "acervo:190",
@@ -19093,40 +18217,12 @@
       "catalog_id": 8512
     },
     {
-      "source_key": "acervo:629",
-      "catalog_id": 8513
-    },
-    {
-      "source_key": "acervo:10277",
-      "catalog_id": 8514
-    },
-    {
-      "source_key": "acervo:839",
-      "catalog_id": 8515
-    },
-    {
-      "source_key": "acervo:732",
-      "catalog_id": 8516
-    },
-    {
-      "source_key": "acervo:905",
-      "catalog_id": 8517
-    },
-    {
       "source_key": "acervo:4323",
       "catalog_id": 8518
     },
     {
       "source_key": "acervo:697",
       "catalog_id": 8519
-    },
-    {
-      "source_key": "acervo:10288",
-      "catalog_id": 8520
-    },
-    {
-      "source_key": "acervo:809",
-      "catalog_id": 8521
     },
     {
       "source_key": "acervo:2969",
@@ -19139,10 +18235,6 @@
     {
       "source_key": "acervo:4263",
       "catalog_id": 3450
-    },
-    {
-      "source_key": "acervo:1485",
-      "catalog_id": 8524
     },
     {
       "source_key": "acervo:2153",
@@ -19159,6 +18251,14 @@
     {
       "source_key": "acervo:10335",
       "catalog_id": 8528
+    },
+    {
+      "source_key": "acervo:4991",
+      "catalog_id": 4524
+    },
+    {
+      "source_key": "acervo:4740",
+      "catalog_id": 4525
     },
     {
       "source_key": "acervo:1031",
@@ -19179,10 +18279,6 @@
     {
       "source_key": "acervo:4097",
       "catalog_id": 8533
-    },
-    {
-      "source_key": "acervo:4359",
-      "catalog_id": 3453
     },
     {
       "source_key": "acervo:4876",
@@ -19357,14 +18453,6 @@
       "catalog_id": 8570
     },
     {
-      "source_key": "acervo:10919",
-      "catalog_id": 8571
-    },
-    {
-      "source_key": "acervo:9907",
-      "catalog_id": 8572
-    },
-    {
       "source_key": "acervo:11453",
       "catalog_id": 8573
     },
@@ -19377,20 +18465,16 @@
       "catalog_id": 8575
     },
     {
+      "source_key": "acervo:739",
+      "catalog_id": 8160
+    },
+    {
+      "source_key": "acervo:2971",
+      "catalog_id": 8162
+    },
+    {
       "source_key": "acervo:9944",
       "catalog_id": 8576
-    },
-    {
-      "source_key": "acervo:877",
-      "catalog_id": 8577
-    },
-    {
-      "source_key": "acervo:899",
-      "catalog_id": 8578
-    },
-    {
-      "source_key": "acervo:871",
-      "catalog_id": 8579
     },
     {
       "source_key": "acervo:2062",
@@ -19557,20 +18641,16 @@
       "catalog_id": 3959
     },
     {
+      "source_key": "acervo:4561",
+      "catalog_id": 8210
+    },
+    {
       "source_key": "acervo:846",
       "catalog_id": 95
     },
     {
       "source_key": "acervo:7271",
       "catalog_id": 8615
-    },
-    {
-      "source_key": "acervo:9074",
-      "catalog_id": 2234
-    },
-    {
-      "source_key": "acervo:4476",
-      "catalog_id": 8616
     },
     {
       "source_key": "acervo:6883",
@@ -19629,18 +18709,6 @@
       "catalog_id": 4349
     },
     {
-      "source_key": "acervo:8661",
-      "catalog_id": 2969
-    },
-    {
-      "source_key": "acervo:1070",
-      "catalog_id": 8628
-    },
-    {
-      "source_key": "acervo:4391",
-      "catalog_id": 3462
-    },
-    {
       "source_key": "acervo:8499",
       "catalog_id": 8629
     },
@@ -19685,20 +18753,12 @@
       "catalog_id": 8638
     },
     {
-      "source_key": "acervo:174",
-      "catalog_id": 8639
-    },
-    {
       "source_key": "acervo:6135",
       "catalog_id": 8640
     },
     {
       "source_key": "acervo:11859",
       "catalog_id": 8641
-    },
-    {
-      "source_key": "acervo:1972",
-      "catalog_id": 8642
     },
     {
       "source_key": "acervo:6567",
@@ -19781,10 +18841,6 @@
       "catalog_id": 8660
     },
     {
-      "source_key": "acervo:10797",
-      "catalog_id": 8661
-    },
-    {
       "source_key": "acervo:10601",
       "catalog_id": 8662
     },
@@ -19843,10 +18899,6 @@
     {
       "source_key": "acervo:10722",
       "catalog_id": 8672
-    },
-    {
-      "source_key": "acervo:945",
-      "catalog_id": 8673
     },
     {
       "source_key": "acervo:3328",
@@ -19969,10 +19021,6 @@
       "catalog_id": 8701
     },
     {
-      "source_key": "acervo:1989",
-      "catalog_id": 2739
-    },
-    {
       "source_key": "acervo:3337",
       "catalog_id": 8702
     },
@@ -19995,30 +19043,6 @@
     {
       "source_key": "acervo:11152",
       "catalog_id": 8707
-    },
-    {
-      "source_key": "acervo:11165",
-      "catalog_id": 8708
-    },
-    {
-      "source_key": "acervo:7699",
-      "catalog_id": 8709
-    },
-    {
-      "source_key": "acervo:5343",
-      "catalog_id": 8710
-    },
-    {
-      "source_key": "acervo:11162",
-      "catalog_id": 8711
-    },
-    {
-      "source_key": "acervo:11156",
-      "catalog_id": 8712
-    },
-    {
-      "source_key": "acervo:11170",
-      "catalog_id": 8713
     },
     {
       "source_key": "acervo:7608",
@@ -20093,46 +19117,6 @@
       "catalog_id": 8728
     },
     {
-      "source_key": "acervo:9283",
-      "catalog_id": 8729
-    },
-    {
-      "source_key": "acervo:3300",
-      "catalog_id": 8730
-    },
-    {
-      "source_key": "acervo:10706",
-      "catalog_id": 8731
-    },
-    {
-      "source_key": "acervo:11783",
-      "catalog_id": 8732
-    },
-    {
-      "source_key": "acervo:3292",
-      "catalog_id": 8733
-    },
-    {
-      "source_key": "acervo:5039",
-      "catalog_id": 8734
-    },
-    {
-      "source_key": "acervo:8726",
-      "catalog_id": 3473
-    },
-    {
-      "source_key": "acervo:9323",
-      "catalog_id": 8735
-    },
-    {
-      "source_key": "acervo:9345",
-      "catalog_id": 8736
-    },
-    {
-      "source_key": "acervo:3787",
-      "catalog_id": 8737
-    },
-    {
       "source_key": "acervo:1346",
       "catalog_id": 8738
     },
@@ -20173,18 +19157,6 @@
       "catalog_id": 8746
     },
     {
-      "source_key": "acervo:4908",
-      "catalog_id": 8747
-    },
-    {
-      "source_key": "acervo:4898",
-      "catalog_id": 8748
-    },
-    {
-      "source_key": "acervo:4899",
-      "catalog_id": 8749
-    },
-    {
       "source_key": "acervo:6064",
       "catalog_id": 8750
     },
@@ -20205,48 +19177,8 @@
       "catalog_id": 8754
     },
     {
-      "source_key": "acervo:4860",
-      "catalog_id": 8755
-    },
-    {
-      "source_key": "acervo:4855",
-      "catalog_id": 8756
-    },
-    {
-      "source_key": "acervo:4886",
-      "catalog_id": 8757
-    },
-    {
       "source_key": "acervo:6081",
       "catalog_id": 8758
-    },
-    {
-      "source_key": "acervo:4897",
-      "catalog_id": 8759
-    },
-    {
-      "source_key": "acervo:4906",
-      "catalog_id": 8760
-    },
-    {
-      "source_key": "acervo:4903",
-      "catalog_id": 8761
-    },
-    {
-      "source_key": "acervo:11371",
-      "catalog_id": 8762
-    },
-    {
-      "source_key": "acervo:7517",
-      "catalog_id": 8763
-    },
-    {
-      "source_key": "acervo:4271",
-      "catalog_id": 8764
-    },
-    {
-      "source_key": "acervo:6090",
-      "catalog_id": 8765
     },
     {
       "source_key": "acervo:6091",
@@ -20261,16 +19193,8 @@
       "catalog_id": 8768
     },
     {
-      "source_key": "acervo:4888",
-      "catalog_id": 8769
-    },
-    {
       "source_key": "acervo:6098",
       "catalog_id": 8770
-    },
-    {
-      "source_key": "acervo:4852",
-      "catalog_id": 8771
     },
     {
       "source_key": "acervo:12388",
@@ -20319,6 +19243,10 @@
     {
       "source_key": "acervo:7466",
       "catalog_id": 8780
+    },
+    {
+      "source_key": "acervo:5733",
+      "catalog_id": 8344
     },
     {
       "source_key": "acervo:8490",
@@ -20465,14 +19393,6 @@
       "catalog_id": 8809
     },
     {
-      "source_key": "acervo:436",
-      "catalog_id": 8810
-    },
-    {
-      "source_key": "acervo:7617",
-      "catalog_id": 8811
-    },
-    {
       "source_key": "acervo:6345",
       "catalog_id": 8812
     },
@@ -20559,6 +19479,18 @@
     {
       "source_key": "acervo:8068",
       "catalog_id": 8828
+    },
+    {
+      "source_key": "acervo:10795",
+      "catalog_id": 8382
+    },
+    {
+      "source_key": "acervo:5463",
+      "catalog_id": 8383
+    },
+    {
+      "source_key": "acervo:6743",
+      "catalog_id": 8384
     },
     {
       "source_key": "acervo:1911",
@@ -20993,6 +19925,26 @@
       "catalog_id": 8921
     },
     {
+      "source_key": "acervo:9475",
+      "catalog_id": 8475
+    },
+    {
+      "source_key": "acervo:4357",
+      "catalog_id": 8476
+    },
+    {
+      "source_key": "acervo:557",
+      "catalog_id": 8477
+    },
+    {
+      "source_key": "acervo:1587",
+      "catalog_id": 8478
+    },
+    {
+      "source_key": "acervo:8506",
+      "catalog_id": 8479
+    },
+    {
       "source_key": "acervo:9141",
       "catalog_id": 8922
     },
@@ -21039,14 +19991,6 @@
     {
       "source_key": "acervo:3523",
       "catalog_id": 8931
-    },
-    {
-      "source_key": "acervo:4036",
-      "catalog_id": 8932
-    },
-    {
-      "source_key": "acervo:8390",
-      "catalog_id": 8933
     },
     {
       "source_key": "acervo:7879",
@@ -21113,10 +20057,6 @@
       "catalog_id": 2281
     },
     {
-      "source_key": "acervo:5100",
-      "catalog_id": 8946
-    },
-    {
       "source_key": "acervo:11245",
       "catalog_id": 8947
     },
@@ -21143,18 +20083,6 @@
     {
       "source_key": "acervo:6646",
       "catalog_id": 8952
-    },
-    {
-      "source_key": "acervo:7927",
-      "catalog_id": 8953
-    },
-    {
-      "source_key": "acervo:4857",
-      "catalog_id": 8954
-    },
-    {
-      "source_key": "acervo:8189",
-      "catalog_id": 8955
     },
     {
       "source_key": "acervo:5119",
@@ -21193,6 +20121,10 @@
       "catalog_id": 8963
     },
     {
+      "source_key": "acervo:1485",
+      "catalog_id": 8524
+    },
+    {
       "source_key": "acervo:3738",
       "catalog_id": 8964
     },
@@ -21219,10 +20151,6 @@
     {
       "source_key": "acervo:8640",
       "catalog_id": 3503
-    },
-    {
-      "source_key": "acervo:820",
-      "catalog_id": 8970
     },
     {
       "source_key": "acervo:7542",
@@ -21269,18 +20197,6 @@
       "catalog_id": 8980
     },
     {
-      "source_key": "acervo:3211",
-      "catalog_id": 8981
-    },
-    {
-      "source_key": "acervo:6012",
-      "catalog_id": 8982
-    },
-    {
-      "source_key": "acervo:4660",
-      "catalog_id": 8983
-    },
-    {
       "source_key": "acervo:10044",
       "catalog_id": 8984
     },
@@ -21307,10 +20223,6 @@
     {
       "source_key": "acervo:7105",
       "catalog_id": 8989
-    },
-    {
-      "source_key": "acervo:8946",
-      "catalog_id": 8990
     },
     {
       "source_key": "acervo:10815",
@@ -21357,10 +20269,6 @@
       "catalog_id": 8998
     },
     {
-      "source_key": "acervo:2257",
-      "catalog_id": 8999
-    },
-    {
       "source_key": "acervo:3052",
       "catalog_id": 9000
     },
@@ -21375,26 +20283,6 @@
     {
       "source_key": "acervo:8748",
       "catalog_id": 9002
-    },
-    {
-      "source_key": "acervo:8750",
-      "catalog_id": 9003
-    },
-    {
-      "source_key": "acervo:6499",
-      "catalog_id": 9004
-    },
-    {
-      "source_key": "acervo:1909",
-      "catalog_id": 9005
-    },
-    {
-      "source_key": "acervo:6662",
-      "catalog_id": 9006
-    },
-    {
-      "source_key": "acervo:12069",
-      "catalog_id": 9007
     },
     {
       "source_key": "acervo:180",
@@ -21449,6 +20337,14 @@
       "catalog_id": 9018
     },
     {
+      "source_key": "acervo:10919",
+      "catalog_id": 8571
+    },
+    {
+      "source_key": "acervo:9907",
+      "catalog_id": 8572
+    },
+    {
       "source_key": "acervo:1968",
       "catalog_id": 2490
     },
@@ -21487,10 +20383,6 @@
     {
       "source_key": "acervo:910",
       "catalog_id": 163
-    },
-    {
-      "source_key": "acervo:3112",
-      "catalog_id": 9025
     },
     {
       "source_key": "acervo:1568",
@@ -21541,10 +20433,6 @@
       "catalog_id": 9035
     },
     {
-      "source_key": "acervo:11460",
-      "catalog_id": 9036
-    },
-    {
       "source_key": "acervo:3791",
       "catalog_id": 9037
     },
@@ -21567,10 +20455,6 @@
     {
       "source_key": "acervo:8727",
       "catalog_id": 3514
-    },
-    {
-      "source_key": "acervo:891",
-      "catalog_id": 9040
     },
     {
       "source_key": "acervo:6138",
@@ -21611,18 +20495,6 @@
     {
       "source_key": "acervo:2982",
       "catalog_id": 9049
-    },
-    {
-      "source_key": "acervo:4559",
-      "catalog_id": 9050
-    },
-    {
-      "source_key": "acervo:4305",
-      "catalog_id": 2631
-    },
-    {
-      "source_key": "acervo:4069",
-      "catalog_id": 9051
     },
     {
       "source_key": "acervo:4861",
@@ -21687,6 +20559,14 @@
     {
       "source_key": "acervo:3287",
       "catalog_id": 9065
+    },
+    {
+      "source_key": "acervo:9074",
+      "catalog_id": 2234
+    },
+    {
+      "source_key": "acervo:4476",
+      "catalog_id": 8616
     },
     {
       "source_key": "acervo:6893",
@@ -21793,14 +20673,6 @@
       "catalog_id": 9085
     },
     {
-      "source_key": "acervo:2664",
-      "catalog_id": 9086
-    },
-    {
-      "source_key": "acervo:6248",
-      "catalog_id": 9087
-    },
-    {
       "source_key": "acervo:370",
       "catalog_id": 9088
     },
@@ -21827,10 +20699,6 @@
     {
       "source_key": "acervo:238",
       "catalog_id": 9094
-    },
-    {
-      "source_key": "acervo:8684",
-      "catalog_id": 9095
     },
     {
       "source_key": "acervo:6918",
@@ -21915,6 +20783,10 @@
     {
       "source_key": "acervo:2398",
       "catalog_id": 9109
+    },
+    {
+      "source_key": "acervo:10797",
+      "catalog_id": 8661
     },
     {
       "source_key": "acervo:9569",
@@ -22029,10 +20901,6 @@
       "catalog_id": 9136
     },
     {
-      "source_key": "acervo:1274",
-      "catalog_id": 9137
-    },
-    {
       "source_key": "acervo:1382",
       "catalog_id": 9138
     },
@@ -22075,10 +20943,6 @@
     {
       "source_key": "acervo:5195",
       "catalog_id": 9145
-    },
-    {
-      "source_key": "acervo:7008",
-      "catalog_id": 9146
     },
     {
       "source_key": "acervo:2766",
@@ -22147,6 +21011,30 @@
     {
       "source_key": "acervo:3294",
       "catalog_id": 9162
+    },
+    {
+      "source_key": "acervo:11165",
+      "catalog_id": 8708
+    },
+    {
+      "source_key": "acervo:7699",
+      "catalog_id": 8709
+    },
+    {
+      "source_key": "acervo:5343",
+      "catalog_id": 8710
+    },
+    {
+      "source_key": "acervo:11162",
+      "catalog_id": 8711
+    },
+    {
+      "source_key": "acervo:11156",
+      "catalog_id": 8712
+    },
+    {
+      "source_key": "acervo:11170",
+      "catalog_id": 8713
     },
     {
       "source_key": "acervo:2275",
@@ -22245,10 +21133,6 @@
       "catalog_id": 9179
     },
     {
-      "source_key": "acervo:824",
-      "catalog_id": 9180
-    },
-    {
       "source_key": "acervo:10907",
       "catalog_id": 9181
     },
@@ -22265,10 +21149,6 @@
       "catalog_id": 9184
     },
     {
-      "source_key": "acervo:3548",
-      "catalog_id": 9185
-    },
-    {
       "source_key": "acervo:9751",
       "catalog_id": 4229
     },
@@ -22279,10 +21159,6 @@
     {
       "source_key": "acervo:326",
       "catalog_id": 9187
-    },
-    {
-      "source_key": "acervo:12369",
-      "catalog_id": 3532
     },
     {
       "source_key": "acervo:4728",
@@ -22311,10 +21187,6 @@
     {
       "source_key": "acervo:4854",
       "catalog_id": 4129
-    },
-    {
-      "source_key": "acervo:3743",
-      "catalog_id": 9194
     },
     {
       "source_key": "acervo:10298",
@@ -22349,6 +21221,22 @@
       "catalog_id": 9199
     },
     {
+      "source_key": "acervo:11371",
+      "catalog_id": 8762
+    },
+    {
+      "source_key": "acervo:7517",
+      "catalog_id": 8763
+    },
+    {
+      "source_key": "acervo:4271",
+      "catalog_id": 8764
+    },
+    {
+      "source_key": "acervo:6090",
+      "catalog_id": 8765
+    },
+    {
       "source_key": "acervo:2904",
       "catalog_id": 9200
     },
@@ -22379,10 +21267,6 @@
     {
       "source_key": "acervo:3538",
       "catalog_id": 9206
-    },
-    {
-      "source_key": "acervo:931",
-      "catalog_id": 9207
     },
     {
       "source_key": "acervo:1062",
@@ -22547,6 +21431,14 @@
     {
       "source_key": "acervo:11344",
       "catalog_id": 9244
+    },
+    {
+      "source_key": "acervo:436",
+      "catalog_id": 8810
+    },
+    {
+      "source_key": "acervo:7617",
+      "catalog_id": 8811
     },
     {
       "source_key": "acervo:12385",
@@ -22785,10 +21677,6 @@
       "catalog_id": 9292
     },
     {
-      "source_key": "acervo:1562",
-      "catalog_id": 9293
-    },
-    {
       "source_key": "acervo:10287",
       "catalog_id": 9294
     },
@@ -23013,10 +21901,6 @@
       "catalog_id": 9342
     },
     {
-      "source_key": "acervo:8239",
-      "catalog_id": 9343
-    },
-    {
       "source_key": "acervo:7744",
       "catalog_id": 3559
     },
@@ -23229,16 +22113,16 @@
       "catalog_id": 9390
     },
     {
-      "source_key": "acervo:4517",
-      "catalog_id": 9391
-    },
-    {
-      "source_key": "acervo:2216",
-      "catalog_id": 9392
-    },
-    {
       "source_key": "acervo:7596",
       "catalog_id": 9393
+    },
+    {
+      "source_key": "acervo:7927",
+      "catalog_id": 8953
+    },
+    {
+      "source_key": "acervo:8189",
+      "catalog_id": 8955
     },
     {
       "source_key": "acervo:8878",
@@ -23453,12 +22337,24 @@
       "catalog_id": 9439
     },
     {
-      "source_key": "acervo:4721",
-      "catalog_id": 9440
+      "source_key": "acervo:8750",
+      "catalog_id": 9003
     },
     {
-      "source_key": "acervo:4468",
-      "catalog_id": 9441
+      "source_key": "acervo:6499",
+      "catalog_id": 9004
+    },
+    {
+      "source_key": "acervo:1909",
+      "catalog_id": 9005
+    },
+    {
+      "source_key": "acervo:12069",
+      "catalog_id": 9007
+    },
+    {
+      "source_key": "acervo:4721",
+      "catalog_id": 9440
     },
     {
       "source_key": "acervo:6852",
@@ -23471,14 +22367,6 @@
     {
       "source_key": "acervo:6995",
       "catalog_id": 9444
-    },
-    {
-      "source_key": "acervo:8444",
-      "catalog_id": 9445
-    },
-    {
-      "source_key": "acervo:6053",
-      "catalog_id": 9446
     },
     {
       "source_key": "acervo:3512",
@@ -23629,10 +22517,6 @@
       "catalog_id": 9481
     },
     {
-      "source_key": "acervo:3735",
-      "catalog_id": 9482
-    },
-    {
       "source_key": "acervo:5016",
       "catalog_id": 9483
     },
@@ -23655,6 +22539,18 @@
     {
       "source_key": "acervo:11984",
       "catalog_id": 9488
+    },
+    {
+      "source_key": "acervo:4559",
+      "catalog_id": 9050
+    },
+    {
+      "source_key": "acervo:4305",
+      "catalog_id": 2631
+    },
+    {
+      "source_key": "acervo:4069",
+      "catalog_id": 9051
     },
     {
       "source_key": "acervo:8924",
@@ -23695,30 +22591,6 @@
     {
       "source_key": "acervo:721",
       "catalog_id": 9496
-    },
-    {
-      "source_key": "acervo:191",
-      "catalog_id": 9497
-    },
-    {
-      "source_key": "acervo:6786",
-      "catalog_id": 9498
-    },
-    {
-      "source_key": "acervo:12304",
-      "catalog_id": 9499
-    },
-    {
-      "source_key": "acervo:9490",
-      "catalog_id": 9500
-    },
-    {
-      "source_key": "acervo:3347",
-      "catalog_id": 9501
-    },
-    {
-      "source_key": "acervo:10781",
-      "catalog_id": 9502
     },
     {
       "source_key": "acervo:1574",
@@ -23797,10 +22669,6 @@
       "catalog_id": 9519
     },
     {
-      "source_key": "acervo:4042",
-      "catalog_id": 9520
-    },
-    {
       "source_key": "acervo:4813",
       "catalog_id": 9521
     },
@@ -23837,16 +22705,8 @@
       "catalog_id": 9529
     },
     {
-      "source_key": "acervo:3672",
-      "catalog_id": 9530
-    },
-    {
       "source_key": "acervo:5633",
       "catalog_id": 9531
-    },
-    {
-      "source_key": "acervo:5407",
-      "catalog_id": 9532
     },
     {
       "source_key": "acervo:9510",
@@ -23897,10 +22757,6 @@
       "catalog_id": 9541
     },
     {
-      "source_key": "acervo:8780",
-      "catalog_id": 9542
-    },
-    {
       "source_key": "acervo:9044",
       "catalog_id": 2133
     },
@@ -23933,24 +22789,8 @@
       "catalog_id": 9549
     },
     {
-      "source_key": "acervo:3546",
-      "catalog_id": 9550
-    },
-    {
-      "source_key": "acervo:2274",
-      "catalog_id": 9551
-    },
-    {
       "source_key": "acervo:6797",
       "catalog_id": 9552
-    },
-    {
-      "source_key": "acervo:9960",
-      "catalog_id": 9553
-    },
-    {
-      "source_key": "acervo:2137",
-      "catalog_id": 9554
     },
     {
       "source_key": "acervo:3913",
@@ -23959,10 +22799,6 @@
     {
       "source_key": "acervo:11740",
       "catalog_id": 9556
-    },
-    {
-      "source_key": "acervo:676",
-      "catalog_id": 9557
     },
     {
       "source_key": "acervo:7065",
@@ -24001,10 +22837,6 @@
       "catalog_id": 9566
     },
     {
-      "source_key": "acervo:3693",
-      "catalog_id": 9567
-    },
-    {
       "source_key": "acervo:2170",
       "catalog_id": 9568
     },
@@ -24033,10 +22865,6 @@
       "catalog_id": 9574
     },
     {
-      "source_key": "acervo:5286",
-      "catalog_id": 9575
-    },
-    {
       "source_key": "acervo:12198",
       "catalog_id": 9576
     },
@@ -24053,20 +22881,12 @@
       "catalog_id": 9579
     },
     {
-      "source_key": "acervo:7492",
-      "catalog_id": 9580
-    },
-    {
       "source_key": "acervo:7210",
       "catalog_id": 9581
     },
     {
       "source_key": "acervo:7213",
       "catalog_id": 9582
-    },
-    {
-      "source_key": "acervo:3124",
-      "catalog_id": 9583
     },
     {
       "source_key": "acervo:5570",
@@ -24151,6 +22971,10 @@
     {
       "source_key": "acervo:5293",
       "catalog_id": 3968
+    },
+    {
+      "source_key": "acervo:7008",
+      "catalog_id": 9146
     },
     {
       "source_key": "acervo:6847",
@@ -24375,6 +23199,10 @@
     {
       "source_key": "acervo:6025",
       "catalog_id": 9648
+    },
+    {
+      "source_key": "acervo:3743",
+      "catalog_id": 9194
     },
     {
       "source_key": "acervo:9354",
@@ -24853,6 +23681,10 @@
       "catalog_id": 9758
     },
     {
+      "source_key": "acervo:1562",
+      "catalog_id": 9293
+    },
+    {
       "source_key": "acervo:3985",
       "catalog_id": 9759
     },
@@ -25089,6 +23921,10 @@
       "catalog_id": 2502
     },
     {
+      "source_key": "acervo:8239",
+      "catalog_id": 9343
+    },
+    {
       "source_key": "acervo:6640",
       "catalog_id": 9811
     },
@@ -25129,10 +23965,6 @@
       "catalog_id": 9818
     },
     {
-      "source_key": "acervo:6589",
-      "catalog_id": 9819
-    },
-    {
       "source_key": "acervo:11662",
       "catalog_id": 9820
     },
@@ -25151,10 +23983,6 @@
     {
       "source_key": "acervo:7452",
       "catalog_id": 9824
-    },
-    {
-      "source_key": "acervo:3965",
-      "catalog_id": 9825
     },
     {
       "source_key": "acervo:9863",
@@ -25179,10 +24007,6 @@
     {
       "source_key": "acervo:3976",
       "catalog_id": 9831
-    },
-    {
-      "source_key": "acervo:11558",
-      "catalog_id": 9832
     },
     {
       "source_key": "acervo:9860",
@@ -25235,10 +24059,6 @@
     {
       "source_key": "acervo:8457",
       "catalog_id": 9843
-    },
-    {
-      "source_key": "acervo:3340",
-      "catalog_id": 9844
     },
     {
       "source_key": "acervo:5646",
@@ -25381,14 +24201,6 @@
       "catalog_id": 9874
     },
     {
-      "source_key": "acervo:3805",
-      "catalog_id": 2265
-    },
-    {
-      "source_key": "acervo:3550",
-      "catalog_id": 9875
-    },
-    {
       "source_key": "acervo:12255",
       "catalog_id": 9876
     },
@@ -25449,10 +24261,6 @@
       "catalog_id": 9888
     },
     {
-      "source_key": "acervo:9047",
-      "catalog_id": 9889
-    },
-    {
       "source_key": "acervo:2662",
       "catalog_id": 9890
     },
@@ -25479,10 +24287,6 @@
     {
       "source_key": "acervo:3981",
       "catalog_id": 9896
-    },
-    {
-      "source_key": "acervo:880",
-      "catalog_id": 9897
     },
     {
       "source_key": "acervo:2342",
@@ -25549,6 +24353,14 @@
       "catalog_id": 9912
     },
     {
+      "source_key": "acervo:8444",
+      "catalog_id": 9445
+    },
+    {
+      "source_key": "acervo:6053",
+      "catalog_id": 9446
+    },
+    {
       "source_key": "acervo:1353",
       "catalog_id": 9913
     },
@@ -25557,28 +24369,12 @@
       "catalog_id": 9914
     },
     {
-      "source_key": "acervo:6689",
-      "catalog_id": 9915
-    },
-    {
       "source_key": "acervo:6604",
       "catalog_id": 9916
     },
     {
       "source_key": "acervo:5647",
       "catalog_id": 9917
-    },
-    {
-      "source_key": "acervo:9601",
-      "catalog_id": 9918
-    },
-    {
-      "source_key": "acervo:9537",
-      "catalog_id": 9919
-    },
-    {
-      "source_key": "acervo:8806",
-      "catalog_id": 336
     },
     {
       "source_key": "acervo:3269",
@@ -25607,22 +24403,6 @@
     {
       "source_key": "acervo:2382",
       "catalog_id": 9926
-    },
-    {
-      "source_key": "acervo:1518",
-      "catalog_id": 9927
-    },
-    {
-      "source_key": "acervo:10313",
-      "catalog_id": 9928
-    },
-    {
-      "source_key": "acervo:6462",
-      "catalog_id": 9929
-    },
-    {
-      "source_key": "acervo:6031",
-      "catalog_id": 9930
     },
     {
       "source_key": "acervo:8596",
@@ -25671,10 +24451,6 @@
     {
       "source_key": "acervo:849",
       "catalog_id": 138
-    },
-    {
-      "source_key": "acervo:8966",
-      "catalog_id": 9939
     },
     {
       "source_key": "acervo:1165",
@@ -25785,8 +24561,16 @@
       "catalog_id": 9963
     },
     {
-      "source_key": "acervo:4399",
-      "catalog_id": 9964
+      "source_key": "acervo:6786",
+      "catalog_id": 9498
+    },
+    {
+      "source_key": "acervo:12304",
+      "catalog_id": 9499
+    },
+    {
+      "source_key": "acervo:9490",
+      "catalog_id": 9500
     },
     {
       "source_key": "acervo:900",
@@ -25987,6 +24771,18 @@
     {
       "source_key": "acervo:7969",
       "catalog_id": 10008
+    },
+    {
+      "source_key": "acervo:3546",
+      "catalog_id": 9550
+    },
+    {
+      "source_key": "acervo:2274",
+      "catalog_id": 9551
+    },
+    {
+      "source_key": "acervo:676",
+      "catalog_id": 9557
     },
     {
       "source_key": "acervo:7992",
@@ -26509,10 +25305,6 @@
       "catalog_id": 10124
     },
     {
-      "source_key": "acervo:12123",
-      "catalog_id": 10125
-    },
-    {
       "source_key": "acervo:355",
       "catalog_id": 10126
     },
@@ -26559,10 +25351,6 @@
     {
       "source_key": "acervo:6862",
       "catalog_id": 10135
-    },
-    {
-      "source_key": "acervo:7887",
-      "catalog_id": 10136
     },
     {
       "source_key": "acervo:8154",
@@ -26711,10 +25499,6 @@
     {
       "source_key": "acervo:1327",
       "catalog_id": 10170
-    },
-    {
-      "source_key": "acervo:950",
-      "catalog_id": 10171
     },
     {
       "source_key": "acervo:11844",
@@ -27149,6 +25933,10 @@
       "catalog_id": 10261
     },
     {
+      "source_key": "acervo:6589",
+      "catalog_id": 9819
+    },
+    {
       "source_key": "acervo:2690",
       "catalog_id": 10262
     },
@@ -27205,10 +25993,6 @@
       "catalog_id": 10273
     },
     {
-      "source_key": "acervo:6809",
-      "catalog_id": 10274
-    },
-    {
       "source_key": "acervo:10908",
       "catalog_id": 10275
     },
@@ -27259,10 +26043,6 @@
     {
       "source_key": "acervo:5557",
       "catalog_id": 10286
-    },
-    {
-      "source_key": "acervo:3766",
-      "catalog_id": 3675
     },
     {
       "source_key": "acervo:7607",
@@ -27377,6 +26157,18 @@
       "catalog_id": 10312
     },
     {
+      "source_key": "acervo:1675",
+      "catalog_id": 4526
+    },
+    {
+      "source_key": "acervo:2702",
+      "catalog_id": 4527
+    },
+    {
+      "source_key": "acervo:9109",
+      "catalog_id": 2213
+    },
+    {
       "source_key": "acervo:7149",
       "catalog_id": 10313
     },
@@ -27429,14 +26221,6 @@
       "catalog_id": 10323
     },
     {
-      "source_key": "acervo:7817",
-      "catalog_id": 2168
-    },
-    {
-      "source_key": "acervo:8334",
-      "catalog_id": 10324
-    },
-    {
       "source_key": "acervo:1206",
       "catalog_id": 10325
     },
@@ -27481,20 +26265,12 @@
       "catalog_id": 10334
     },
     {
-      "source_key": "acervo:805",
-      "catalog_id": 10335
-    },
-    {
       "source_key": "acervo:9922",
       "catalog_id": 10336
     },
     {
       "source_key": "acervo:7701",
       "catalog_id": 10337
-    },
-    {
-      "source_key": "acervo:7032",
-      "catalog_id": 10338
     },
     {
       "source_key": "acervo:3897",
@@ -27545,10 +26321,6 @@
       "catalog_id": 10350
     },
     {
-      "source_key": "acervo:9536",
-      "catalog_id": 10351
-    },
-    {
       "source_key": "acervo:6470",
       "catalog_id": 10352
     },
@@ -27587,6 +26359,18 @@
     {
       "source_key": "acervo:9593",
       "catalog_id": 10359
+    },
+    {
+      "source_key": "acervo:9601",
+      "catalog_id": 9918
+    },
+    {
+      "source_key": "acervo:9537",
+      "catalog_id": 9919
+    },
+    {
+      "source_key": "acervo:8806",
+      "catalog_id": 336
     },
     {
       "source_key": "acervo:6924",
@@ -27657,14 +26441,6 @@
       "catalog_id": 10374
     },
     {
-      "source_key": "acervo:10577",
-      "catalog_id": 10375
-    },
-    {
-      "source_key": "acervo:7773",
-      "catalog_id": 3695
-    },
-    {
       "source_key": "acervo:4222",
       "catalog_id": 2615
     },
@@ -27733,14 +26509,6 @@
       "catalog_id": 10388
     },
     {
-      "source_key": "acervo:10891",
-      "catalog_id": 10389
-    },
-    {
-      "source_key": "acervo:8887",
-      "catalog_id": 3698
-    },
-    {
       "source_key": "acervo:11741",
       "catalog_id": 10390
     },
@@ -27775,10 +26543,6 @@
     {
       "source_key": "acervo:6816",
       "catalog_id": 10398
-    },
-    {
-      "source_key": "acervo:7870",
-      "catalog_id": 10399
     },
     {
       "source_key": "acervo:7923",
@@ -27849,10 +26613,6 @@
       "catalog_id": 10414
     },
     {
-      "source_key": "acervo:628",
-      "catalog_id": 10415
-    },
-    {
       "source_key": "acervo:6401",
       "catalog_id": 10416
     },
@@ -27887,10 +26647,6 @@
     {
       "source_key": "acervo:4872",
       "catalog_id": 4172
-    },
-    {
-      "source_key": "acervo:8456",
-      "catalog_id": 10424
     },
     {
       "source_key": "acervo:12040",
@@ -28093,10 +26849,6 @@
       "catalog_id": 10466
     },
     {
-      "source_key": "acervo:7755",
-      "catalog_id": 3715
-    },
-    {
       "source_key": "acervo:8011",
       "catalog_id": 10467
     },
@@ -28115,10 +26867,6 @@
     {
       "source_key": "acervo:10830",
       "catalog_id": 10471
-    },
-    {
-      "source_key": "acervo:5712",
-      "catalog_id": 3701
     },
     {
       "source_key": "acervo:4947",
@@ -28345,10 +27093,6 @@
       "catalog_id": 10523
     },
     {
-      "source_key": "acervo:11432",
-      "catalog_id": 10524
-    },
-    {
       "source_key": "acervo:10409",
       "catalog_id": 10525
     },
@@ -28523,6 +27267,10 @@
     {
       "source_key": "acervo:4847",
       "catalog_id": 10562
+    },
+    {
+      "source_key": "acervo:12123",
+      "catalog_id": 10125
     },
     {
       "source_key": "acervo:5615",
@@ -29217,6 +27965,10 @@
       "catalog_id": 10709
     },
     {
+      "source_key": "acervo:6809",
+      "catalog_id": 10274
+    },
+    {
       "source_key": "acervo:6714",
       "catalog_id": 10710
     },
@@ -29453,6 +28205,14 @@
       "catalog_id": 10763
     },
     {
+      "source_key": "acervo:7817",
+      "catalog_id": 2168
+    },
+    {
+      "source_key": "acervo:8334",
+      "catalog_id": 10324
+    },
+    {
       "source_key": "acervo:10876",
       "catalog_id": 10764
     },
@@ -29681,6 +28441,14 @@
       "catalog_id": 10814
     },
     {
+      "source_key": "acervo:10577",
+      "catalog_id": 10375
+    },
+    {
+      "source_key": "acervo:7773",
+      "catalog_id": 3695
+    },
+    {
       "source_key": "acervo:7109",
       "catalog_id": 10815
     },
@@ -29769,10 +28537,6 @@
       "catalog_id": 10834
     },
     {
-      "source_key": "acervo:4065",
-      "catalog_id": 10835
-    },
-    {
       "source_key": "acervo:7905",
       "catalog_id": 10836
     },
@@ -29791,6 +28555,10 @@
     {
       "source_key": "acervo:9699",
       "catalog_id": 10840
+    },
+    {
+      "source_key": "acervo:9702",
+      "catalog_id": 10841
     },
     {
       "source_key": "acervo:2535",
@@ -29873,18 +28641,6 @@
       "catalog_id": 10857
     },
     {
-      "source_key": "acervo:7982",
-      "catalog_id": 10858
-    },
-    {
-      "source_key": "acervo:1758",
-      "catalog_id": 10859
-    },
-    {
-      "source_key": "acervo:4272",
-      "catalog_id": 3765
-    },
-    {
       "source_key": "acervo:7912",
       "catalog_id": 10860
     },
@@ -29915,6 +28671,10 @@
     {
       "source_key": "acervo:11102",
       "catalog_id": 10867
+    },
+    {
+      "source_key": "acervo:8456",
+      "catalog_id": 10424
     },
     {
       "source_key": "acervo:11795",
@@ -29957,10 +28717,6 @@
       "catalog_id": 10876
     },
     {
-      "source_key": "acervo:5287",
-      "catalog_id": 10877
-    },
-    {
       "source_key": "acervo:12122",
       "catalog_id": 10878
     },
@@ -29995,26 +28751,6 @@
     {
       "source_key": "acervo:4221",
       "catalog_id": 10886
-    },
-    {
-      "source_key": "acervo:3019",
-      "catalog_id": 10887
-    },
-    {
-      "source_key": "acervo:9619",
-      "catalog_id": 10888
-    },
-    {
-      "source_key": "acervo:1749",
-      "catalog_id": 10889
-    },
-    {
-      "source_key": "acervo:4207",
-      "catalog_id": 10890
-    },
-    {
-      "source_key": "acervo:4213",
-      "catalog_id": 10891
     },
     {
       "source_key": "acervo:11254",
@@ -30073,10 +28809,6 @@
       "catalog_id": 10903
     },
     {
-      "source_key": "acervo:3844",
-      "catalog_id": 10904
-    },
-    {
       "source_key": "acervo:1160",
       "catalog_id": 10905
     },
@@ -30107,18 +28839,6 @@
     {
       "source_key": "acervo:10504",
       "catalog_id": 10912
-    },
-    {
-      "source_key": "acervo:9509",
-      "catalog_id": 10913
-    },
-    {
-      "source_key": "acervo:11560",
-      "catalog_id": 3065
-    },
-    {
-      "source_key": "acervo:1093",
-      "catalog_id": 10914
     },
     {
       "source_key": "acervo:12035",
@@ -30155,6 +28875,10 @@
     {
       "source_key": "acervo:3880",
       "catalog_id": 10922
+    },
+    {
+      "source_key": "acervo:5712",
+      "catalog_id": 3701
     },
     {
       "source_key": "acervo:11820",
@@ -30219,10 +28943,6 @@
     {
       "source_key": "acervo:2150",
       "catalog_id": 10933
-    },
-    {
-      "source_key": "acervo:2918",
-      "catalog_id": 10934
     },
     {
       "source_key": "acervo:6506",
@@ -30349,10 +29069,6 @@
       "catalog_id": 10959
     },
     {
-      "source_key": "acervo:11480",
-      "catalog_id": 10960
-    },
-    {
       "source_key": "acervo:6618",
       "catalog_id": 10961
     },
@@ -30387,6 +29103,10 @@
     {
       "source_key": "acervo:5367",
       "catalog_id": 10968
+    },
+    {
+      "source_key": "acervo:11432",
+      "catalog_id": 10524
     },
     {
       "source_key": "acervo:1528",
@@ -30425,10 +29145,6 @@
       "catalog_id": 10976
     },
     {
-      "source_key": "acervo:3803",
-      "catalog_id": 10977
-    },
-    {
       "source_key": "acervo:358",
       "catalog_id": 10978
     },
@@ -30447,10 +29163,6 @@
     {
       "source_key": "acervo:5680",
       "catalog_id": 10982
-    },
-    {
-      "source_key": "acervo:6671",
-      "catalog_id": 10983
     },
     {
       "source_key": "acervo:3843",
@@ -30585,10 +29297,6 @@
       "catalog_id": 11012
     },
     {
-      "source_key": "acervo:2931",
-      "catalog_id": 11013
-    },
-    {
       "source_key": "acervo:7795",
       "catalog_id": 11014
     },
@@ -30693,10 +29401,6 @@
       "catalog_id": 11035
     },
     {
-      "source_key": "acervo:1194",
-      "catalog_id": 11036
-    },
-    {
       "source_key": "acervo:2194",
       "catalog_id": 11037
     },
@@ -30723,10 +29427,6 @@
     {
       "source_key": "acervo:4436",
       "catalog_id": 11042
-    },
-    {
-      "source_key": "acervo:8913",
-      "catalog_id": 11043
     },
     {
       "source_key": "acervo:9261",
@@ -30829,10 +29529,6 @@
       "catalog_id": 11064
     },
     {
-      "source_key": "acervo:1355",
-      "catalog_id": 11065
-    },
-    {
       "source_key": "acervo:2188",
       "catalog_id": 11066
     },
@@ -30919,10 +29615,6 @@
     {
       "source_key": "acervo:4500",
       "catalog_id": 11083
-    },
-    {
-      "source_key": "acervo:4264",
-      "catalog_id": 11084
     },
     {
       "source_key": "acervo:4030",
@@ -31169,10 +29861,6 @@
       "catalog_id": 11134
     },
     {
-      "source_key": "acervo:4564",
-      "catalog_id": 11135
-    },
-    {
       "source_key": "acervo:7917",
       "catalog_id": 11136
     },
@@ -31301,10 +29989,6 @@
       "catalog_id": 11163
     },
     {
-      "source_key": "acervo:10850",
-      "catalog_id": 11164
-    },
-    {
       "source_key": "acervo:9171",
       "catalog_id": 11165
     },
@@ -31319,10 +30003,6 @@
     {
       "source_key": "acervo:4815",
       "catalog_id": 11168
-    },
-    {
-      "source_key": "acervo:11291",
-      "catalog_id": 11169
     },
     {
       "source_key": "acervo:4288",
@@ -31661,10 +30341,6 @@
       "catalog_id": 11241
     },
     {
-      "source_key": "acervo:564",
-      "catalog_id": 11242
-    },
-    {
       "source_key": "acervo:11320",
       "catalog_id": 11243
     },
@@ -31827,6 +30503,10 @@
     {
       "source_key": "acervo:4326",
       "catalog_id": 2586
+    },
+    {
+      "source_key": "acervo:4065",
+      "catalog_id": 10835
     },
     {
       "source_key": "acervo:3562",
@@ -32053,6 +30733,22 @@
       "catalog_id": 11328
     },
     {
+      "source_key": "acervo:3019",
+      "catalog_id": 10887
+    },
+    {
+      "source_key": "acervo:9619",
+      "catalog_id": 10888
+    },
+    {
+      "source_key": "acervo:1749",
+      "catalog_id": 10889
+    },
+    {
+      "source_key": "acervo:4213",
+      "catalog_id": 10891
+    },
+    {
       "source_key": "acervo:12441",
       "catalog_id": 11329
     },
@@ -32243,6 +30939,10 @@
     {
       "source_key": "acervo:9758",
       "catalog_id": 4225
+    },
+    {
+      "source_key": "acervo:2918",
+      "catalog_id": 10934
     },
     {
       "source_key": "acervo:1469",
@@ -32713,6 +31413,10 @@
       "catalog_id": 11467
     },
     {
+      "source_key": "acervo:1194",
+      "catalog_id": 11036
+    },
+    {
       "source_key": "acervo:2395",
       "catalog_id": 11468
     },
@@ -32817,74 +31521,6 @@
       "catalog_id": 11487
     },
     {
-      "source_key": "acervo:6275",
-      "catalog_id": 11488
-    },
-    {
-      "source_key": "acervo:7811",
-      "catalog_id": 2146
-    },
-    {
-      "source_key": "acervo:10885",
-      "catalog_id": 11489
-    },
-    {
-      "source_key": "acervo:7302",
-      "catalog_id": 11490
-    },
-    {
-      "source_key": "acervo:2441",
-      "catalog_id": 11491
-    },
-    {
-      "source_key": "acervo:11401",
-      "catalog_id": 11492
-    },
-    {
-      "source_key": "acervo:5002",
-      "catalog_id": 11493
-    },
-    {
-      "source_key": "acervo:6282",
-      "catalog_id": 11494
-    },
-    {
-      "source_key": "acervo:7308",
-      "catalog_id": 11495
-    },
-    {
-      "source_key": "acervo:4495",
-      "catalog_id": 11496
-    },
-    {
-      "source_key": "acervo:10384",
-      "catalog_id": 11497
-    },
-    {
-      "source_key": "acervo:10640",
-      "catalog_id": 2561
-    },
-    {
-      "source_key": "acervo:11410",
-      "catalog_id": 11498
-    },
-    {
-      "source_key": "acervo:12434",
-      "catalog_id": 11499
-    },
-    {
-      "source_key": "acervo:2707",
-      "catalog_id": 11500
-    },
-    {
-      "source_key": "acervo:3479",
-      "catalog_id": 11501
-    },
-    {
-      "source_key": "acervo:7063",
-      "catalog_id": 11502
-    },
-    {
       "source_key": "acervo:9112",
       "catalog_id": 2196
     },
@@ -32987,54 +31623,6 @@
     {
       "source_key": "acervo:5302",
       "catalog_id": 11523
-    },
-    {
-      "source_key": "acervo:7606",
-      "catalog_id": 11524
-    },
-    {
-      "source_key": "acervo:8886",
-      "catalog_id": 3867
-    },
-    {
-      "source_key": "acervo:6840",
-      "catalog_id": 11525
-    },
-    {
-      "source_key": "acervo:2236",
-      "catalog_id": 11526
-    },
-    {
-      "source_key": "acervo:9916",
-      "catalog_id": 11527
-    },
-    {
-      "source_key": "acervo:4544",
-      "catalog_id": 11528
-    },
-    {
-      "source_key": "acervo:3779",
-      "catalog_id": 11529
-    },
-    {
-      "source_key": "acervo:7108",
-      "catalog_id": 11530
-    },
-    {
-      "source_key": "acervo:9156",
-      "catalog_id": 11531
-    },
-    {
-      "source_key": "acervo:7113",
-      "catalog_id": 11532
-    },
-    {
-      "source_key": "acervo:11725",
-      "catalog_id": 11533
-    },
-    {
-      "source_key": "acervo:2254",
-      "catalog_id": 11534
     },
     {
       "source_key": "acervo:7889",
@@ -33197,10 +31785,6 @@
       "catalog_id": 11566
     },
     {
-      "source_key": "acervo:3836",
-      "catalog_id": 11567
-    },
-    {
       "source_key": "acervo:253",
       "catalog_id": 11568
     },
@@ -33301,6 +31885,10 @@
       "catalog_id": 11592
     },
     {
+      "source_key": "acervo:4564",
+      "catalog_id": 11135
+    },
+    {
       "source_key": "acervo:11237",
       "catalog_id": 11593
     },
@@ -33315,10 +31903,6 @@
     {
       "source_key": "acervo:6482",
       "catalog_id": 11596
-    },
-    {
-      "source_key": "acervo:7531",
-      "catalog_id": 11597
     },
     {
       "source_key": "acervo:10197",
@@ -33405,10 +31989,6 @@
       "catalog_id": 11616
     },
     {
-      "source_key": "acervo:1075",
-      "catalog_id": 11617
-    },
-    {
       "source_key": "acervo:11120",
       "catalog_id": 11618
     },
@@ -33425,10 +32005,6 @@
       "catalog_id": 11621
     },
     {
-      "source_key": "acervo:1483",
-      "catalog_id": 11622
-    },
-    {
       "source_key": "acervo:6101",
       "catalog_id": 11623
     },
@@ -33437,16 +32013,8 @@
       "catalog_id": 11624
     },
     {
-      "source_key": "acervo:6068",
-      "catalog_id": 11625
-    },
-    {
       "source_key": "acervo:4487",
       "catalog_id": 11626
-    },
-    {
-      "source_key": "acervo:6894",
-      "catalog_id": 11627
     },
     {
       "source_key": "acervo:8443",
@@ -33553,14 +32121,6 @@
       "catalog_id": 11647
     },
     {
-      "source_key": "acervo:2242",
-      "catalog_id": 11648
-    },
-    {
-      "source_key": "acervo:9157",
-      "catalog_id": 11649
-    },
-    {
       "source_key": "acervo:4327",
       "catalog_id": 2638
     },
@@ -33637,10 +32197,6 @@
       "catalog_id": 11661
     },
     {
-      "source_key": "acervo:3659",
-      "catalog_id": 11662
-    },
-    {
       "source_key": "acervo:2854",
       "catalog_id": 11663
     },
@@ -33661,14 +32217,6 @@
       "catalog_id": 11666
     },
     {
-      "source_key": "acervo:1746",
-      "catalog_id": 11667
-    },
-    {
-      "source_key": "acervo:897",
-      "catalog_id": 11668
-    },
-    {
       "source_key": "acervo:1293",
       "catalog_id": 11669
     },
@@ -33679,10 +32227,6 @@
     {
       "source_key": "acervo:1551",
       "catalog_id": 11671
-    },
-    {
-      "source_key": "acervo:1005",
-      "catalog_id": 11672
     },
     {
       "source_key": "acervo:9880",
@@ -33703,10 +32247,6 @@
     {
       "source_key": "acervo:7947",
       "catalog_id": 11677
-    },
-    {
-      "source_key": "acervo:536",
-      "catalog_id": 11678
     },
     {
       "source_key": "acervo:4637",
@@ -33785,10 +32325,6 @@
       "catalog_id": 11695
     },
     {
-      "source_key": "acervo:8537",
-      "catalog_id": 11696
-    },
-    {
       "source_key": "acervo:7520",
       "catalog_id": 11697
     },
@@ -33823,10 +32359,6 @@
     {
       "source_key": "acervo:4255",
       "catalog_id": 2639
-    },
-    {
-      "source_key": "acervo:160",
-      "catalog_id": 11705
     },
     {
       "source_key": "acervo:8608",
@@ -34009,10 +32541,6 @@
       "catalog_id": 11743
     },
     {
-      "source_key": "acervo:2973",
-      "catalog_id": 11744
-    },
-    {
       "source_key": "acervo:11199",
       "catalog_id": 11745
     },
@@ -34169,10 +32697,6 @@
       "catalog_id": 3069
     },
     {
-      "source_key": "acervo:10604",
-      "catalog_id": 11781
-    },
-    {
       "source_key": "acervo:11377",
       "catalog_id": 11782
     },
@@ -34253,44 +32777,12 @@
       "catalog_id": 11801
     },
     {
-      "source_key": "acervo:4910",
-      "catalog_id": 11802
-    },
-    {
-      "source_key": "acervo:4882",
-      "catalog_id": 11803
-    },
-    {
-      "source_key": "acervo:4867",
-      "catalog_id": 11804
-    },
-    {
-      "source_key": "acervo:4887",
-      "catalog_id": 11805
-    },
-    {
-      "source_key": "acervo:4904",
-      "catalog_id": 11806
-    },
-    {
       "source_key": "acervo:216",
       "catalog_id": 11807
     },
     {
       "source_key": "acervo:220",
       "catalog_id": 11808
-    },
-    {
-      "source_key": "acervo:4998",
-      "catalog_id": 11809
-    },
-    {
-      "source_key": "acervo:4226",
-      "catalog_id": 11810
-    },
-    {
-      "source_key": "acervo:4896",
-      "catalog_id": 11811
     },
     {
       "source_key": "acervo:1269",
@@ -34343,6 +32835,1514 @@
     {
       "source_key": "acervo:8385",
       "catalog_id": 11822
+    },
+    {
+      "source_key": "acervo:5268",
+      "catalog_id": 3937
+    },
+    {
+      "source_key": "acervo:5286",
+      "catalog_id": 3973
+    },
+    {
+      "source_key": "acervo:5287",
+      "catalog_id": 3981
+    },
+    {
+      "source_key": "acervo:11563",
+      "catalog_id": 3048
+    },
+    {
+      "source_key": "acervo:11558",
+      "catalog_id": 3051
+    },
+    {
+      "source_key": "acervo:8641",
+      "catalog_id": 3157
+    },
+    {
+      "source_key": "acervo:8577",
+      "catalog_id": 2966
+    },
+    {
+      "source_key": "acervo:8355",
+      "catalog_id": 4110
+    },
+    {
+      "source_key": "acervo:9047",
+      "catalog_id": 2131
+    },
+    {
+      "source_key": "acervo:8966",
+      "catalog_id": 3645
+    },
+    {
+      "source_key": "acervo:8858",
+      "catalog_id": 3155
+    },
+    {
+      "source_key": "acervo:8904",
+      "catalog_id": 3597
+    },
+    {
+      "source_key": "acervo:8913",
+      "catalog_id": 3794
+    },
+    {
+      "source_key": "acervo:9125",
+      "catalog_id": 2197
+    },
+    {
+      "source_key": "acervo:9083",
+      "catalog_id": 2238
+    },
+    {
+      "source_key": "acervo:8857",
+      "catalog_id": 3138
+    },
+    {
+      "source_key": "acervo:7784",
+      "catalog_id": 2145
+    },
+    {
+      "source_key": "acervo:7223",
+      "catalog_id": 2428
+    },
+    {
+      "source_key": "acervo:7659",
+      "catalog_id": 3482
+    },
+    {
+      "source_key": "acervo:7671",
+      "catalog_id": 3906
+    },
+    {
+      "source_key": "acervo:7781",
+      "catalog_id": 2185
+    },
+    {
+      "source_key": "acervo:10940",
+      "catalog_id": 2364
+    },
+    {
+      "source_key": "acervo:10982",
+      "catalog_id": 2373
+    },
+    {
+      "source_key": "acervo:10957",
+      "catalog_id": 2312
+    },
+    {
+      "source_key": "acervo:10457",
+      "catalog_id": 2793
+    },
+    {
+      "source_key": "acervo:10342",
+      "catalog_id": 2483
+    },
+    {
+      "source_key": "acervo:10467",
+      "catalog_id": 2811
+    },
+    {
+      "source_key": "acervo:10458",
+      "catalog_id": 2813
+    },
+    {
+      "source_key": "acervo:10604",
+      "catalog_id": 2507
+    },
+    {
+      "source_key": "acervo:10278",
+      "catalog_id": 2892
+    },
+    {
+      "source_key": "acervo:10449",
+      "catalog_id": 2789
+    },
+    {
+      "source_key": "acervo:10345",
+      "catalog_id": 2474
+    },
+    {
+      "source_key": "acervo:10614",
+      "catalog_id": 2550
+    },
+    {
+      "source_key": "acervo:3627",
+      "catalog_id": 3083
+    },
+    {
+      "source_key": "acervo:3633",
+      "catalog_id": 3146
+    },
+    {
+      "source_key": "acervo:3649",
+      "catalog_id": 3246
+    },
+    {
+      "source_key": "acervo:3645",
+      "catalog_id": 3430
+    },
+    {
+      "source_key": "acervo:3667",
+      "catalog_id": 3505
+    },
+    {
+      "source_key": "acervo:3693",
+      "catalog_id": 3509
+    },
+    {
+      "source_key": "acervo:3637",
+      "catalog_id": 3207
+    },
+    {
+      "source_key": "acervo:3628",
+      "catalog_id": 3859
+    },
+    {
+      "source_key": "acervo:10112",
+      "catalog_id": 4046
+    },
+    {
+      "source_key": "acervo:4412",
+      "catalog_id": 3132
+    },
+    {
+      "source_key": "acervo:4350",
+      "catalog_id": 3340
+    },
+    {
+      "source_key": "acervo:4201",
+      "catalog_id": 2634
+    },
+    {
+      "source_key": "acervo:4199",
+      "catalog_id": 2574
+    },
+    {
+      "source_key": "acervo:4224",
+      "catalog_id": 2629
+    },
+    {
+      "source_key": "acervo:4226",
+      "catalog_id": 2585
+    },
+    {
+      "source_key": "acervo:4207",
+      "catalog_id": 2603
+    },
+    {
+      "source_key": "acervo:4851",
+      "catalog_id": 4126
+    },
+    {
+      "source_key": "acervo:4852",
+      "catalog_id": 4127
+    },
+    {
+      "source_key": "acervo:4853",
+      "catalog_id": 4128
+    },
+    {
+      "source_key": "acervo:4855",
+      "catalog_id": 4133
+    },
+    {
+      "source_key": "acervo:4864",
+      "catalog_id": 4163
+    },
+    {
+      "source_key": "acervo:4909",
+      "catalog_id": 4154
+    },
+    {
+      "source_key": "acervo:4865",
+      "catalog_id": 4161
+    },
+    {
+      "source_key": "acervo:4900",
+      "catalog_id": 4146
+    },
+    {
+      "source_key": "acervo:4863",
+      "catalog_id": 4160
+    },
+    {
+      "source_key": "acervo:4866",
+      "catalog_id": 4145
+    },
+    {
+      "source_key": "acervo:4895",
+      "catalog_id": 4152
+    },
+    {
+      "source_key": "acervo:4910",
+      "catalog_id": 4159
+    },
+    {
+      "source_key": "acervo:4867",
+      "catalog_id": 4162
+    },
+    {
+      "source_key": "acervo:4896",
+      "catalog_id": 4151
+    },
+    {
+      "source_key": "acervo:4898",
+      "catalog_id": 4157
+    },
+    {
+      "source_key": "acervo:4860",
+      "catalog_id": 4148
+    },
+    {
+      "source_key": "acervo:4897",
+      "catalog_id": 4155
+    },
+    {
+      "source_key": "acervo:4905",
+      "catalog_id": 4165
+    },
+    {
+      "source_key": "acervo:4904",
+      "catalog_id": 4175
+    },
+    {
+      "source_key": "acervo:4908",
+      "catalog_id": 4180
+    },
+    {
+      "source_key": "acervo:4882",
+      "catalog_id": 4187
+    },
+    {
+      "source_key": "acervo:4885",
+      "catalog_id": 4192
+    },
+    {
+      "source_key": "acervo:4916",
+      "catalog_id": 4197
+    },
+    {
+      "source_key": "acervo:4887",
+      "catalog_id": 4193
+    },
+    {
+      "source_key": "acervo:4899",
+      "catalog_id": 4195
+    },
+    {
+      "source_key": "acervo:4886",
+      "catalog_id": 4194
+    },
+    {
+      "source_key": "acervo:4903",
+      "catalog_id": 4191
+    },
+    {
+      "source_key": "acervo:4888",
+      "catalog_id": 4201
+    },
+    {
+      "source_key": "acervo:3112",
+      "catalog_id": 3041
+    },
+    {
+      "source_key": "acervo:1971",
+      "catalog_id": 2212
+    },
+    {
+      "source_key": "acervo:2015",
+      "catalog_id": 2717
+    },
+    {
+      "source_key": "acervo:1972",
+      "catalog_id": 2709
+    },
+    {
+      "source_key": "acervo:826",
+      "catalog_id": 194
+    },
+    {
+      "source_key": "acervo:1093",
+      "catalog_id": 201
+    },
+    {
+      "source_key": "acervo:11380",
+      "catalog_id": 8222
+    },
+    {
+      "source_key": "acervo:8510",
+      "catalog_id": 6346
+    },
+    {
+      "source_key": "acervo:12163",
+      "catalog_id": 7113
+    },
+    {
+      "source_key": "acervo:7870",
+      "catalog_id": 5238
+    },
+    {
+      "source_key": "acervo:6256",
+      "catalog_id": 7383
+    },
+    {
+      "source_key": "acervo:6269",
+      "catalog_id": 8390
+    },
+    {
+      "source_key": "acervo:5118",
+      "catalog_id": 8534
+    },
+    {
+      "source_key": "acervo:1893",
+      "catalog_id": 6298
+    },
+    {
+      "source_key": "acervo:229",
+      "catalog_id": 6318
+    },
+    {
+      "source_key": "acervo:160",
+      "catalog_id": 6419
+    },
+    {
+      "source_key": "acervo:1816",
+      "catalog_id": 7764
+    },
+    {
+      "source_key": "acervo:2218",
+      "catalog_id": 6299
+    },
+    {
+      "source_key": "acervo:536",
+      "catalog_id": 6432
+    },
+    {
+      "source_key": "acervo:2215",
+      "catalog_id": 4582
+    },
+    {
+      "source_key": "acervo:1901",
+      "catalog_id": 6278
+    },
+    {
+      "source_key": "acervo:45",
+      "catalog_id": 4580
+    },
+    {
+      "source_key": "acervo:257",
+      "catalog_id": 6301
+    },
+    {
+      "source_key": "acervo:11291",
+      "catalog_id": 3818
+    },
+    {
+      "source_key": "acervo:8373",
+      "catalog_id": 7154
+    },
+    {
+      "source_key": "acervo:8993",
+      "catalog_id": 2099
+    },
+    {
+      "source_key": "acervo:8946",
+      "catalog_id": 3630
+    },
+    {
+      "source_key": "acervo:8896",
+      "catalog_id": 3085
+    },
+    {
+      "source_key": "acervo:8780",
+      "catalog_id": 2219
+    },
+    {
+      "source_key": "acervo:7235",
+      "catalog_id": 2441
+    },
+    {
+      "source_key": "acervo:9536",
+      "catalog_id": 10359
+    },
+    {
+      "source_key": "acervo:5407",
+      "catalog_id": 9473
+    },
+    {
+      "source_key": "acervo:10963",
+      "catalog_id": 2344
+    },
+    {
+      "source_key": "acervo:10313",
+      "catalog_id": 3654
+    },
+    {
+      "source_key": "acervo:10660",
+      "catalog_id": 2570
+    },
+    {
+      "source_key": "acervo:10273",
+      "catalog_id": 2840
+    },
+    {
+      "source_key": "acervo:10277",
+      "catalog_id": 2888
+    },
+    {
+      "source_key": "acervo:10288",
+      "catalog_id": 2889
+    },
+    {
+      "source_key": "acervo:10464",
+      "catalog_id": 2795
+    },
+    {
+      "source_key": "acervo:3803",
+      "catalog_id": 2296
+    },
+    {
+      "source_key": "acervo:3672",
+      "catalog_id": 3586
+    },
+    {
+      "source_key": "acervo:3659",
+      "catalog_id": 3904
+    },
+    {
+      "source_key": "acervo:3735",
+      "catalog_id": 2914
+    },
+    {
+      "source_key": "acervo:4399",
+      "catalog_id": 2635
+    },
+    {
+      "source_key": "acervo:4264",
+      "catalog_id": 2653
+    },
+    {
+      "source_key": "acervo:5140",
+      "catalog_id": 8118
+    },
+    {
+      "source_key": "acervo:4998",
+      "catalog_id": 9855
+    },
+    {
+      "source_key": "acervo:3128",
+      "catalog_id": 3042
+    },
+    {
+      "source_key": "acervo:2216",
+      "catalog_id": 5408
+    },
+    {
+      "source_key": "acervo:2028",
+      "catalog_id": 2742
+    },
+    {
+      "source_key": "acervo:950",
+      "catalog_id": 10170
+    },
+    {
+      "source_key": "acervo:693",
+      "catalog_id": 61
+    },
+    {
+      "source_key": "acervo:875",
+      "catalog_id": 34
+    },
+    {
+      "source_key": "acervo:898",
+      "catalog_id": 207
+    },
+    {
+      "source_key": "acervo:696",
+      "catalog_id": 264
+    },
+    {
+      "source_key": "acervo:704",
+      "catalog_id": 74
+    },
+    {
+      "source_key": "acervo:792",
+      "catalog_id": 7622
+    },
+    {
+      "source_key": "acervo:945",
+      "catalog_id": 196
+    },
+    {
+      "source_key": "acervo:836",
+      "catalog_id": 43
+    },
+    {
+      "source_key": "acervo:629",
+      "catalog_id": 15
+    },
+    {
+      "source_key": "acervo:839",
+      "catalog_id": 20
+    },
+    {
+      "source_key": "acervo:877",
+      "catalog_id": 28
+    },
+    {
+      "source_key": "acervo:820",
+      "catalog_id": 298
+    },
+    {
+      "source_key": "acervo:891",
+      "catalog_id": 6
+    },
+    {
+      "source_key": "acervo:824",
+      "catalog_id": 153
+    },
+    {
+      "source_key": "acervo:931",
+      "catalog_id": 30
+    },
+    {
+      "source_key": "acervo:805",
+      "catalog_id": 192
+    },
+    {
+      "source_key": "acervo:6275",
+      "catalog_id": 11488
+    },
+    {
+      "source_key": "acervo:7811",
+      "catalog_id": 2146
+    },
+    {
+      "source_key": "acervo:10885",
+      "catalog_id": 11489
+    },
+    {
+      "source_key": "acervo:7302",
+      "catalog_id": 11490
+    },
+    {
+      "source_key": "acervo:2441",
+      "catalog_id": 11491
+    },
+    {
+      "source_key": "acervo:11401",
+      "catalog_id": 11492
+    },
+    {
+      "source_key": "acervo:5002",
+      "catalog_id": 11493
+    },
+    {
+      "source_key": "acervo:6282",
+      "catalog_id": 11494
+    },
+    {
+      "source_key": "acervo:7308",
+      "catalog_id": 11495
+    },
+    {
+      "source_key": "acervo:4495",
+      "catalog_id": 11496
+    },
+    {
+      "source_key": "acervo:10384",
+      "catalog_id": 11497
+    },
+    {
+      "source_key": "acervo:10640",
+      "catalog_id": 2561
+    },
+    {
+      "source_key": "acervo:11410",
+      "catalog_id": 11498
+    },
+    {
+      "source_key": "acervo:12434",
+      "catalog_id": 11499
+    },
+    {
+      "source_key": "acervo:2707",
+      "catalog_id": 11500
+    },
+    {
+      "source_key": "acervo:3479",
+      "catalog_id": 11501
+    },
+    {
+      "source_key": "acervo:7063",
+      "catalog_id": 11502
+    },
+    {
+      "source_key": "acervo:628",
+      "catalog_id": 143
+    },
+    {
+      "source_key": "acervo:1075",
+      "catalog_id": 126
+    },
+    {
+      "source_key": "acervo:11572",
+      "catalog_id": 3056
+    },
+    {
+      "source_key": "acervo:8617",
+      "catalog_id": 3087
+    },
+    {
+      "source_key": "acervo:8684",
+      "catalog_id": 3519
+    },
+    {
+      "source_key": "acervo:10972",
+      "catalog_id": 2340
+    },
+    {
+      "source_key": "acervo:10984",
+      "catalog_id": 2370
+    },
+    {
+      "source_key": "acervo:3844",
+      "catalog_id": 2293
+    },
+    {
+      "source_key": "acervo:6662",
+      "catalog_id": 3590
+    },
+    {
+      "source_key": "acervo:6689",
+      "catalog_id": 3643
+    },
+    {
+      "source_key": "acervo:10139",
+      "catalog_id": 4028
+    },
+    {
+      "source_key": "acervo:10180",
+      "catalog_id": 4013
+    },
+    {
+      "source_key": "acervo:4250",
+      "catalog_id": 2588
+    },
+    {
+      "source_key": "acervo:4906",
+      "catalog_id": 4183
+    },
+    {
+      "source_key": "acervo:2009",
+      "catalog_id": 2702
+    },
+    {
+      "source_key": "acervo:837",
+      "catalog_id": 292
+    },
+    {
+      "source_key": "acervo:1070",
+      "catalog_id": 76
+    },
+    {
+      "source_key": "acervo:3124",
+      "catalog_id": 3025
+    },
+    {
+      "source_key": "acervo:4857",
+      "catalog_id": 4177
+    },
+    {
+      "source_key": "acervo:7785",
+      "catalog_id": 2150
+    },
+    {
+      "source_key": "acervo:9081",
+      "catalog_id": 2239
+    },
+    {
+      "source_key": "acervo:10294",
+      "catalog_id": 2884
+    },
+    {
+      "source_key": "acervo:10295",
+      "catalog_id": 2848
+    },
+    {
+      "source_key": "acervo:7606",
+      "catalog_id": 11524
+    },
+    {
+      "source_key": "acervo:8886",
+      "catalog_id": 3867
+    },
+    {
+      "source_key": "acervo:6840",
+      "catalog_id": 11525
+    },
+    {
+      "source_key": "acervo:2236",
+      "catalog_id": 11526
+    },
+    {
+      "source_key": "acervo:9916",
+      "catalog_id": 11527
+    },
+    {
+      "source_key": "acervo:4544",
+      "catalog_id": 11528
+    },
+    {
+      "source_key": "acervo:3779",
+      "catalog_id": 11529
+    },
+    {
+      "source_key": "acervo:7108",
+      "catalog_id": 11530
+    },
+    {
+      "source_key": "acervo:9156",
+      "catalog_id": 11531
+    },
+    {
+      "source_key": "acervo:7113",
+      "catalog_id": 11532
+    },
+    {
+      "source_key": "acervo:11725",
+      "catalog_id": 11533
+    },
+    {
+      "source_key": "acervo:2254",
+      "catalog_id": 11534
+    },
+    {
+      "source_key": "acervo:10302",
+      "catalog_id": 2885
+    },
+    {
+      "source_key": "acervo:10280",
+      "catalog_id": 2887
+    },
+    {
+      "source_key": "acervo:10289",
+      "catalog_id": 2856
+    },
+    {
+      "source_key": "acervo:640",
+      "catalog_id": 270
+    },
+    {
+      "source_key": "acervo:649",
+      "catalog_id": 306
+    },
+    {
+      "source_key": "acervo:775",
+      "catalog_id": 114
+    },
+    {
+      "source_key": "acervo:737",
+      "catalog_id": 212
+    },
+    {
+      "source_key": "acervo:732",
+      "catalog_id": 247
+    },
+    {
+      "source_key": "acervo:905",
+      "catalog_id": 238
+    },
+    {
+      "source_key": "acervo:809",
+      "catalog_id": 185
+    },
+    {
+      "source_key": "acervo:899",
+      "catalog_id": 151
+    },
+    {
+      "source_key": "acervo:871",
+      "catalog_id": 182
+    },
+    {
+      "source_key": "acervo:880",
+      "catalog_id": 25
+    },
+    {
+      "source_key": "acervo:6068",
+      "catalog_id": 11625
+    },
+    {
+      "source_key": "acervo:6894",
+      "catalog_id": 11627
+    },
+    {
+      "source_key": "acervo:1746",
+      "catalog_id": 11667
+    },
+    {
+      "source_key": "acervo:897",
+      "catalog_id": 11668
+    },
+    {
+      "source_key": "acervo:7323",
+      "catalog_id": 4528
+    },
+    {
+      "source_key": "acervo:2717",
+      "catalog_id": 4529
+    },
+    {
+      "source_key": "acervo:5297",
+      "catalog_id": 3940
+    },
+    {
+      "source_key": "acervo:5561",
+      "catalog_id": 4530
+    },
+    {
+      "source_key": "acervo:9427",
+      "catalog_id": 4354
+    },
+    {
+      "source_key": "acervo:12244",
+      "catalog_id": 4531
+    },
+    {
+      "source_key": "acervo:2005",
+      "catalog_id": 2708
+    },
+    {
+      "source_key": "acervo:4822",
+      "catalog_id": 4532
+    },
+    {
+      "source_key": "acervo:6125",
+      "catalog_id": 4361
+    },
+    {
+      "source_key": "acervo:7909",
+      "catalog_id": 4413
+    },
+    {
+      "source_key": "acervo:5092",
+      "catalog_id": 4535
+    },
+    {
+      "source_key": "acervo:8686",
+      "catalog_id": 3112
+    },
+    {
+      "source_key": "acervo:7594",
+      "catalog_id": 4591
+    },
+    {
+      "source_key": "acervo:2992",
+      "catalog_id": 4592
+    },
+    {
+      "source_key": "acervo:2225",
+      "catalog_id": 4593
+    },
+    {
+      "source_key": "acervo:10163",
+      "catalog_id": 4108
+    },
+    {
+      "source_key": "acervo:185",
+      "catalog_id": 4594
+    },
+    {
+      "source_key": "acervo:5069",
+      "catalog_id": 4595
+    },
+    {
+      "source_key": "acervo:10975",
+      "catalog_id": 4596
+    },
+    {
+      "source_key": "acervo:10261",
+      "catalog_id": 4604
+    },
+    {
+      "source_key": "acervo:10423",
+      "catalog_id": 4706
+    },
+    {
+      "source_key": "acervo:4691",
+      "catalog_id": 4707
+    },
+    {
+      "source_key": "acervo:7864",
+      "catalog_id": 4768
+    },
+    {
+      "source_key": "acervo:9245",
+      "catalog_id": 4769
+    },
+    {
+      "source_key": "acervo:7249",
+      "catalog_id": 4770
+    },
+    {
+      "source_key": "acervo:7843",
+      "catalog_id": 4771
+    },
+    {
+      "source_key": "acervo:12295",
+      "catalog_id": 4772
+    },
+    {
+      "source_key": "acervo:6433",
+      "catalog_id": 4823
+    },
+    {
+      "source_key": "acervo:3653",
+      "catalog_id": 3452
+    },
+    {
+      "source_key": "acervo:1943",
+      "catalog_id": 5224
+    },
+    {
+      "source_key": "acervo:2226",
+      "catalog_id": 5225
+    },
+    {
+      "source_key": "acervo:562",
+      "catalog_id": 5388
+    },
+    {
+      "source_key": "acervo:2896",
+      "catalog_id": 5389
+    },
+    {
+      "source_key": "acervo:3665",
+      "catalog_id": 3561
+    },
+    {
+      "source_key": "acervo:10094",
+      "catalog_id": 4090
+    },
+    {
+      "source_key": "acervo:10720",
+      "catalog_id": 5441
+    },
+    {
+      "source_key": "acervo:10482",
+      "catalog_id": 5443
+    },
+    {
+      "source_key": "acervo:8212",
+      "catalog_id": 5444
+    },
+    {
+      "source_key": "acervo:5653",
+      "catalog_id": 5445
+    },
+    {
+      "source_key": "acervo:5324",
+      "catalog_id": 5692
+    },
+    {
+      "source_key": "acervo:172",
+      "catalog_id": 5942
+    },
+    {
+      "source_key": "acervo:10251",
+      "catalog_id": 6191
+    },
+    {
+      "source_key": "acervo:297",
+      "catalog_id": 6192
+    },
+    {
+      "source_key": "acervo:345",
+      "catalog_id": 6193
+    },
+    {
+      "source_key": "acervo:3520",
+      "catalog_id": 6243
+    },
+    {
+      "source_key": "acervo:2761",
+      "catalog_id": 6244
+    },
+    {
+      "source_key": "acervo:2250",
+      "catalog_id": 6245
+    },
+    {
+      "source_key": "acervo:8522",
+      "catalog_id": 6290
+    },
+    {
+      "source_key": "acervo:8192",
+      "catalog_id": 6293
+    },
+    {
+      "source_key": "acervo:8195",
+      "catalog_id": 6294
+    },
+    {
+      "source_key": "acervo:3077",
+      "catalog_id": 6295
+    },
+    {
+      "source_key": "acervo:5146",
+      "catalog_id": 6300
+    },
+    {
+      "source_key": "acervo:541",
+      "catalog_id": 6301
+    },
+    {
+      "source_key": "acervo:8147",
+      "catalog_id": 6348
+    },
+    {
+      "source_key": "acervo:10745",
+      "catalog_id": 6349
+    },
+    {
+      "source_key": "acervo:3117",
+      "catalog_id": 6356
+    },
+    {
+      "source_key": "acervo:239",
+      "catalog_id": 6357
+    },
+    {
+      "source_key": "acervo:6947",
+      "catalog_id": 6358
+    },
+    {
+      "source_key": "acervo:203",
+      "catalog_id": 6411
+    },
+    {
+      "source_key": "acervo:5611",
+      "catalog_id": 6412
+    },
+    {
+      "source_key": "acervo:8481",
+      "catalog_id": 6413
+    },
+    {
+      "source_key": "acervo:7202",
+      "catalog_id": 6414
+    },
+    {
+      "source_key": "acervo:11758",
+      "catalog_id": 6415
+    },
+    {
+      "source_key": "acervo:3121",
+      "catalog_id": 6416
+    },
+    {
+      "source_key": "acervo:8204",
+      "catalog_id": 6418
+    },
+    {
+      "source_key": "acervo:527",
+      "catalog_id": 6419
+    },
+    {
+      "source_key": "acervo:2323",
+      "catalog_id": 6420
+    },
+    {
+      "source_key": "acervo:8485",
+      "catalog_id": 6474
+    },
+    {
+      "source_key": "acervo:12204",
+      "catalog_id": 6475
+    },
+    {
+      "source_key": "acervo:10727",
+      "catalog_id": 6476
+    },
+    {
+      "source_key": "acervo:4514",
+      "catalog_id": 6532
+    },
+    {
+      "source_key": "acervo:1955",
+      "catalog_id": 6533
+    },
+    {
+      "source_key": "acervo:7004",
+      "catalog_id": 6583
+    },
+    {
+      "source_key": "acervo:11812",
+      "catalog_id": 6628
+    },
+    {
+      "source_key": "acervo:1432",
+      "catalog_id": 6629
+    },
+    {
+      "source_key": "acervo:1601",
+      "catalog_id": 6675
+    },
+    {
+      "source_key": "acervo:5964",
+      "catalog_id": 6737
+    },
+    {
+      "source_key": "acervo:5965",
+      "catalog_id": 6738
+    },
+    {
+      "source_key": "acervo:10774",
+      "catalog_id": 6739
+    },
+    {
+      "source_key": "acervo:12321",
+      "catalog_id": 6740
+    },
+    {
+      "source_key": "acervo:6463",
+      "catalog_id": 6741
+    },
+    {
+      "source_key": "acervo:6476",
+      "catalog_id": 6742
+    },
+    {
+      "source_key": "acervo:11383",
+      "catalog_id": 6745
+    },
+    {
+      "source_key": "acervo:6002",
+      "catalog_id": 6800
+    },
+    {
+      "source_key": "acervo:9561",
+      "catalog_id": 6801
+    },
+    {
+      "source_key": "acervo:9703",
+      "catalog_id": 6802
+    },
+    {
+      "source_key": "acervo:10040",
+      "catalog_id": 6858
+    },
+    {
+      "source_key": "acervo:1980",
+      "catalog_id": 6859
+    },
+    {
+      "source_key": "acervo:1289",
+      "catalog_id": 7109
+    },
+    {
+      "source_key": "acervo:9286",
+      "catalog_id": 7156
+    },
+    {
+      "source_key": "acervo:2659",
+      "catalog_id": 7620
+    },
+    {
+      "source_key": "acervo:1534",
+      "catalog_id": 7621
+    },
+    {
+      "source_key": "acervo:1119",
+      "catalog_id": 7622
+    },
+    {
+      "source_key": "acervo:698",
+      "catalog_id": 7673
+    },
+    {
+      "source_key": "acervo:2643",
+      "catalog_id": 7674
+    },
+    {
+      "source_key": "acervo:857",
+      "catalog_id": 186
+    },
+    {
+      "source_key": "acervo:3995",
+      "catalog_id": 8105
+    },
+    {
+      "source_key": "acervo:3548",
+      "catalog_id": 9185
+    },
+    {
+      "source_key": "acervo:6456",
+      "catalog_id": 8152
+    },
+    {
+      "source_key": "acervo:6884",
+      "catalog_id": 8153
+    },
+    {
+      "source_key": "acervo:5081",
+      "catalog_id": 8207
+    },
+    {
+      "source_key": "acervo:3524",
+      "catalog_id": 8209
+    },
+    {
+      "source_key": "acervo:8818",
+      "catalog_id": 333
+    },
+    {
+      "source_key": "acervo:4220",
+      "catalog_id": 8430
+    },
+    {
+      "source_key": "acervo:1379",
+      "catalog_id": 8484
+    },
+    {
+      "source_key": "acervo:1387",
+      "catalog_id": 8485
+    },
+    {
+      "source_key": "acervo:8586",
+      "catalog_id": 3447
+    },
+    {
+      "source_key": "acervo:8380",
+      "catalog_id": 8486
+    },
+    {
+      "source_key": "acervo:4359",
+      "catalog_id": 3453
+    },
+    {
+      "source_key": "acervo:8661",
+      "catalog_id": 2969
+    },
+    {
+      "source_key": "acervo:4391",
+      "catalog_id": 3462
+    },
+    {
+      "source_key": "acervo:174",
+      "catalog_id": 8639
+    },
+    {
+      "source_key": "acervo:9283",
+      "catalog_id": 8729
+    },
+    {
+      "source_key": "acervo:3300",
+      "catalog_id": 8730
+    },
+    {
+      "source_key": "acervo:10706",
+      "catalog_id": 8731
+    },
+    {
+      "source_key": "acervo:11783",
+      "catalog_id": 8732
+    },
+    {
+      "source_key": "acervo:3292",
+      "catalog_id": 8733
+    },
+    {
+      "source_key": "acervo:5039",
+      "catalog_id": 8734
+    },
+    {
+      "source_key": "acervo:8726",
+      "catalog_id": 3473
+    },
+    {
+      "source_key": "acervo:9323",
+      "catalog_id": 8735
+    },
+    {
+      "source_key": "acervo:9345",
+      "catalog_id": 8736
+    },
+    {
+      "source_key": "acervo:3787",
+      "catalog_id": 8737
+    },
+    {
+      "source_key": "acervo:4036",
+      "catalog_id": 8932
+    },
+    {
+      "source_key": "acervo:8390",
+      "catalog_id": 8933
+    },
+    {
+      "source_key": "acervo:3211",
+      "catalog_id": 8981
+    },
+    {
+      "source_key": "acervo:6012",
+      "catalog_id": 8982
+    },
+    {
+      "source_key": "acervo:4660",
+      "catalog_id": 8983
+    },
+    {
+      "source_key": "acervo:11460",
+      "catalog_id": 9036
+    },
+    {
+      "source_key": "acervo:2664",
+      "catalog_id": 9086
+    },
+    {
+      "source_key": "acervo:6248",
+      "catalog_id": 9087
+    },
+    {
+      "source_key": "acervo:1274",
+      "catalog_id": 9137
+    },
+    {
+      "source_key": "acervo:12369",
+      "catalog_id": 3532
+    },
+    {
+      "source_key": "acervo:4517",
+      "catalog_id": 9391
+    },
+    {
+      "source_key": "acervo:4468",
+      "catalog_id": 9441
+    },
+    {
+      "source_key": "acervo:191",
+      "catalog_id": 9497
+    },
+    {
+      "source_key": "acervo:3347",
+      "catalog_id": 9501
+    },
+    {
+      "source_key": "acervo:10781",
+      "catalog_id": 9502
+    },
+    {
+      "source_key": "acervo:9960",
+      "catalog_id": 9553
+    },
+    {
+      "source_key": "acervo:2137",
+      "catalog_id": 9554
+    },
+    {
+      "source_key": "acervo:3965",
+      "catalog_id": 9825
+    },
+    {
+      "source_key": "acervo:3805",
+      "catalog_id": 2265
+    },
+    {
+      "source_key": "acervo:3550",
+      "catalog_id": 9875
+    },
+    {
+      "source_key": "acervo:1518",
+      "catalog_id": 9927
+    },
+    {
+      "source_key": "acervo:6462",
+      "catalog_id": 9929
+    },
+    {
+      "source_key": "acervo:6031",
+      "catalog_id": 9930
+    },
+    {
+      "source_key": "acervo:7887",
+      "catalog_id": 10136
+    },
+    {
+      "source_key": "acervo:3766",
+      "catalog_id": 3675
+    },
+    {
+      "source_key": "acervo:7032",
+      "catalog_id": 10338
+    },
+    {
+      "source_key": "acervo:10891",
+      "catalog_id": 10389
+    },
+    {
+      "source_key": "acervo:8887",
+      "catalog_id": 3698
+    },
+    {
+      "source_key": "acervo:7982",
+      "catalog_id": 10858
+    },
+    {
+      "source_key": "acervo:1758",
+      "catalog_id": 10859
+    },
+    {
+      "source_key": "acervo:4272",
+      "catalog_id": 3765
+    },
+    {
+      "source_key": "acervo:11560",
+      "catalog_id": 3065
+    },
+    {
+      "source_key": "acervo:11480",
+      "catalog_id": 10960
+    },
+    {
+      "source_key": "acervo:2931",
+      "catalog_id": 11013
+    },
+    {
+      "source_key": "acervo:1355",
+      "catalog_id": 11065
+    },
+    {
+      "source_key": "acervo:10850",
+      "catalog_id": 11164
+    },
+    {
+      "source_key": "acervo:7531",
+      "catalog_id": 11597
+    },
+    {
+      "source_key": "acervo:2242",
+      "catalog_id": 11648
+    },
+    {
+      "source_key": "acervo:9157",
+      "catalog_id": 11649
+    },
+    {
+      "source_key": "acervo:4877",
+      "catalog_id": 4179
+    },
+    {
+      "source_key": "acervo:8537",
+      "catalog_id": 11696
+    },
+    {
+      "source_key": "acervo:2973",
+      "catalog_id": 11744
     }
   ],
   "skipped": [

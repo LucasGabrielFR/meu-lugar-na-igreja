@@ -1,35 +1,35 @@
-# Cobertura paroquial — 2026-10-24
-Catálogo parcial publicado: **10.077 paróquias ativas**, em **4019 municípios** e **27 UFs**. São **2624 institucionais** e **7453 de referência, com diocese em aberto**. 43 de 281 circunscrições têm registros vinculados. Ter registros não comprova completude da diocese.
+# Cobertura paroquial — 2026-10-25
+Catálogo parcial publicado: **9.889 paróquias ativas**, em **4019 municípios** e **27 UFs**. São **2618 institucionais** e **7271 de referência, com diocese em aberto**. 43 de 281 circunscrições têm registros vinculados. Ter registros não comprova completude da diocese.
 A consulta CNBB foi realizada individualmente para as 281 circunscrições: 248 listas vieram vazias. Zero na tabela significa catálogo pendente, não ausência de paróquias.
 ## Por UF
 | UF | Institucionais | Referência / diocese em aberto | Total | Municípios |
 | --- | ---: | ---: | ---: | ---: |
 | AC | 30 | 23 | 53 | 20 |
 | AL | 0 | 81 | 81 | 34 |
-| AM | 55 | 61 | 116 | 37 |
+| AM | 55 | 58 | 113 | 37 |
 | AP | 0 | 26 | 26 | 8 |
-| BA | 48 | 538 | 586 | 291 |
+| BA | 48 | 533 | 581 | 291 |
 | CE | 0 | 224 | 224 | 140 |
-| DF | 162 | 9 | 171 | 1 |
-| ES | 7 | 181 | 188 | 74 |
-| GO | 346 | 178 | 524 | 231 |
-| MA | 35 | 163 | 198 | 126 |
-| MG | 197 | 1161 | 1358 | 619 |
+| DF | 162 | 5 | 167 | 1 |
+| ES | 7 | 178 | 185 | 74 |
+| GO | 346 | 164 | 510 | 231 |
+| MA | 35 | 162 | 197 | 126 |
+| MG | 197 | 1153 | 1350 | 619 |
 | MS | 0 | 142 | 142 | 64 |
-| MT | 20 | 163 | 183 | 116 |
-| PA | 0 | 197 | 197 | 104 |
-| PB | 71 | 220 | 291 | 178 |
-| PE | 290 | 210 | 500 | 182 |
+| MT | 20 | 162 | 182 | 116 |
+| PA | 0 | 196 | 196 | 104 |
+| PB | 71 | 214 | 285 | 178 |
+| PE | 290 | 190 | 480 | 182 |
 | PI | 0 | 174 | 174 | 126 |
-| PR | 281 | 482 | 763 | 326 |
-| RJ | 48 | 488 | 536 | 84 |
-| RN | 125 | 112 | 237 | 112 |
+| PR | 279 | 469 | 748 | 326 |
+| RJ | 48 | 484 | 532 | 84 |
+| RN | 121 | 109 | 230 | 112 |
 | RO | 30 | 24 | 54 | 27 |
 | RR | 3 | 2 | 5 | 4 |
-| RS | 203 | 449 | 652 | 322 |
-| SC | 76 | 262 | 338 | 169 |
+| RS | 203 | 439 | 642 | 322 |
+| SC | 76 | 229 | 305 | 169 |
 | SE | 102 | 151 | 253 | 71 |
-| SP | 460 | 1660 | 2120 | 471 |
+| SP | 460 | 1607 | 2067 | 471 |
 | TO | 35 | 72 | 107 | 82 |
 ## Por circunscrição
 A coluna CNBB conta todas as igrejas retornadas pela fonte, incluindo entidades que não são paróquias.
@@ -62,7 +62,7 @@ A coluna CNBB conta todas as igrejas retornadas pela fonte, incluindo entidades 
 | Arquidiocese de Mariana | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/572b6f01-6fc3-48d7-b339-829ac12552aa) |
 | Arquidiocese de Maringá | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/44ef8d8e-da54-4f57-a4ee-c591757100e6) |
 | Arquidiocese de Montes Claros | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/4a82dea2-22ec-407d-b460-dc792ff88307) |
-| Arquidiocese de Natal | 125 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/e296a3f1-54b4-4e07-8fce-4119a35b6b38) |
+| Arquidiocese de Natal | 121 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/e296a3f1-54b4-4e07-8fce-4119a35b6b38) |
 | Arquidiocese de Niterói | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/c4f44b1f-d0b8-4197-817a-d10cfd0a526d) |
 | Arquidiocese de Olinda e Recife | 150 | 162 | [site](https://portalcdicbr.cnbb.org.br/diocese/ff15a9da-7438-4fe1-ac54-038f144a7502) |
 | Arquidiocese de Palmas | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/21d3e93c-b53b-4a1a-a829-28527b007c2f) |
@@ -293,7 +293,7 @@ A coluna CNBB conta todas as igrejas retornadas pela fonte, incluindo entidades 
 | Diocese de Três Lagoas | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/60bc860e-cf69-40ce-beff-4e1694bcf68a) |
 | Diocese de Tubarão | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/f41da8cc-09dc-452d-9ac9-74454ea6b1d2) |
 | Diocese de Uberlândia | 49 | 51 | [site](https://portalcdicbr.cnbb.org.br/diocese/00bcf9fa-9ead-4481-9a72-ac02be6a5409) |
-| Diocese de Umuarama | 51 | 51 | [site](https://portalcdicbr.cnbb.org.br/diocese/b7cfb1d4-8931-4fa3-8aef-1e8d62709808) |
+| Diocese de Umuarama | 49 | 51 | [site](https://portalcdicbr.cnbb.org.br/diocese/b7cfb1d4-8931-4fa3-8aef-1e8d62709808) |
 | Diocese de União da Vitória | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/63ab0be9-af11-4a1e-b121-e75e56c146ac) |
 | Diocese de Uruaçu | 35 | 0 | [site](https://diocesedeuruacu.com.br/) |
 | Diocese de Uruguaiana | 0 | 0 | [site](https://portalcdicbr.cnbb.org.br/diocese/f5d408d2-466a-4edf-9c44-a44eaadd85be) |

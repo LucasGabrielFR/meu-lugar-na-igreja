@@ -14,7 +14,7 @@ export function parseFlorianopolis(html,municipalities){
     const links=directoryLinks(paragraph[1],/^https:\/\/arquifln\.org\.br\/igrejas\//);
     if(!links.length){
       // Every municipality heading resets the scope, even if its spelling cannot be resolved.
-      if(/<strong\b/i.test(paragraph[1])&&/#800000/i.test(paragraph[1])){
+      if(/<(?:strong|b)\b/i.test(paragraph[1])&&/#800000/i.test(paragraph[1])){
         const label=normalizeCatalogName(decodeDirectory(paragraph[1]));
         city=municipalities.find(m=>m.uf==='SC'&&normalizeCatalogName(m.name)===label)??null;
       }

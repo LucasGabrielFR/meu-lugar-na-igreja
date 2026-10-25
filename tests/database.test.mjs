@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import pg from 'pg';
-import {referenceIdentity} from '../scripts/reference-catalog.mjs';
+import {loadParishResolutions} from '../scripts/parish-reconciliation.mjs';
 test('every active catalog parish has a map neighborhood and every source resolves to a catalog record', {skip:!process.env.PGHOST},async()=>{
   const client=new pg.Client();await client.connect();
   try {
@@ -27,16 +27,22 @@ test('reference records allow an open diocese while institutional records still 
   }finally{await client.query('ROLLBACK');await client.end();}
 });
 
-test('unique institutional matches do not leave an empty duplicate reference neighborhood', {skip:!process.env.PGHOST},async()=>{
+test('reviewed duplicates resolve to one active identity while distinct homonyms remain separate', {skip:!process.env.PGHOST},async()=>{
   const client=new pg.Client();await client.connect();
   try{
-    const catalog=(await client.query(`SELECT pc.*,m.name city_name,(SELECT count(*)::int FROM houses h JOIN parishes p ON p.id=h.parish_id WHERE p.catalog_id=pc.id) houses
-      FROM parish_catalog pc JOIN municipalities m ON m.code=pc.municipality_code WHERE pc.active`)).rows;
-    const groups=new Map();
-    for(const row of catalog){const key=referenceIdentity(row.name,{code:row.municipality_code,name:row.city_name});groups.set(key,[...(groups.get(key)??[]),row]);}
-    for(const rows of groups.values()){
-      const institutional=rows.filter(r=>r.source_kind==='institutional'),references=rows.filter(r=>r.source_kind==='reference');
-      if(institutional.length===1&&references.length===1)assert.ok(references[0].houses>0,`Empty duplicate: ${references[0].name}`);
+    const catalog=(await client.query('SELECT id,source_key,active FROM parish_catalog')).rows;
+    const sources=(await client.query('SELECT source_key,catalog_id FROM parish_catalog_sources')).rows;
+    const active=new Set(catalog.filter(p=>p.active).map(p=>p.id));
+    const identities=new Map([...catalog.map(p=>[p.source_key,p.id]),...sources.map(s=>[s.source_key,s.catalog_id])]);
+    const plan=loadParishResolutions();
+    for(const merge of plan.merges){
+      assert.equal(identities.get(merge.duplicate_key),identities.get(merge.canonical_key),merge.duplicate_key);
+      assert.ok(active.has(identities.get(merge.canonical_key)));
+    }
+    for(const review of plan.reviews.filter(r=>r.status.startsWith('preservar_')||r.status==='pendente_evidencia')){
+      const a=identities.get(review.a.source_key),b=identities.get(review.b.source_key);
+      assert.notEqual(a,b,`Homônimas unidas: ${review.pair}`);
+      assert.ok(active.has(a)&&active.has(b),`Homônima arquivada: ${review.pair}`);
     }
   }finally{await client.end();}
 });

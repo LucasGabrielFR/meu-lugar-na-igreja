@@ -2,6 +2,36 @@
 
 Todas as mudanças relevantes serão registradas neste arquivo, seguindo [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
+## [0.20.0] - 2026-10-25
+
+### Added
+
+- Snapshot oficial comprimido e importação transacional de 5.570 contornos municipais para PostgreSQL, com geometria, projeção, fonte, data e checksum para repetição sem reprocessamento. Lacuna de Boa Esperança do Norte registrada no manifesto.
+- Testes de cobertura, idempotência, resposta do contorno local e busca municipal por código/sem acentos.
+
+### Changed
+
+- Admin consulta cidades e paróquias por página de 50 e busca SQL sem acentos. Consultas completas são evitadas nas outras seções; seleção de município usa consulta local limitada a 15 opções.
+- Endpoint de limite municipal lê somente o banco, com cache HTTP de 24 horas; removida consulta externa ao IBGE durante a navegação.
+
+## [0.19.0] - 2026-10-25
+
+### Added
+
+- Manifesto de conciliação por fontes e registro persistente de redirecionamentos, preservando proveniência e histórico dos duplicados arquivados. Revisão individual dos 378 pares, com uma descoberta adicional após corrigir o município.
+- Fila de possíveis variações de nomes na importação e no Catálogo administrativo; novas fichas suspeitas são retidas antes da criação de bairros.
+- Testes de preservação de casas e aliases, repetição da conciliação, bloqueio de municípios/dioceses incompatíveis e retenção de abreviações não revisadas.
+- Second Brain ativado por solicitação do responsável: projeto AcutisTech cadastrado no Obsidian com visão, contexto, backlog, histórico de versões e conhecimento transversal. Instrução local de recuperação em `AGENTS.md`; sem segredos no vault.
+
+### Fixed
+
+- 188 duplicados arquivados de forma reversível, com nomes completos no cadastro canônico; homônimas preservadas e quatro casos inconclusivos mantidos separados. Relatório de aplicação registra os totais efetivos.
+- Observação editorial “nova paróquia” retirada de São Sebastião em Palhoça.
+- Cabeçalhos municipais em `<b>` reconhecidos pelo parser de Florianópolis. Ficha de Leoberto Leal deixa de herdar Itapema; snapshot e cadastro corrigidos.
+- Conciliação automática anterior baseada apenas no nome substituída por decisões explícitas de fontes; importação desconsidera registros arquivados ao procurar correspondências novas.
+
+- Build/recriação Docker saudáveis; lint, TypeScript, 48 testes e auditoria sem vulnerabilidades. Instalação vazia e repetição mantiveram 9.889 ativos e todos os aliases revisados, sem perda das 11.210 fontes da base existente.
+
 ## [0.18.2] - 2026-10-25
 
 ### Added

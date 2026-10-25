@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-10-25T04:58:05.522Z",
+  "merges": 188,
+  "reviewed_pairs": 378,
+  "additional_findings": 23,
+  "dispositions": {
+    "conciliar": 165,
+    "preservar_enderecos_distintos": 46,
+    "pendente_evidencia": 4,
+    "preservar_homonimas": 162,
+    "corrigir_municipio": 1
+  },
+  "counts": {
+    "active_catalog": 9889,
+    "active_neighborhoods": 9889,
+    "houses": 0,
+    "redirects": 188,
+    "sources": 11210,
+    "pending_imports": 0
+  },
+  "checks": {
+    "active_duplicates": 0,
+    "sources_on_duplicates": 0,
+    "duplicate_neighborhoods": 0,
+    "houses_on_duplicates": 0,
+    "unresolved_aliases": 0
+  },
+  "palhoca": [
+    {
+      "id": 2603,
+      "name": "Paróquia Nossa Senhora do Rosário (Enseada do Brito)"
+    },
+    {
+      "id": 2602,
+      "name": "Paróquia São Francisco de Assis (Aririú)"
+    },
+    {
+      "id": 2605,
+      "name": "Paróquia São Judas Tadeu e São João Batista (Ponte do Imaruim)"
+    },
+    {
+      "id": 2606,
+      "name": "Paróquia São Sebastião (São Sebastião)"
+    },
+    {
+      "id": 2604,
+      "name": "Paróquia Senhor Bom Jesus de Nazaré (Centro)"
+    }
+  ]
+}

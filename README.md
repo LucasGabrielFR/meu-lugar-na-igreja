@@ -2,6 +2,20 @@
 
 Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras. A integração com comentários do Instagram será uma etapa posterior.
 
+## Dados locais e administração — versão 0.20.0
+
+A lista de cidades já consultava o PostgreSQL, sem busca em tempo real no IBGE. Agora cidades e paróquias têm busca SQL sem distinção de acentos e paginação de 50 cadastros. O formulário de cidade consulta até 15 municípios da base local, em vez de entregar 5.571 opções ao navegador.
+
+Os contornos de 5.570 municípios também passam a ser persistidos no PostgreSQL, com geometria original, projeção preparada, fonte e data. A navegação não consulta mais a API do IBGE. Boa Esperança do Norte (MT) consta no catálogo, mas sua malha não foi disponibilizada pela fonte nesta coleta. Veja [dados locais e atualização](docs/DADOS-LOCAIS.md).
+
+## Conciliação e memória — versão 0.19.0
+
+A revisão dos 378 pares originou 165 conciliações iniciais e 23 adicionais descobertas na correção geográfica e no teste de instalação limpa. Duplicados são arquivados, suas fontes redirecionadas ao cadastro canônico e os nomes completos preservados. Homônimas em localidades diferentes permanecem distintas; quatro casos sem evidência suficiente continuam separados. Decisões, fontes e motivos estão em `db/catalog/parish-resolutions.json`; resultado em [Conciliação paroquial](docs/CONCILIACAO-PAROQUIAS.md). O backup anterior à aplicação está em `backups/`, fora do Git e das imagens.
+
+A importação reaplica o manifesto e respeita os aliases. Fichas novas com possíveis variações de nome ficam retidas na fila **Possíveis variações aguardando revisão**, no Catálogo do admin, antes de criar outro bairro. A semelhança não provoca união automática. Não há novas dependências.
+
+Este projeto passa a usar a skill `obsidian-second-brain`. Visão geral, decisões, backlog e histórico 0.1.0–0.18.2 foram registrados no vault da AcutisTech, em `01_Empresas/Acutis_Tech/Projetos/Meu Lugar na Igreja/`; resultados seguintes são anexados. `AGENTS.md` orienta a recuperação nas próximas sessões. Credenciais e backups não são copiados ao vault.
+
 ## Auditoria de nomenclatura — versão 0.18.2
 
 O [relatório de possíveis duplicidades](docs/AUDITORIA-PAROQUIAS.md) lista pares por município, com nomes originais, fontes e IDs de catálogo e mapa. O script `scripts/audit-parish-duplicates.mjs` usa transação PostgreSQL somente de leitura; não altera o catálogo, o importador ou o mapa. Nomes semelhantes e homônimas exigem revisão humana antes de qualquer conciliação. Não há novas dependências. O admin permite editar e arquivar a exibição do bairro; isso não mescla fontes nem remove o registro de catálogo.
@@ -29,7 +43,7 @@ Os aviões cruzam a área que o usuário está vendo em trajetórias aleatórias
 
 Áreas virtuais vizinhas usam escalas compatíveis com a distância entre as sedes, mantendo as coordenadas oficiais e evitando sobreposição. Passar o ponteiro sobre a cidade destaca seu contorno dourado e mostra nome, UF, macrorregião, paróquias e casas. Clicar no território abre a cidade; clicar na igreja abre somente os detalhes paroquiais. A navegação permite Brasil → região → estado → cidade → paróquia, com totais próprios em cada nível.
 
-O limite municipal real é mostrado em azul tracejado, separado da área ilustrada. A rota `/api/cities/[code]/boundary` consulta a [API pública de malhas do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3) sob demanda, com cache de 24 horas, timeout e mensagem de indisponibilidade. Essa camada exige acesso externo ao IBGE, sem conta, chave ou serviço pago. A ilustração, as informações do catálogo e os contornos virtuais continuam funcionando quando essa consulta falha. O botão “Ver limite municipal · IBGE” enquadra a malha administrativa; localizar uma paróquia enquadra seu bairro.
+O limite municipal real é mostrado em azul tracejado, separado da área ilustrada. Até a versão 0.19, a rota `/api/cities/[code]/boundary` consultava a [API pública de malhas do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3) sob demanda, com cache de 24 horas, timeout e mensagem de indisponibilidade. Desde a versão 0.20.0, essa camada usa exclusivamente a malha persistida no banco; acesso externo ao IBGE é necessário apenas para atualizar o snapshot. A ilustração, as informações do catálogo e os contornos virtuais continuam funcionando quando essa consulta falha. O botão “Ver limite municipal · IBGE” enquadra a malha administrativa; localizar uma paróquia enquadra seu bairro.
 
 ## Cidade em quadras — versão 0.16.0
 
@@ -47,9 +61,9 @@ A auditoria identificou estradas reais acessíveis a 750 dos 751 municípios com
 
 ## Catálogo paroquial e estado dos dados
 
-O mapa contém **10.077 paróquias no catálogo ativo, em 4.019 municípios e 27 UFs**: **2.624 institucionais** e **7.453 referências com diocese em aberto**, com **zero casas**. A cobertura continua parcial. Os totais e as lacunas por UF e por diocese estão em [Cobertura paroquial](docs/COBERTURA-PAROQUIAL.md). O contador do mapa inclui também um município real anteriormente cadastrado, sem paróquia ativa, totalizando 4.020 cidades. Os registros apenas de teste foram removidos a pedido do responsável, com backup local em `backups/` (não versionado, não incluído na imagem). Municípios reais que já eram usados em testes permanecem com os seus bairros institucionais.
+O mapa contém **9.889 paróquias no catálogo ativo, em 4.019 municípios e 27 UFs**: **2.618 institucionais** e **7.271 referências com diocese em aberto**, com **zero casas**. A cobertura continua parcial. Os totais e as lacunas por UF e por diocese estão em [Cobertura paroquial](docs/COBERTURA-PAROQUIAL.md). O contador do mapa inclui também um município real anteriormente cadastrado, sem paróquia ativa, totalizando 4.020 cidades. Os registros apenas de teste foram removidos a pedido do responsável, com backup local em `backups/` (não versionado, não incluído na imagem). Municípios reais que já eram usados em testes permanecem com os seus bairros institucionais.
 
-As **281 circunscrições CNBB foram consultadas individualmente**; só 33 retornaram igrejas na consulta pública. Diretórios oficiais complementares ampliaram para 39 circunscrições com paróquias no projeto. **A cobertura continua parcial**, com lacunas explícitas em AC, AL, AP, CE, MT, MS, PA, PI, SC e SE, além de dioceses ausentes dentro dos estados atendidos. Não inferimos paróquias a partir de capelas ou do simples nome de um templo.
+As **281 circunscrições CNBB foram consultadas individualmente**; só 33 retornaram igrejas na consulta pública. Diretórios oficiais complementares ampliaram a cobertura; atualmente 43 circunscrições têm paróquias vinculadas no projeto. **A cobertura continua parcial**, com lacunas explícitas em AC, AL, AP, CE, MT, MS, PA, PI, SC e SE, além de dioceses ausentes dentro dos estados atendidos. Não inferimos paróquias a partir de capelas ou do simples nome de um templo.
 
 A camada rodoviária pode ser ligada/desligada em **Camadas do mapa**. Entradas e bairros são adaptados à cidade virtual. Veja [rodovias](docs/RODOVIAS.md) e [dados eclesiásticos](docs/DADOS-ECLESIASTICOS.md).
 

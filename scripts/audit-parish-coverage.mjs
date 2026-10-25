@@ -27,8 +27,8 @@ try{
   ];
   if(existsSync('db/reference/national-directory.json')){
     const reference=JSON.parse(readFileSync('db/reference/national-directory.json','utf8'));
-    const plan=planReferenceCatalog(reference,catalog,municipalities);
     const linked=(await client.query(`SELECT source_key,catalog_id FROM parish_catalog_sources WHERE source_kind='reference'`)).rows;
+    const plan=planReferenceCatalog(reference,catalog,municipalities,new Set(linked.map(r=>r.source_key)));
     const unresolved=reference.records.filter(r=>r.kind==='parish'&&!r.municipality_code);
     report.push('## Referência nacional para pesquisa',`[Acervo Católico](${reference.source}), coletado em ${reference.fetched_at}: ${reference.records.length} fichas de igrejas, ${reference.records.filter(r=>r.kind==='parish').length} com nomenclatura paroquial; ${unresolved.length} dessas sem município resolvido.`,
       `${linked.length} fichas de referência foram vinculadas/publicadas, incluindo fontes adicionais de registros institucionais já existentes. ${plan.skipped.length} fichas permanecem excluídas ou para revisão: ${plan.skipped.filter(r=>r.reason.startsWith('Homônimas')).length} por homonímia/correspondências múltiplas.`,

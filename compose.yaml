@@ -22,6 +22,7 @@ services:
     volumes:
       - ./scripts:/app/scripts:ro
       - ./db:/app/db:ro
+      - ./src/lib:/app/src/lib:ro
       - ./public/data:/app/public/data:ro
     environment:
       PGHOST: db

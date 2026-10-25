@@ -3,7 +3,13 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {parseFlorianopolis,parseAracaju,resolveDirectoryAddress} from '../scripts/diocesan-expansion-parser.mjs';
 import {parseReferencePage} from '../scripts/reference-directory-parser.mjs';
+import {decodeDirectory} from '../scripts/catalog-html.mjs';
 const municipalities=JSON.parse(readFileSync('public/data/municipios.json','utf8'));
+
+test('double-encoded apostrophes do not become literal entities in parish names',()=>{
+  assert.equal(decodeDirectory('Sant&amp;rsquo;Ana'),"Sant'Ana");
+  assert.equal(decodeDirectory('Sant&rsquo;Ana'),"Sant'Ana");
+});
 
 test('official municipal groups exclude conflicting reitoria classification and do not leak the last city',()=>{
   const html=`<p><strong style="color:#800000">Florianópolis</strong></p>
@@ -22,6 +28,11 @@ test('Aracaju directory uses terminal city instead of a municipality appearing i
   assert.equal(result.parishes.length,2);assert.equal(result.parishes[0].municipality_code,2804607);assert.equal(result.parishes[1].municipality_code,2800308);
   assert.equal(resolveDirectoryAddress('São José, Nobres 78470000',municipalities,['MT'])[0].code,5105903);
   assert.equal(resolveDirectoryAddress('Nova Califórnia, Rondônia',municipalities,['AC','RO','AM']).length,0);
+});
+
+test('Florianópolis resets the municipality when headings use b rather than strong',()=>{
+  const result=parseFlorianopolis(`<p><strong style="color:#800000">Itapema</strong></p><p><a href="https://arquifln.org.br/igrejas/itapema/">Paróquia Sagrado Coração de Jesus</a></p><p><span style="color:#800000"><b>Leoberto Leal</b></span></p><p><a href="https://arquifln.org.br/igrejas/leoberto/">Paróquia Sagrado Coração de Jesus</a></p>`,municipalities);
+  assert.deepEqual(result.parishes.map(p=>p.municipality_code),[4208302,4209805]);
 });
 
 test('independent directory preserves provenance, separates chapels and stores no contacts',()=>{
