@@ -3,6 +3,8 @@ services:
   db:
     image: postgres:17-bookworm
     restart: unless-stopped
+    ports:
+      - "127.0.0.1:5432:5432"
     environment:
       POSTGRES_DB: ${POSTGRES_DB:?Run npm run setup first}
       POSTGRES_USER: ${POSTGRES_USER:?Run npm run setup first}
@@ -49,6 +51,8 @@ services:
       COOKIE_SECURE: ${COOKIE_SECURE:-true}
       META_WEBHOOK_VERIFY_TOKEN: ${META_WEBHOOK_VERIFY_TOKEN:-}
       META_APP_SECRET: ${META_APP_SECRET:-}
+      INSTAGRAM_ACCESS_TOKEN: ${INSTAGRAM_ACCESS_TOKEN:-}
+      INSTAGRAM_ACCOUNT_ID: ${INSTAGRAM_ACCOUNT_ID:-}
     ports:
       - '${APP_BIND:-127.0.0.1}:${APP_PORT:-3100}:3000'
     depends_on:

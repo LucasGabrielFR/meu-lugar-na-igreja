@@ -206,3 +206,41 @@ export async function saveMap(_: FormState, form: FormData): Promise<FormState> 
   revalidatePath('/', 'layout');
   return {success:'Cadastro salvo. O mapa já foi atualizado.'};
 }
+
+export async function saveAppConfig(_: FormState, form: FormData): Promise<FormState> {
+  const admin = await requireAdmin();
+  const parsed = z.object({
+    key: z.enum(['privacy_policy', 'terms_of_service']),
+    title: z.string().trim().min(2).max(150),
+    value: z.string().trim().min(10).max(50000),
+  }).safeParse(Object.fromEntries(form));
+
+  if (!parsed.success) {
+    return { error: 'Preencha o título e o conteúdo do documento.' };
+  }
+
+  const { key, title, value } = parsed.data;
+
+  try {
+    await db.query(
+      `INSERT INTO app_configs(key, title, value, updated_at)
+       VALUES($1, $2, $3, now())
+       ON CONFLICT(key) DO UPDATE SET title = EXCLUDED.title, value = EXCLUDED.value, updated_at = now()`,
+      [key, title, value]
+    );
+    await db.query(
+      'INSERT INTO audit_log(admin_id, action, entity, entity_id) VALUES($1, $2, $3, $4)',
+      [admin.id, 'save', 'app_config', key]
+    );
+  } catch (error) {
+    console.error('App config save failed', error);
+    return { error: 'Não foi possível salvar o documento.' };
+  }
+
+  revalidatePath('/admin');
+  revalidatePath('/privacidade');
+  revalidatePath('/termos');
+  revalidatePath('/');
+  return { success: 'Documento salvo com sucesso. As páginas públicas já foram atualizadas.' };
+}
+

@@ -24,3 +24,19 @@ export async function getMunicipality(code: number) {
   );
   return result.rows[0]??null;
 }
+
+export async function getAppConfig(key: string) {
+  const result = await db.query<{ key: string; title: string; value: string; updated_at: Date }>(
+    'SELECT key, title, value, updated_at FROM app_configs WHERE key = $1',
+    [key]
+  );
+  return result.rows[0] ?? null;
+}
+
+export async function getAllAppConfigs() {
+  const result = await db.query<{ key: string; title: string; value: string; updated_at: Date }>(
+    'SELECT key, title, value, updated_at FROM app_configs ORDER BY key'
+  );
+  return result.rows;
+}
+
