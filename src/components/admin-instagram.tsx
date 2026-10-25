@@ -23,7 +23,7 @@ export default async function AdminInstagram({result}:{result?:string}){
       <div style={{display:'flex',gap:12,flexWrap:'wrap',marginTop:16}}><form action={checkInstagram}><button className="outline-button" disabled={!configured||!!expired}>Atualizar dados da conta</button></form><form action={disconnectInstagram}><button className="outline-button">Desconectar do painel</button></form></div>
       <p className="field-note">Desconectar apaga o token desta aplicação. Para revogar o acesso também na Meta, remova o aplicativo em Apps e sites no Instagram. A assinatura do webhook existente não é alterada por esse botão.</p>
     </article>:<p>Nenhuma conta conectada pelo painel.</p>}
-    <form action={connectInstagram}><button className="gold-button" disabled={!configured}>{connection?'Reconectar ou trocar conta':'Conectar Instagram'}</button></form>
+    <form action={connectInstagram}><button className="primary-button" disabled={!configured}>{connection?'Reconectar ou trocar conta':'Conectar Instagram'}</button></form>
     <p className="field-note">Permissões solicitadas: {INSTAGRAM_SCOPES.join(', ')}. Uma conta conectada por vez; a troca só ocorre após concluir a autorização.</p>
     <p>O token fica criptografado no banco e não é exibido. A atualização consulta o perfil novamente; ela não renova a validade do token. Quando necessário, use Reconectar.</p>
     <p>Conectar a conta não inicia a criação de casas nem ativa novas assinaturas de webhook. O recebimento e o processamento de comentários são etapas separadas.</p>
