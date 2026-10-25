@@ -1,6 +1,6 @@
 {
   "name": "minha-paroquia-no-brasil",
-  "version": "0.21.0",
+  "version": "0.21.2",
   "private": true,
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",

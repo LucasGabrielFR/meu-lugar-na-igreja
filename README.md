@@ -2,6 +2,10 @@
 
 Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras. A integração com comentários do Instagram será uma etapa posterior.
 
+## Acesso administrativo — versão 0.21.2
+
+O mapa público não exibe atalho para administração. Os links públicos de privacidade e termos permanecem disponíveis. Acesso direto por /admin, com autenticação obrigatória e proteção de login existentes.
+
 ## Recepção Instagram — versão 0.21.0
 
 A rota `/api/webhooks/instagram` responde à verificação da Meta e persiste notificações assinadas na tabela `instagram_webhook_receipts`. Configure `META_WEBHOOK_VERIFY_TOKEN` e `META_APP_SECRET` no servidor e reconstrua o Docker. A rota permanece indisponível enquanto seu respectivo segredo estiver ausente. Esta etapa recebe eventos; processamento de comentários e criação de casas ainda não estão implementados. Veja [configuração, tabela e acesso ao banco por SSH](docs/INSTAGRAM-WEBHOOK.md). Nenhuma dependência nova.

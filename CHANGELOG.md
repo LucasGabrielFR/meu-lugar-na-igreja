@@ -8,6 +8,18 @@ Todas as mudanças relevantes serão registradas neste arquivo, seguindo [Keep a
 
 - Planejamento da participação por comentários no perfil oficial @meu_lugar_na_igreja. Uma casa por autor reconhecido pela Meta, cidade/paróquia obrigatórias e ausência de código/login/documentos por decisão do responsável. Inclui prova técnica, conexão oficial, fila PostgreSQL, deduplicação e critérios de liberação; nenhuma integração ativada nesta etapa.
 
+## [0.21.2] - 2026-10-25
+
+### Fixed
+
+- Removido novamente o atalho admin reintroduzido no cabeçalho do mapa durante a inclusão das páginas legais. Links e conteúdo de privacidade/termos preservados; acesso administrativo direto e autenticação mantidos.
+
+## [0.21.1] - 2026-10-25
+
+### Removed
+
+- Atalho de administração do cabeçalho público do mapa. Acesso direto a /admin e autenticação preservados.
+
 ## [0.21.0] - 2026-10-25
 
 ### Added
