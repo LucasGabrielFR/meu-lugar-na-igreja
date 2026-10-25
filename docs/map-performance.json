@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-25T02:26:34.924Z",
+  "environment": "Node em Docker local; uma amostra, não mede FPS/INP nem dispositivos móveis",
+  "scenario": {
+    "city": 3525003,
+    "zoom": 128,
+    "viewport": [
+      1280,
+      720
+    ],
+    "cities": 4019,
+    "sourceRoads": 22128,
+    "selectedRoads": 1653,
+    "scopedCities": 30
+  },
+  "ms": {
+    "scales": 83.04,
+    "baselineAllRoadProjection": 367.57,
+    "baselineGlobalConnections": 1007.68,
+    "firstVisibleRoadProjection": 98.19,
+    "cachedVisibleRoadProjection": 5.61,
+    "regionalConnections": 26.48
+  }
+}

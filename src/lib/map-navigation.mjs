@@ -1,5 +1,5 @@
 export const MIN_MAP_ZOOM = .45;
-export const MAX_MAP_ZOOM = 8192;
+export const MAX_MAP_ZOOM = 65536;
 
 export function clampMapZoom(zoom) {
   return Math.max(MIN_MAP_ZOOM, Math.min(MAX_MAP_ZOOM, zoom));

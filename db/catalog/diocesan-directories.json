@@ -1,0 +1,1531 @@
+{
+  "fetched_at": "2026-10-24T16:09:54.829Z",
+  "coverage": "Complemento parcial dos diretórios oficiais de Manaus, Natal, Vitória e Roraima. Só entram fichas identificadas como paróquias com município inequívoco.",
+  "jurisdictions": [
+    {
+      "key": "manaus",
+      "name": "Arquidiocese de Manaus",
+      "type": "archdiocese",
+      "website": "https://arquidiocesedemanaus.org.br/"
+    },
+    {
+      "key": "natal",
+      "name": "Arquidiocese de Natal",
+      "type": "archdiocese",
+      "website": "https://www.arquidiocesedenatal.org.br/"
+    },
+    {
+      "key": "vitoria",
+      "name": "Arquidiocese de Vitória do Espírito Santo",
+      "type": "archdiocese",
+      "website": "https://www.aves.org.br/"
+    },
+    {
+      "key": "roraima",
+      "name": "Diocese de Roraima",
+      "type": "diocese",
+      "website": "https://diocesederoraima.org.br/"
+    }
+  ],
+  "parishes": [
+    {
+      "key": "manaus:149435",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Coração Imaculado de Maria",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-coracao-imaculado-de-maria/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149402",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Cristo Libertador",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-cristo-libertador/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149410",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Cristo Redentor",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-cristo-redentor/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149442",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Cristo Rei",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-cristo-rei/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149443",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Divino Espírito Santo",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-divino-espirito-santo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149386",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Dom Bosco",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-dom-bosco/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149393",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Menino Jesus de Praga",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-menino-jesus-de-praga/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149411",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora Auxiliadora",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-auxiliadora/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149436",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora Consoladora dos Aflitos",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-consoladora-dos-aflitos/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149403",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora da Glória",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-da-gloria/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149412",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora das Dores",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-das-dores/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149394",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora das Graças",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-das-gracas/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149444",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora das Graças – Aleixo",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-das-gracas-aleixo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149397",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora das Mercês",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-das-merces/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149457",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora de Fátima",
+      "municipality_code": 1301100,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-de-fatima/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149395",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora de Guadalupe",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-de-guadalupe/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149396",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora de Lourdes",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-de-lourdes/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149398",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora de Nazaré",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-de-nazare/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149425",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora do Carmo",
+      "municipality_code": 1304005,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-do-carmo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149458",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora do Perpétuo Socorro (Careiro da Várzea)",
+      "municipality_code": 1301159,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-do-perpetuo-socorro-careiro-da-varzea/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149438",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora do Perpétuo Socorro (Educandos)",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-do-perpetuo-socorro-educandos/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149479",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora do Perpétuo Socorro – Balbina",
+      "municipality_code": 1303536,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-do-perpetuo-socorro-balbina/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149389",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora dos Remédios",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-dos-remedios/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149404",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora Mãe da Misericórdia",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-mae-da-misericordia/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149445",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora Mãe dos Pobres",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-mae-dos-pobres/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149413",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Nossa Senhora Rainha dos Apóstolos",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-nossa-senhora-rainha-dos-apostolos/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149390",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Sagrado Coração de Jesus",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sagrado-coracao-de-jesus/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149414",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santa Cruz",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santa-cruz/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149437",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santa Luzia",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santa-luzia/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149405",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santa Luzia – Presidente Vargas – Matinha",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santa-luzia-presidente-vargas-matinha/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149426",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santa Rita de Cássia",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santa-rita-de-cassia/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149415",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santa Teresinha",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santa-teresinha/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149427",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santíssima Trindade",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santissima-trindade/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149416",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santo Afonso Maria de Ligório",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santo-afonso-maria-de-ligorio/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149422",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santo Ângelo",
+      "municipality_code": 1303205,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santo-angelo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149406",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santo Antônio",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santo-antonio/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149477",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Santos Mártires e Nossa Senhora Aparecida – Presidente Figueiredo",
+      "municipality_code": 1303536,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santos-martires-e-nossa-senhora-aparecida-presidente-figueiredo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149418",
+      "jurisdiction": "manaus",
+      "name": "Paróquia Sant’Ana",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-santana/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149463",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Bento",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-bento/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149439",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Francisco das Chagas",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-francisco-das-chagas/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149428",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Francisco de Assis",
+      "municipality_code": 1301209,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-francisco-de-assis/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149399",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Geraldo",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-geraldo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149423",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São João Batista",
+      "municipality_code": 1301852,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-joao-batista/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149407",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Jorge",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-jorge/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149446",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São José Operário – Leste",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-jose-operario-leste/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149429",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São José – Belo Horizonte",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-jose-belo-horizonte/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149440",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Lázaro",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-lazaro/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149430",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Pedro Apóstolo",
+      "municipality_code": 1300607,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-pedro-apostolo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149459",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Pedro Apóstolo – Manaquiri",
+      "municipality_code": 1302553,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-pedro-apostolo-manaquiri/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149478",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Pedro Apóstolo – Rio Preto da Eva",
+      "municipality_code": 1303569,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-pedro-apostolo-rio-preto-da-eva/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149408",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Raimundo Nonato",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-raimundo-nonato/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149392",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Sebastião, Mártir, São Francisco de Assis",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-sebastiao-martir-sao-francisco-de-assis/",
+      "source_updated_at": null
+    },
+    {
+      "key": "manaus:149409",
+      "jurisdiction": "manaus",
+      "name": "Paróquia São Vicente de Paulo",
+      "municipality_code": 1302603,
+      "source_url": "https://arquidiocesedemanaus.org.br/paroquia/paroquia-sao-vicente-de-paulo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:2efa2b48b3361f61",
+      "jurisdiction": "natal",
+      "name": "Paróquia da Catedral de Nossa Senhora da Apresentação - Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:8b97debfc4324ac8",
+      "jurisdiction": "natal",
+      "name": "Paróquia da Sagrada Família – Rocas – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:99c34b464a51651b",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Apresentação – Cidade Alta - Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:b9a8444668588cf3",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Mãe Luiza - Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:280108a4a74688de",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora das Graças e Santa Teresinha – Tirol – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:45fe49ed5d48c73c",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora de Lourdes – Areia Preta – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:44a22c3f66f0190d",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São João Batista – Lagoa Seca – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:51aac1f091aea4c8",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Pedro Apóstolo – Alecrim – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:2487bf3b730e2281",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Bom Jesus das Dores – Ribeira – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:4ef51fd8419da7c5",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora Aparecida – Neópolis – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:b0ab7fe911c7ce56",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Candelária – Candelária – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:95ecc95b924b5f46",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Sant'Ana – Capim Macio – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:0d406de66cb9c7f0",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santa Rita de Cássia dos Impossíveis – Ponta Negra – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:c66f153b47798e7f",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santo Afonso Maria de Ligório – Mirassol – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ce5af828e05d6fdc",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Camilo de Léllis – Lagoa Nova – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:6eb9ac827a30288c",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São João Batista – Vila de Ponta Negra – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ea784debfab3b1e1",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Sagrado Coração de Jesus e Nossa Senhora do Perpétuo Socorro – Morro Branco – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:0fbb0bfda909947f",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora Rainha da Paz – Nova Parnamirim",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:5a33ce8e49184d63",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Nova Parnamirim",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:bf5595b0d93ecce2",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santos Reis - Parnamirim",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:13f1363549d54768",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora de Fátima – Parnamirim",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:652f09f12dc9df08",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora do Carmo – Parque das Nações – Parnamirim",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:9dcbc577879388ac",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Francisco de Assis e São João Lostau Navarro – Pirangi do Norte",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:894f95adff82e52b",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Santo André de Soveral – Jardim Aeroporto",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:d49aef6f6828b7f4",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora Virgem dos Pobres - Emaús",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:d2e149bc65774bcd",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Mateus Moreira – Cidade Verde",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:a17b8a0684fc4d1e",
+      "jurisdiction": "natal",
+      "name": "Paróquia São Miguel Arcanjo - Parnamirim",
+      "municipality_code": 2403251,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:a4fe0507977427f5",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora Auxiliadora – Felipe Camarão – Natal/RN",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:dd5a35a8eb7f46e7",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Assunção – Guarapes",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:4eb3604ebe52f3a4",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora do Perpétuo Socorro – Quintas – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:1cdefd853df7f1d1",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São José – Cidade Nova – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:5e81088d81ab3388",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São José de Anchieta – Lagoa Nova – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:153419f1305d37b5",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Sebastião – Alecrim – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:8474e12ab2cb1bc1",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Santuário dos Santos Mártires de Cunhaú e Uruaçu – Nazaré – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:85527da600387588",
+      "jurisdiction": "natal",
+      "name": "Paróquia Jesus Bom Pastor – Bom Pastor – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:cf36607a86fa1301",
+      "jurisdiction": "natal",
+      "name": "Paróquia Santuário de Nossa Senhora da Esperança e Santo Inácio de Loyola",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:f7ccbc41cac9959f",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Francisco de Assis – Cidade Satélite – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:673c55c6be8f83ca",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santa Clara – Pitimbu – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:65e22faee42b1aa4",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Sra. dos Impossíveis – Pitimbu – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:c52e976ff31a2750",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Santo Ambrósio Francisco Ferro – Planalto",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:cd8a2006f38e1dd9",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Cristo Rei – Pirangi – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:bf4b18d72de1ea65",
+      "jurisdiction": "natal",
+      "name": "Paróquia da Imaculada Conceição – Nova Aliança – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:2f26c5f2873072ee",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santa Luzia – Boa Esperança – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:7ba4e8f8913b7ada",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santa Maria Mãe – Conj. Santa Catarina – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:6ab1d8b335088e0c",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santo Antônio de Pádua – Parque dos Coqueiros – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:764daa10f18ce16d",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Sant'ana – Soledade 2 – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ae1bd4f01eab98d7",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Tomé Apóstolo – Conj. Cidade do Sol – Natal",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:6b6f19e6b45da96a",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Macaíba",
+      "municipality_code": 2407104,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:e5293420be3af219",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora de Fátima – Macaíba",
+      "municipality_code": 2407104,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:22f6b9a091f7c9e2",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santo Antônio – Santo Antônio do Potengi",
+      "municipality_code": 2412005,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:6aac272fa92189d0",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santo Expedito – Jardim Petrópolis",
+      "municipality_code": 2412005,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:9820446d0cec1f53",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Gonçalo do Amarante",
+      "municipality_code": 2412005,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ba85eb9f8223c829",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Lucas – Conjunto Amarante – São Gonçalo do Amarante",
+      "municipality_code": 2412005,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:1332989c445940a4",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora dos Navegantes - Redinha",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:03eaee35d1da7e31",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora de Fátima - Pq. das Dunas",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:5d14878d2d319f80",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São João Batista - Pitangui",
+      "municipality_code": 2403608,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ed9a3d9679ef273a",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São João Bosco - Gramoré",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:bd9bf4a3ef055cea",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Miguel – Extremoz",
+      "municipality_code": 2403608,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:5de21e99c89ab2e8",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Tiago Menor - Santarém",
+      "municipality_code": 2408102,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-urbano",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:af541d1bc6ef6876",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Lajes",
+      "municipality_code": 2406700,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:fd9bf4eec778e576",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição - São Rafael",
+      "municipality_code": 2412807,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:4ad9ba5b52ecf620",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora das Graças – Afonso Bezerra",
+      "municipality_code": 2400307,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:3696fd3c3c69063a",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Sant'ana – Santana do Matos",
+      "municipality_code": 2411403,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:f48f5182de23a1b2",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São José – Angicos",
+      "municipality_code": 2400802,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:8a817d912997e962",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Paulo Apóstolo – Pedro Avelino",
+      "municipality_code": 2409704,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:b2c9ae607adaf8f6",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Vicente Férrer – Itajá",
+      "municipality_code": 2404853,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:8caecfb104d097b0",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Guamaré",
+      "municipality_code": 2404507,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:dabc0d79bfa8e9a4",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição - Macau",
+      "municipality_code": 2407203,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:a256a5e84a5acc66",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora de Lourdes – Ipanguaçu",
+      "municipality_code": 2404705,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:d486dea141beccbd",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora do Rosário – Alto do Rodrigues",
+      "municipality_code": 2400703,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:f0d398a36bc73e41",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São João Batista – Pendências",
+      "municipality_code": 2409902,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:53559dfd5f9afcd6",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São José Operário – Jandaíra",
+      "municipality_code": 2405108,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:a8d0c2d4bd5bdd61",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora Mãe dos Homens – João Câmara",
+      "municipality_code": 2405801,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:7b66f411dcc7b2b2",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora de Nazaré – Parazinho",
+      "municipality_code": 2408805,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:3c6acf00b63763b7",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santo Antão Abade – São Bento do Norte",
+      "municipality_code": 2411601,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:0a60ddec7e134eff",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora do Livramento – Taipu/RN",
+      "municipality_code": 2413904,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:9d27875d5ca6f1ce",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Sagrado Coração de Jesus - Poço Branco/RN",
+      "municipality_code": 2410108,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:1bb3507d9107f9a3",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora das Dores - Ceará-Mirim",
+      "municipality_code": 2402600,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:c1c50854a2b82a38",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora do Rosário de Fátima - Ceará-Mirim",
+      "municipality_code": 2402600,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:2d972613695fc378",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Ceará-Mirim",
+      "municipality_code": 2402600,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:db43695f2c7b2d13",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Maxaranguape",
+      "municipality_code": 2407500,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:5c6fbd513ba08bba",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Pureza – Pureza",
+      "municipality_code": 2410405,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:d4841d543ac5f18d",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Santa Maria",
+      "municipality_code": 2409332,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:07fb21178866c451",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Bom Jesus dos Navegantes – Touros",
+      "municipality_code": 2414407,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:00633f6e052f3c52",
+      "jurisdiction": "natal",
+      "name": "Paróquia da Virgem e Mártir Santa Luzia - Touros",
+      "municipality_code": 2414407,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:981341d7a1bb1db2",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora dos Navegantes – Rio do Fogo",
+      "municipality_code": 2408953,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:053b3e7fe130d3c8",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Miguel Arcanjo - São Miguel do Gostoso",
+      "municipality_code": 2412559,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-norte",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ea73890fad182564",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Canguaretama",
+      "municipality_code": 2402204,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:bc8939f76bbe4b65",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Piedade – Espírito Santo",
+      "municipality_code": 2403509,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:b955a6307015b51c",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora dos Prazeres – Goianinha",
+      "municipality_code": 2404200,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:18c45ccce1150393",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santo Antônio de Lisboa – Tibau do Sul",
+      "municipality_code": 2414209,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:06a035aeba2a4df9",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Francisco de Assis – Pedro Velho",
+      "municipality_code": 2409803,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:c74ac2aa8a9f138b",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Pedro Pescador – Baía Formosa",
+      "municipality_code": 2401404,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:aa9621f9e81e614a",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São João Batista – Arez",
+      "municipality_code": 2401206,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ab414959b548bde4",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Sant'ana e São Joaquim – São José de Mipibu",
+      "municipality_code": 2412203,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:705161f65a80714b",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Divino Espírito Santo – Vera Cruz",
+      "municipality_code": 2414803,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:236c55b71aa90eb4",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora do Ó - Nísia Floresta",
+      "municipality_code": 2408201,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:19fbaac0ebc493ad",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Penha - Monte Alegre",
+      "municipality_code": 2407807,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:7d303e8ee78d74cc",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora das Dores - Brejinho",
+      "municipality_code": 2401800,
+      "source_url": "https://www.arquidiocesedenatal.org.br/vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:f6881aa429736ee7",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora de Lourdes – Campo Redondo",
+      "municipality_code": 2402105,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:6b8633410bdf121a",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora do Amparo – Coronel Ezequiel",
+      "municipality_code": 2402808,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:0aa98d6de5e357f3",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santa Rita de Cássia – Santa Cruz",
+      "municipality_code": 2411205,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:0fa8aa5ee42b95d3",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santa Teresinha – Tangará",
+      "municipality_code": 2414001,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:772683b7e9f7a5d2",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Sebastião - Japi",
+      "municipality_code": 2405405,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:1ed9e96a71a5c97f",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – São Tomé",
+      "municipality_code": 2412906,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:4b5284b2a32aea5c",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Serra Caiada",
+      "municipality_code": 2410306,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:6ed087c5102bf8ff",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora do Perpétuo Socorro – Barcelona",
+      "municipality_code": 2401503,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ed2369a56e860f6a",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Paulo Apóstolo – São Paulo do Potengi",
+      "municipality_code": 2412609,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ee2279f62efaf470",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Pedro Apóstolo – São Pedro",
+      "municipality_code": 2412708,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:05ed5b5d162926cc",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Sagrado Coração de Jesus – Bom Jesus",
+      "municipality_code": 2401701,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:8f55c951956466d7",
+      "jurisdiction": "natal",
+      "name": "Paróquia do Sagrado Coração de Jesus – Riachuelo",
+      "municipality_code": 2410900,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:e22c3f92ec9d9591",
+      "jurisdiction": "natal",
+      "name": "Paróquia da Imaculada Conceição –",
+      "municipality_code": 2408300,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:ea84ebdd6ee223de",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora de Fátima – Passa e Fica",
+      "municipality_code": 2409100,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:4be3e5d4c742a7e2",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santa Teresinha – Lagoa D'Anta",
+      "municipality_code": 2406205,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:68c43e6eda364758",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Bento Abade – Serra de São Bento",
+      "municipality_code": 2413300,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:1e629041a7bbf83e",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São João Batista - Montanhas",
+      "municipality_code": 2407708,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:103224025768a3e9",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Nossa Senhora da Conceição – Santo Antônio",
+      "municipality_code": 2411502,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:7905aef8755570f4",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Pedro Apóstolo – Várzea",
+      "municipality_code": 2414704,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:3f8eaa2a0f47e08d",
+      "jurisdiction": "natal",
+      "name": "Paróquia de Santo Antônio - Serrinha",
+      "municipality_code": 2413508,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:9a2bd50571f9357f",
+      "jurisdiction": "natal",
+      "name": "Paróquia de São Francisco de Assis – Lagoa de Pedras",
+      "municipality_code": 2406304,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "natal:e9518c0f14447dfb",
+      "jurisdiction": "natal",
+      "name": "Paróquia da Imaculada Conceição - Lagoa Salgada",
+      "municipality_code": 2406601,
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01",
+      "source_updated_at": null
+    },
+    {
+      "key": "vitoria:15666",
+      "jurisdiction": "vitoria",
+      "name": "Sagrada Família – Vitória",
+      "municipality_code": 3205309,
+      "source_url": "https://www.aves.org.br/paroquias/sagrada-familia-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "vitoria:15664",
+      "jurisdiction": "vitoria",
+      "name": "Ressurreição",
+      "municipality_code": 3205309,
+      "source_url": "https://www.aves.org.br/paroquias/ressurreicao/",
+      "source_updated_at": null
+    },
+    {
+      "key": "vitoria:15662",
+      "jurisdiction": "vitoria",
+      "name": "São Pedro – Praia do Suá",
+      "municipality_code": 3205309,
+      "source_url": "https://www.aves.org.br/paroquias/sao-pedro-4/",
+      "source_updated_at": null
+    },
+    {
+      "key": "vitoria:15660",
+      "jurisdiction": "vitoria",
+      "name": "Basílica de Santo Antonio",
+      "municipality_code": 3205309,
+      "source_url": "https://www.aves.org.br/paroquias/basilica-de-santo-antonio/",
+      "source_updated_at": null
+    },
+    {
+      "key": "vitoria:15658",
+      "jurisdiction": "vitoria",
+      "name": "São Francisco de Assis – Jardim da Penha",
+      "municipality_code": 3205309,
+      "source_url": "https://www.aves.org.br/paroquias/sao-francisco-de-assis-5/",
+      "source_updated_at": null
+    },
+    {
+      "key": "vitoria:15656",
+      "jurisdiction": "vitoria",
+      "name": "Nossa Senhora das Graças – Jucutuquara",
+      "municipality_code": 3205309,
+      "source_url": "https://www.aves.org.br/paroquias/nossa-senhora-das-gracas-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "vitoria:15654",
+      "jurisdiction": "vitoria",
+      "name": "São Pedro Apóstolo – Bairro Conquista",
+      "municipality_code": 3205309,
+      "source_url": "https://www.aves.org.br/paroquias/sao-pedro-apostolo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "roraima:7039",
+      "jurisdiction": "roraima",
+      "name": "Paróquia Nossa Senhora de Fátima – Mucajaí",
+      "municipality_code": 1400308,
+      "source_url": "https://diocesederoraima.org.br/mucajai/",
+      "source_updated_at": null
+    },
+    {
+      "key": "roraima:7052",
+      "jurisdiction": "roraima",
+      "name": "Paróquia Santo Isidoro – Alto Alegre",
+      "municipality_code": 1400050,
+      "source_url": "https://diocesederoraima.org.br/alto-alegre/",
+      "source_updated_at": null
+    },
+    {
+      "key": "roraima:7049",
+      "jurisdiction": "roraima",
+      "name": "Paróquia Nossa Senhora de Nazaré – Normandia",
+      "municipality_code": 1400407,
+      "source_url": "https://diocesederoraima.org.br/normandia/",
+      "source_updated_at": null
+    }
+  ],
+  "skipped": [
+    {
+      "key": "natal:3293bd56cc38f794",
+      "name": "Paróquia de São José - São José de Campestre",
+      "reason": "Município RN sem correspondência inequívoca",
+      "source_url": "https://www.arquidiocesedenatal.org.br/c%C3%B3pia-vicariato-sul-01"
+    },
+    {
+      "name": "Paróquia Santo Antônio de Sant´Anna  Galvão",
+      "reason": "Página agrupa municípios ou não identifica sede inequívoca",
+      "source_url": "https://diocesederoraima.org.br/frei-galvao/"
+    },
+    {
+      "name": "Paróquia São José Operário – Caracaraí e Iracema",
+      "reason": "Página conjunta não identifica uma única paróquia/sede; exige revisão",
+      "source_url": "https://diocesederoraima.org.br/caracarai-e-iracema/"
+    },
+    {
+      "name": "Paróquia São João Batista e São Luis de França",
+      "reason": "Página conjunta não identifica uma única paróquia/sede; exige revisão",
+      "source_url": "https://diocesederoraima.org.br/sao-luiz-e-sao-joao-da-baliza/"
+    }
+  ],
+  "withdrawn_keys": [
+    "roraima:7058",
+    "roraima:7045"
+  ]
+}

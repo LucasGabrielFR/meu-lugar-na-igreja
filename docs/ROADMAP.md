@@ -1,3 +1,7 @@
+> Atualização 0.13.0: malha IBGE regional, entradas ligadas à rua interna e validação dos quatro municípios reportados. Coleta paroquial integral, funções e integração Instagram continuam nas etapas futuras.
+
+> Atualização 0.11.0: catálogo CNBB/CDICBR somado às fontes locais, com proveniência múltipla, cobertura por circunscrição e materialização de bairros vazios. Cobertura nacional ainda parcial; veja [dados eclesiásticos](DADOS-ECLESIASTICOS.md).
+
 > Atualização 0.10.0: o mapa agora é contínuo e ilustrado, com arte isométrica SVG, sedes oficiais e bairros conectados. A cena 3D separada foi substituída. Próximas prioridades e achados atuais estão em [Auditoria de 24/10/2026](AUDITORIA-2026-10-24.md).
 
 # Entregas e critérios de aceite

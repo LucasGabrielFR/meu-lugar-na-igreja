@@ -95,5 +95,63 @@ services:
       - ./scripts:/app/scripts:ro
       - ./public/data:/app/public/data
     command: [node, scripts/build-municipality-seats.mjs]
+  catalog-national:
+    profiles: [tools]
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts:ro
+      - ./db/catalog:/app/db/catalog
+      - ./public/data:/app/public/data:ro
+      - ./.cache:/app/.cache
+    command: [node, scripts/fetch-cnbb-inventory.mjs]
+  catalog-regional:
+    profiles: [tools]
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts:ro
+      - ./db/catalog:/app/db/catalog
+      - ./public/data:/app/public/data:ro
+    command: [node, scripts/fetch-diocesan-directories.mjs]
+  catalog-expansion:
+    profiles: [tools]
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts:ro
+      - ./db/catalog:/app/db/catalog
+      - ./public/data:/app/public/data:ro
+      - ./.cache:/app/.cache
+    command: [node, scripts/fetch-diocesan-expansion.mjs]
+  catalog-reference:
+    profiles: [tools]
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts:ro
+      - ./db/reference:/app/db/reference
+      - ./public/data:/app/public/data:ro
+      - ./.cache:/app/.cache
+    command: [node, scripts/fetch-reference-directory.mjs]
+  highways:
+    profiles: [tools]
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts:ro
+      - ./public/data:/app/public/data
+      - ./.cache:/app/.cache
+    command: [node, scripts/fetch-ibge-roads.mjs]
 volumes:
   postgres_data:

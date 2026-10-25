@@ -1,3 +1,9 @@
+> Versão vigente 0.13.0: IBGE BC250 substitui o DNIT. use-road-data.ts carrega visão geral e células regionais com cache limitado; map-roads.mjs calcula entradas por cruzamento do perímetro e map-road-layer.tsx mantém a escala das ruas. Veja RODOVIAS.md. Os registros abaixo descrevem versões anteriores.
+
+> Versão 0.12.0: rodovias locais DNIT/IBAMA, acessos ilustrativos por proximidade, inventário das 281 circunscrições e mapa sem casas/dados de teste. Veja RODOVIAS.md e COBERTURA-PAROQUIAL.md. As notas abaixo são históricas.
+
+> Atualização 0.11.0: catálogo CNBB/CDICBR somado às fontes locais, com proveniência múltipla, cobertura por circunscrição e materialização de bairros vazios. Cobertura nacional ainda parcial; veja [dados eclesiásticos](DADOS-ECLESIASTICOS.md).
+
 # Arquitetura proposta
 
 > Direção vigente na versão 0.10.0: `world-map.tsx` mantém a única câmera; `town-art.tsx` desenha construções no próprio mapa, `town-layout.mjs` organiza bairros conectados e `use-city-cache.ts` carrega dados por aproximação. As sedes oficiais substituem centroides; coordenadas são armazenadas no PostgreSQL. Three/Fiber/Drei foram removidos. As notas versionadas abaixo descrevem a evolução histórica.
@@ -92,3 +98,4 @@ Depois de alterações de código: construir, recriar, aguardar saúde dos conta
 ## Organização inicial proposta
 
 Um pacote, sem monorepo obrigatório: `src/app` para site/API/admin, `src/domain` para regras, `src/db` para schema, `src/integrations/instagram`, `src/worker`, `src/map`, `public` para arte própria, `drizzle` para migrações e `docs` para decisões. Não criar essas pastas vazias antes de precisar delas.
+

@@ -1,0 +1,2096 @@
+{
+  "fetched_at": "2026-10-24T18:58:33.589Z",
+  "coverage": "Complemento parcial de diretórios institucionais de Florianópolis, Rio Branco, Aracaju e Cuiabá. Não se declara cobertura nacional integral. Registros ambíguos ficam separados para revisão.",
+  "jurisdictions": [
+    {
+      "key": "florianopolis",
+      "name": "Arquidiocese de Florianópolis",
+      "type": "archdiocese",
+      "website": "https://arquifln.org.br/"
+    },
+    {
+      "key": "riobranco",
+      "name": "Diocese de Rio Branco",
+      "type": "diocese",
+      "website": "https://diocesederiobranco.org.br/"
+    },
+    {
+      "key": "aracaju",
+      "name": "Arquidiocese de Aracaju",
+      "type": "archdiocese",
+      "website": "https://arquidiocesedearacaju.org/"
+    },
+    {
+      "key": "cuiaba",
+      "name": "Arquidiocese de Cuiabá",
+      "type": "archdiocese",
+      "website": "https://arquidiocesecuiaba.org.br/"
+    }
+  ],
+  "parishes": [
+    {
+      "key": "florianopolis:62838773956fd18d",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora da Imaculada Conceição",
+      "municipality_code": 4200903,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-da-imaculada-conceicao/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:d3427ab508485d6c",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Sebastião",
+      "municipality_code": 4201109,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-sebastiao/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:673606ee450288c1",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Sagrado Coração de Jesus",
+      "municipality_code": 4201208,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-antonio-carlos/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:fa7eeca78feb2b57",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santa Inês (Centro)",
+      "municipality_code": 4202008,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santa-ines/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:2dbaff2a3601df4c",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Sebastião (Ariribá)",
+      "municipality_code": 4202008,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-sebastiao-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:c8face8a91e09e51",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora Aparecida (Vila Real)",
+      "municipality_code": 4202008,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-aparecida/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:e09052543b37f33a",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São João Batista",
+      "municipality_code": 4202305,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-joao-batista-biguacu/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:4546eaeb009c5145",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São João Evangelista",
+      "municipality_code": 4202305,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-joao-evangelista/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:b827b1739358ac79",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora da Imaculada Conceição",
+      "municipality_code": 4202453,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-da-imaculada-conceicao-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:d60b1018ddb0f823",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São José",
+      "municipality_code": 4202701,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-jose/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:3416a656c681536b",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Judas Tadeu (Águas Claras)",
+      "municipality_code": 4202909,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-judas-tadeu/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:8577b9058fa201a7",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora de Azambuja (Azambuja)",
+      "municipality_code": 4202909,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-de-azambuja/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:47152842a51392a3",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santa Catarina (Dom Joaquim)",
+      "municipality_code": 4202909,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santa-catarina/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:9ab35a0ea7de9cdb",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santa Teresinha (Santa Teresinha)",
+      "municipality_code": 4202909,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santa-teresinha/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:723a29d3ba4ba1d3",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Luís Gonzaga (Centro)",
+      "municipality_code": 4202909,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-luis-gonzaga/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:d2d28e160ec007ee",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Divino Espírito Santo",
+      "municipality_code": 4203204,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-divino-espirito-santo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:1189a600707397c5",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Senhor Bom Jesus (Monte Alegre)",
+      "municipality_code": 4203204,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-senhor-bom-jesus/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:10cd989c3278d0dc",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora do Bom Sucesso (Areias)",
+      "municipality_code": 4203204,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-do-bom-sucesso",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:43eafcc52f284b19",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Sant’Ana",
+      "municipality_code": 4203709,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santana/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:b4e585c496284185",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora de Lourdes e São Luís (Agrônomica)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-de-lourdes-e-sao-luis-gonzaga/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:43b18885e12221ca",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora da Glória (Balneário do Estreito)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-da-gloria/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:f1b34167a9c0dd45",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora de Guadalupe (Canasvieiras",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-de-guadalupe/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:002fda786e4453eb",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São João Batista e Santa Luzia (Capoeiras)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-joao-batista-e-santa-luzia/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:c78dbb14efccf74b",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora do Desterro e Santa Catarina (Catedral)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-do-desterro-e-santa-catarina/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:3696f42e348a9671",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora do Sagrado Coração (Campeche)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-do-sagrado-coracao/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:ec6a36ee0740eaee",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santo Antônio e Santa Maria Goretti (Coloninha)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santo-antonio-e-santa-maria-goretti/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:23151f5371b76ce1",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora do Carmo (Coqueiros)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-do-carmo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:02eee0cb1863153c",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Sra de Fátima e Sta Teresinha do Menino Jesus",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-de-fatima-e-santa-teresinha-do-menino-jesus/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:b912a0f0701b1708",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Sagrado Coração de Jesus (Ingleses)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sagrado-coracao-de-jesus/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:ab795eedea60f750",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São José e Santa Rita de Cássia (Jardim Atlântico)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-jose-e-santa-rita-de-cassia/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:48e552f140b43fc0",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora da Imaculada Conceição da Lagoa (Lagoa da Conceição)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-da-imaculada-conceicao-da-lagoa/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:a2a36268821a0871",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Francisco Xavier (Monte Verde)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-francisco-xavier/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:c88c5d0cfbcd730a",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora das Necessidades (Santo Antônio de Lisboa)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-das-necessidades/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:1096f72a31e4c9e2",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santa Teresinha do Menino Jesus (Prainha)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santa-teresinha-do-menino-jesus/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:549b4b4fb7f2f7d9",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora da Lapa (Ribeirão da Ilha)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-da-lapa/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:50a66c23aecaf556",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora da Boa Viagem (Saco dos Limões)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-da-boa-viagem/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:c2b595d09bebd575",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santo Antônio (Centro)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santo-antonio/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:28f9021715c01f3d",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santíssima Trindade (Trindade)",
+      "municipality_code": 4205407,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santissima-trindade/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:3e0efc9392affbf4",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Joaquim",
+      "municipality_code": 4205704,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-joaquim/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:8cc5bfebb86ef4e1",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora dos Navegantes",
+      "municipality_code": 4206009,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-dos-navegantes/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:c16cf67e6e537f5c",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora do Perpétuo Socorro",
+      "municipality_code": 4206306,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-do-perpetuo-socorro/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:f1f1b5e80884123b",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora de Fátima (Cidade Nova)",
+      "municipality_code": 4208203,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-de-fatima-itajai",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:9f1e29f3201643a2",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Cristóvão (Cordeiros)",
+      "municipality_code": 4208203,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-cristovao-cordeiros/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:763a5ad547755150",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São João Bosco (Dom Bosco)",
+      "municipality_code": 4208203,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-joao-bosco/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:79961d0f4fff0130",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora de Lourdes (Fazenda)",
+      "municipality_code": 4208203,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-de-lourdes/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:c4404d4d33650c3f",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santíssimo Sacramento (Centro)",
+      "municipality_code": 4208203,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santissimo-sacramento/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:9625d19f7236e677",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São João Batista (São João)",
+      "municipality_code": 4208203,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-joao-batista/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:9d9c0b729cf67033",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Vicente de Paulo (São Vicente)",
+      "municipality_code": 4208203,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-vicente-de-paulo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:3b847d8f0e597e4d",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Pedro Apóstolo (Itaipava)",
+      "municipality_code": 4208203,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-pedro-apostolo/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:17e97f3ac0e41ac3",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santo Antônio (Centro)",
+      "municipality_code": 4208302,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santo-antonio-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:3b11dbd2ecffe234",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Sagrado Coração de Jesus (Meia Praia)",
+      "municipality_code": 4208302,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sagrado-coracao-de-jesus-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:a2ba0e0c97e97d9b",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Sagrado Coração de Jesus",
+      "municipality_code": 4208302,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sagrado-coracao-de-jesus-3/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:485603332a834a9b",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Senhor Bom Jesus",
+      "municipality_code": 4210209,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-senhor-bom-jesus-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:08b6c58f0bd924a3",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Virgílio",
+      "municipality_code": 4211504,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-virgilio/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:7b8f515ddba7b381",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Francisco de Assis (Aririú)",
+      "municipality_code": 4211900,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-francisco-de-assis/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:05f83c8917f92bc6",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora do Rosário (Enseada do Brito)",
+      "municipality_code": 4211900,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-do-rosario/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:7c84a83f7ebbb0cb",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Senhor Bom Jesus de Nazaré (Centro)",
+      "municipality_code": 4211900,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-senhor-bom-jesus-de-nazare/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:a3b20af10567c4f7",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Judas Tadeu e São João Batista (Ponte do Imaruim)",
+      "municipality_code": 4211900,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-judas-tadeu-e-sao-joao-batista/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:ac5fcaa1c4d0c0b0",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Sebastião (São Sebastião) – *nova paróquia",
+      "municipality_code": 4211900,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-sebastiao-palhoca/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:6b59268bf6ed8c84",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Sagrado Coração de Jesus",
+      "municipality_code": 4212304,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sagrado-coracao-de-jesus-4/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:31d79c9c2f0b99ec",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Senhor Bom Jesus dos Aflitos",
+      "municipality_code": 4213500,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-senhor-bom-jesus-dos-aflitos/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:2e12c991e6b35700",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santo Amaro",
+      "municipality_code": 4215703,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santo-amaro/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:5186ee515f7b3009",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Bonifácio",
+      "municipality_code": 4215901,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-bonifacio/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:42ff821e1b3625ef",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São João Batista",
+      "municipality_code": 4216305,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-joao-batista-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:8480370ec8a451f2",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santa Cruz (Areias)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santa-cruz/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:705000b3b7151ff1",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Judas Tadeu (Barreiros)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-judas-tadeu-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:ede516850a61f01d",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Sagrados Corações (Barreiros)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sagrados-coracoes/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:b0c2892d0ca83386",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Santo Antônio (Campinas)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santo-antonio-3/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:f71e9f8849c683ea",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São José (Centro Histórico)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-de-sao-jose/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:58d1eccc19e537a3",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Francisco de Assis (Forquilhinhas)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-francisco-de-assis-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:cceb8b01739030af",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora dos Navegantes e São Pedro (Serraria)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-dos-navegantes-serraria-sj/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:df1e73ae2912964f",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora Rosário (Nossa Senhora do Rosário)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-do-rosario-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:bea6e7fa72c130c2",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Nossa Senhora Aparecida (Procasa)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-nossa-senhora-aparecida-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:bd332b7abf3d53a3",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia Sant´Ana (Colônia Santana)",
+      "municipality_code": 4216602,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-santana-2/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:e5d19fa43eb6aff1",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Pedro de Alcântara",
+      "municipality_code": 4217253,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-pedro-de-alcantara/",
+      "source_updated_at": null
+    },
+    {
+      "key": "florianopolis:85e7c54b4f6c5355",
+      "jurisdiction": "florianopolis",
+      "name": "Paróquia São Sebastião",
+      "municipality_code": 4218004,
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-sao-sebastiao-3/",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:dc680c388e7ab2f4",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA NOSSA SENHORA DAS DORES - BRASILÉIA",
+      "municipality_code": 1200104,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-nossa-senhora-das-dores--brasileia",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:babb15eb3bcd1ef9",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA NOSSA SENHORA DO PERPÉTUO SOCORRO - ASSIS BRASIL",
+      "municipality_code": 1200054,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-nossa-senhora-do-perpetuo-socorro--assis-brasil",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:64bb7525dfeafcb4",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO SEBASTIÃO (2001)",
+      "municipality_code": 1200252,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-sebastiao-2001-",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:f1e6829e3242ee55",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO SEBASTIÃO - XAPURI - 1910",
+      "municipality_code": 1200708,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-sebastiao--xapuri--1910",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:8ca01c2945f58743",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA BOM JESUS DO ABUNÃ - PLÁCIDO DE CASTRO - 1982",
+      "municipality_code": 1200385,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-bom-jesus-do-abuna--placido-de-castro--1982",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:a05e4af992dbfd57",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA NOSSA SENHORA RAINHA DA PAZ - ACRELÂNDIA - 2000",
+      "municipality_code": 1200013,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-nossa-senhora-rainha-da-paz--acrelandia--2000",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:66393bfdf7fc3026",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA NOSSA SENHORA DAS GRAÇAS - SEN. GUIOMARD - 1998",
+      "municipality_code": 1200450,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-nossa-senhora-das-gracas--sen-guiomard--1998",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:c9740a7432ad3784",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SANTO ANTONIO - CAPIXABA - 2005",
+      "municipality_code": 1200179,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-santo-antonio--capixaba--2005",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:00fb79509170e880",
+      "jurisdiction": "riobranco",
+      "name": "NOSSA SENHORA DA PENHA - MANUEL URBANO - 1987",
+      "municipality_code": 1200344,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/nossa-senhora-da-penha--manuel-urbano--1987",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:51765c7e167c4311",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA NOSSA SENHORA DA CONCEIÇÃO - SENA MADUREIRA - 1910",
+      "municipality_code": 1200500,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-nossa-senhora-da-conceicao--sena-madureira--1910",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:90c48d11538537da",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SANTA ROSA DE LIMA - SANTA ROSA DO PURUS",
+      "municipality_code": 1200435,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-santa-rosa-de-lima--santa-rosa-do-purus",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:c223af6820f152d3",
+      "jurisdiction": "riobranco",
+      "name": "NOSSA SENHORA DE NAZARÉ - PORTO ACRE - 2005",
+      "municipality_code": 1200807,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/nossa-senhora-de-nazare--porto-acre--2005",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:9d003d2950d34275",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SANTA CRUZ - RIO BRANCO - 1989",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-santa-cruz--rio-branco--1989",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:9d015325ae49dacb",
+      "jurisdiction": "riobranco",
+      "name": "SÃO JORGE - RIO BRANCO - 2015",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/sao-jorge--rio-branco--2015",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:5323411de9742214",
+      "jurisdiction": "riobranco",
+      "name": "SÃO LOURENÇO - VILAS DO V E INCRA - 2006",
+      "municipality_code": 1200807,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/sao-lourenco--vilas-do-v-e-incra--2006",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:6de4f923467389db",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SAGRADA FAMÍLIA (1989)",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sagrada-familia-1989-",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:28e3c31ba1babd78",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO JOÃO BATISTA - BUJARI - 2006",
+      "municipality_code": 1200138,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-joao-batista--bujari--2006",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:defb106cf42928fe",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO JUDAS TADEU - RIO BRANCO 2001",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-judas-tadeu--rio-branco-2001",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:302aab97a2fe5517",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA NOSSA SENHORA IMACULADA CONCEIÇÃO - RIO BRANCO - 1951",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-nossa-senhora-imaculada-conceicao--rio-branco--1951",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:90417a17be2c255b",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO MATEUS - RIO BRANCO - 2012",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-mateus--rio-branco--2012",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:8718a45fc5fdbf68",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO MIGUEL ARCANJO - 2009",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-miguel-arcanjo--2009",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:50891aa9e0ceda85",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA CRISTO LIBERTADOR - RIO BRANCO - 1988",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-cristo-libertador--rio-branco--1988",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:d56d5f941c7d02bd",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO FILIPE APÓSTOLO - RIO BRANCO",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-filipe-apostolo--rio-branco",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:5e219ee49a638401",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO PEREGRINO - RIO BRANCO - 1991",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-peregrino--rio-branco--1991",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:3410a55051e6b325",
+      "jurisdiction": "riobranco",
+      "name": "SÃO PAULO APÓSTOLO - RIO BRANCO - 2014",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/sao-paulo-apostolo--rio-branco--2014",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:5036bc28141da34a",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA DIVINO ESPÍRITO SANTO - RIO BRANCO - 1990",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-divino-espirito-santo--rio-branco--1990",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:d754ae11ad82e30f",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SANTA CLARA - RIO BRANCO -2017",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-santa-clara--rio-branco-2017",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:bd32c27d57215c03",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SANTA INÊS - RIO BRANCO 1960",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-santa-ines--rio-branco-1960",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:816947620db57866",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SANTA RITA DE CÁSSIA - RIO BRANCO 2011",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-santa-rita-de-cassia--rio-branco-2011",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:766d6df77e208665",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO SEBASTIÃO - RIO BRANCO",
+      "municipality_code": 1200401,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-sebastiao--rio-branco",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:46151e61bed93f2d",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO FRANCISCO DE ASSIS - BOCA DO ACRE",
+      "municipality_code": 1300706,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-francisco-de-assis--boca-do-acre",
+      "source_updated_at": null
+    },
+    {
+      "key": "riobranco:d78d90e47468a384",
+      "jurisdiction": "riobranco",
+      "name": "PARÓQUIA SÃO PEDRO - BOCA DO ACRE",
+      "municipality_code": 1300706,
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-pedro--boca-do-acre",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:5408c842f82c95c8",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA JESUS MISERICORDIOSO – ITABAIANA/SE",
+      "municipality_code": 2802908,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-jesus-misericordioso-itabaiana-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:7addbf1894618b1f",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOÃO EVANGELISTA – CUMBE-SE",
+      "municipality_code": 2801900,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-joao-evangelista-cumbe-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:803e6c48372c3ae9",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DAS GRAÇAS – FEIRA NOVA-SE",
+      "municipality_code": 2802205,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-das-gracas-feira-nova-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:2cbeed7c1bcc8e19",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO CRISTÓVÃO – NOSSA SENHORA DAS DORES-SE",
+      "municipality_code": 2804607,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-cristovao-nossa-senhora-das-dores-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:37884f294a881c7c",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DAS DORES – NOSSA SENHORA DAS DORES/SE",
+      "municipality_code": 2804607,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-das-dores",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:7426e0d43f94b921",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO AMPARO – CAPELA-SE",
+      "municipality_code": 2801306,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-amparo-capela-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:337d8b0aa4aa80fd",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA JESUS, MARIA E JOSÉ – SIRIRI-SE",
+      "municipality_code": 2807204,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-jesus-maria-e-jose-siriri-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:aeabda8bfac8bbc6",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SAGRADO CORAÇÃO DE JESUS – LARANJEIRAS-SE",
+      "municipality_code": 2803609,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sagrado-coracao-de-jesus-laranjeiras-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:d51de17287f67a74",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOÃO BATISTA – GENERAL MAYNARD-SE",
+      "municipality_code": 2802502,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-joao-batista-general-maynard-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:e57e81f6946ae5be",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTO AMARO – SANTO AMARO DAS BROTAS-SE",
+      "municipality_code": 2806602,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santo-amaro-santo-amaro-das-brotas-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:9b305a11108db9fb",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO ROSÁRIO – ROSÁRIO DO CATETE-SE",
+      "municipality_code": 2806107,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-rosario-rosario-do-catete-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:56088ed06b13ca33",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO CARMO – CARMÓPOLIS-SE",
+      "municipality_code": 2801504,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-carmo-carmopolis-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:ba816c42e626d870",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DA PURIFICAÇÃO, CAPELA-SE",
+      "municipality_code": 2801306,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-da-purificacao-capela-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:b0c921e97ac4b575",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO PAULO, FREI PAULO-SE",
+      "municipality_code": 2802304,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-paulo-frei-paulo-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:8561730b47e1976b",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOSÉ, PINHÃO-SE",
+      "municipality_code": 2805208,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-jose-pinhao-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:1f3a30e3ac0e9435",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA N. SRA. DO PATROCÍNIO, PEDRA MOLE-SE",
+      "municipality_code": 2805000,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-n-sra-do-patrocinio-pedra-mole-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:d1d55f249ae6fe42",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOÃO BATISTA, AREIA BRANCA-SE",
+      "municipality_code": 2800506,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-joao-batista-areia-branca-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:6036417f39687840",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO FRANCISCO DE ASSIS, MACAMBIRA-SE",
+      "municipality_code": 2803708,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-francisco-de-assis-macambira-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:44345daac2914d4a",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO DOMINGOS DE GUSMÃO, SÃO DOMINGOS-SE",
+      "municipality_code": 2806800,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-domingos-de-gusmao-sao-domingos-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:77353ffc418535da",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA N. SRA. DA BOA HORA E SÃO ROQUE, CAMPO DO BRITO-SE",
+      "municipality_code": 2801009,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-n-sra-da-boa-hora-e-sao-roque-campo-do-brito-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:c3a5565cc4833df0",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO SEBASTIÃO, SERRA DO MACHADO, RIBEIRÓPOLIS-SE",
+      "municipality_code": 2806008,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-sebastiao-serra-do-machado-ribeiropolis-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:ea3f3e4fe7f496b9",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO MIGUEL ARCANJO, SÃO MIGUEL DO ALEIXO-SE",
+      "municipality_code": 2807006,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-miguel-arcanjo-sao-miguel-do-aleixo-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:bbcac35de8814586",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOSÉ E SANTA DULCE DOS POBRES, MALHADOR-SE",
+      "municipality_code": 2803906,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-jose-e-santa-dulce-dos-pobres-malhador-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:7cebc0ea99702549",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA TERESINHA DO MENINO JESUS, MOITA BONITA-SE",
+      "municipality_code": 2804102,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-teresinha-do-menino-jesus-moita-bonita-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:409250c1e546e8f1",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA CRUZ E SAGRADO CORAÇÃO DE JESUS, CARIRA-SE",
+      "municipality_code": 2801405,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-cruz-e-sagrado-coracao-de-jesus-carira-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:023fd61faf166600",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SAGRADO CORAÇÃO DE JESUS, RIBEIRÓPOLIS-SE",
+      "municipality_code": 2806008,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sagrado-coracao-de-jesus-ribeiropolis-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:14b93b2d898febcd",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA IMACULADA CONCEIÇÃO E SÃO LUCAS, ITABAIANA-SE",
+      "municipality_code": 2802908,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-imaculada-conceicao-e-sao-lucas-itabaiana-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:5662c619fb3b44cb",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO MATEUS – BAIRRO ARUANA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-mateus-bairro-aruana-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:1fbe6592dc5d4773",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA TERESINHA DO MENINO JESUS – BAIRRO ROBALO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-teresinha-do-menino-jesus-bairro-robalo-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:07bbe549bdcf4f55",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA DULCE DOS POBRES – BAIRRO ARUANA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-dulce-dos-pobres-bairro-aruana-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:2b796a05d47188d5",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DAS GRAÇAS – BAIRRO LAMARÃO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-das-gracas-bairro-lamarao-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:cab70ce9759cf786",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DA SOLEDADE – BAIRRO SOLEDADE, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-da-soledade-bairro-soledade-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:49d977f44efe3126",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO FRANCISCO DE ASSIS – BAIRRO SANTOS DUMONT, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-francisco-de-assis-bairro-santos-dumont-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:336ecdb6201f9f53",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA LUZIA E SÃO BENEDITO – BARRA DOS COQUEIROS-SE",
+      "municipality_code": 2800605,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-luzia-e-sao-benedito-barra-dos-coqueiros-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:2674556976776da5",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA BOM JESUS DOS NAVEGANTES – BAIRRO ATALAIA NOVA, BARRA DOS COQUEIROS-SE",
+      "municipality_code": 2800605,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-bom-jesus-dos-navegantes-bairro-atalaia-nova-barra-dos-coqueiros-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:ced5df404854d834",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO PEDRO PESCADOR – BAIRRO INDUSTRIAL, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-pedro-pescador-bairro-industrial-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:199130d9a21e81a5",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SAGRADA FAMÍLIA – BAIRRO DOM LUCIANO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sagrada-familia-bairro-dom-luciano-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:3b970b166964ace4",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO PERPÉTUO SOCORRO – BAIRRO SANTOS DUMONT, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-perpetuo-socorro-bairro-santos-dumont-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:2ae7f5af698f316c",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO CARMO – ALTO DA JAQUEIRA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-carmo-alto-da-jaqueira-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:aec87129d9e83262",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DE GUADALUPE – LOT. COQUEIRAL, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-de-guadalupe-lot-coqueiral-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:283a8183de1a26bb",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTO ANTÔNIO – BAIRRO SANTO ANTÔNIO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santo-antonio-bairro-santo-antonio-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:bc38274497346695",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO PIO X – BAIRRO 18 DO FORTE, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-pio-x-bairro-18-do-forte-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:a2350bbae7363598",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO COSME E DAMIÃO – CONJ. MARIA DO CARMO – OLARIA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-cosme-e-damiao-conj-maria-do-carmo-olaria-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:aedcaae48927e2b9",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA CLARA DE ASSIS – JARDIM CENTENÁRIO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-clara-de-assis-jardim-centenario-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:49603cb2cd3b577b",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SAGRADO CORAÇÃO DE JESUS – AGAMENON MAGALHÃES, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sagrado-coracao-de-jesus-agamenon-magalhaes-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:5097df48b1935d96",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DE LOURDES – BAIRRO SIQUEIRA CAMPOS, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-de-lourdes-bairro-siqueira-campos-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:0a76dbbee1e17d9b",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOSÉ OPERÁRIO – CONJ. CASTELO BRANCO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-jose-operario-conj-castelo-branco-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:aeab070eeafdcf89",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO CARMO – ITABAIANA-SE",
+      "municipality_code": 2802908,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-carmo-itabaiana-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:0972cf0ba1f97066",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO BOM PARTO – ITABAIANA-SE",
+      "municipality_code": 2802908,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-bom-parto-itabaiana-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:989ce1cf10298ddb",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA CLARA DE ASSIS E SANTA DULCE DOS POBRES – ITABAIANA-SE",
+      "municipality_code": 2802908,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-clara-de-assis-e-santa-dulce-dos-pobres-itabaiana-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:6b7e2d21f7f6eb64",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTO ANTÔNIO E ALMAS – ITABAIANA-SE",
+      "municipality_code": 2802908,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santo-antonio-e-almas-itabaiana-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:cf4ded587c4a7855",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DAS GRAÇAS – ITABAIANA-SE",
+      "municipality_code": 2802908,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-das-gracas-itabaiana-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:2c183889e2aba33b",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO DOMINGOS SÁVIO – BAIRRO PEREIRA LOBO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-domingos-savio-bairro-pereira-lobo-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:ec99e8852bfa2296",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA RITA DE CÁSSIA – CONJ. COSTA E SILVA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-rita-de-cassia-conj-costa-e-silva-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:5ba6d168985524ca",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA LÚCIA, CONJ. SANTA LÚCIA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-lucia-conj-santa-lucia-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:46a55ccc3b088b52",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA LUZIA – BAIRRO LUZIA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-luzia-bairro-luzia-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:9abbc716ae49956b",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SAGRADA FAMILIA – CONJ. SOL NASCENTE E JK, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sagrada-familia-conj-sol-nascente-e-jk-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:ca571163de9b4f06",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA RAINHA DO MUNDO – CONJ. MÉDICI, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-rainha-do-mundo-conj-medici-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:99f35d5cf708faa6",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO CARMO E SANTA TERESINHA DO MENINO JESUS – SUISSA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-carmo-e-santa-teresinha-do-menino-jesus-suissa-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:fd6f7295d0142107",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DE FÁTIMA – BAIRRO PONTO NOVO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-de-fatima-bairro-ponto-novo-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:358613bb0c430167",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DA LUZ – BAIRRO JABOTIANA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-da-luz-bairro-jabotiana-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:d3adc7b6631758e2",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DA CONCEIÇÃO – RIACHUELO-SE",
+      "municipality_code": 2805901,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-da-conceicao-riachuelo-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:0e0564eaab29b555",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA ROSA DE LIMA – SANTA ROSA DE LIMA-SE",
+      "municipality_code": 2806503,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-rosa-de-lima-santa-rosa-de-lima-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:60fa462f43d6519c",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO PEDRO E SÃO PAULO – 13 DE JULHO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-pedro-e-sao-paulo-13-de-julho-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:e18ae5f51f817d68",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SAGRADO CORAÇÃO DE JESUS – GRAGERU, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sagrado-coracao-de-jesus-grageru-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:30df3f95e4a972e3",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA SANTÍSSIMO SACRAMENTO – CONJ. LEITE NETO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-santissimo-sacramento-conj-leite-neto-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:18636e735f8dd823",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO ROSÁRIO – BAIRRO CENTRO, ARACAJU/SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-rosario-bairro-centro-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:abcd6162ed88bcc9",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA AUXILIADORA, BAIRRO CIRURGIA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-auxiliadora-bairro-cirurgia-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:8ddd82e83ba7de06",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA DE JESUS RESSUSCITADO – BAIRRO JARDINS, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-de-jesus-ressuscitado-bairro-jardins-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:f2c322d18db57e88",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SENHOR DOS PASSOS, MARUIM-SE",
+      "municipality_code": 2804003,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-senhor-dos-passos-maruim-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:82da320e7b71c93f",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTUÁRIO NOSSA SENHORA DIVINA PASTORA, DIVINA PASTORA-SE",
+      "municipality_code": 2802007,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santuario-nossa-senhora-divina-pastora",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:640d3e3ecd4de518",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA AUXILIADORA – BAIRRO SUISSA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-auxiliadora",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:10a88c795fc5fde9",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DA CONCEIÇÃO – BAIRRO MOSQUEIRO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-da-conceicao-bairro-mosqueiro-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:0241c6cf67c478b1",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA DE SANTA TERESA D’ÁVILA – BAIRRO AEROPORTO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-de-santa-teresa-davila-bairro-aeroporto-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:74558eb9db7a673b",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA CORAÇÃO IMACULADO DE MARIA – POVOADO GAMELEIRA – MOSQUEIRO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-coracao-imaculado-de-maria-povoado-gameleira-mosqueiro-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:97473309197825e0",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO RAFAEL ARCANJO – CONJ. PADRE PEDRO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-rafael-arcanjo-conj-padre-pedro-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:f129fce7220db18b",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOSÉ E SANTA TERESA DE CALCUTÁ – LOT. MARIVAN, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-jose-e-santa-teresa-de-calcuta-lot-marivan-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:807232fd8d094cf6",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOSÉ DE ANCHIETA – CONJ. AUGUSTO FRANCO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-jose-de-anchieta-conj-augusto-franco-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:1f33b0f3095b96ff",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANTA CRUZ – BAIRRO SANTA MARIA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santa-cruz-bairro-santa-maria-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:18091234be474cb0",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SAGRADO CORAÇÃO DE JESUS – SÃO CONRADO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sagrado-coracao-de-jesus-sao-conrado-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:ac8567a541a57e3c",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO PERPÉTUO DO SOCORRO – CONJ. ORLANDO DANTAS, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-perpetuo-do-socorro-conj-orlando-dantas-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:5358c87a8675f0af",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO FRANCISCO DE ASSIS – CONJ. JARDIM ESPERANÇA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-francisco-de-assis-conj-jardim-esperanca-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:2bffd30e612812e4",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DE GUADALUPE – BAIRRO COROA DO MEIO, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-de-guadalupe-bairro-coroa-do-meio-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:e5fd46a5788d39f4",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA APARECIDA – BAIRRO FAROLÂNDIA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-aparecida-bairro-farolandia-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:6eafa2bc5e938e9e",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA BOM JESUS DOS NAVEGANTES – BAIRRO ATALAIA, ARACAJU-SE",
+      "municipality_code": 2800308,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-bom-jesus-dos-navegantes-bairro-atalaia-aracaju-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:cf197edd443f2075",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DA CONCEIÇÃO – TAIÇOCA DE FORA, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-da-conceicao-taicoca-de-fora-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:d7095d8abd19e849",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA MENINO JESUS – PARQUE DOS FARÓIS, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-menino-jesus-parque-dos-farois-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:6eae6b15f195aa77",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOÃO EVANGELISTA – CONJ. MARCOS FREIRE III, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-joao-evangelista-conj-marcos-freire-iii-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:acf794858c53dd0c",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SAGRADA FAMÍLIA – CONJ. FERNANDO COLLOR, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sagrada-familia-conj-fernando-collor-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:8d05c4ec61476c8f",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA ROSA MISTICA – CONJ. JARDIM, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-rosa-mistica-conj-jardim-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:2a5511341424b288",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO SOCORRO – BAIRRO CENTRO, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-socorro-bairro-centro-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:9a4efefc2973c34b",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DAS GRAÇAS – LOT. TIJUQUINHA, SÃO CRISTOVÃO-SE",
+      "municipality_code": 2806701,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-das-gracas-lot-tijuquinha-sao-cristovao-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:a68fc17b2dc82983",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA MENINO DEUS – POVOADO COLÔNIA MIRANDA, SÃO CRISTOVÃO-SE",
+      "municipality_code": 2806701,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-menino-deus-povoado-colonia-miranda-sao-cristovao-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:4ab129d6e7f501d9",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SENHOR DO BONFIM – CONJ. ROSA ELZE, SÃO CRISTOVÃO-SE",
+      "municipality_code": 2806701,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-senhor-do-bomfim-conj-rosa-elze-sao-cristovao-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:3352f1026ed7e4f4",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SANT’ANA – POVOADO SAPÉ, ITAPORANGA D´AJUDA-SE",
+      "municipality_code": 2803203,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santana-povoado-sape-itaporanga-dajuda-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:3428ba59d49dd0e3",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DE LORETO – CONJ. EDUARDO GOMES, SÃO CRISTOVÃO-SE",
+      "municipality_code": 2806701,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-loreto-conj-eduardo-gomes-sao-cristovao-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:883fc720d8589026",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DO CARMO – BAIRRO ROSA MARIA, SÃO CRISTÓVÃO-SE",
+      "municipality_code": 2806701,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-do-carmo",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:1384bd155f0bb53e",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO MARCOS EVANGELISTA – MARCOS FREIRE I, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-marcos-evangelista-marcos-freire-i-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:f00f1673434fcdc0",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOSÉ – CONJ. JOÃO ALVES, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-jose-conj-joao-alves-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:9243cdb47c1de6b5",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA SÃO JOÃO BATISTA – CONJ. JOÃO ALVES, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-joao-batista-conj-joao-alves-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:fe5abedaa98ed124",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA MONTE SERRAT – JARDIM PIABETA, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-monte-serrat-jardim-piabeta-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "aracaju:b155fbd184bfbf94",
+      "jurisdiction": "aracaju",
+      "name": "PARÓQUIA NOSSA SENHORA DE FÁTIMA – CONJ. MARCOS FREIRE II, NOSSA SENHORA DO SOCORRO-SE",
+      "municipality_code": 2804805,
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-de-fatima-conj-marcos-freire-ii-nossa-senhora-do-socorro-se",
+      "source_updated_at": null
+    },
+    {
+      "key": "cuiaba:3078",
+      "jurisdiction": "cuiaba",
+      "name": "São Mateus Apóstolo e Evangelista",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/sao-mateus/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3077",
+      "jurisdiction": "cuiaba",
+      "name": "São Sebastião – 3 Barras Cuiabá",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/sao-sebastiao-3-barras-cuiaba/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3076",
+      "jurisdiction": "cuiaba",
+      "name": "São Sebastião – Várzea Grande",
+      "municipality_code": 5108402,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/sao-sebastiao-varzea-grande/",
+      "source_updated_at": "2026-08-04T15:56:53Z"
+    },
+    {
+      "key": "cuiaba:3075",
+      "jurisdiction": "cuiaba",
+      "name": "São Sebastião – Nobres",
+      "municipality_code": 5105903,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/sao-sebastiao-nobres/",
+      "source_updated_at": "2026-08-04T15:54:16Z"
+    },
+    {
+      "key": "cuiaba:3074",
+      "jurisdiction": "cuiaba",
+      "name": "São João Bosco",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/sao-joao-bosco/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3073",
+      "jurisdiction": "cuiaba",
+      "name": "São Gonçalo",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/sao-goncalo/",
+      "source_updated_at": "2026-08-19T14:23:16Z"
+    },
+    {
+      "key": "cuiaba:3071",
+      "jurisdiction": "cuiaba",
+      "name": "Santo Antônio de Pádua – Várzea Grande",
+      "municipality_code": 5108402,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/santo-antonio-de-padua-varzea-grande/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3069",
+      "jurisdiction": "cuiaba",
+      "name": "Santa Edwiges",
+      "municipality_code": 5108402,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/santa-edwiges/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3068",
+      "jurisdiction": "cuiaba",
+      "name": "Sagrada Família",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/sagrada-familia/",
+      "source_updated_at": "2026-08-04T15:48:21Z"
+    },
+    {
+      "key": "cuiaba:3066",
+      "jurisdiction": "cuiaba",
+      "name": "Nossa Senhora do Rosário – Rosário Oeste",
+      "municipality_code": 5107701,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-do-rosario-rosario-oeste/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3059",
+      "jurisdiction": "cuiaba",
+      "name": "Nossa Senhora Aparecida – Cuiabá",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-aparecida-cuiaba/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3057",
+      "jurisdiction": "cuiaba",
+      "name": "Divino Espírito Santo",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/divino-espirito-santo/",
+      "source_updated_at": "2026-06-22T19:49:24Z"
+    },
+    {
+      "key": "cuiaba:3022",
+      "jurisdiction": "cuiaba",
+      "name": "Nossa Senhora Medianeira de Todas as Graças",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-medianeira-de-todas-as-gracas/",
+      "source_updated_at": "2026-08-04T15:44:03Z"
+    },
+    {
+      "key": "cuiaba:3020",
+      "jurisdiction": "cuiaba",
+      "name": "Nossa Senhora Mãe dos Homens",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-mae-dos-homens/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3018",
+      "jurisdiction": "cuiaba",
+      "name": "Nossa Senhora do Rosário e São Benedito",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-do-rosario-e-sao-benedito/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:3011",
+      "jurisdiction": "cuiaba",
+      "name": "Nossa Senhora das Graças",
+      "municipality_code": 5108402,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-das-gracas/",
+      "source_updated_at": "2026-06-22T19:51:09Z"
+    },
+    {
+      "key": "cuiaba:3007",
+      "jurisdiction": "cuiaba",
+      "name": "Nossa Senhora da Guia – Várzea Grande",
+      "municipality_code": 5108402,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-da-guia-varzea-grande/",
+      "source_updated_at": "2026-08-04T15:55:20Z"
+    },
+    {
+      "key": "cuiaba:2997",
+      "jurisdiction": "cuiaba",
+      "name": "Nossa Senhora Aparecida – Jangada",
+      "municipality_code": 5104906,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-aparecida-jangada/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:2995",
+      "jurisdiction": "cuiaba",
+      "name": "Cristo Rei",
+      "municipality_code": 5108402,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/cristo-rei/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    },
+    {
+      "key": "cuiaba:2994",
+      "jurisdiction": "cuiaba",
+      "name": "Coração Imaculado de Maria",
+      "municipality_code": 5103403,
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/coracao-imaculado-de-maria/",
+      "source_updated_at": "2026-06-02T20:10:58Z"
+    }
+  ],
+  "skipped": [
+    {
+      "key": "florianopolis:9e9117b27b58b320",
+      "name": "Paróquia Militar Nossa Senhora do Loreto (Base Aérea)",
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-militar-nossa-senhora-de-loreto-aeronautica/",
+      "reason": "Capelania, reitoria ou registro sem classificação paroquial inequívoca"
+    },
+    {
+      "key": "florianopolis:afd784438227aeb2",
+      "name": "Paróquia Santa Catarina de Alexandria (Colégio Catarinense)",
+      "source_url": "https://arquifln.org.br/igrejas/reitoria-da-igreja-santa-catarina-de-alexandria/",
+      "reason": "Capelania, reitoria ou registro sem classificação paroquial inequívoca"
+    },
+    {
+      "key": "florianopolis:eade56b38da0a1e5",
+      "name": "Paróquia Militar Cristo Rei (Polícia Militar)",
+      "source_url": "https://arquifln.org.br/igrejas/paroquia-militar-cristo-rei-policia-militar/",
+      "reason": "Capelania, reitoria ou registro sem classificação paroquial inequívoca"
+    },
+    {
+      "key": "florianopolis:6bae1c223251f9e9",
+      "name": "Capelania Militar Santa Catarina (Exército)",
+      "source_url": "https://arquifln.org.br/igrejas/capelania-militar-santa-catarina-exercito/",
+      "reason": "Capelania, reitoria ou registro sem classificação paroquial inequívoca"
+    },
+    {
+      "key": "florianopolis:38058a1cddc7634b",
+      "name": "Capelania Spiritus Veritatis (UNIVALI)",
+      "source_url": "https://arquifln.org.br/igrejas/capelania-spiritus-veritatis/",
+      "reason": "Capelania, reitoria ou registro sem classificação paroquial inequívoca"
+    },
+    {
+      "key": "florianopolis:34556260e495f330",
+      "name": "Santuário Santa Paulina",
+      "source_url": "https://arquifln.org.br/igrejas/santuario-santa-paulina/",
+      "reason": "Capelania, reitoria ou registro sem classificação paroquial inequívoca"
+    },
+    {
+      "key": "riobranco:14cb2cbe33523a39",
+      "name": "CRISTO REI - NOVA CALIFORNIA - 2009",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/cristo-rei--nova-california--2009",
+      "reason": "Distrito/endereço sem município inequívoco; não usar o endereço da cúria como sede paroquial"
+    },
+    {
+      "key": "riobranco:af0759bcd177fef2",
+      "name": "NOSSA SENHORA APARECIDA - VILA CAMPINAS 2011",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/nossa-senhora-aparecida--vila-campinas-2011",
+      "reason": "Distrito/endereço sem município inequívoco; não usar o endereço da cúria como sede paroquial"
+    },
+    {
+      "key": "riobranco:b6b7551f2d4d36dc",
+      "name": "PARÓQUIA SÃO JOSÉ - EXTREMA - 1988",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/paroquia-sao-jose--extrema--1988",
+      "reason": "Distrito/endereço sem município inequívoco; não usar o endereço da cúria como sede paroquial"
+    },
+    {
+      "key": "riobranco:6671a907a6b0b888",
+      "name": "ÁREA MISSIONÁRIA SÃO CAMILO",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/area-missionaria-sao-camilo",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "riobranco:83ea3bf63b92962b",
+      "name": "QUASE PARÓQUIA - SAGRADO CORAÇÃO DE JESUS - VILA CAQUETÁ",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/quase-paroquia--sagrado-coracao-de-jesus--vila-caqueta",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "riobranco:66b75f42eb4d8ca5",
+      "name": "QUASE PARÓQUIA BOM PASTOR - VILA NOVA ALDEIA",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/quase-paroquia-bom-pastor--vila-nova-aldeia",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "riobranco:aac30c876b907702",
+      "name": "ÁREA MISSIONÁRIA CIDADE DO POVO",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/area-missionaria-cidade-do-povo",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "riobranco:ba3da6b0783a00be",
+      "name": "ÁREA MISSIONÁRIA SOUZA ARAÚJO",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/area-missionaria-souza-araujo",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "riobranco:ffa6fd16cf5b7f6a",
+      "name": "CATEDRAL NOSSA SENHORA DE NAZARÉ",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/catedral-nossa-senhora-de-nazare",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "riobranco:6a474a97a304f7f1",
+      "name": "ÁREA MISSIONÁRIA DIVINA MISERICÓRDIA",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/area-missionaria-divina-misericordia",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "riobranco:3784882d9ae06635",
+      "name": "ÁREA MISSIONÁRIA JOÃO PAULO II",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/area-missionaria-joao-paulo-ii",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "riobranco:888c7d6dd2709858",
+      "name": "QUASE PARÓQUIA NOSSA SENHORA DE FÁTIMA - TRANSACREANA",
+      "source_url": "https://diocesederiobranco.org.br/paroquias/quase-paroquia-nossa-senhora-de-fatima--transacreana",
+      "reason": "Área, quase-paróquia ou catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "aracaju:7a4cc94fe10b856c",
+      "name": "PARÓQUIA N. SRA. DA CONCEIÇÃO, POVOADO ALAGADIÇO (FREI PAULO-SE)",
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-n-sra-da-conceicao-povoado-alagadico-frei-paulo-se",
+      "reason": "Município no título sem correspondência exata"
+    },
+    {
+      "key": "aracaju:78ac58853eae5771",
+      "name": "PARÓQUIA NOSSA SENHORA APARECIDA, APARECIDA-SE",
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-aparecida-aparecida-se",
+      "reason": "Município no título sem correspondência exata"
+    },
+    {
+      "key": "aracaju:799bf60a1cbcd61b",
+      "name": "PARÓQUIA SANTO ANTÔNIO – POVOADO CAUEIRA, ITAPORANGA-SE",
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-santo-antonio-povoado-caueira-itaporanga-se",
+      "reason": "Município no título sem correspondência exata"
+    },
+    {
+      "key": "aracaju:0a85267907b8255c",
+      "name": "PARÓQUIA SÃO LUCAS EVANGELISTA – COROA DO MEIO. ARACAJU-SE",
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-sao-lucas-evangelista-coroa-do-meio-aracaju-se",
+      "reason": "Município no título sem correspondência exata"
+    },
+    {
+      "key": "aracaju:098ff30cf398b050",
+      "name": "PARÓQUIA NOSSA SENHORA D’AJUDA – ITAPORANGA-SE",
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-dajuda-itaporanga-se",
+      "reason": "Município no título sem correspondência exata"
+    },
+    {
+      "key": "aracaju:1841c175f449ff17",
+      "name": "PARÓQUIA NOSSA SENHORA ROSA MISTICA – PRIMEIRA ETAPA, CONJ. MARCOS FREIRE III",
+      "source_url": "https://arquidiocesedearacaju.org/paroquias/paroquia-nossa-senhora-rosa-mistica-primeira-etapa-conj-marcos-freire-iii",
+      "reason": "Município no título sem correspondência exata"
+    },
+    {
+      "key": "cuiaba:3040",
+      "name": "Universitária São José Operário",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/universitaria-sao-jose-operario/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:3070",
+      "name": "Santo Antônio  – Santo Antônio de Leverger",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/santo-antonio-santo-antonio-de-leverger/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:3067",
+      "name": "Rural de Santa Cruz das Palmeiras",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/rural-de-santa-cruz-das-palmeiras/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:3065",
+      "name": "Nossa Senhora de Brotas",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-de-brotas/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:3043",
+      "name": "Santuário Eucarístico São João Paulo II",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/santuario-eucaristico-sao-joao-paulo-ii/",
+      "reason": "Santuário/catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "cuiaba:3041",
+      "name": "Santuário Eucarístico Nossa Senhora do Bom Despacho",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/santuario-eucaristico-nossa-senhora-do-bom-despacho/",
+      "reason": "Santuário/catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "cuiaba:3024",
+      "name": "Nossa Senhora das Dores",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-das-dores/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:3015",
+      "name": "Nossa Senhora do Pantanal",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-do-pantanal/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:3013",
+      "name": "Nossa Senhora de Guadalupe",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-de-guadalupe/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:3009",
+      "name": "Santuário Nossa Senhora da Medalha Milagrosa",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/santuario-nossa-senhora-da-medalha-milagrosa/",
+      "reason": "Santuário/catedral sem classificação paroquial explícita"
+    },
+    {
+      "key": "cuiaba:3003",
+      "name": "Nossa Senhora da Guia – Distrito da Guia",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-da-guia-distrito-da-guia/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:3001",
+      "name": "Nossa Senhora da Guia – Cuiabá",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/nossa-senhora-da-guia-cuiaba/",
+      "reason": "Endereço institucional sem município MT inequívoco"
+    },
+    {
+      "key": "cuiaba:2847",
+      "name": "Catedral Basílica Senhor Bom Jesus de Cuiabá",
+      "source_url": "https://arquidiocesecuiaba.org.br/paroquia/catedral-basilica-senhor-bom-jesus-de-cuiaba/",
+      "reason": "Santuário/catedral sem classificação paroquial explícita"
+    }
+  ]
+}

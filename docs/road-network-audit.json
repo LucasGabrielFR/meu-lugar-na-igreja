@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-24T21:04:23.075Z",
+  "source": {
+    "source": "https://geoservicos.ibge.gov.br/geoserver/ows",
+    "layer": "CCAR:BC250_2021_Trecho_Rodoviario_L",
+    "attribution": "IBGE · BC250 2021",
+    "retrieved_at": "2026-10-24T17:15:42.169Z",
+    "revision": "16ea6b8f51cd",
+    "features": 129366,
+    "source_features": 133528,
+    "overview_features": 14270,
+    "filter": "operacional=Sim; situacaofisica=Construída",
+    "coverage": "Rodovias federais, estaduais e demais trechos rodoviários da BC250; vias locais carregadas por região. Base cartográfica de referência, sem roteamento.",
+    "tile_degrees": 2
+  },
+  "municipalities": 4019,
+  "realConnectedMunicipalities": 4008,
+  "realRoadEntrances": 10549,
+  "illustrativeLocalLinks": 5,
+  "unconnected": [
+    1304203,
+    1200351,
+    2605459,
+    1301308,
+    1200435
+  ]
+}

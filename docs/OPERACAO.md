@@ -1,4 +1,4 @@
-# Operação da versão 0.10.0
+# Operação da versão 0.17.0
 
 ## Serviços e escopo
 
@@ -64,3 +64,21 @@ Nenhum vínculo sacerdotal ou função comum é coletado nesta versão. Pedidos 
 Malhas: `https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=minima&intrarregiao=UF`.
 
 Municípios: `https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=nome`. Consulta em 23/10/2026: 5.571 registros, guardados em formato reduzido (código, nome e UF). Revisar alterações do catálogo por migração/controladamente; atualizar geografia não deve alterar lotes virtuais existentes.
+
+## Atualização nacional de paróquias
+
+Execute `docker compose --profile tools run --build --rm catalog-national` e depois `docker compose up --build -d --wait`. O painel Catálogo oficial mostra cobertura, fontes e datas. A carga é parcial e cria bairros vazios; não cria casas nem valida padres. Arquivamentos são preservados. Veja [dados eclesiásticos](DADOS-ECLESIASTICOS.md).
+
+## Serviços da versão 0.13.0
+
+- catalog-national consulta todas as circunscrições CNBB e retoma checkpoints recentes em .cache/.
+- catalog-regional atualiza os diretórios oficiais complementares.
+- catalog-expansion atualiza Florianópolis, Rio Branco, Aracaju e Cuiabá, com cache de 24 horas; use `node scripts/fetch-diocesan-expansion.mjs --refresh` como comando do serviço para forçar atualização.
+- catalog-reference atualiza o snapshot nacional em `db/reference/`. A próxima migração publica referências paroquiais elegíveis, identificando sua origem e deixando a diocese em aberto. Cache de páginas permite retomar uma coleta interrompida. Homônimas, capelas e municípios não resolvidos ficam para revisão no relatório.
+- highways atualiza a malha IBGE BC250 e seus arquivos regionais. Use --refresh no coletor para ignorar checkpoints.
+- Após atualizar snapshots, use docker compose up --build -d --wait.
+
+O mapa usa fontes locais para rodovias, municípios e paróquias. Nenhum serviço de rotas ou API paga é necessário. A limpeza das casas foi executada uma única vez com backup; não é repetida por migrações. Não execute scripts/reset-map-to-catalog.mjs em uma base com moradores sem nova autorização expressa.
+
+Na versão 0.17.0, a camada opcional de limite municipal consulta `servicodados.ibge.gov.br` por HTTPS. Liberar acesso de saída para esse host no servidor se quiser essa camada. A rota valida o código contra o catálogo IBGE local, usa timeout de 12 segundos e cache de 24 horas; o navegador também recebe cache público de um dia. Em falha, o contorno virtual permanece e a interface informa a indisponibilidade da malha real. Não é necessário configurar credenciais nem novos containers. O cache pode ser renovado após reconstruções; não é um backup de cartografia.
+

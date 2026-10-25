@@ -2,6 +2,172 @@
 
 Todas as mudanças relevantes serão registradas neste arquivo, seguindo [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
+## [0.18.2] - 2026-10-25
+
+### Added
+
+- Auditoria somente de leitura para possíveis duplicidades paroquiais dentro do mesmo município: abreviações, acentos, preposições, grafias próximas e títulos incompletos. O relatório preserva fontes, localidades e IDs para decisão humana; não altera importação ou registros.
+- Listagem nacional com 378 pares candidatos em 110 municípios, envolvendo 553 registros dos 10.077 ativos; homônimas não são tratadas como exclusões aprovadas. Palhoça recebe conferência prioritária e identificação da observação editorial “nova paróquia”.
+
+## [0.18.1] - 2026-10-24
+
+### Fixed
+
+- Projeção rodoviária restrita ao enquadramento com margem e cache por geometria; conexões calculadas por região, mantendo os vizinhos para ligações alternativas.
+- Geometrias e contornos municipais reutilizados quando outros municípios carregam; escalas não são recalculadas quando os raios permanecem iguais.
+- Eventos de arraste, pinça e roda agrupados por quadro, preservando a âncora do zoom e evitando atualizações intermediárias de hover durante o gesto.
+- Ruas e rodovias agrupadas em poucos caminhos SVG; máscara limitada à tela para evitar superfícies desnecessariamente grandes.
+- Na amostra local de Jandira, projeção completa de 367,57 ms substituída por 98,19 ms no primeiro enquadramento e 5,61 ms com cache; conexões de 1.007,68 ms para 26,48 ms. Medição de CPU em Node/Docker, sem alegação de FPS.
+- Validação: build e serviços Docker saudáveis, lint, TypeScript e 43 testes aprovados; auditoria sem vulnerabilidades; arraste e zoom exercitados no navegador local sem erros de console.
+
+### Added
+
+- Testes de reutilização e invalidação de geometrias, trechos que atravessam a tela e conexões com municípios fora do enquadramento.
+- Perfil reproduzível de cálculo do mapa em Docker, sem novas dependências, em `scripts/profile-map.mjs` e `docs/map-performance.json`.
+
+## [0.18.0] - 2026-10-24
+
+### Added
+
+- Aviões ilustrativos gerados na área visível, com direções, entradas, velocidades e intervalos aleatórios em todos os níveis de zoom.
+- Limite de dois voos simultâneos em telas grandes e um em telas menores; descarte de trajetos concluídos ou que saíram do enquadramento.
+- Controle por visibilidade da aba/mapa, abertura de diálogos e preferência de movimento reduzido, com encerramento de timers/listeners ao desmontar.
+- Testes de travessia da área visível, diversidade de direções, culling por movimento da câmera e limite por tamanho de tela.
+
+### Changed
+
+- Rota fixa nacional e repetição infinita substituídas por animação SVG local, sem API de voos ou novas dependências.
+- Ícones mantêm tamanho legível durante o zoom, não interceptam cliques e não geram atualizações React por quadro da animação.
+
+### Fixed
+
+- Cada voo inicia sua própria animação SVG ao entrar no DOM, evitando que aviões criados depois herdem o tempo inicial do documento e terminem imediatamente fora da tela.
+- Validação: imagens Docker reconstruídas e serviços saudáveis; lint, TypeScript e 40 testes aprovados, auditoria sem vulnerabilidades. Navegador confirmou aviões em zoom municipal, deslocamento real entre capturas DOM, substituição por novos trajetos e zero voos ao abrir um diálogo.
+
+## [0.17.0] - 2026-10-24
+
+### Added
+
+- Contorno da área virtual ao passar o ponteiro e na seleção, com resumo contextual de cidade ou paróquia e contagem de casas.
+- Navegação por Brasil, cinco macrorregiões, estado, cidade e paróquia; cada nível mostra seus próprios totais e ações.
+- Limite municipal simplificado do IBGE em azul tracejado, consultado sob demanda por rota validada, com cache de 24 horas e fallback para a área ilustrada.
+- Enquadramento específico para limite municipal, paróquia e casa; zoom ampliado para detalhes em municípios cuja ilustração foi reduzida.
+- Testes de separação entre territórios metropolitanos, conservação das sedes, regiões e geometrias administrativas.
+
+### Fixed
+
+- Escala das cidades ilustradas considera os municípios vizinhos, evitando que São Paulo cubra Guarulhos, São Caetano e outras cidades próximas.
+- Nome e contagem ficam junto da sede e da área correspondente, em vez de aparecerem deslocados abaixo da mancha urbana.
+- Clique em igreja preserva a seleção paroquial, com ação de localizar seu bairro; clique no território seleciona a cidade.
+- Validação: Docker reconstruído com aplicação e banco saudáveis; lint, TypeScript e 38 testes aprovados, auditoria sem vulnerabilidades. Navegador conferiu cartão municipal, limite administrativo, navegação Sudeste → São Paulo e seleção/localização paroquial com resumo persistente. Endpoint municipal retornou 200 para São Paulo e São Caetano (qualidade máxima da malha simplificada), 400 para código inválido e 404 para município inexistente.
+
+## [0.16.0] - 2026-10-24
+
+### Added
+
+- Cidade contínua organizada em quadras com núcleos paroquiais, praças locais, praça compartilhada e setores visuais em municípios grandes.
+- Lotes e blocos determinísticos: adicionar moradores e paróquias preserva as posições já ocupadas. Novos blocos residenciais entram na malha compartilhada.
+- Seleção de nomes por zoom, quantidade de paróquias, prioridade da cidade em foco e colisão em coordenadas de tela.
+- Detalhamento progressivo de igrejas, árvores, casas e nomes paroquiais, com destaque por foco/seleção e passagem do ponteiro.
+- Testes para centenas de paróquias, estabilidade de lotes e núcleos, conectividade de ruas e colisão de nomes.
+
+### Changed
+
+- Distribuição circular e vias radiais substituídas por ruas conectadas em quadras. Acessos às rodovias chegam a nós dessa malha.
+- Símbolos e nomes municipais aparecem gradualmente; cidades com mais paróquias têm prioridade em escalas distantes.
+- Setores são organização visual fictícia, sem inferência de limites paroquiais ou diocesanos.
+- Validação: Docker reconstruído com aplicação e banco saudáveis; lint, TypeScript e 35 testes aprovados; auditoria de dependências sem vulnerabilidades. Revisão visual de São Paulo e visão nacional confirmou quadras e nomes progressivos. Auditoria de acessos atualizada para 4.019 municípios.
+
+## [0.15.0] - 2026-10-24
+
+### Added
+
+- Publicação de paróquias do Acervo Católico como fonte de referência, com município IBGE resolvido e diocese em aberto.
+- Proveniência institucional/referência persistida no catálogo e em suas fontes, identificada no painel, API e cartão da igreja.
+- Reconciliação de correspondências únicas por nome/município; homônimas ambíguas ficam para revisão. Fontes institucionais existentes têm prioridade.
+- Restrição de banco exige diocese para registros institucionais, permitindo vínculo desconhecido apenas em referências.
+
+### Changed
+
+- Importação e atualização do mapa usam também o snapshot nacional de referência, conforme autorizado pelo responsável, sem criar casas.
+- Catálogo administrativo usa junção opcional de diocese e exibe totais separados por tipo de fonte.
+- A confirmação institucional posterior pode aproveitar um registro de referência existente, preservando seu identificador e bairro.
+- A conciliação reconhece qualificadores iniciais como “Santuário”, corrigindo a duplicata de São José em Niquelândia e outras 13 referências vazias, arquivadas com suas fontes preservadas no registro institucional.
+- Validação: importação repetida manteve 10.077 paróquias ativas (2.624 institucionais e 7.453 referências), em 4.019 municípios e 27 UFs, sem casas e sem bairros faltantes. Docker reconstruído e saudável; lint, TypeScript e 31 testes passaram; auditoria sem vulnerabilidades. Cartão de referência conferido no navegador em Maceió com origem e diocese em aberto; painel protegido por autenticação.
+
+## [0.14.0] - 2026-10-24
+
+### Added
+
+- Coletor institucional complementar com 230 fichas de Florianópolis, Rio Branco, Aracaju e Cuiabá, URLs de origem e exclusões documentadas.
+- Coleta nacional independente de referência, separada do catálogo publicado, com cache por página, retomada, classificação por nomenclatura e município IBGE.
+- Auditoria reproduzível por UF e circunscrição, relação de candidatas para pesquisa e minuta de solicitação de exportação nacional à instituição responsável.
+- Testes de classificação, associação municipal e separação entre referência e catálogo institucional.
+
+### Changed
+
+- Importação transacional inclui o novo snapshot oficial, mantendo a reconciliação de fontes e sem criar casas.
+- Serviços Docker específicos para atualização institucional complementar e referência nacional. Nenhuma dependência nova.
+
+- Imagens reconstruídas e aplicação/banco saudáveis. Importação repetida preservou 2.624 paróquias, 830 municípios do catálogo, 21 UFs e zero casas; nenhum registro ativo ficou sem bairro associado.
+- Lint, TypeScript e 27 testes passaram; auditoria de dependências sem vulnerabilidades. Quatro municípios das novas fontes responderam pela API pública com seus bairros e zero casas.
+
+## [0.13.0] - 2026-10-24
+
+### Added
+
+- Malha rodoviária IBGE BC250 2021: 129.366 trechos classificados como construídos e operacionais, dentre 133.528 registros consultados. Inclui rodovias estaduais e demais estradas além das federais.
+- Visão geral com 14.270 trechos federais e 200 arquivos regionais carregados por aproximação, com cache limitado no cliente.
+- Auditoria reproduzível das conexões com a malha real e testes para Campinorte, Niquelândia, Minaçu e Colinas do Sul.
+
+### Changed
+
+- A atualização padrão de rodovias usa o IBGE; o coletor DNIT permanece apenas como referência histórica.
+- As entradas seguem a direção da estrada, com asfalto, acostamento visual e faixas na mesma escala das ruas da cidade.
+- O terreno da comunidade perdeu a borda circular rígida; vias internas sem acesso externo terminam nos anéis urbanos, sem falsas saídas no gramado.
+
+### Fixed
+
+- Rodovia junto ao núcleo não é mais confundida com acesso existente: as interseções com o perímetro geram entradas explícitas.
+- Rodovias cortadas pelo desenho da cidade recebem ligações; a seleção não fica limitada aos dois primeiros cruzamentos.
+- Ruas internas e estradas externas deixam de usar espessuras incompatíveis ao aproximar.
+
+## [0.12.0] - 2026-10-24
+
+### Added
+
+- Inventário público das 281 circunscrições CNBB, com classificação canônica das igrejas, data da consulta e indicação de diretório vazio.
+- Conectores oficiais de Manaus, dos sete vicariatos de Natal, Vitória e Roraima. Catálogo ampliado para 2.394 paróquias ativas em 752 municípios, 17 UFs e 39 circunscrições com registros.
+- Malha real DNIT/IBAMA: 5.251 trechos existentes da versão SNV 202201B, excluindo trechos planejados e travessias, carregada de snapshot local.
+- Acessos ilustrativos até a rodovia próxima e conexões limitadas entre municípios até 100 km, com saídas encaixadas no perímetro da cidade.
+- Camada rodoviária configurável, atribuição das fontes, descarte de geometrias fora do enquadramento e testes de proximidade/encaixe.
+
+### Changed
+
+- Importação mantém paróquias homônimas com IDs distintos da mesma fonte; concilia somente correspondências inequívocas entre provedores diferentes.
+- Atualização nacional consulta cada circunscrição, com checkpoint factual, sem persistir fotos, biografias ou contatos pessoais da resposta.
+- Painel exibe a data de consulta CNBB e distingue diretório vazio de ausência real de paróquias. A cobertura permanece parcial.
+
+### Removed
+
+- Por solicitação do responsável, removidas as 121 casas, cinco bairros sem fonte, um bairro duplicado e duas cidades apenas de teste. Backup factual local antes da limpeza.
+- Mapas de demonstração deixam de aparecer; os municípios e paróquias reais importados permanecem sem moradores.
+
+## [0.11.0] - 2026-10-24
+
+### Added
+
+- Coletor público CNBB/CDICBR: 281 circunscrições e 1.844 fichas paroquiais resolvidas em 641 municípios e 13 UFs, entre 1.883 resultados. Cobertura parcial.
+- Snapshot nacional, 39 exclusões documentadas e trilha de fontes múltiplas por paróquia.
+- Cobertura por circunscrição, municípios/UFs e histórico das coletas no painel.
+- Testes de resolução município/UF e integridade do catálogo nacional.
+
+### Changed
+
+- Paróquias importadas geram bairros no mapa mesmo sem casas. A importação não valida padres.
+- Conciliação conservadora entre fontes por município, circunscrição e nome. Arquivamentos e casas são preservados.
+- Busca enquadra também cidades com igrejas e nenhuma casa. Cartões mostram circunscrição e fonte oficial.
+
 ## [0.10.0] - 2026-10-24
 
 ### Added
@@ -178,3 +344,6 @@ Versão inicial de planejamento; não representa lançamento de software execut�
 - Catálogo extensível de áreas e funções, escolha direta e progressão configurável por pontos.
 - Regras de verificação humana exclusivas para padres, sem validação dos demais títulos.
 - Roadmap com critérios de aceite e fluxo documentado em Mermaid.
+
+
+

@@ -10,7 +10,9 @@ export async function getWorld() {
 }
 export async function getCityWorld(code: number) {
   const [parishes, houses] = await Promise.all([
-    db.query<Parish>('SELECT p.* FROM parishes p JOIN cities c ON c.code=p.city_code WHERE p.city_code=$1 AND p.active AND c.active ORDER BY p.slot', [code]),
+    db.query<Parish>(`SELECT p.*,j.name jurisdiction,pc.source_url,pc.source_kind FROM parishes p JOIN cities c ON c.code=p.city_code
+      LEFT JOIN parish_catalog pc ON pc.id=p.catalog_id LEFT JOIN ecclesiastical_jurisdictions j ON j.id=pc.jurisdiction_id
+      WHERE p.city_code=$1 AND p.active AND c.active ORDER BY p.slot`, [code]),
     db.query<House>('SELECT h.* FROM houses h JOIN parishes p ON p.id=h.parish_id JOIN cities c ON c.code=h.city_code WHERE h.city_code=$1 AND h.active AND p.active AND c.active ORDER BY h.id', [code]),
   ]);
   return { parishes: parishes.rows, houses: houses.rows };
