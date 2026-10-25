@@ -2,6 +2,12 @@
 
 Todas as mudanças relevantes serão registradas neste arquivo, seguindo [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
+## [Unreleased]
+
+### Added
+
+- Planejamento da participação por comentários no perfil oficial @meu_lugar_na_igreja. Uma casa por autor reconhecido pela Meta, cidade/paróquia obrigatórias e ausência de código/login/documentos por decisão do responsável. Inclui prova técnica, conexão oficial, fila PostgreSQL, deduplicação e critérios de liberação; nenhuma integração ativada nesta etapa.
+
 ## [0.20.0] - 2026-10-25
 
 ### Added

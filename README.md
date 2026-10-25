@@ -2,6 +2,10 @@
 
 Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras. A integração com comentários do Instagram será uma etapa posterior.
 
+## Planejamento da integração Instagram
+
+O próximo fluxo usará somente **@meu_lugar_na_igreja**: comentário do próprio autor com município/UF e paróquia, sem login do morador, código de comprovação ou documentos. Autoria vem da API oficial, nunca de um @ mencionado no texto. A integração ainda não está implementada; o formulário moderado atual permanece funcionando. Veja [plano e aceites](instagram-identidade-plan.md).
+
 ## Dados locais e administração — versão 0.20.0
 
 A lista de cidades já consultava o PostgreSQL, sem busca em tempo real no IBGE. Agora cidades e paróquias têm busca SQL sem distinção de acentos e paginação de 50 cadastros. O formulário de cidade consulta até 15 municípios da base local, em vez de entregar 5.571 opções ao navegador.
