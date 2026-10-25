@@ -8,6 +8,15 @@ Todas as mudanças relevantes serão registradas neste arquivo, seguindo [Keep a
 
 - Planejamento da participação por comentários no perfil oficial @meu_lugar_na_igreja. Uma casa por autor reconhecido pela Meta, cidade/paróquia obrigatórias e ausência de código/login/documentos por decisão do responsável. Inclui prova técnica, conexão oficial, fila PostgreSQL, deduplicação e critérios de liberação; nenhuma integração ativada nesta etapa.
 
+## [0.22.0] - 2026-10-25
+
+### Added
+
+- Seção Instagram no admin: conectar via Instagram Login, exibir perfil real retornado pela API, atualizar dados, reconectar/trocar conta e desconectar localmente.
+- Callback OAuth separado do webhook, state aleatório/temporário ligado a administrador e sessão, consumo único e erros sem exposição de credenciais.
+- Migration012 para autorizações e conta única; tokens cifrados com AES-256-GCM e registro de conexão/desconexão em auditoria. Troca por token de longa duração com validade retornada pelo provedor.
+- Configuração Docker e roteiro de App Review; testes de criptografia, protocolo OAuth, erros, expiração, sessão e repetição no PostgreSQL. Sem novas dependências; webhook e páginas legais preservados. Desconexão local não revoga permissões Meta nem desativa o webhook.
+
 ## [0.21.2] - 2026-10-25
 
 ### Fixed

@@ -2,6 +2,10 @@
 
 Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras. A integração com comentários do Instagram será uma etapa posterior.
 
+## Conectar Instagram — versão 0.22.0
+
+O admin tem uma seção **Instagram** com OAuth oficial, exibição do perfil, atualização dos dados e desconexão local. Configure APP_URL, INSTAGRAM_APP_ID, INSTAGRAM_APP_SECRET e INSTAGRAM_TOKEN_ENCRYPTION_KEY; cadastre `/api/instagram/callback` no login da Meta. Tokens ficam cifrados no PostgreSQL, e o callback valida state de uso único ligado à sessão administrativa. Sem novas dependências. Veja [configuração e roteiro de demonstração](docs/INSTAGRAM-OAUTH.md). O webhook existente é preservado; conectar não inicia a criação de casas. Sem credenciais reais configuradas, o botão permanece desabilitado.
+
 ## Acesso administrativo — versão 0.21.2
 
 O mapa público não exibe atalho para administração. Os links públicos de privacidade e termos permanecem disponíveis. Acesso direto por /admin, com autenticação obrigatória e proteção de login existentes.
