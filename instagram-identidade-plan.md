@@ -28,3 +28,7 @@ Uma casa por identidade de perfil Instagram reconhecida pela API no escopo da in
 - [Workspace oficial da Meta](https://www.postman.com/meta/instagram/overview) e [Instagram Login](https://www.postman.com/meta/instagram/folder/6raa77c/instagram-api-with-instagram-login): confirmam conta profissional, ausência de necessidade de Página Facebook nesse caminho e nomes das permissões.
 - [Coleção oficial](https://www.postman.com/meta/instagram/documentation/6yqw8pt/instagram-api?entity=request-23987686-3fe78620-2258-44b6-893f-42d76c7200d7): distingue login Facebook/Instagram e requisitos de mensagens. Não misturar fluxos.
 - Referências para configuração: [criar app](https://developers.facebook.com/docs/instagram-platform/create-an-instagram-app/), [webhooks](https://developers.facebook.com/docs/instagram-platform/webhooks/), [moderação de comentários](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/comment-moderation/). A leitura automatizada dessas páginas foi limitada por HTTP 429/indisponibilidade. Campos precisos do payload, níveis de acesso e telas atuais dependem de confirmação no dashboard e prova real; nenhum endpoint autenticado foi testado nesta pesquisa.
+
+## Entrega parcial 0.21.0
+
+Receptor GET/POST e caixa de entrada PostgreSQL implementados em 25/10/2026. Configuração e banco por SSH em docs/INSTAGRAM-WEBHOOK.md. OAuth, eventos reais de produção e processamento em casas continuam pendentes.

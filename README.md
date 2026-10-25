@@ -2,6 +2,10 @@
 
 Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras. A integração com comentários do Instagram será uma etapa posterior.
 
+## Recepção Instagram — versão 0.21.0
+
+A rota `/api/webhooks/instagram` responde à verificação da Meta e persiste notificações assinadas na tabela `instagram_webhook_receipts`. Configure `META_WEBHOOK_VERIFY_TOKEN` e `META_APP_SECRET` no servidor e reconstrua o Docker. A rota permanece indisponível enquanto seu respectivo segredo estiver ausente. Esta etapa recebe eventos; processamento de comentários e criação de casas ainda não estão implementados. Veja [configuração, tabela e acesso ao banco por SSH](docs/INSTAGRAM-WEBHOOK.md). Nenhuma dependência nova.
+
 ## Planejamento da integração Instagram
 
 O próximo fluxo usará somente **@meu_lugar_na_igreja**: comentário do próprio autor com município/UF e paróquia, sem login do morador, código de comprovação ou documentos. Autoria vem da API oficial, nunca de um @ mencionado no texto. A integração ainda não está implementada; o formulário moderado atual permanece funcionando. Veja [plano e aceites](instagram-identidade-plan.md).
