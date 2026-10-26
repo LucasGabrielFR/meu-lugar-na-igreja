@@ -29,26 +29,31 @@ export async function verifyInstagramWebhook(request,token){
   return new Response(params.get('hub.challenge'),{headers:{'Content-Type':'text/plain','Cache-Control':'no-store'}});
 }
 
-export async function receiveInstagramWebhook(request,client,secret){
+export async function receiveInstagramWebhook(request,client,secret,logger=console){
+  const reject=(reason,status,message)=>{
+    logger.warn('instagram_webhook_rejected',{reason,status});
+    return new Response(message,{status});
+  };
 
-  if(!secret)return Response.json({error:'Webhook não configurado.'},{status:503});
-  if(Number(request.headers.get('content-length'))>MAX_BODY)return new Response('Payload too large',{status:413});
+  if(!secret)return reject('missing_app_secret',503,'Webhook não configurado.');
+  if(Number(request.headers.get('content-length'))>MAX_BODY)return reject('body_too_large',413,'Payload too large');
   const reader=request.body?.getReader();
-  if(!reader)return new Response('Empty body',{status:400});
+  if(!reader)return reject('empty_body',400,'Empty body');
   const chunks=[];let size=0;
   try{
-    while(true){const {done,value}=await reader.read();if(done)break;size+=value.byteLength;if(size>MAX_BODY){await reader.cancel();return new Response('Payload too large',{status:413});}chunks.push(value);}
-  }catch{return new Response('Invalid body',{status:400});}
+    while(true){const {done,value}=await reader.read();if(done)break;size+=value.byteLength;if(size>MAX_BODY){await reader.cancel();return reject('body_too_large',413,'Payload too large');}chunks.push(value);}
+  }catch{return reject('body_read_failed',400,'Invalid body');}
   const body=Buffer.concat(chunks);
-  if(!validInstagramSignature(body,request.headers.get('x-hub-signature-256'),secret))return new Response('Forbidden',{status:403});
+  if(!validInstagramSignature(body,request.headers.get('x-hub-signature-256'),secret))return reject('invalid_signature',403,'Forbidden');
   let payload;
-  try{payload=JSON.parse(body.toString('utf8'));}catch{return new Response('Invalid JSON',{status:400});}
-  if(payload?.object!=='instagram'||!Array.isArray(payload.entry))return new Response('Invalid Instagram event',{status:400});
+  try{payload=JSON.parse(body.toString('utf8'));}catch{return reject('invalid_json',400,'Invalid JSON');}
+  if(payload?.object!=='instagram'||!Array.isArray(payload.entry))return reject('invalid_event_shape',400,'Invalid Instagram event');
   try{
-    await storeInstagramReceipt(client,body,payload);
+    const receipt=await storeInstagramReceipt(client,body,payload);
+    logger.info('instagram_webhook_received',{receipt_id:receipt.id,delivery_count:receipt.delivery_count,entries:payload.entry.length});
     return Response.json({received:true});
   }catch{
-    console.error('Instagram webhook persistence failed');
+    logger.error('instagram_webhook_persistence_failed');
     return Response.json({error:'Recebimento temporariamente indisponível.'},{status:503});
   }
 }

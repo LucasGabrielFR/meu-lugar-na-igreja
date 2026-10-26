@@ -71,6 +71,27 @@ services:
       timeout: 5s
       start_period: 20s
       retries: 10
+  instagram-diagnostics:
+    profiles: [tools]
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts:ro
+    environment:
+      PGHOST: db
+      PGPORT: 5432
+      PGDATABASE: ${POSTGRES_DB}
+      PGUSER: ${POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      INSTAGRAM_ACCESS_TOKEN: ${INSTAGRAM_ACCESS_TOKEN:-}
+      INSTAGRAM_TOKEN_ENCRYPTION_KEY: ${INSTAGRAM_TOKEN_ENCRYPTION_KEY:-}
+      INSTAGRAM_API_VERSION: ${INSTAGRAM_API_VERSION:-v26.0}
+    depends_on:
+      db:
+        condition: service_healthy
+    command: [node, scripts/diagnose-instagram.mjs]
   checks:
     profiles: [tools]
     build:

@@ -39,3 +39,13 @@ test('PostgreSQL preserves receipt payload and counts exact redeliveries without
     assert.deepEqual(stored.payload,JSON.parse(body));assert.equal(stored.status,'processed');
   }finally{await client.query('ROLLBACK');await client.end();}
 });
+
+test('diagnostic logs distinguish rejection and acceptance without exposing body or credentials',async()=>{
+  const logs=[],logger={warn:(...args)=>logs.push(args),info:(...args)=>logs.push(args),error:(...args)=>logs.push(args)};
+  let writes=0;const client={query:async()=>{writes++;return {rows:[{id:'42',delivery_count:1}]};}};
+  await receiveInstagramWebhook(new Request('http://localhost',{method:'POST',body}),client,secret,logger);
+  assert.equal(writes,0);assert.deepEqual(logs[0],['instagram_webhook_rejected',{reason:'invalid_signature',status:403}]);
+  await receiveInstagramWebhook(signed(),client,secret,logger);
+  assert.equal(writes,1);assert.deepEqual(logs[1],['instagram_webhook_received',{receipt_id:'42',delivery_count:1,entries:1}]);
+  const text=JSON.stringify(logs);assert.ok(!text.includes(secret));assert.ok(!text.includes('Niquelândia'));assert.ok(!text.includes('test-account'));
+});
