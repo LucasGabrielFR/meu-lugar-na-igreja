@@ -2,6 +2,10 @@
 
 Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras. A integração com comentários do Instagram será uma etapa posterior.
 
+## Diagnóstico Instagram — versão 0.22.1
+
+O receptor registra nos logs aceitação, rejeição e falha de persistência sem expor payloads ou credenciais. O perfil Docker `instagram-diagnostics` faz consultas somente de leitura para conferir conta, assinaturas, permissões e acesso amostral aos comentários. Isso permite distinguir falha de entrega de rejeição no servidor; não ativa assinaturas nem cria casas. Veja [roteiro de diagnóstico](docs/DIAGNOSTICO-INSTAGRAM.md). Sem novas dependências ou migrations.
+
 ## Conectar Instagram — versão 0.22.0
 
 O admin tem uma seção **Instagram** com OAuth oficial, exibição do perfil, atualização dos dados e desconexão local. Configure APP_URL, INSTAGRAM_APP_ID, INSTAGRAM_APP_SECRET e INSTAGRAM_TOKEN_ENCRYPTION_KEY; cadastre `/api/instagram/callback` no login da Meta. Tokens ficam cifrados no PostgreSQL, e o callback valida state de uso único ligado à sessão administrativa. Sem novas dependências. Veja [configuração e roteiro de demonstração](docs/INSTAGRAM-OAUTH.md). O webhook existente é preservado; conectar não inicia a criação de casas. Sem credenciais reais configuradas, o botão permanece desabilitado.

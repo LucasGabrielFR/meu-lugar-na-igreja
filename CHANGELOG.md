@@ -8,6 +8,17 @@ Todas as mudanças relevantes serão registradas neste arquivo, seguindo [Keep a
 
 - Planejamento da participação por comentários no perfil oficial @meu_lugar_na_igreja. Uma casa por autor reconhecido pela Meta, cidade/paróquia obrigatórias e ausência de código/login/documentos por decisão do responsável. Inclui prova técnica, conexão oficial, fila PostgreSQL, deduplicação e critérios de liberação; nenhuma integração ativada nesta etapa.
 
+## [0.22.1] - 2026-10-25
+
+### Fixed
+
+- Rejeições de webhook antes da gravação deixam motivo/status observáveis nos logs. Aceitação informa ID da linha e contador; falha de persistência permanece503. Logs não expõem textos, perfis ou credenciais; validação de assinatura preservada.
+
+### Added
+
+- Diagnóstico Docker somente de leitura da conta autorizada, apps/campos assinados, permissões e comentários amostrais da última publicação. Relatório sanitizado com códigos de erro; sem autoassinatura ou alterações remotas.
+- Testes de logs sem dados sensíveis e consultas diagnósticas sem mutações. A causa da ausência de eventos reais em produção ainda exige correlacionar esses resultados com o teste do usuário.
+
 ## [0.22.0] - 2026-10-25
 
 ### Added
