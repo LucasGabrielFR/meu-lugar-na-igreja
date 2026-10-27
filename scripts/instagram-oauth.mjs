@@ -1,5 +1,5 @@
 import {randomBytes,createHash,createCipheriv,createDecipheriv} from 'node:crypto';
-export const INSTAGRAM_SCOPES=['instagram_business_basic','instagram_business_manage_comments'];
+export const INSTAGRAM_SCOPES=['instagram_business_basic','instagram_business_manage_comments','instagram_business_manage_messages'];
 export const oauthHash=value=>createHash('sha256').update(value).digest('hex');
 export const newOAuthState=()=>randomBytes(32).toString('hex');
 
@@ -61,4 +61,15 @@ export async function saveInstagramConnection(client,stateHash,adminId,result,ke
     await client.query("INSERT INTO audit_log(admin_id,action,entity,entity_id) VALUES($1,'connect','instagram',$2)",[adminId,result.profile.accountId]);
     await client.query('COMMIT');
   }catch(error){await client.query('ROLLBACK');throw error;}
+}
+export async function getActiveInstagramToken(client,key,env=process.env){
+  try{
+    if(client&&key){
+      const res=await client.query('SELECT token_ciphertext,expires_at FROM instagram_connections WHERE slot=true');
+      if(res.rows.length>0&&new Date(res.rows[0].expires_at)>new Date()){
+        return decryptInstagramToken(res.rows[0].token_ciphertext,key);
+      }
+    }
+  }catch{}
+  return env.INSTAGRAM_ACCESS_TOKEN||null;
 }
