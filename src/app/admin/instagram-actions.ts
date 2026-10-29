@@ -1,9 +1,11 @@
 'use server';
 import {cookies} from 'next/headers';
 import {redirect} from 'next/navigation';
+import {revalidatePath} from 'next/cache';
 import {requireAdmin} from '@/lib/auth';
 import {db} from '@/lib/db';
 import {instagramConfig,instagramAuthorizationUrl,newOAuthState,oauthHash,decryptInstagramToken,readInstagramProfile} from '../../../scripts/instagram-oauth.mjs';
+import {processPendingInstagramReceipts} from '../../../scripts/instagram-comment-processor.mjs';
 
 export async function connectInstagram(){
   const admin=await requireAdmin();let config;
@@ -39,4 +41,16 @@ export async function disconnectInstagram(){
     await client.query('COMMIT');
   }catch(error){await client.query('ROLLBACK');throw error;}finally{client.release();}
   redirect('/admin?view=instagram&result=disconnected');
+}
+export async function processInstagramComments(){
+  await requireAdmin();
+  let result='processed';
+  try{
+    await processPendingInstagramReceipts(db,process.env);
+    revalidatePath('/','layout');
+    revalidatePath('/admin');
+  }catch{
+    result='process_failed';
+  }
+  redirect('/admin?view=instagram&result='+result);
 }

@@ -37,7 +37,27 @@ function highwayGrid(roads){const grid=new Map();for(const road of roads){for(le
 function nearbyRoads(grid,node,range){const found=new Map();for(let x=Math.floor(node.x-range);x<=Math.floor(node.x+range);x++)for(let y=Math.floor(node.y-range);y<=Math.floor(node.y+range);y++)for(const road of grid.get(x+':'+y)??[])found.set(road.id,road);return [...found.values()];}
 /** @param {import('./types').City[]} cities @param {Map<number,{lon:number;lat:number}>} seats @param {ReturnType<typeof projectHighways>} roads @param {Record<number,number>} radii @param {Record<number,number>} scales @param {Set<number>|null} activeCodes */
 export function buildRoadConnections(cities,seats,roads,radii={},scales={},activeCodes=null){
-  const nodes=cities.flatMap(city=>{const seat=seats.get(city.code);if(!seat||!city.active||!city.parishes)return [];const scale=scales[city.code]??3/(111320*Math.cos(seat.lat*Math.PI/180));return [{code:city.code,x:seat.lon,y:roadMercatorY(seat.lat),lat:seat.lat,parishes:city.parishes,radius:radii[city.code]??estimateTownRadius(city.houses,city.parishes),scale}];});
+  let minLon=-Infinity,maxLon=Infinity,minY=-Infinity,maxY=Infinity;
+  if(activeCodes){
+    for(const code of activeCodes){
+      const s=seats.get(code);if(!s)continue;
+      const y=s.y??roadMercatorY(s.lat);
+      if(s.lon<minLon||minLon===-Infinity)minLon=s.lon;
+      if(s.lon>maxLon||maxLon===Infinity)maxLon=s.lon;
+      if(y<minY||minY===-Infinity)minY=y;
+      if(y>maxY||maxY===Infinity)maxY=y;
+    }
+    if(minLon!==-Infinity){minLon-=1.3;maxLon+=1.3;minY-=1.3;maxY+=1.3;}
+    else{minLon=Infinity;maxLon=-Infinity;}
+  }
+  const nodes=cities.flatMap(city=>{
+    if(!city.active||!city.parishes)return [];
+    const seat=seats.get(city.code);if(!seat)return [];
+    const y=seat.y??roadMercatorY(seat.lat);
+    if(activeCodes&&!activeCodes.has(city.code)&&(seat.lon<minLon||seat.lon>maxLon||y<minY||y>maxY))return [];
+    const scale=scales[city.code]??3/(111320*Math.cos(seat.lat*Math.PI/180));
+    return [{code:city.code,x:seat.lon,y,lat:seat.lat,parishes:city.parishes,radius:radii[city.code]??estimateTownRadius(city.houses,city.parishes),scale}];
+  });
   const connections=[],grid=highwayGrid(roads),connected=new Set();
   /** @type {Record<number,number[]>} */
   const exits={};

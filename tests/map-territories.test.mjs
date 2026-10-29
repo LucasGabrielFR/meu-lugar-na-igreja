@@ -30,3 +30,13 @@ test('virtual outline removes interior points and administrative paths support m
   assert.equal((result.path.match(/M/g)??[]).length,2);assert.equal(result.bounds[0],-48);assert.equal(result.bounds[2],-46);assert.ok(result.bounds.every(Number.isFinite));
   assert.throws(()=>geographicPath({features:[]}),/sem geometria/);
 });
+test('buildTownScales spatial hash scales all 5570 municipalities in under 150ms',()=>{
+  const municipalities=JSON.parse(readFileSync('public/data/municipios.json','utf8'));
+  const seats=new Map(JSON.parse(readFileSync('public/data/municipio-sedes.json','utf8')).map(([code,lon,lat])=>[code,{lon,lat}]));
+  const cities=municipalities.map(m=>({...m,active:true,parishes:3,houses:5}));
+  const start=performance.now();
+  const scales=buildTownScales(cities,seats);
+  const elapsed=performance.now()-start;
+  assert.equal(Object.keys(scales).length,cities.length);
+  assert.ok(elapsed<150,`Expected spatial hash buildTownScales to take <150ms, took ${elapsed.toFixed(1)}ms`);
+});

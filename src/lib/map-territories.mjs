@@ -10,11 +10,23 @@ export function buildTownScales(cities,seats,radii={}){
     const seat=seats.get(c.code),base=3/(111320*Math.cos(seat.lat*Math.PI/180));
     return {code:c.code,x:seat.lon,y:mercatorLatitude(seat.lat),base,radius:(radii[c.code]??estimateTownRadius(c.houses,c.parishes))*base,factor:1};
   });
-  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
-    const a=nodes[i],b=nodes[j],total=a.radius+b.radius,dx=a.x-b.x,dy=a.y-b.y;
-    if(Math.abs(dx)>total*1.2||Math.abs(dy)>total*1.2)continue;
-    const factor=Math.min(1,Math.hypot(dx,dy)*.82/total);
-    a.factor=Math.min(a.factor,factor);b.factor=Math.min(b.factor,factor);
+  const bucketSize=0.6,grid=new Map();
+  for(let i=0;i<nodes.length;i++){
+    const n=nodes[i],bx=Math.floor(n.x/bucketSize),by=Math.floor(n.y/bucketSize),key=`${bx}:${by}`;
+    let cell=grid.get(key);if(!cell){cell=[];grid.set(key,cell);}cell.push(i);
+  }
+  for(let i=0;i<nodes.length;i++){
+    const a=nodes[i],bx=Math.floor(a.x/bucketSize),by=Math.floor(a.y/bucketSize);
+    for(let dx=-1;dx<=1;dx++)for(let dy=-1;dy<=1;dy++){
+      const cell=grid.get(`${bx+dx}:${by+dy}`);if(!cell)continue;
+      for(const j of cell){
+        if(j<=i)continue;
+        const b=nodes[j],total=a.radius+b.radius,ddx=a.x-b.x,ddy=a.y-b.y;
+        if(Math.abs(ddx)>total*1.2||Math.abs(ddy)>total*1.2)continue;
+        const factor=Math.min(1,Math.hypot(ddx,ddy)*.82/total);
+        a.factor=Math.min(a.factor,factor);b.factor=Math.min(b.factor,factor);
+      }
+    }
   }
   return Object.fromEntries(nodes.map(n=>[n.code,n.base*Math.max(.0001,n.factor)]));
 }

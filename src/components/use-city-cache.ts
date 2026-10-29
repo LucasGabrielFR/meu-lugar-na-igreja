@@ -7,9 +7,9 @@ export function useCityCache(initial:World,initialCity:number|null) {
   const cache=useRef(worlds);
   const inflight=useRef(new Map<number,{controller:AbortController;promise:Promise<CityWorld>}>());
   useEffect(()=>{const requests=inflight.current;return ()=>{for(const request of requests.values())request.controller.abort();requests.clear();};},[]);
-  const loadCity=useCallback((code:number):Promise<CityWorld>=>{
-    if(cache.current[code])return Promise.resolve(cache.current[code]);
-    const existing=inflight.current.get(code);if(existing)return existing.promise;
+  const loadCity=useCallback((code:number,force=false):Promise<CityWorld>=>{
+    if(!force&&cache.current[code])return Promise.resolve(cache.current[code]);
+    const existing=inflight.current.get(code);if(!force&&existing)return existing.promise;
     const controller=new AbortController();
     const promise=fetch(`/api/cities/${code}`,{signal:controller.signal}).then(async response=>{
       if(!response.ok)throw new Error('Não foi possível carregar a comunidade.');

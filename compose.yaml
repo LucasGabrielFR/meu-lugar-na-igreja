@@ -58,6 +58,9 @@ services:
       INSTAGRAM_APP_SECRET: ${INSTAGRAM_APP_SECRET:-}
       INSTAGRAM_TOKEN_ENCRYPTION_KEY: ${INSTAGRAM_TOKEN_ENCRYPTION_KEY:-}
       INSTAGRAM_API_VERSION: ${INSTAGRAM_API_VERSION:-v26.0}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-openai/gpt-4o-mini}
+      INSTAGRAM_REPLY_ON_SUCCESS: ${INSTAGRAM_REPLY_ON_SUCCESS:-false}
     ports:
       - '${APP_BIND:-127.0.0.1}:${APP_PORT:-3100}:3000'
     depends_on:
@@ -88,10 +91,38 @@ services:
       INSTAGRAM_ACCESS_TOKEN: ${INSTAGRAM_ACCESS_TOKEN:-}
       INSTAGRAM_TOKEN_ENCRYPTION_KEY: ${INSTAGRAM_TOKEN_ENCRYPTION_KEY:-}
       INSTAGRAM_API_VERSION: ${INSTAGRAM_API_VERSION:-v26.0}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-openai/gpt-4o-mini}
+      INSTAGRAM_REPLY_ON_SUCCESS: ${INSTAGRAM_REPLY_ON_SUCCESS:-false}
     depends_on:
       db:
         condition: service_healthy
     command: [node, scripts/diagnose-instagram.mjs]
+  instagram-process:
+    profiles: [tools]
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts:ro
+    environment:
+      PGHOST: db
+      PGPORT: 5432
+      PGDATABASE: ${POSTGRES_DB}
+      PGUSER: ${POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      INSTAGRAM_ACCESS_TOKEN: ${INSTAGRAM_ACCESS_TOKEN:-}
+      INSTAGRAM_ACCOUNT_ID: ${INSTAGRAM_ACCOUNT_ID:-}
+      INSTAGRAM_TOKEN_ENCRYPTION_KEY: ${INSTAGRAM_TOKEN_ENCRYPTION_KEY:-}
+      INSTAGRAM_API_VERSION: ${INSTAGRAM_API_VERSION:-v26.0}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-openai/gpt-4o-mini}
+      INSTAGRAM_REPLY_ON_SUCCESS: ${INSTAGRAM_REPLY_ON_SUCCESS:-false}
+    depends_on:
+      db:
+        condition: service_healthy
+    command: [node, scripts/process-instagram-webhooks.mjs]
   checks:
     profiles: [tools]
     build:

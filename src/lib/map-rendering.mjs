@@ -12,16 +12,35 @@ export function mapViewBounds(view,paddingPixels=180){
   const units=48/view.zoom/Math.max(1,Math.min(view.width,view.height));
   return [view.center[0]-(view.width/2+paddingPixels)*units,view.center[1]-(view.height/2+paddingPixels)*units,view.center[0]+(view.width/2+paddingPixels)*units,view.center[1]+(view.height/2+paddingPixels)*units];
 }
+export function warmHighwaysCache(lines){
+  for(const line of lines){
+    if(!roadBounds.has(line)){
+      const box=[Infinity,Infinity,-Infinity,-Infinity];
+      for(const [x,y] of line.points){box[0]=Math.min(box[0],x);box[1]=Math.min(box[1],y);box[2]=Math.max(box[2],x);box[3]=Math.max(box[3],y);}
+      roadBounds.set(line,box);
+    }
+    if(!projected.has(line)){
+      projected.set(line,projectHighways([line])[0]);
+    }
+  }
+}
 export function roadsForView(lines,view){
   if(view.zoom<2)return [];
   const bounds=mapViewBounds(view),latitude=y=>(2*Math.atan(Math.exp(-y*Math.PI/180))-Math.PI/2)*180/Math.PI;
-  // Enough surrounding cartography for 25 km access searches, not whole regional tiles.
-  const margin=.5,west=bounds[0]-margin,east=bounds[2]+margin,north=latitude(bounds[1])+margin,south=latitude(bounds[3])-margin;
+  // Enough surrounding cartography for 25 km access searches, scaled by zoom so city views stay fast.
+  const margin=Math.min(.5,4/view.zoom+.08),west=bounds[0]-margin,east=bounds[2]+margin,north=latitude(bounds[1])+margin,south=latitude(bounds[3])-margin;
+  const filterBySpan=lines.length>500&&view.zoom<12;
+  const minSpan=view.zoom<5?.22:.07;
   const result=[];
   for(const line of lines){
     let box=roadBounds.get(line);
     if(!box){box=[Infinity,Infinity,-Infinity,-Infinity];for(const [x,y] of line.points){box[0]=Math.min(box[0],x);box[1]=Math.min(box[1],y);box[2]=Math.max(box[2],x);box[3]=Math.max(box[3],y);}roadBounds.set(line,box);}
     if(box[2]<west||box[0]>east||box[3]<south||box[1]>north)continue;
+    if(filterBySpan){
+      const span=(box[2]-box[0])+(box[3]-box[1]);
+      if(view.zoom<5&&!line.br&&span<.45)continue;
+      if(span<minSpan)continue;
+    }
     let road=projected.get(line);if(!road){road=projectHighways([line])[0];projected.set(line,road);}result.push(road);
   }
   return result;

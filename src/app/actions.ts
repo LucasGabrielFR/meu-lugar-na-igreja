@@ -8,6 +8,7 @@ import { db } from '@/lib/db';
 import { requireAdmin } from '@/lib/auth';
 import type { FormState } from '@/lib/types';
 import { hashPassword, verifyPassword, tokenHash } from '../../scripts/security.mjs';
+import { upsertHouseFromInstagramComment } from '../../scripts/instagram-comment-processor.mjs';
 const dummyPasswordHash = hashPassword('unavailable-account');
 
 export async function login(_: FormState, form: FormData): Promise<FormState> {
@@ -243,4 +244,78 @@ export async function saveAppConfig(_: FormState, form: FormData): Promise<FormS
   revalidatePath('/');
   return { success: 'Documento salvo com sucesso. As páginas públicas já foram atualizadas.' };
 }
+
+export async function createHouseOnMap(input: {
+  username: string;
+  display_name?: string;
+  city_code: number;
+  parish_id: number;
+  website?: string;
+}): Promise<{
+  error?: string;
+  success?: string;
+  houseId?: number;
+  cityCode?: number;
+  parishId?: number;
+  username?: string;
+}> {
+  if (String(input?.website ?? '').trim()) {
+    return { error: 'Não foi possível criar a casa agora.' };
+  }
+  const parsed = z.object({
+    username: z.string().trim().transform(x => x.replace(/^@/, '').toLowerCase()).pipe(z.string().regex(/^[a-z0-9._]{1,30}$/)),
+    display_name: z.string().trim().max(140).optional(),
+    city_code: z.coerce.number().int().positive(),
+    parish_id: z.coerce.number().int().positive(),
+  }).safeParse(input);
+
+  if (!parsed.success) {
+    return { error: 'Informe um @ do Instagram válido (sem espaços), uma cidade e uma paróquia válida da lista.' };
+  }
+
+  const { username, display_name, city_code, parish_id } = parsed.data;
+  const client = await db.connect();
+  try {
+    const parishCheck = (await client.query<{ id: number; name: string; city_code: number; city_name: string; uf: string }>(
+      `SELECT p.id, p.name, p.city_code, m.name AS city_name, m.uf
+       FROM parishes p
+       JOIN municipalities m ON m.code = p.city_code
+       WHERE p.id = $1 AND p.city_code = $2 AND p.active`,
+      [parish_id, city_code]
+    )).rows[0];
+
+    if (!parishCheck) {
+      return { error: 'Escolha uma paróquia ativa válida pertencente ao município selecionado.' };
+    }
+
+    const cleanDisplayName = display_name && display_name.length >= 2 ? display_name : `@${username}`;
+    const res = await upsertHouseFromInstagramComment(client, {
+      cityCode: city_code,
+      parishId: parish_id,
+      authorId: null,
+      username,
+      displayName: cleanDisplayName,
+      commentId: null,
+      mediaId: null,
+    });
+
+    revalidatePath('/', 'layout');
+    revalidatePath('/admin');
+    return {
+      success: res.outcome === 'house_updated'
+        ? `Sua casa (@${username}) foi atualizada para a ${parishCheck.name} (${parishCheck.city_name}/${parishCheck.uf})!`
+        : `Sua casa (@${username}) foi construída na ${parishCheck.name} (${parishCheck.city_name}/${parishCheck.uf})!`,
+      houseId: res.houseId,
+      cityCode: city_code,
+      parishId: parish_id,
+      username,
+    };
+  } catch (error) {
+    console.error('Create house on map failed', error instanceof Error ? error.message : 'unknown');
+    return { error: 'Não foi possível construir a casa agora. Tente novamente em instantes.' };
+  } finally {
+    client.release();
+  }
+}
+
 

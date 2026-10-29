@@ -132,3 +132,51 @@
   .legal-nav-link{width:42px;padding:0;justify-content:center}
 }
 
+/* v0.24.0: Handle Finder, Auto-Tour, Status Pills, Bottom CTA & On-Map House Creation */
+.clean-topbar{grid-template-columns:minmax(180px,auto) minmax(200px,380px) minmax(0,1fr);gap:16px}
+.tour-button{display:inline-flex;align-items:center;gap:6px;min-height:42px;padding:0 13px;border:1px solid #ddd7c8;border-radius:20px;background:#fffdf7;color:var(--ink);font-size:11px;font-weight:700;white-space:nowrap;transition:all .15s ease}
+.tour-button:hover{background:#f5efe2;border-color:#c9a04c}
+.tour-button.active{background:#002845;color:#fffdf7;border-color:#002845}
+.top-handle-finder{display:inline-flex;align-items:center;height:42px;background:#fffdf7;border:1.5px solid #d5c9af;border-radius:22px;padding:3px 4px 3px 11px;gap:5px;box-shadow:0 2px 6px #0028450a}
+.top-handle-finder:focus-within{border-color:#b88f40;box-shadow:0 0 0 3px #b88f4025}
+.top-handle-finder .handle-at{color:#8a6b31;font-weight:700;font-size:13px;user-select:none}
+.top-handle-finder input{border:0;outline:0;background:transparent;width:110px;font-size:12px;color:var(--ink)}
+.top-handle-finder button{border:0;border-radius:18px;background:#e3b341;color:#112b3c;font-size:11px;font-weight:800;padding:7px 13px;min-height:32px;letter-spacing:.2px;transition:background .15s ease}
+.top-handle-finder button:hover{background:#cf9e2c}
+
+.map-status-pills{position:absolute;top:14px;left:20px;right:190px;z-index:25;display:flex;align-items:center;gap:8px;flex-wrap:wrap;pointer-events:none}
+.status-pill{pointer-events:auto;display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:5px 12px;border-radius:20px;background:#fffdf7f2;border:1.5px solid #d8ceba;box-shadow:0 3px 10px #0f293818;font-size:11px;color:#163547;white-space:nowrap}
+button.status-pill:hover{background:#fff8e6;border-color:#c9a04c}
+.status-pill.day-pill{background:#e3b341;border-color:#9e7418;color:#10293b;font-weight:800;letter-spacing:.4px;font-size:10.5px}
+.status-pill.highlight-pill{background:#fff8e6f5;border-color:#d4ab50}
+.status-pill.feedback-pill{background:#10293b;border-color:#e3b341;color:#fffdf7;font-weight:600}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#2ca568;display:inline-block;box-shadow:0 0 0 3px #2ca5682b}
+.clean-map .map-breadcrumb{top:54px;left:20px;padding:8px 12px;font-size:10.5px}
+
+.map-bottom-cta{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:25;display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:30px;background:linear-gradient(180deg,#f3c84b 0%,#dda828 100%);border:2px solid #163547;box-shadow:0 6px 20px #0d253438;color:#102738;font-size:12.5px;white-space:nowrap;max-width:calc(100% - 32px);overflow:hidden;text-overflow:ellipsis;transition:transform .15s ease,box-shadow .15s ease}
+.map-bottom-cta:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 8px 24px #0d253448}
+.map-bottom-cta .cta-dot{width:10px;height:10px;border-radius:50%;background:#fffdf7;border:2px solid #8a6512;flex-shrink:0}
+
+.create-house-modal{padding:20px 23px 24px;overflow:auto}
+.create-house-methods{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.method-badge{padding:11px 13px;border-radius:7px;border:1px solid #dfd6c3;background:#f8f4ea;display:flex;flex-direction:column;gap:4px;font-size:11px;line-height:1.45;color:var(--muted)}
+.method-badge strong{color:var(--ink);font-size:12px;display:flex;align-items:center;gap:5px}
+.method-badge.active-method{background:#fff8e6;border-color:#cfa346}
+.method-badge.ig-method:hover{background:#f1eadb;border-color:#b88f40}
+
+@media(max-width:1020px){
+  .clean-topbar{grid-template-columns:auto 1fr auto;gap:10px}
+  .tour-button span,.legal-nav-link span,.help-button span{display:none}
+  .tour-button,.legal-nav-link,.help-button{width:40px;padding:0;justify-content:center}
+  .top-handle-finder input{width:85px}
+}
+@media(max-width:680px){
+  .top-handle-finder{display:none}
+  .map-status-pills{top:10px;left:10px;right:10px;gap:5px}
+  .status-pill{font-size:10px;padding:4px 9px;min-height:28px}
+  .status-pill.highlight-pill{display:none}
+  .clean-map .map-breadcrumb{top:46px;left:10px}
+  .map-bottom-cta{bottom:46px;padding:10px 14px;font-size:11px}
+  .create-house-methods{grid-template-columns:1fr}
+}
+

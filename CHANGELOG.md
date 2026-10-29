@@ -4,9 +4,38 @@ Todas as mudanças relevantes serão registradas neste arquivo, seguindo [Keep a
 
 ## [Unreleased]
 
+## [0.24.1] - 2026-10-28
+
+### Fixed
+
+- Corrigido o comportamento em que passar o mouse sobre o território de um município ou sobre o mapa marcava o estado inteiro em dourado/marrom (`src/components/world-map.tsx`). Agora o hover destaca exclusivamente o território municipal sob o cursor (`visibleBoundaries`), carregando até 120 limites municipais por lote a partir de `zoom >= 2.8`.
+- Eliminado o travamento severo ao aproximar uma cidade com a camada de rodovias ativa: `MapRoadLayer` não reconstrói nem retessela strings SVG gigantes a cada frame de pan/zoom (`useMemo` + `vectorEffect="non-scaling-stroke"`), `roadsForView` filtra vias secundárias curtas na visão macro/regional, `useRoadData` limita tiles detalhados às 3 células mais próximas em `zoom >= 28`, `townScales`/`roadNetwork` foram desacoplados do carregamento de `worlds` e `TownArt` aplica nível de detalhe progressivo (`blockPixels`).
+
 ### Added
 
-- Planejamento da participação por comentários no perfil oficial @meu_lugar_na_igreja. Uma casa por autor reconhecido pela Meta, cidade/paróquia obrigatórias e ausência de código/login/documentos por decisão do responsável. Inclui prova técnica, conexão oficial, fila PostgreSQL, deduplicação e critérios de liberação; nenhuma integração ativada nesta etapa.
+- Pré-carregamento real durante a tela inicial `MapLoading` (`warmHighwaysCache` em `src/lib/map-rendering.mjs`, `src/components/use-road-data.ts` e `src/components/world-map.tsx`), pré-projetando a malha rodoviária e os layouts das cidades prioritárias com barra de progresso antes de exibir o mapa.
+
+## [0.24.0] - 2026-10-28
+
+### Added
+
+- Criação direta de casa pelo mapa (`createHouseOnMap` em `src/app/actions.ts` e modal interativo no mapa) permitindo ao participante informar seu `@` válido do Instagram, selecionar município e paróquia ativa e voar imediatamente para sua casa recém-construída, coexistindo com a criação via comentários em `@meu_lugar_na_igreja`.
+- Busca rápida `@ seu @ [achar]` no cabeçalho (`GET /api/houses`) para localizar casas por `@username` ou nome público, botão **Passear** (auto-tour pelas cidades ativas), barra superior de pílulas de status (`DIA 0 · PRÉ-LANÇAMENTO`, contadores e última casa construída) e pílula dourada inferior de chamada para ação.
+- Endpoint em lote `GET /api/cities/boundaries` e renderização automática do território municipal real do IBGE (`municipality_boundaries`) ao aproximar o mapa (`zoom >= 5`), além de pílulas de resumo por UF na visão macro e melhorias visuais nas praças dos bairros paroquiais (`src/components/town-art.tsx`).
+
+### Changed
+
+- Desempenho do mapa otimizado (`src/lib/map-territories.mjs`, `src/lib/map-roads.mjs`, `src/components/map-road-layer.tsx`, `src/components/world-map.tsx`): `buildTownScales` migrado de `O(N²)` para spatial hash `O(N)` (<150 ms para 5.570 municípios), remoção de `<mask>` SVG de tela inteira na camada rodoviária, consolidação de polígonos estaduais, limite de emblemas detalhados por quadro e bloqueio de eventos de ponteiro internos durante arraste (`isDragging`).
+
+## [0.23.0] - 2026-10-28
+
+### Added
+
+- Processamento automático e sob demanda de comentários do Instagram (`scripts/instagram-comment-processor.mjs` e perfil Docker `instagram-process`) integrado ao receptor de webhook `/api/webhooks/instagram` e ao painel `/admin?view=instagram`.
+- Interpretação de Paróquia, Cidade e Estado (UF) via OpenRouter (`OPENROUTER_API_KEY` e `OPENROUTER_MODEL`, padrão `openai/gpt-4o-mini`) com validação estrita contra os municípios e paróquias ativas no PostgreSQL e fallback determinístico.
+- Criação e atualização transacional de casas (`houses`) vinculadas ao identificador oficial do autor (`instagram_user_id`, `instagram_comment_id`, `instagram_media_id`), garantindo uma única casa por perfil.
+- Resposta automática no comentário do Instagram (`POST /{comment_id}/replies`) com linguagem respeitosa, católica e divertida quando o comentário não contém dados suficientes ou quando a paróquia/cidade não é localizada sem ambiguidade no mapa.
+- Migration `013_instagram_comment_processing.sql` adicionando `instagram_comment_events` e colunas de vínculo nas casas, além de histórico e botão de processamento na aba Instagram do painel administrativo.
 
 ## [0.22.1] - 2026-10-25
 

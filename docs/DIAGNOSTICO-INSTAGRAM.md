@@ -45,3 +45,7 @@ Interpretação:
 ## Limite da conclusão
 
 A versão0.22.1 melhora observação e coleta evidência; não presume nem corrige automaticamente o motivo externo da ausência de notificações. É necessário executar os comandos em produção e correlacionar com comentário real. O status publicado/acesso avançado deve ser conferido no app concreto, sem alegar que testes locais ou exemplos do dashboard comprovam o fluxo público.
+
+## Validação local
+
+Docker reconstruído/recriado e saudável.61testes aprovados, TypeScript/auditoria aprovados e lint sem erros (dois warnings preexistentes nos componentes legais). POSTlocal sem segredo respondeu503 e registrou missing_app_secret; nenhum recebimento sintético criado. Perfil Docker executado localmente em somenteleitura retornou no_access_token, conforme ausência de credencial local. Resultados da API nos testes são simulados; não comprovam configuração/assinatura da conta em produção. Próximo passo depende da execução dos comandos pelo responsável no servidor.

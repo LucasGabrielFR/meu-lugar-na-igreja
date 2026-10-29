@@ -1,6 +1,27 @@
 # Meu Lugar na Igreja
 
-Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras. A integração com comentários do Instagram será uma etapa posterior.
+Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras, com participação integrada via comentários no Instagram e criação direta no mapa.
+
+## Pré-carregamento (Boot Loader), Otimização de Rodovias e Hover Municipal — versão 0.24.1
+
+- **Pré-carregamento completo na tela inicial (`MapLoading`):** antes de liberar o mapa, a tela de carregamento pré-projeta em fatias (`requestAnimationFrame`) as 14.270 linhas de `highways.json` no cache (`warmHighwaysCache`) e pré-carrega os layouts e contornos das cidades em destaque/foco, eliminando engasgos ao iniciar a navegação.
+- **Fim do travamento ao aproximar cidades:** `MapRoadLayer` agora usa caminhos SVG memoizados (`useMemo`) com `vectorEffect="non-scaling-stroke"` (sem recalcular ou retesselar milhares de segmentos a cada frame de roda/arraste); o nível de detalhe rodoviário filtra micro-segmentos em zoom regional e limita os blocos detalhados (`useRoadData`) às 3 células mais próximas somente em `zoom >= 28`; `TownArt` aplica nível de detalhe progressivo (`blockPixels`) e `loadCity`/`boundaries` aguardam a câmera estabilizar (`settledVisibleCities`).
+- **Correção do destaque territorial no hover:** passar o mouse sobre um município ou sobre o terreno não pinta mais o estado inteiro de marrom/dourado (`shapes` não altera `fill` em `onPointerEnter`). Os territórios municipais (`municipality_boundaries`, até 120 por lote a partir de `zoom >= 2.8`) destacam exclusivamente o município sob o cursor.
+
+## Duas Formas de Criar Casa, Desempenho do Mapa e Território Municipal — versão 0.24.0
+
+- **Duas formas de criar casa no mapa:** além da criação automática via comentários em `@meu_lugar_na_igreja`, o visitante pode clicar na barra dourada inferior (**"construa sua casa aqui com seu @"**) ou no botão **"Construir casa"** no topo, informando um `@` válido do Instagram, município e paróquia ativa (`createHouseOnMap`). A casa é criada ou atualizada imediatamente no bairro paroquial e a câmera voa até o lote.
+- **Busca rápida por `@` (`achar`) e modo `Passear`:** campo `@ seu @ [achar]` no cabeçalho (`/api/houses?q=...`) para localizar diretamente a casa de qualquer participante, além do botão **Passear** para tour automático pelas comunidades ativas.
+- **Pílulas de status e badges estaduais:** barra de status no topo do mapa com indicador `DIA 0 · PRÉ-LANÇAMENTO` (pronto para iniciar a contagem oficial no Dia 1), contadores de casas e paróquias, destaque da última casa criada e pílulas estaduais na visão macro do Brasil.
+- **Território municipal IBGE e bairros paroquiais aprimorados:** carregamento em lote dos limites municipais reais (`/api/cities/boundaries`) ao aproximar o mapa (`zoom >= 5`), praças paroquiais com calçamento e caminhos radiais conectados à matriz, e selo `@username` sobre a casa selecionada.
+- **Otimização severa de desempenho do mapa:** substituição do cálculo `O(N²)` de escalas municipais (`buildTownScales`, ~8 milhões de iterações) por grade espacial `O(N)`, remoção da máscara SVG de tela cheia nas rodovias (`MapRoadLayer`), consolidação da renderização dos estados e supressão de eventos de hover durante o arraste (`isDragging`).
+
+## Processamento de Comentários Instagram com IA — versão 0.23.0
+
+Os eventos recebidos pelo webhook `/api/webhooks/instagram` são processados automaticamente (e também sob demanda no painel `/admin?view=instagram` ou pelo perfil Docker `instagram-process`). O sistema utiliza um modelo leve via OpenRouter (`OPENROUTER_MODEL`, padrão `openai/gpt-4o-mini`) aliado ao catálogo paroquial PostgreSQL para identificar a **Paróquia, Cidade e Estado (UF)** comentados pelo participante:
+- **Correspondência confirmada:** cria ou atualiza automaticamente a casa do autor (`instagram_user_id` / `@username`) na paróquia e município correspondentes, garantindo uma única casa por perfil.
+- **Comentário incompleto ou paróquia não localizada/ambígua:** responde automaticamente ao comentário no Instagram (`POST /{comment_id}/replies`) em tom respeitoso, católico e bem-humorado, orientando como informar a paróquia, bairro e cidade/UF.
+- **Prevenção de loops e duplicidades:** ignora eventos sintéticos de teste da Meta e comentários feitos pela própria conta conectada, registrando o histórico em `instagram_comment_events` (migration `013`).
 
 ## Diagnóstico Instagram — versão 0.22.1
 
