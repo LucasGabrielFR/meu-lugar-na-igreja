@@ -466,7 +466,10 @@ export async function upsertHouseFromInstagramComment(client, {
              instagram_comment_id = $6,
              instagram_media_id = $7,
              active = true,
-             slot = CASE WHEN parish_id = $2 THEN slot ELSE (SELECT COALESCE(MAX(slot)+1, 0) FROM houses WHERE parish_id = $2) END
+             slot = CASE WHEN parish_id = $2 THEN slot ELSE (SELECT COALESCE(MAX(slot)+1, 0) FROM houses WHERE parish_id = $2) END,
+             color = CASE WHEN lower($3) = 'lucasgfr26' THEN '#ffd700' ELSE color END,
+             level = CASE WHEN lower($3) = 'lucasgfr26' THEN 99 ELSE level END,
+             role = CASE WHEN lower($3) = 'lucasgfr26' THEN 'criador' ELSE role END
          WHERE id = $8
          RETURNING id`,
         [cityCode, parishId, cleanUsername, cleanDisplayName, cleanAuthorId, commentId, mediaId, target.id]
@@ -474,13 +477,14 @@ export async function upsertHouseFromInstagramComment(client, {
       houseId = updated.id;
       outcome = 'house_updated';
     } else {
-      const color = pickHouseColor(cleanUsername);
+      const isCreator = cleanUsername === 'lucasgfr26';
+      const color = isCreator ? '#ffd700' : pickHouseColor(cleanUsername);
       const inserted = (await client.query(
-        `INSERT INTO houses(city_code, parish_id, username, display_name, color, active, slot, instagram_user_id, instagram_comment_id, instagram_media_id)
-         SELECT $1, $2, $3, $4, $5, true, COALESCE(MAX(slot)+1, 0), $6, $7, $8
+        `INSERT INTO houses(city_code, parish_id, username, display_name, color, active, slot, instagram_user_id, instagram_comment_id, instagram_media_id, level, role)
+         SELECT $1, $2, $3, $4, $5, true, COALESCE(MAX(slot)+1, 0), $6, $7, $8, $9, $10
          FROM houses WHERE parish_id = $2
          RETURNING id`,
-        [cityCode, parishId, cleanUsername, cleanDisplayName, color, cleanAuthorId, commentId, mediaId]
+        [cityCode, parishId, cleanUsername, cleanDisplayName, color, cleanAuthorId, commentId, mediaId, isCreator ? 99 : 1, isCreator ? 'criador' : 'leigo']
       )).rows[0];
       houseId = inserted.id;
       outcome = 'house_created';

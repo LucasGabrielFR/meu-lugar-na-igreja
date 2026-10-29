@@ -52,3 +52,72 @@ export function geographicPath(collection){
   if(!points.length)throw Error('Limite municipal sem geometria válida');
   return {path:paths.join(''),bounds:points.reduce((b,[x,y])=>[Math.min(b[0],x),Math.min(b[1],y),Math.max(b[2],x),Math.max(b[3],y)],[Infinity,Infinity,-Infinity,-Infinity])};
 }
+
+/**
+ * @param {{ lon: number; lat: number; y: number }} anchor
+ * @param {{ cells?: { col: number; row: number }[] } | null | undefined} layout
+ * @param {number} scale
+ * @param {number[] | null | undefined} bounds
+ */
+export function clampTownToBoundary(anchor, layout, scale, bounds) {
+  if (!layout || !bounds || bounds.length < 4) return anchor;
+  const [minLon, minY, maxLon, maxY] = bounds;
+  let minCol = Infinity, maxCol = -Infinity, minRow = Infinity, maxRow = -Infinity;
+  for (const c of layout.cells ?? []) {
+    if (c.col < minCol) minCol = c.col;
+    if (c.col > maxCol) maxCol = c.col;
+    if (c.row < minRow) minRow = c.row;
+    if (c.row > maxRow) maxRow = c.row;
+  }
+  if (!Number.isFinite(minCol)) return anchor;
+
+  const townMinX = (minCol * 192 - 104) * scale;
+  const townMaxX = (maxCol * 192 + 104) * scale;
+  const townMinY = (minRow * 192 - 104) * 0.7 * scale;
+  const townMaxY = (maxRow * 192 + 104) * 0.7 * scale;
+
+  const padX = Math.max(0.002, (maxLon - minLon) * 0.02);
+  const padY = Math.max(0.002, (maxY - minY) * 0.02);
+
+  let lon = anchor.lon;
+  let y = anchor.y;
+
+  if (lon + townMaxX > maxLon - padX) {
+    lon = maxLon - padX - townMaxX;
+  }
+  if (lon + townMinX < minLon + padX) {
+    lon = minLon + padX - townMinX;
+  }
+  if (y + townMaxY > maxY - padY) {
+    y = maxY - padY - townMaxY;
+  }
+  if (y + townMinY < minY + padY) {
+    y = minY + padY - townMinY;
+  }
+
+  return { lon, lat: anchor.lat, y };
+}
+
+/**
+ * @param {number} code
+ * @param {{ lon: number; lat: number; y: number }} seat
+ * @param {Record<string | number, [number, number]>} [coastalDrags]
+ * @param {{ cells?: { col: number; row: number }[] } | null | undefined} [layout]
+ * @param {number} [scale]
+ * @param {number[] | null | undefined} [boundaryBounds]
+ */
+export function computeTownAnchor(code, seat, coastalDrags = {}, layout = null, scale = 0, boundaryBounds = null) {
+  let lon = seat.lon;
+  let lat = seat.lat;
+  const drag = coastalDrags[code] ?? coastalDrags[String(code)];
+  if (drag) {
+    lon += drag[0];
+    lat += drag[1];
+  }
+  let anchor = { lon, lat, y: mercatorLatitude(lat) };
+  if (boundaryBounds && layout && scale > 0) {
+    anchor = clampTownToBoundary(anchor, layout, scale, boundaryBounds);
+  }
+  return anchor;
+}
+

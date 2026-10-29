@@ -180,3 +180,2560 @@ button.status-pill:hover{background:#fff8e6;border-color:#c9a04c}
   .create-house-methods{grid-template-columns:1fr}
 }
 
+
+/* =========================================================================
+   3D Street Walking Mode (Passear no Mapa · Bonequinho)
+   ========================================================================= */
+.walk-mode-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 950;
+  background: #2d1b2e;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.walk-hud-top-left {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 20;
+}
+
+.walk-hud-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(22, 53, 71, 0.2);
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #102738;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  transition: all 0.15s ease;
+}
+
+.walk-exit-button {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+.walk-exit-button:hover {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.walk-location-pill .walk-icon-pin {
+  color: #b88f40;
+}
+.walk-location-text small {
+  color: #64748b;
+  font-weight: normal;
+}
+
+.walk-residents-pill {
+  background: rgba(248, 250, 252, 0.92);
+  color: #334155;
+}
+
+.walk-controls-banner {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 2px solid #0f172a;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #0f172a;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.walk-action-feedback {
+  font-weight: 700;
+  color: #b45309;
+  animation: pulseFeedback 0.3s ease;
+}
+@keyframes pulseFeedback {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.walk-hud-top-right {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 20;
+}
+
+.walk-gender-toggle {
+  display: flex;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(22, 53, 71, 0.2);
+  border-radius: 9px;
+  padding: 3px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
+}
+.gender-btn {
+  padding: 5px 11px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #475569;
+  transition: all 0.15s ease;
+}
+.gender-btn.active {
+  background: #102738;
+  color: #f8fafc;
+  box-shadow: 0 2px 6px rgba(16, 39, 56, 0.3);
+}
+
+.walk-role-dropdown-wrap {
+  position: relative;
+}
+.walk-role-trigger {
+  cursor: pointer;
+}
+.walk-role-trigger:hover {
+  background: #ffffff;
+  border-color: #b88f40;
+}
+.walk-role-trigger .role-icon {
+  font-size: 14px;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.walk-role-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 320px;
+  max-height: 400px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+}
+.walk-role-menu-header {
+  padding: 12px 14px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+.walk-role-menu-header strong {
+  display: block;
+  font-size: 12px;
+  color: #0f172a;
+}
+.walk-role-menu-header small {
+  font-size: 10px;
+  color: #64748b;
+}
+.walk-role-list {
+  padding: 6px;
+  overflow-y: auto;
+  max-height: 330px;
+}
+.walk-role-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+  transition: background 0.15s ease;
+}
+.walk-role-item:hover {
+  background: #f1f5f9;
+}
+.walk-role-item.active {
+  background: #fef3c7;
+  border-left: 3px solid #b45309;
+}
+.walk-role-item .item-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.walk-role-item strong {
+  display: block;
+  font-size: 12px;
+  color: #0f172a;
+}
+.walk-role-item small {
+  display: block;
+  font-size: 10.5px;
+  color: #64748b;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.walk-hud-bottom-right {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 20;
+}
+.walk-action-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #0f172a;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0f172a;
+  transition: all 0.15s ease;
+}
+.walk-action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+.walk-action-button:active {
+  transform: translateY(1px);
+}
+.walk-action-button kbd {
+  display: inline-block;
+  padding: 2px 6px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #475569;
+}
+.walk-action-button.pray-btn:hover {
+  background: #fef3c7;
+  border-color: #b45309;
+}
+.walk-action-button.cheer-btn:hover {
+  background: #dcfce7;
+  border-color: #15803d;
+}
+.walk-action-button.praise-btn:hover {
+  background: #e0e7ff;
+  border-color: #4338ca;
+}
+
+/* Chat Component in Walk Mode */
+.walk-chat-box {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 20;
+  width: 320px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  border-radius: 12px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.walk-chat-box.collapsed {
+  width: auto;
+}
+.walk-chat-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 9px 14px;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+}
+.walk-chat-toggle:hover {
+  background: rgba(241, 245, 249, 0.8);
+}
+.chat-badge {
+  margin-left: auto;
+  padding: 2px 7px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  font-size: 10px;
+  color: #334155;
+}
+.walk-chat-content {
+  padding: 10px;
+  border-top: 1px solid #e2e8f0;
+  background: #fafaf9;
+}
+.walk-chat-messages {
+  max-height: 180px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 4px;
+  margin-bottom: 10px;
+}
+.walk-chat-msg {
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #e7e5e4;
+  font-size: 11px;
+}
+.msg-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+.msg-role {
+  padding: 1px 5px;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 9px;
+}
+.msg-sender {
+  font-weight: 700;
+  color: #1e293b;
+}
+.msg-time {
+  margin-left: auto;
+  color: #94a3b8;
+  font-size: 9px;
+}
+.msg-body {
+  color: #334155;
+  line-height: 1.4;
+}
+.walk-chat-form {
+  display: flex;
+  gap: 6px;
+}
+.walk-chat-form input {
+  flex: 1;
+  padding: 7px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 11px;
+  outline: none;
+}
+.walk-chat-form input:focus {
+  border-color: #102738;
+}
+.walk-chat-form button {
+  padding: 0 12px;
+  background: #102738;
+  color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.walk-chat-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Travel Feature in Walk Mode */
+.walk-travel-btn {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.walk-travel-btn:hover {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+  transform: translateY(-1px);
+}
+.walk-travel-btn .travel-btn-icon {
+  font-size: 14px;
+}
+
+.walk-travel-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeInBackdrop 0.2s ease;
+}
+
+.walk-travel-dialog {
+  background: #ffffff;
+  border: 1px solid rgba(22, 53, 71, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  max-width: 580px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: popDialog 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popDialog {
+  0% { transform: scale(0.94); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInBackdrop {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.travel-dialog-header {
+  padding: 18px 20px 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+.travel-dialog-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.travel-header-icon {
+  font-size: 24px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.travel-dialog-title h4 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+}
+.travel-dialog-title p {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #64748b;
+}
+.travel-close-btn {
+  background: transparent;
+  border: 0;
+  padding: 6px;
+  border-radius: 8px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.travel-close-btn:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.travel-search-wrap {
+  position: relative;
+  margin: 16px 20px 12px;
+  display: flex;
+  align-items: center;
+}
+.travel-search-wrap .search-icon {
+  position: absolute;
+  left: 12px;
+  color: #94a3b8;
+  pointer-events: none;
+}
+.travel-search-wrap input {
+  width: 100%;
+  padding: 10px 36px 10px 36px;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 13.5px;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.15s ease;
+}
+.travel-search-wrap input:focus {
+  background: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+.travel-search-wrap .clear-search-btn {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: 0;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 4px;
+}
+.travel-search-wrap .clear-search-btn:hover {
+  color: #0f172a;
+}
+
+.travel-results-list {
+  padding: 0 20px 18px;
+  overflow-y: auto;
+  max-height: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.travel-status-msg {
+  padding: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.travel-result-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+.travel-result-item:hover {
+  background: #f0fdf4;
+  border-color: #86efac;
+  transform: translateX(2px);
+}
+.travel-result-item.current {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  cursor: default;
+}
+.travel-result-item .item-pin {
+  color: #b88f40;
+  flex-shrink: 0;
+}
+.travel-result-item .item-info {
+  flex: 1;
+  min-width: 0;
+}
+.travel-result-item .city-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  color: #0f172a;
+}
+.travel-result-item .uf-tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 1px 5px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  color: #334155;
+}
+.travel-result-item small {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+}
+.travel-result-item .fly-btn {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  background: #102738;
+  color: #ffffff;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.travel-result-item:hover .fly-btn {
+  background: #16a34a;
+}
+.travel-result-item .current-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  background: #e2e8f0;
+  color: #475569;
+  border-radius: 6px;
+}
+
+.travel-quick-destinations {
+  padding: 0 20px 20px;
+  overflow-y: auto;
+  max-height: 420px;
+}
+.travel-quick-destinations .section-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+}
+.quick-dest-pill {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+.quick-dest-pill:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  transform: translateY(-1px);
+}
+.quick-dest-pill.current {
+  background: #fef3c7;
+  border-color: #fde68a;
+}
+.quick-dest-pill .dest-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.quick-dest-pill .dest-text strong {
+  display: block;
+  font-size: 13px;
+  color: #0f172a;
+}
+.quick-dest-pill .dest-text small {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+/* Cinematic Flight Overlay */
+.walk-travel-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  background: radial-gradient(circle at center, #1e3a5f 0%, #0f172a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInFlight 0.3s ease;
+}
+@keyframes fadeInFlight {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.walk-travel-card {
+  text-align: center;
+  color: #ffffff;
+  padding: 32px 40px;
+  max-width: 440px;
+}
+.travel-flight-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+  animation: planeFly 1.2s infinite ease-in-out alternate;
+}
+@keyframes planeFly {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-10px) rotate(4deg); }
+}
+.walk-travel-card h3 {
+  font-size: 21px;
+  font-weight: 800;
+  margin: 0 0 6px;
+  color: #ffffff;
+}
+.walk-travel-card p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0 0 20px;
+}
+.travel-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.travel-progress-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  border-radius: 99px;
+  animation: progressTravel 0.7s infinite linear;
+}
+@keyframes progressTravel {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@media (max-width: 820px) {
+  .walk-controls-banner {
+    display: none;
+  }
+  .walk-hud-top-left {
+    top: 10px;
+    left: 10px;
+    gap: 6px;
+  }
+  .walk-hud-top-right {
+    top: 10px;
+    right: 10px;
+    gap: 6px;
+  }
+  .walk-residents-pill {
+    display: none;
+  }
+  .walk-hud-bottom-right {
+    bottom: 12px;
+    right: 12px;
+    gap: 6px;
+  }
+  .walk-action-button {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+  .walk-chat-box {
+    bottom: 12px;
+    left: 12px;
+    max-width: calc(100vw - 24px);
+  }
+}
+
+/* =========================================================================
+   Admin Parish Curation, Duplicates & Enhanced Management
+   ========================================================================= */
+.admin-alert-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #fff8e6;
+  border: 1px solid #eab308;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 10px rgba(234, 179, 8, 0.15);
+}
+.admin-alert-banner .alert-icon {
+  color: #b45309;
+  flex-shrink: 0;
+}
+.admin-alert-banner strong {
+  color: #92400e;
+  font-size: 13px;
+}
+.alert-action-btn {
+  white-space: nowrap;
+  font-size: 11px;
+  padding: 9px 15px;
+  min-height: 36px;
+  background: #102738;
+  border-color: #102738;
+  color: #fff;
+}
+.alert-action-btn:hover {
+  background: #1e3a5f;
+  color: #fff;
+}
+
+/* Filter bar in Admin Parishes */
+.admin-filter-bar {
+  margin-top: 14px;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+.filter-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #334155;
+}
+.filter-field select,
+.filter-field input {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 12px;
+  min-width: 140px;
+}
+.filter-field.search-field {
+  flex: 1;
+  min-width: 200px;
+}
+.filter-field.search-field .searchbox {
+  min-height: 40px;
+  height: 40px;
+}
+.filter-submit-btn {
+  height: 40px;
+  padding: 0 16px;
+  background: #102738;
+  border-color: #102738;
+  color: #ffffff;
+  font-weight: 600;
+}
+.filter-submit-btn:hover {
+  background: #1e3a5f;
+  color: #ffffff;
+}
+.reset-filter-btn {
+  height: 40px;
+  padding: 0 10px;
+  color: #64748b;
+}
+
+/* Duplicates view */
+.admin-duplicates-view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.duplicates-header-card {
+  background: #ffffff;
+}
+.duplicate-toast {
+  position: sticky;
+  top: 16px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  font-size: 13px;
+  font-weight: 500;
+  animation: slideDown 0.2s ease-out;
+}
+.duplicate-toast.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+.duplicate-toast.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+.duplicate-toast button {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.7;
+}
+.duplicate-toast button:hover {
+  opacity: 1;
+}
+
+.duplicate-progress-container {
+  margin: 16px 0;
+  padding: 14px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+.duplicate-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 8px;
+}
+.duplicate-progress-header strong {
+  color: #0f172a;
+}
+.duplicate-progress-track {
+  width: 100%;
+  height: 9px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.duplicate-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+  border-radius: 999px;
+  transition: width 0.3s ease-in-out;
+}
+
+.duplicate-notice-box {
+  padding: 12px 14px;
+  background: #fffbeb;
+  border: 1px solid #fef3c7;
+  border-radius: 6px;
+  font-size: 12.5px;
+  color: #92400e;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.duplicate-filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 14px;
+}
+.uf-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.uf-pill {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.uf-pill:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+.uf-pill.active {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+.duplicate-pairs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.duplicate-pair-card {
+  padding: 22px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.duplicate-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.duplicate-card-header h3 {
+  margin: 4px 0 0;
+  font-size: 18px;
+}
+.similarity-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid #fde68a;
+}
+.duplicate-comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.duplicate-parish-box {
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.parish-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.box-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+}
+.box-houses {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #0369a1;
+  background: #e0f2fe;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.duplicate-parish-box h4 {
+  font-size: 15px;
+  margin: 0 0 16px;
+  color: #0f172a;
+  line-height: 1.4;
+}
+.parish-box-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.parish-box-actions .keep-button {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 11px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #b88f40;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.parish-box-actions .keep-button:hover {
+  background: #9d752c;
+}
+.action-hint {
+  font-size: 10.5px;
+  color: #64748b;
+  text-align: center;
+}
+.duplicate-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+.duplicate-card-footer .ignore-button {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  color: #64748b;
+  font-size: 11px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.duplicate-card-footer .ignore-button:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+@media (max-width: 820px) {
+  .duplicate-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+  .filter-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* ==========================================
+   GAMIFICAÇÃO, NÍVEIS E GOVERNANÇA
+   ========================================== */
+
+.gamification-card {
+  margin: 14px 0;
+  padding: 16px;
+  background: #fdfbf7;
+  border: 1px solid #ebdcc8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gamification-feedback {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.gamification-feedback.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+.gamification-feedback.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+.gamification-feedback button {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: inherit;
+}
+
+.gamification-badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.game-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.badge-creator {
+  background: linear-gradient(135deg, #ffd700, #b8860b);
+  color: #2d1804;
+  border: 1px solid #ffd700;
+}
+.badge-president {
+  background: #064e3b;
+  color: #ffffff;
+  border: 1px solid #10b981;
+}
+.badge-governor {
+  background: #1e3a8a;
+  color: #ffffff;
+  border: 1px solid #3b82f6;
+}
+.badge-mayor {
+  background: #78350f;
+  color: #ffffff;
+  border: 1px solid #f59e0b;
+}
+.badge-founder {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #7dd3fc;
+}
+.badge-role {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.gamification-tabs {
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+.gamification-tabs .tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #64748b;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.gamification-tabs .tab-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+.gamification-tabs .tab-btn.active {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.gamification-tab-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* XP Progress */
+.xp-progress-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.xp-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #334155;
+}
+.xp-track {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.xp-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+.role-description-text {
+  font-size: 11.5px;
+  color: #64748b;
+  margin: 2px 0 0;
+  line-height: 1.4;
+}
+
+/* House stage */
+.house-stage-box {
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+.stage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.stage-tag {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}
+.house-stage-box h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #0f172a;
+}
+.stage-sub {
+  font-size: 11px;
+  color: #b88f40;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+.house-stage-box p {
+  font-size: 11.5px;
+  color: #475569;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Faith actions */
+.faith-action-card {
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faith-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.faith-icon {
+  color: #f59e0b;
+}
+.faith-header strong {
+  display: block;
+  font-size: 13px;
+  color: #0f172a;
+}
+.faith-header p {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  color: #64748b;
+}
+.checkin-btn {
+  width: 100%;
+  font-size: 12px;
+  padding: 9px;
+  background: #0f172a;
+  color: #fff;
+}
+.prayer-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+/* Governance box */
+.governance-box {
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gov-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.gov-icon {
+  color: #059669;
+}
+.governance-box h4 {
+  margin: 0;
+  font-size: 13.5px;
+}
+.governance-box p {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  color: #64748b;
+}
+.governance-box label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #334155;
+}
+.governance-box input,
+.governance-box textarea {
+  padding: 7px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* Priest referral */
+.priest-approved-box {
+  padding: 14px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+}
+.priest-stamp {
+  font-size: 10.5px;
+  font-weight: 800;
+  color: #16a34a;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+.priest-approved-box h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #166534;
+}
+.priest-referral-form {
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.referral-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.referral-header strong {
+  font-size: 13px;
+  color: #0f172a;
+}
+.referral-header p {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  color: #64748b;
+}
+.priest-referral-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+.priest-referral-form input,
+.priest-referral-form select {
+  padding: 7px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+
+/* =========================================================================
+   DAILY MISSIONS LATERAL DRAWER (Colapsável na lateral · Estilo Domine com seu time)
+   ========================================================================= */
+
+.missions-drawer-wrapper {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  bottom: 20px;
+  z-index: 35;
+  display: flex;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.missions-drawer-wrapper.drawer-open {
+  transform: translateX(12px);
+}
+
+.missions-drawer-wrapper.drawer-collapsed {
+  transform: translateX(-370px);
+}
+
+/* Alça / Aba Lateral sempre clicável */
+.missions-drawer-tab {
+  position: absolute;
+  left: 368px;
+  top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #ffdb15;
+  border: 2.5px solid #102738;
+  border-left: none;
+  border-radius: 0 22px 22px 0;
+  box-shadow: 4px 6px 18px rgba(16, 39, 56, 0.25);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  color: #102738;
+  transition: transform 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
+  pointer-events: auto;
+  z-index: 38;
+}
+
+.missions-drawer-tab:hover {
+  background: #ffe347;
+  transform: translateX(3px);
+}
+
+.drawer-tab-badge {
+  background: #102738;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+.drawer-tab-count {
+  font-size: 13px;
+  font-weight: 900;
+  color: #102738;
+}
+
+.drawer-tab-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  border: 1.5px solid #102738;
+  border-radius: 50%;
+  color: #102738;
+}
+
+/* Card Principal */
+.missions-board-card {
+  width: 368px;
+  max-width: calc(100vw - 32px);
+  height: calc(100dvh - 110px);
+  max-height: 720px;
+  min-height: 440px;
+  background: #ebf6fd;
+  border: 3px solid #102738;
+  border-radius: 20px;
+  box-shadow: 0 16px 45px rgba(16, 39, 56, 0.35);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.missions-card-header {
+  padding: 14px 16px 10px;
+  background: linear-gradient(180deg, #7cc4f5 0%, #b2dffc 100%);
+  border-bottom: 2.5px solid #102738;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.missions-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #102738;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #102738;
+  box-shadow: 0 2px 0 #102738;
+  transition: all 0.15s ease;
+  z-index: 5;
+  padding: 0;
+}
+
+.missions-close-btn:hover {
+  background: #fee2e2;
+  transform: scale(1.05);
+}
+
+.missions-date-pill {
+  display: inline-block;
+  background: #ffdb15;
+  color: #102738;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 4px 14px;
+  border: 2px solid #102738;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 0 #102738;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.missions-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.missions-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-text-stroke: 1.5px #102738;
+  paint-order: stroke fill;
+  filter: drop-shadow(0 2px 0 #102738);
+}
+
+.missions-subtitle {
+  font-size: 10.5px;
+  color: #1a425a;
+  font-weight: 700;
+  margin: 4px 0 0;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Status do Morador / Identificação */
+.missions-user-status-bar {
+  background: #ffffff;
+  border-bottom: 2px solid #102738;
+  padding: 6px 12px;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.user-active-info {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #102738;
+  font-size: 11.5px;
+}
+
+.user-active-info .user-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 6px #22c55e;
+  flex-shrink: 0;
+}
+
+.user-guest-info {
+  color: #475569;
+  text-align: center;
+  font-size: 11px;
+}
+
+.streak-badge {
+  margin-left: auto;
+  background: #fef08a;
+  color: #854d0e;
+  font-weight: 900;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  border: 1px solid #ca8a04;
+}
+
+/* Scrollable Missions List */
+.missions-scroll-area {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  pointer-events: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #94a3b8 #f1f5f9;
+}
+
+.missions-scroll-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.missions-scroll-area::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.missions-scroll-area::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+.missions-tier-group {
+  background: #ffffff;
+  border: 2px solid #102738;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 0 #102738;
+  flex-shrink: 0;
+}
+
+.missions-tier-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #102738;
+}
+
+.missions-tier-header.tier-easy { background: #16a34a; }
+.missions-tier-header.tier-medium { background: #ea580c; }
+.missions-tier-header.tier-hard { background: #dc2626; }
+
+.tier-reward {
+  background: rgba(0, 0, 0, 0.28);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.missions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mission-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e2e8f0;
+  cursor: default;
+  transition: background 0.15s ease;
+}
+
+.mission-item:last-child {
+  border-bottom: none;
+}
+
+.mission-item.done {
+  background: #f0fdf4;
+}
+
+.mission-item.done .mission-name {
+  color: #166534;
+}
+
+.mission-status-indicator {
+  flex-shrink: 0;
+}
+
+.status-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border: 1.5px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.status-circle.completed {
+  background: #22c55e;
+  border-color: #16a34a;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.status-circle.pending {
+  background: #f8fafc;
+}
+
+.mission-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.mission-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.mission-name {
+  font-size: 11px;
+  color: #0f172a;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.mission-desc {
+  display: block;
+  font-size: 9.5px;
+  color: #64748b;
+  margin-top: 2px;
+  line-height: 1.2;
+}
+
+.mission-xp-tag {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: #15803d;
+  background: #dcfce7;
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.mission-xp-tag.gold-tag {
+  color: #854d0e;
+  background: #fef08a;
+}
+
+.mission-xp-tag.tag-done {
+  background: #22c55e;
+  color: #ffffff;
+}
+
+.mission-action-btn {
+  font-size: 9px;
+  font-weight: 800;
+  background: #102738;
+  color: #ffffff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.mission-action-btn:hover {
+  background: #1a425a;
+}
+
+.mission-action-link {
+  color: #64748b;
+  padding: 4px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+}
+
+.mission-action-link:hover {
+  color: #0f172a;
+  background: #e2e8f0;
+}
+
+.missions-bonus-banner {
+  background: #15803d;
+  color: #ffffff;
+  padding: 7px 12px;
+  margin: 0 12px 8px;
+  border: 2px solid #102738;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 0 #102738;
+  flex-shrink: 0;
+}
+
+.missions-bonus-text strong {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+.missions-bonus-text small {
+  display: block;
+  font-size: 9px;
+  opacity: 0.9;
+}
+
+.missions-footer-cta {
+  padding: 0 12px 12px;
+  flex-shrink: 0;
+}
+
+.missions-cta-btn {
+  width: 100%;
+  background: #ffdb15;
+  border: 2.5px solid #102738;
+  border-radius: 12px;
+  padding: 8px 6px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 0 #102738;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.missions-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #102738;
+  background: #ffe347;
+}
+
+.missions-cta-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #102738;
+}
+
+.missions-cta-btn span {
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  color: #102738;
+  letter-spacing: 0.3px;
+}
+
+.missions-cta-btn small {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  color: #334155;
+  margin-top: 1px;
+}
+
+@media (max-width: 650px) {
+  .missions-drawer-wrapper {
+    top: auto;
+    bottom: 74px;
+    left: 0;
+    max-width: 100vw;
+  }
+  .missions-drawer-wrapper.drawer-open {
+    transform: translateX(0);
+  }
+  .missions-drawer-wrapper.drawer-collapsed {
+    transform: translateX(-100%);
+  }
+  .missions-drawer-tab {
+    left: auto;
+    right: -48px;
+    top: -46px;
+    border-radius: 12px 12px 0 0;
+    border-left: 2.5px solid #102738;
+    border-bottom: none;
+  }
+  .missions-board-card {
+    width: 100vw;
+    max-width: 100vw;
+    height: 55dvh;
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+/* =========================================================================
+   ENHANCED "COMO FUNCIONA" MODAL CONTENT
+   ========================================================================= */
+
+.how-it-works-modal-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.how-it-works-tabs {
+  display: flex;
+  gap: 6px;
+  padding: 10px 18px;
+  background: #f7f5ed;
+  border-bottom: 1px solid #e2ddd0;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.how-it-works-tabs .tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  font-size: 11.5px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 1px solid #d9d3c5;
+  background: #ffffff;
+  color: #55636e;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.how-it-works-tabs .tab-btn:hover {
+  background: #f0ebe0;
+  color: #102738;
+}
+
+.how-it-works-tabs .tab-btn.active {
+  background: #102738;
+  color: #ffdb15;
+  border-color: #102738;
+}
+
+.guide-section {
+  padding: 20px 22px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.guide-hero-banner {
+  background: linear-gradient(135deg, #102738 0%, #1e455f 100%);
+  color: #ffffff;
+  padding: 20px 22px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.guide-kicker {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #ffdb15;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.guide-hero-banner h2 {
+  font-size: 22px;
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.guide-hero-banner p {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #d1e2ec;
+  margin: 0;
+}
+
+.guide-header-box {
+  margin-bottom: 18px;
+}
+
+.guide-header-box h2 {
+  font-size: 20px;
+  margin: 2px 0 6px;
+  color: #102738;
+}
+
+.guide-header-box p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.guide-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.guide-card {
+  background: #fffdf7;
+  border: 1px solid #e0d9cc;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.guide-card h3 {
+  font-size: 15px;
+  margin: 8px 0 6px;
+  color: #102738;
+}
+
+.guide-card p {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #52606d;
+  margin: 0;
+}
+
+.guide-card-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.guide-card-icon.gold { background: #fef3c7; color: #b45309; }
+.guide-card-icon.green { background: #dcfce7; color: #15803d; }
+
+.guide-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  font-size: 11.5px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.missions-guide-table {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.missions-guide-tier {
+  background: #fffdf7;
+  border: 1px solid #ded8ca;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tier-badge-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.tier-badge-heading.green { background: #16a34a; }
+.tier-badge-heading.orange { background: #ea580c; }
+.tier-badge-heading.red { background: #dc2626; }
+
+.tier-items-list {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tier-item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.tier-item-row .icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.tier-item-row strong {
+  display: block;
+  font-size: 12px;
+  color: #102738;
+}
+
+.tier-item-row p {
+  font-size: 11px;
+  color: #64748b;
+  margin: 2px 0 0;
+  line-height: 1.35;
+}
+
+.guide-bonus-callout {
+  margin-top: 14px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.guide-bonus-callout strong {
+  display: block;
+  font-size: 12.5px;
+  color: #166534;
+}
+
+.guide-bonus-callout p {
+  font-size: 11px;
+  color: #15803d;
+  margin: 2px 0 0;
+}
+
+.levels-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #ded7c7;
+  border-radius: 8px;
+}
+
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  text-align: left;
+}
+
+.guide-table th {
+  background: #f1ede2;
+  padding: 9px 12px;
+  border-bottom: 2px solid #ded7c7;
+  color: #102738;
+  font-weight: 800;
+}
+
+.guide-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee9df;
+  color: #334155;
+}
+
+.highlight-sacristan {
+  background: #fffbeb;
+  font-weight: 600;
+}
+
+.highlight-sacristan td:first-child {
+  color: #b45309;
+}
+
+.house-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.house-stage-card {
+  background: #fffdf7;
+  border: 1px solid #ded8ca;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.house-stage-card.sacristan-card {
+  border-color: #ffd700;
+  background: #fffdf0;
+}
+
+.stage-pill {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 800;
+  background: #e2e8f0;
+  color: #475569;
+  padding: 2px 7px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.stage-pill.gold {
+  background: #fef08a;
+  color: #854d0e;
+}
+
+.house-stage-card h4 {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #102738;
+}
+
+.house-stage-card p {
+  margin: 0;
+  font-size: 10.5px;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+.palaces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.palace-card {
+  background: #fffdf7;
+  border: 1.5px solid #ded8ca;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.palace-card.mayor { border-color: #60a5fa; }
+.palace-card.governor { border-color: #a855f7; }
+.palace-card.president { border-color: #f59e0b; background: #fffcf0; }
+
+.palace-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #102738;
+  margin-bottom: 4px;
+}
+
+.palace-card h4 {
+  font-size: 13px;
+  margin: 0 0 4px;
+  color: #102738;
+}
+
+.palace-card p {
+  margin: 0;
+  font-size: 10.5px;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+.cascade-explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cascade-step {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fffdf7;
+  border: 1px solid #ded8ca;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #102738;
+  color: #ffdb15;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.cascade-step strong {
+  display: block;
+  font-size: 12.5px;
+  color: #102738;
+}
+
+.cascade-step p {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.powers-comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.power-box {
+  background: #fffdf7;
+  border: 1px solid #ded8ca;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.power-box.highlight {
+  border-color: #ffd700;
+  background: #fffdf2;
+  grid-column: 1 / -1;
+}
+
+.power-box h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #102738;
+}
+
+.power-box ul {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 11px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.priest-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.priest-card {
+  background: #fffdf7;
+  border: 1px solid #ded8ca;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.priest-card .icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+.priest-card .icon-wrap.gold { background: #fef3c7; color: #b45309; }
+.priest-card .icon-wrap.green { background: #dcfce7; color: #15803d; }
+
+.priest-card h4 {
+  font-size: 14px;
+  margin: 0 0 6px;
+  color: #102738;
+}
+
+.priest-card p, .priest-card ul {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #52606d;
+}
+
+.priest-card ul {
+  padding-left: 16px;
+  margin: 6px 0 0;
+}
+
+.controls-card {
+  background: #fffdf7;
+  border: 1px solid #ded8ca;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.controls-card h4 {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #102738;
+}
+
+.controls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.control-key {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11.5px;
+  color: #334155;
+}
+
+.control-key kbd {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 3px 7px;
+  font-size: 10.5px;
+  font-weight: 800;
+  color: #0f172a;
+  box-shadow: 0 1px 0 #94a3b8;
+}
+
+
+.world-dialog:has(.how-it-works-modal-content) {
+  width: min(780px, 95vw);
+  max-height: min(86dvh, 780px);
+}
+
+.missions-nav-btn {
+  background: #ffdb15;
+  border-color: #102738;
+  color: #102738;
+  font-weight: 800;
+  box-shadow: 0 2px 0 #102738;
+}
+
+.missions-nav-btn:hover {
+  background: #ffe347;
+}
+
+.missions-nav-btn.active {
+  background: #102738;
+  border-color: #102738;
+  color: #ffdb15;
+}
+
+/* Modo Vídeo Limpo (Clean Video Mode): Oculta todas as barras e HUDs para gravação 3D cinematográfica perfeita */
+.clean-video-mode .topbar,
+.clean-video-mode .clean-topbar,
+.clean-video-mode .hud-controls,
+.clean-video-mode .rules-button,
+.clean-video-mode .layers-button,
+.clean-video-mode .daily-missions-board,
+.clean-video-mode .recent-house-ticker,
+.clean-video-mode .map-tools,
+.clean-video-mode .map-stats,
+.clean-video-mode .map-breadcrumb,
+.clean-video-mode .view-switch,
+.clean-video-mode .map-caption,
+.clean-video-mode .detail-card,
+.clean-video-mode .walk-hud-top-left,
+.clean-video-mode .walk-hud-top-right,
+.clean-video-mode .walk-controls-banner,
+.clean-video-mode .walk-bottom-bar,
+.clean-video-mode .walk-chat-drawer {
+  display: none !important;
+}
+
+.clean-video-mode,
+.clean-video-mode .walk-mode-overlay,
+.clean-video-mode .walk-3d-scene-container {
+  width: 100vw !important;
+  height: 100vh !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  background: #000 !important;
+}

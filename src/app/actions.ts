@@ -195,6 +195,12 @@ export async function saveMap(_: FormState, form: FormData): Promise<FormState> 
     }
     await client.query('INSERT INTO audit_log(admin_id,action,entity,entity_id) VALUES($1,$2,$3,$4)', [admin.id,'save',type.data,String(entityId)]);
     await client.query('COMMIT');
+    if (type.data === 'parish') {
+      try {
+        const { invalidateDuplicateCache } = await import('@/lib/admin-curation');
+        invalidateDuplicateCache();
+      } catch {}
+    }
   } catch (error) {
     await client.query('ROLLBACK');
     if (error instanceof z.ZodError) return {error:'Confira os campos: nomes até 140 caracteres, descrição até 600, perfil válido e cor hexadecimal.'};
@@ -319,3 +325,474 @@ export async function createHouseOnMap(input: {
 }
 
 
+
+export async function deleteParish(_: FormState, form: FormData): Promise<FormState> {
+  const admin = await requireAdmin();
+  const id = idSchema.parse(form.get('id'));
+  const migrateToId = form.get('migrate_to_id') ? idSchema.parse(form.get('migrate_to_id')) : null;
+
+  const client = await db.connect();
+  try {
+    await client.query('BEGIN');
+    await client.query('SELECT pg_advisory_xact_lock(78123003)');
+
+    const parishRes = await client.query('SELECT id, city_code, name FROM parishes WHERE id=$1', [id]);
+    if (!parishRes.rowCount) throw new Error('Paróquia não encontrada.');
+    const parish = parishRes.rows[0];
+
+    const houseCountRes = await client.query('SELECT count(*)::int AS count FROM houses WHERE parish_id=$1', [id]);
+    const houseCount = houseCountRes.rows[0]?.count ?? 0;
+
+    if (houseCount > 0) {
+      if (!migrateToId) {
+        throw new Error(`Esta paróquia possui ${houseCount} morador(es). Selecione uma paróquia de destino para transferi-los.`);
+      }
+      if (migrateToId === id) {
+        throw new Error('A paróquia de destino não pode ser a mesma que será excluída.');
+      }
+      const targetRes = await client.query('SELECT id FROM parishes WHERE id=$1 AND city_code=$2 AND active', [migrateToId, parish.city_code]);
+      if (!targetRes.rowCount) {
+        throw new Error('A paróquia de destino selecionada não pertence ao mesmo município ou está arquivada.');
+      }
+
+      // Reassign houses
+      await client.query(`
+        UPDATE houses
+        SET parish_id = $1,
+            slot = (SELECT COALESCE(MAX(slot)+1, 0) FROM houses WHERE parish_id = $1)
+        WHERE parish_id = $2
+      `, [migrateToId, id]);
+    }
+
+    // Reassign participation requests and comment events if any
+    if (migrateToId) {
+      await client.query('UPDATE participation_requests SET parish_id=$1 WHERE parish_id=$2', [migrateToId, id]);
+      await client.query('UPDATE instagram_comment_events SET parish_id=$1 WHERE parish_id=$2', [migrateToId, id]);
+    } else {
+      await client.query('UPDATE participation_requests SET parish_id=NULL WHERE parish_id=$1', [id]);
+      await client.query('UPDATE instagram_comment_events SET parish_id=NULL WHERE parish_id=$1', [id]);
+    }
+
+    // Delete ignores if any
+    await client.query('DELETE FROM parish_duplicate_ignores WHERE parish_id_1=$1 OR parish_id_2=$1', [id]);
+
+    // Delete parish
+    await client.query('DELETE FROM parishes WHERE id=$1', [id]);
+
+    await client.query('INSERT INTO audit_log(admin_id, action, entity, entity_id) VALUES($1, $2, $3, $4)', [
+      admin.id,
+      houseCount > 0 ? `delete_and_migrate_to_${migrateToId}` : 'delete',
+      'parish',
+      String(id),
+    ]);
+
+    await client.query('COMMIT');
+    const { invalidateDuplicateCache } = await import('@/lib/admin-curation');
+    invalidateDuplicateCache();
+  } catch (error) {
+    await client.query('ROLLBACK');
+    console.error('deleteParish error', error);
+    return { error: error instanceof Error ? error.message : 'Falha ao excluir a paróquia.' };
+  } finally {
+    client.release();
+  }
+
+  revalidatePath('/admin');
+  revalidatePath('/', 'layout');
+  return { success: 'Paróquia excluída com sucesso.' };
+}
+
+async function executeMergeDuplicate(keepId: number, removeId: number, adminId: string | number): Promise<void> {
+  const client = await db.connect();
+  try {
+    await client.query('BEGIN');
+    await client.query('SELECT pg_advisory_xact_lock(78123003)');
+
+    const p1 = (await client.query('SELECT id, city_code, name FROM parishes WHERE id=$1', [keepId])).rows[0];
+    const p2 = (await client.query('SELECT id, city_code, name FROM parishes WHERE id=$1', [removeId])).rows[0];
+
+    if (!p1 || !p2) throw new Error('Uma das paróquias selecionadas não foi encontrada.');
+    if (p1.city_code !== p2.city_code) throw new Error('As paróquias devem pertencer ao mesmo município.');
+
+    // Migrate houses from p2 to p1 with unique slots
+    await client.query(`
+      WITH next_slots AS (
+        SELECT id,
+               (SELECT COALESCE(MAX(slot), -1) FROM houses WHERE parish_id = $1) + ROW_NUMBER() OVER (ORDER BY id) AS new_slot
+        FROM houses
+        WHERE parish_id = $2
+      )
+      UPDATE houses h
+      SET parish_id = $1,
+          slot = ns.new_slot
+      FROM next_slots ns
+      WHERE h.id = ns.id
+    `, [keepId, removeId]);
+
+    // Migrate requests and comment events
+    await client.query('UPDATE participation_requests SET parish_id=$1 WHERE parish_id=$2', [keepId, removeId]);
+    await client.query('UPDATE instagram_comment_events SET parish_id=$1 WHERE parish_id=$2', [keepId, removeId]);
+
+    // Clean ignores
+    await client.query('DELETE FROM parish_duplicate_ignores WHERE parish_id_1=$1 OR parish_id_2=$1', [removeId]);
+
+    // Delete merged parish
+    await client.query('DELETE FROM parishes WHERE id=$1', [removeId]);
+
+    await client.query('INSERT INTO audit_log(admin_id, action, entity, entity_id) VALUES($1, $2, $3, $4)', [
+      adminId,
+      `merge_into_${keepId}`,
+      'parish',
+      String(removeId),
+    ]);
+
+    await client.query('COMMIT');
+    const { invalidateDuplicateCache } = await import('@/lib/admin-curation');
+    invalidateDuplicateCache();
+  } catch (error) {
+    await client.query('ROLLBACK');
+    throw error;
+  } finally {
+    client.release();
+  }
+}
+
+export async function resolveDuplicatePair(keepId: number, removeId: number): Promise<{ success?: string; error?: string }> {
+  try {
+    const admin = await requireAdmin();
+    if (keepId === removeId) {
+      return { error: 'A paróquia a ser mantida e a ser removida não podem ser a mesma.' };
+    }
+    await executeMergeDuplicate(keepId, removeId, admin.id);
+    revalidatePath('/admin');
+    revalidatePath('/', 'layout');
+    return { success: 'Paróquia mantida e duplicata apagada com sucesso!' };
+  } catch (error) {
+    console.error('resolveDuplicatePair error', error);
+    return { error: error instanceof Error ? error.message : 'Falha ao unificar paróquias.' };
+  }
+}
+
+export async function ignoreDuplicatePairDirect(id1: number, id2: number): Promise<{ success?: string; error?: string }> {
+  try {
+    await requireAdmin();
+    const p1 = Math.min(id1, id2);
+    const p2 = Math.max(id1, id2);
+
+    await db.query(`
+      INSERT INTO parish_duplicate_ignores(parish_id_1, parish_id_2)
+      VALUES($1, $2)
+      ON CONFLICT (parish_id_1, parish_id_2) DO NOTHING
+    `, [p1, p2]);
+
+    const { invalidateDuplicateCache } = await import('@/lib/admin-curation');
+    invalidateDuplicateCache();
+
+    revalidatePath('/admin');
+    return { success: 'Par marcado como distinto.' };
+  } catch (error) {
+    console.error('ignoreDuplicatePairDirect error', error);
+    return { error: error instanceof Error ? error.message : 'Falha ao ignorar par.' };
+  }
+}
+
+export async function mergeDuplicateParishes(_: FormState, form: FormData): Promise<FormState> {
+  const admin = await requireAdmin();
+  const keepId = idSchema.parse(form.get('keep_id'));
+  const removeId = idSchema.parse(form.get('remove_id'));
+
+  if (keepId === removeId) {
+    return { error: 'A paróquia a ser mantida e a ser removida não podem ser a mesma.' };
+  }
+
+  try {
+    await executeMergeDuplicate(keepId, removeId, admin.id);
+  } catch (error) {
+    console.error('mergeDuplicateParishes error', error);
+    return { error: error instanceof Error ? error.message : 'Falha ao mesclar as paróquias.' };
+  }
+
+  revalidatePath('/admin');
+  revalidatePath('/', 'layout');
+  return { success: 'Paróquias unificadas com sucesso! As casas foram transferidas e o registro duplicado foi removido.' };
+}
+
+export async function ignoreDuplicateParishPair(_: FormState, form: FormData): Promise<FormState> {
+  await requireAdmin();
+  const id1 = idSchema.parse(form.get('id1'));
+  const id2 = idSchema.parse(form.get('id2'));
+  const p1 = Math.min(id1, id2);
+  const p2 = Math.max(id1, id2);
+
+  await db.query(`
+    INSERT INTO parish_duplicate_ignores(parish_id_1, parish_id_2)
+    VALUES($1, $2)
+    ON CONFLICT (parish_id_1, parish_id_2) DO NOTHING
+  `, [p1, p2]);
+
+  const { invalidateDuplicateCache } = await import('@/lib/admin-curation');
+  invalidateDuplicateCache();
+
+  revalidatePath('/admin');
+  return { success: 'Par marcado como distinto. O alerta para este par não será mais exibido.' };
+}
+
+// ==========================================
+// AÇÕES DE GAMIFICAÇÃO E GOVERNANÇA
+// ==========================================
+
+export async function performCheckinAction(username: string): Promise<{ success: boolean; message: string; xpGained: number; streak: number }> {
+  const { processDailyCheckin } = await import('@/lib/gamification');
+  const res = await processDailyCheckin(username);
+  if (res.success) {
+    revalidatePath('/', 'layout');
+  }
+  return res;
+}
+
+export async function submitPrayerAction(_: FormState, form: FormData): Promise<FormState> {
+  const { submitPrayer } = await import('@/lib/gamification');
+  const cityCode = Number(form.get('city_code'));
+  const parishId = Number(form.get('parish_id'));
+  const username = String(form.get('username') ?? '').trim();
+  const displayName = String(form.get('display_name') ?? '').trim() || username;
+  const intention = String(form.get('intention') ?? '').trim();
+
+  if (!username) return { error: 'Identifique seu @ do Instagram antes de acender uma vela.' };
+  if (!intention) return { error: 'Escreva sua intenção de oração para a paróquia.' };
+
+  const res = await submitPrayer(cityCode, parishId, username, displayName, intention);
+  if (!res.success) return { error: res.message };
+
+  revalidatePath('/', 'layout');
+  return { success: res.message };
+}
+
+export async function votePresidentialAction(_: FormState, form: FormData): Promise<FormState> {
+  const { voteForPresident } = await import('@/lib/gamification');
+  const voterUsername = String(form.get('voter_username') ?? '').trim();
+  const candidateUsername = String(form.get('candidate_username') ?? '').trim();
+
+  if (!voterUsername) return { error: 'Informe seu @ de morador para votar.' };
+  if (!candidateUsername) return { error: 'Escolha um candidato a Presidente.' };
+
+  const res = await voteForPresident(voterUsername, candidateUsername);
+  if (!res.success) return { error: res.message };
+
+  revalidatePath('/', 'layout');
+  return { success: res.message };
+}
+
+export async function submitPresidentialProposalAction(_: FormState, form: FormData): Promise<FormState> {
+  const { getCurrentCycleWeek } = await import('@/lib/gamification');
+  const username = String(form.get('president_username') ?? '').trim().toLowerCase().replace(/^@/, '');
+  const title = String(form.get('title') ?? '').trim().slice(0, 150);
+  const description = String(form.get('description') ?? '').trim().slice(0, 1500);
+  const category = String(form.get('category') ?? 'gameplay').trim();
+
+  if (!title || !description) {
+    return { error: 'Título e descrição da proposta são obrigatórios.' };
+  }
+
+  // Validar se o usuário é realmente o Presidente ativo
+  const presRes = await db.query<{ id: number }>(`
+    SELECT id FROM houses
+    WHERE lower(username) = $1 AND civil_role = 'presidente' AND active
+  `, [username]);
+
+  if (!presRes.rows.length) {
+    return { error: 'Apenas o Presidente da República em mandato pode submeter propostas para a AcutisTech.' };
+  }
+
+  const cycleWeek = getCurrentCycleWeek();
+  await db.query(`
+    INSERT INTO feature_proposals (cycle_week, president_username, title, description, category, status)
+    VALUES ($1, $2, $3, $4, $5, 'pending')
+  `, [cycleWeek, username, title, description, category]);
+
+  revalidatePath('/admin');
+  revalidatePath('/', 'layout');
+  return { success: 'Proposta presidencial encaminhada com sucesso para o Gabinete de Inovação da AcutisTech!' };
+}
+
+export async function updateMayorSettingsAction(_: FormState, form: FormData): Promise<FormState> {
+  const username = String(form.get('username') ?? '').trim().toLowerCase().replace(/^@/, '');
+  const cityCode = Number(form.get('city_code'));
+  const mayorMessage = String(form.get('mayor_message') ?? '').trim().slice(0, 100);
+  const patronFestival = form.get('patron_festival') === 'true' || form.get('patron_festival') === 'on';
+
+  // Validar autoridade de Prefeito
+  const mayorRes = await db.query<{ id: number }>(`
+    SELECT id FROM houses
+    WHERE lower(username) = $1 AND civil_role = 'prefeito' AND city_code = $2 AND active
+  `, [username, cityCode]);
+
+  if (!mayorRes.rows.length) {
+    return { error: 'Apenas o Prefeito em mandato deste município pode atualizar estes decretos.' };
+  }
+
+  await db.query(`
+    UPDATE cities
+    SET mayor_message = $1, patron_festival_active = $2
+    WHERE code = $3
+  `, [mayorMessage || null, patronFestival, cityCode]);
+
+  revalidatePath('/', 'layout');
+  return { success: 'Decreto municipal atualizado com sucesso!' };
+}
+
+export async function updateGovernorSettingsAction(_: FormState, form: FormData): Promise<FormState> {
+  const { getCurrentCycleWeek } = await import('@/lib/gamification');
+  const username = String(form.get('username') ?? '').trim().toLowerCase().replace(/^@/, '');
+  const uf = String(form.get('uf') ?? '').trim().toUpperCase().slice(0, 2);
+  const featuredCityCode = Number(form.get('featured_city_code'));
+  const decreeContent = String(form.get('decree_content') ?? '').trim().slice(0, 200);
+
+  // Validar autoridade de Governador
+  const govRes = await db.query<{ id: number }>(`
+    SELECT h.id FROM houses h
+    JOIN municipalities m ON m.code = h.city_code
+    WHERE lower(h.username) = $1 AND h.civil_role = 'governador' AND m.uf = $2 AND h.active
+  `, [username, uf]);
+
+  if (!govRes.rows.length) {
+    return { error: 'Apenas o Governador em mandato deste Estado pode publicar estes decretos.' };
+  }
+
+  if (featuredCityCode) {
+    await db.query(`UPDATE cities SET governor_featured = false WHERE code IN (SELECT code FROM municipalities WHERE uf = $1)`, [uf]);
+    await db.query(`UPDATE cities SET governor_featured = true WHERE code = $1`, [featuredCityCode]);
+  }
+
+  if (decreeContent) {
+    const cycleWeek = getCurrentCycleWeek();
+    await db.query(`
+      INSERT INTO governance_decrees (cycle_week, role_type, author_username, scope_uf, title, content)
+      VALUES ($1, 'governador', $2, $3, 'Decreto Estadual da Fé', $4)
+    `, [cycleWeek, username, uf, decreeContent]);
+  }
+
+  revalidatePath('/', 'layout');
+  return { success: 'Decreto do Governador publicado com sucesso para todo o Estado!' };
+}
+
+export async function referPriestAction(_: FormState, form: FormData): Promise<FormState> {
+  const referrer = String(form.get('referrer_username') ?? '').trim().toLowerCase().replace(/^@/, '');
+  const priest = String(form.get('priest_username') ?? '').trim().toLowerCase().replace(/^@/, '');
+  const priestTitle = String(form.get('priest_title') ?? 'Pároco').trim();
+  const cityCode = Number(form.get('city_code'));
+  const parishId = Number(form.get('parish_id'));
+
+  if (!referrer) return { error: 'Identifique seu @ do Instagram.' };
+  if (!priest) return { error: 'Informe o @ do sacerdote no Instagram.' };
+  if (!parishId) return { error: 'Selecione a paróquia do sacerdote.' };
+
+  try {
+    await db.query(`
+      INSERT INTO gamification_referrals (referrer_username, referred_username, is_priest, priest_title, city_code, parish_id)
+      VALUES ($1, $2, true, $3, $4, $5)
+      ON CONFLICT (referrer_username, referred_username) DO NOTHING
+    `, [referrer, priest, priestTitle, cityCode, parishId]);
+
+    // +15 XP imediato pela indicação
+    const { awardXpToUser } = await import('@/lib/gamification');
+    await awardXpToUser(referrer, 15, 'priest_referral');
+
+    revalidatePath('/admin');
+    revalidatePath('/', 'layout');
+    return { success: `Indicação enviada! Você ganhou +15 XP. Quando o Padre @${priest} for validado pela equipe, você receberá +500 XP bônus!` };
+  } catch (error: any) {
+    return { error: 'Não foi possível registrar a indicação sacerdotal no momento.' };
+  }
+}
+
+export async function approvePriestReferralAction(referralId: number): Promise<{ success?: string; error?: string }> {
+  try {
+    const admin = await requireAdmin();
+    const { awardXpToUser } = await import('@/lib/gamification');
+
+    const referralRes = await db.query<{
+      id: number;
+      referrer_username: string;
+      referred_username: string;
+      priest_title: string;
+      parish_id: number;
+      city_code: number;
+    }>(`
+      SELECT id, referrer_username, referred_username, priest_title, parish_id, city_code
+      FROM gamification_referrals
+      WHERE id = $1 AND is_priest AND NOT bonus_awarded
+    `, [referralId]);
+
+    if (!referralRes.rows.length) {
+      return { error: 'Indicação não encontrada ou bônus já concedido.' };
+    }
+
+    const { referrer_username, referred_username, priest_title, parish_id, city_code } = referralRes.rows[0];
+
+    // 1. Atualizar Paróquia para ter padre aprovado com upgrade sagrado
+    await db.query(`
+      UPDATE parishes
+      SET has_approved_priest = true,
+          priest_name = $1,
+          priest_title = $2,
+          holy_blessing_active = true,
+          stained_glass_active = true,
+          blessed_sacrament_chapel = true
+      WHERE id = $3
+    `, [`Pe. ${referred_username}`, priest_title || 'Pároco', parish_id]);
+
+    // 2. Conceder o Bônus Sacerdotal Máximo (+500 XP) ao fiel indicador!
+    await awardXpToUser(referrer_username, 500, 'priest_approved_bonus');
+
+    // 3. Atualizar referral
+    await db.query(`
+      UPDATE gamification_referrals
+      SET bonus_awarded = true,
+          approved_at = now(),
+          approved_by_admin_id = $2
+      WHERE id = $1
+    `, [referralId, admin.id]);
+
+    revalidatePath('/admin');
+    revalidatePath('/', 'layout');
+    return { success: `Padre @${referred_username} aprovado com sucesso! A paróquia recebeu o Upgrade Sagrado e o fiel @${referrer_username} ganhou +500 XP!` };
+  } catch (error) {
+    console.error('approvePriestReferralAction error', error);
+    return { error: error instanceof Error ? error.message : 'Falha ao aprovar sacerdote.' };
+  }
+}
+
+export async function tallyGovernanceWeeklyAction(): Promise<{ success?: string; error?: string }> {
+  try {
+    await requireAdmin();
+    const { tallyWeeklyGovernance } = await import('@/lib/gamification');
+    const result = await tallyWeeklyGovernance();
+
+    revalidatePath('/admin');
+    revalidatePath('/', 'layout');
+    return {
+      success: `Apuração concluída para ${result.cycleWeek}! Presidente: @${result.president ?? 'nenhum'} · Governadores: ${result.governorsCount} · Prefeitos: ${result.mayorsCount} · Sacristãos: ${result.sacristansCount}`,
+    };
+  } catch (error) {
+    console.error('tallyGovernanceWeeklyAction error', error);
+    return { error: error instanceof Error ? error.message : 'Falha ao processar apuração semanal.' };
+  }
+}
+
+export async function getUserMissionsStatusAction(username: string) {
+  const { getUserMissionsStatus } = await import('@/lib/gamification');
+  return getUserMissionsStatus(username);
+}
+
+export async function recordWalkAction(username: string): Promise<{ success: boolean; xpGained: number }> {
+  try {
+    const { awardXpToUser } = await import('@/lib/gamification');
+    const res = await awardXpToUser(username, 15, 'Passeio 3D com o bonequinho no bairro');
+    revalidatePath('/', 'layout');
+    return { success: true, xpGained: 15 };
+  } catch (error) {
+    console.error('recordWalkAction error', error);
+    return { success: false, xpGained: 0 };
+  }
+}

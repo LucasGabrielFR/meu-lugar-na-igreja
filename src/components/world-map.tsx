@@ -3,10 +3,11 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { PointerEvent as MapPointerEvent, WheelEvent as MapWheelEvent } from 'react';
 import geo from '../../public/data/brasil.json';
 import municipalSeats from '../../public/data/municipio-sedes.json';
+import coastalDrags from '../../public/data/municipio-coastal-drags.json';
 import { clampMapZoom, visibleMapTiles, zoomAround } from '@/lib/map-navigation.mjs';
 import { buildTownLayout, estimateTownRadius } from '@/lib/town-layout.mjs';
 import { minimumLabelParishes, selectMapLabels } from '@/lib/map-labels.mjs';
-import { buildTownScales, regionFor, STATE_NAMES } from '@/lib/map-territories.mjs';
+import { buildTownScales, regionFor, STATE_NAMES, computeTownAnchor } from '@/lib/map-territories.mjs';
 import { cachedTownLayout, cachedTownOutline, scopedCityCodes } from '@/lib/map-rendering.mjs';
 import type { City, CityWorld, MapFocus, MapSelection } from '@/lib/types';
 import MapLoading from './map-loading';
@@ -24,6 +25,9 @@ const states: Record<string, string> = {
 };
 const mercatorY = (latitude: number) => (-Math.log(Math.tan(Math.PI / 4 + (latitude * Math.PI) / 360)) * 180) / Math.PI;
 const seats = new Map((municipalSeats as [number, number, number][]).map(([code, lon, lat]) => [code, { lon, lat, y: mercatorY(lat) }]));
+if (!seats.has(4399999)) {
+  seats.set(4399999, { lon: -51.8, lat: -35.2, y: mercatorY(-35.2) });
+}
 const localScale = (latitude: number) => 4.2 / (111320 * Math.cos((latitude * Math.PI) / 180));
 const biome = (uf: string) =>
   ['AC', 'AM', 'AP', 'PA', 'RO', 'RR'].includes(uf)
@@ -34,7 +38,17 @@ const biome = (uf: string) =>
         ? '#8ba57d'
         : '#859b75';
 
-function TownEmblem({ size, populated }: { size: number; populated: boolean }) {
+function TownEmblem({ size, populated, isCreatorIsland }: { size: number; populated: boolean; isCreatorIsland?: boolean }) {
+  if (isCreatorIsland) {
+    return (
+      <g transform={`scale(${size / 8})`}>
+        <ellipse cy="6" rx="18" ry="9" fill="#ecd599" stroke="#76b3c4" strokeWidth="1.2" />
+        <ellipse cy="5" rx="14" ry="7" fill="#6ba072" />
+        <path d="M-7 3L-5 -5L-2 -2L0 -7L2 -2L5 -5L7 3Z" fill="#ffd700" stroke="#b8860b" strokeWidth="0.8" />
+        <circle cx="0" cy="-8" r="1.5" fill="#ef4444" />
+      </g>
+    );
+  }
   return (
     <g transform={`scale(${size / 10})`}>
       <ellipse cy="4" rx="10" ry="5" fill={populated ? '#f0d27a' : '#d8d7b0'} opacity=".85" />
@@ -70,6 +84,8 @@ export default function WorldMap({
   selectedCity,
   animateFlights,
   onInspect,
+  onHoverCity,
+  onCenterCity,
 }: {
   cities: City[];
   worlds: Record<number, CityWorld>;
@@ -86,12 +102,17 @@ export default function WorldMap({
   selectedCity: number | null;
   animateFlights: boolean;
   onInspect: (selection: MapSelection) => void;
+  onHoverCity?: (cityCode: number | null) => void;
+  onCenterCity?: (cityCode: number | null) => void;
 }) {
   const container = useRef<HTMLDivElement>(null);
   const [viewport, setViewport] = useState({ width: 800, height: 600 });
   const [center, setCenter] = useState<[number, number]>(() => {
-    const point = focus.code ? seats.get(focus.code) : null;
-    return point ? [point.lon, point.y] : [-54, 18];
+    if (!focus.code) return [-54, 18];
+    const point = seats.get(focus.code);
+    if (!point) return [-54, 18];
+    const drag = (coastalDrags as unknown as Record<string, [number, number]>)[String(focus.code)];
+    return drag ? [point.lon + drag[0], mercatorY(point.lat + drag[1])] : [point.lon, point.y];
   });
   const [tileView, setTileView] = useState({ center: [-54, 18], zoom: 1, width: 800, height: 600 });
   const [settledTiles, setSettledTiles] = useState<Set<string>>(() => new Set());
@@ -101,6 +122,11 @@ export default function WorldMap({
   const [hoveredParish, setHoveredParish] = useState<number | null>(null);
   const [hoveredState, setHoveredState] = useState<string | null>(null);
   const [isDragging, setIsDragging] = useState(false);
+
+  const updateHoveredCity = (code: number | null) => {
+    setHoveredCity(code);
+    onHoverCity?.(code);
+  };
 
   const boundaryCache = useRef<Map<number, BoundaryRecord | null>>(new Map());
   const [boundaries, setBoundaries] = useState<Record<number, BoundaryRecord>>({});
@@ -205,12 +231,26 @@ export default function WorldMap({
   const townScales = useMemo(() => buildTownScales(cities, seats, radii), [cities, radii]);
   const outlines = useMemo(() => Object.fromEntries(Object.entries(layouts).map(([code, layout]) => [code, cachedTownOutline(layout)])), [layouts]);
 
+  const townAnchors = useMemo(() => {
+    const map = new Map<number, { lon: number; lat: number; y: number }>();
+    for (const city of cities) {
+      const seat = seats.get(city.code);
+      if (!seat) continue;
+      const b = boundaries[city.code];
+      const layout = layouts[city.code];
+      const scale = (townScales[city.code] ?? localScale(seat.lat)) * 1.18;
+      const anchor = computeTownAnchor(city.code, seat, coastalDrags as unknown as Record<string, [number, number]>, layout, scale, b?.bounds);
+      map.set(city.code, anchor);
+    }
+    return map;
+  }, [cities, boundaries, layouts, townScales]);
+
   const roadNetwork = useMemo(
     () =>
       showHighways && highways.length && tileView.zoom >= 10
-        ? buildRoadConnections(cities, seats, highways, radii, townScales, scopedCityCodes(cities, seats, tileView, radii, townScales))
+        ? buildRoadConnections(cities, townAnchors, highways, radii, townScales, scopedCityCodes(cities, townAnchors, tileView, radii, townScales))
         : { connections: [], exits: {} as Record<number, number[]>, towns: [], unconnected: [] },
-    [cities, highways, radii, townScales, tileView, showHighways]
+    [cities, highways, radii, townScales, tileView, showHighways, townAnchors]
   );
 
   const dimension = 48 / zoom;
@@ -253,7 +293,7 @@ export default function WorldMap({
     const key = `${focus.sequence}:${viewport.width}:${viewport.height}`;
     if (appliedFocus.current === key) return;
     const frame = requestAnimationFrame(() => {
-      const point = focus.code ? seats.get(focus.code) : null;
+      const point = focus.code ? (townAnchors.get(focus.code) ?? seats.get(focus.code)) : null;
       if (!point) {
         const parts = shapes.filter(s => (focus.uf ? s.uf === focus.uf : focus.region ? regionFor(s.uf) === focus.region : false));
         if (parts.length) {
@@ -309,15 +349,16 @@ export default function WorldMap({
       appliedFocus.current = key;
     });
     return () => cancelAnimationFrame(frame);
-  }, [focus, viewport, cities, layouts, onZoom, townScales, shapes, boundary]);
+  }, [focus, viewport, cities, layouts, onZoom, townScales, shapes, boundary, townAnchors]);
 
   const visibleCities = useMemo(() => {
     const halfW = (viewport.width * units) / 2;
     const halfH = (viewport.height * units) / 2;
     const list: { city: City; point: { lon: number; lat: number; y: number }; radius: number; scale: number; pixels: number }[] = [];
     for (const city of cities) {
-      const point = seats.get(city.code);
-      if (!point) continue;
+      const seat = seats.get(city.code);
+      if (!seat) continue;
+      const point = townAnchors.get(city.code) ?? seat;
       const radius = radii[city.code] ?? estimateTownRadius(city.houses, city.parishes);
       const scale = (townScales[city.code] ?? localScale(point.lat)) * 1.18;
       const pixels = (radius * scale) / units;
@@ -326,7 +367,7 @@ export default function WorldMap({
       list.push({ city, point, radius, scale, pixels });
     }
     return list;
-  }, [cities, radii, townScales, units, viewport.width, viewport.height, center]);
+  }, [cities, radii, townScales, townAnchors, units, viewport.width, viewport.height, center]);
 
   // Settled visible cities (updated only when tileView settles after pan/zoom) to avoid network/layout spikes mid-gesture
   const settledVisibleCities = useMemo(() => {
@@ -336,8 +377,9 @@ export default function WorldMap({
     const list: { city: City; point: { lon: number; lat: number; y: number }; pixels: number; dist: number }[] = [];
     for (const city of cities) {
       if (!city.active) continue;
-      const point = seats.get(city.code);
-      if (!point) continue;
+      const seat = seats.get(city.code);
+      if (!seat) continue;
+      const point = townAnchors.get(city.code) ?? seat;
       const radius = radii[city.code] ?? estimateTownRadius(city.houses, city.parishes);
       const scale = (townScales[city.code] ?? localScale(point.lat)) * 1.18;
       const pixels = (radius * scale) / tUnits;
@@ -348,7 +390,17 @@ export default function WorldMap({
       list.push({ city, point, pixels, dist: Math.hypot(dx, dy) });
     }
     return list;
-  }, [cities, radii, townScales, tileView]);
+  }, [cities, radii, townScales, townAnchors, tileView]);
+
+  useEffect(() => {
+    if (settledVisibleCities.length > 0) {
+      const sorted = [...settledVisibleCities].sort((a, b) => a.dist - b.dist);
+      const closest = sorted[0];
+      if (closest) {
+        onCenterCity?.(closest.city.code);
+      }
+    }
+  }, [settledVisibleCities, onCenterCity]);
 
   // Batch-load municipal territory polygons for settled visible cities at regional/city zoom
   const wantedBoundaryCodes = useMemo(() => {
@@ -708,11 +760,11 @@ export default function WorldMap({
                 onPointerEnter={() => {
                   if (performance.now() < inputUntil.current) return;
                   setHoveredState(null);
-                  setHoveredCity(record.code);
+                  updateHoveredCity(record.code);
                 }}
                 onPointerLeave={() => {
                   if (performance.now() < inputUntil.current) return;
-                  setHoveredCity(prev => (prev === record.code ? null : prev));
+                  updateHoveredCity(null);
                 }}
                 onClick={event => {
                   event.stopPropagation();
@@ -739,22 +791,23 @@ export default function WorldMap({
             const layout = layouts[city.code];
             const town = !!world?.parishes.length && (pixels >= 42 || (city.code === selectedCity && pixels >= 22));
             const labelY = -24;
+            const seat = seats.get(city.code) ?? point;
             return (
               <g
                 key={city.code}
                 data-city-marker={city.code}
-                data-seat-longitude={point.lon}
-                data-seat-latitude={point.lat}
+                data-seat-longitude={seat.lon}
+                data-seat-latitude={seat.lat}
                 transform={`translate(${point.lon},${point.y})`}
                 onPointerOver={event => {
                   if (performance.now() < inputUntil.current) return;
-                  setHoveredCity(city.code);
+                  updateHoveredCity(city.code);
                   const parish = (event.target as Element).closest('[data-parish-id]');
                   setHoveredParish(parish ? Number(parish.getAttribute('data-parish-id')) : null);
                 }}
                 onPointerLeave={() => {
                   if (performance.now() < inputUntil.current) return;
-                  setHoveredCity(null);
+                  updateHoveredCity(null);
                   setHoveredParish(null);
                 }}
                 onClick={() => onInspect({ city })}
@@ -768,8 +821,8 @@ export default function WorldMap({
                       role="button"
                       tabIndex={0}
                       aria-label={`Território virtual de ${city.name}`}
-                      onFocus={() => setHoveredCity(city.code)}
-                      onBlur={() => setHoveredCity(null)}
+                      onFocus={() => updateHoveredCity(city.code)}
+                      onBlur={() => updateHoveredCity(null)}
                       onKeyDown={event => {
                         if (event.key === 'Enter' || event.key === ' ') {
                           event.preventDefault();
@@ -825,7 +878,7 @@ export default function WorldMap({
                     }}
                   >
                     <rect x="-18" y="-22" width="36" height="42" fill="transparent" />
-                    <TownEmblem size={4.5 + Math.min(6, Math.log2(city.houses + 1))} populated={city.houses > 0} />
+                    <TownEmblem size={4.5 + Math.min(6, Math.log2(city.houses + 1))} populated={city.houses > 0} isCreatorIsland={city.code === 4399999} />
                   </g>
                 )}
                 {cityLabelIds.has(city.code) && !(selectedParish && selectedCity === city.code) && (

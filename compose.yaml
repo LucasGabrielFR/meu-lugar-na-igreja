@@ -217,5 +217,45 @@ services:
       - ./public/data:/app/public/data
       - ./.cache:/app/.cache
     command: [node, scripts/fetch-ibge-roads.mjs]
+  voicestudio:
+    profiles: [studio]
+    image: ghcr.io/debpalash/voicestudio:stable
+    restart: unless-stopped
+    environment:
+      OMNIVOICE_API_KEY: ${OMNIVOICE_API_KEY:-omnivoice-local-secret}
+      OMNIVOICE_DATA_DIR: /app/omnivoice_data
+    ports:
+      - "127.0.0.1:3900:3900"
+    volumes:
+      - voicestudio_data:/app/omnivoice_data
+  video-studio:
+    profiles: [studio]
+    build:
+      context: ./video-studio
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3200:3200"
+    environment:
+      PORT: 3200
+      PGHOST: db
+      PGPORT: 5432
+      PGDATABASE: ${POSTGRES_DB}
+      PGUSER: ${POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      FAL_KEY: ${FAL_KEY:-}
+      VOICESTUDIO_URL: http://voicestudio:3900
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
+      REMOTION_CHROME_EXECUTABLE: /usr/bin/chromium
+    volumes:
+      - ./video-studio:/app/video-studio
+      - video_studio_node_modules:/app/video-studio/node_modules
+      - ./.env:/app/.env:ro
+    depends_on:
+      db:
+        condition: service_healthy
 volumes:
   postgres_data:
+  voicestudio_data:
+  video_studio_node_modules:

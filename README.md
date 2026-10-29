@@ -1,6 +1,190 @@
 # Meu Lugar na Igreja
 
-Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras, com participação integrada via comentários no Instagram e criação direta no mapa.
+Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras, com participação integrada via comentários no Instagram, criação direta no mapa, navegação 3D em terceira pessoa pelas ruas do bairro paroquial e curadoria ativa com salvaguarda inteligente de moradores.
+
+## Modo Passear 3D nas Ruas, Paramentaria São Pedro, Rendas Nobres & Emotes — versão 0.29.1
+
+- **Sobrepeliz do Cerimoniário de Alta Paramentaria (Estilo São Pedro Paramentaria):**
+  - Desenvolvida com base nas peças autênticas de alfaiataria litúrgica: corpo de linho branco puro com pregas clássicas verticais (frente e verso), peitoral limpo e sóbrio (sem emblemas circulares artificiais).
+  - Barrado nobre de renda barroca com flores e acantos vazados com transparência, contendo o **Monograma Mariano Coroado em Ouro Litúrgico** repetido em simetria com barra dobrada em branco e dourado.
+  - Mangas amplas no modelo bell-sleeve cobrindo os braços com a mesma faixa ricamente bordada.
+- **Cinemática Estável e Indestrutível dos Emotes:**
+  - **Orar de Joelhos (`pray` / Atalho `E`)**: O fiel ajoelha-se no chão em frente à matriz (`playerGroup.position.y = -2.2`), com as pernas dobradas confortavelmente para trás, tronco e cabeça em contemplação reverente e mãos postas à frente do coração.
+  - **Comemorar com Pulo e Mãos ao Alto (`cheer` / Atalho `C`)**: O personagem salta no ar em júbilo, estendendo os dois braços retos para cima em glorioso "V" de vitória (sem dobras ou interferência na cabeça).
+  - **Louvor com as Mãos de um Lado para o Outro (`praise` / Atalho `G`)**: O personagem ergue as mãos abertas e balança os braços ritmicamente de um lado para o outro em harmonia comunitária.
+- **Fidelidade e Curadoria Completa das Vestes dos Personagens 3D:**
+  - **Leigo**: Traje social refinado com camisa social, calça e cinto de couro elegante com fivela prateada, sem qualquer colarinho de clérigo.
+  - **Coroinha**: Túnica vermelha litúrgica até os pés e sobrepeliz rendada branca em camadas cobrindo o corpo até a altura das pernas.
+  - **Acólito**: Túnica branca pura e cíngulo cinza amarrado na cintura com laço e pontas/franjas caídas sobre a perna esquerda, sem sobrepeliz.
+  - **Cerimoniário**: Túnica preta clássica com sobrepeliz branca rendada de bordas trabalhadas.
+  - **Ministro da Eucaristia**: Jaleco branco com botões pretos em destaque e logotipo bordado da Santa Eucaristia no peito esquerdo (cálice dourado e hóstia sagrada com cruz).
+  - **Sacristão**: Traje executivo escuro com cinto de serviço e molho de chaves litúrgicas douradas penduradas na argola da cintura.
+  - **Prefeito, Governador e Presidente**: Terno executivo e gravata sob a faixa oficial (eliminada qualquer clérgima ou gola clerical).
+  - **Padre**: Batina preta tradicional completa até os pés com abotoamento central visível (33 botões litúrgicos), clérgima branca no pescoço e estola sacerdotal branca caindo dos ombros com cruzes douradas nas extremidades.
+- **Novas Mecânicas e Físicas de Animação de Emotes:**
+  - **Oração (`pray`)**: Palmas unidas à frente do peito com rotações anatômicas precisas dos braços, cabeça curvada reverentemente e respiração suave de contemplação.
+  - **Comemoração (`cheer`)**: O personagem pula alegremente com física de elevação no eixo Y, braços erguidos em louvor e ação de graças aos céus, e cabeça voltada para o alto e para a torre da Igreja Matriz.
+  - Balanço dinâmico e ondulação de tecido das batinas e túnicas ao caminhar pelas calçadas da paróquia.
+- **Botão `Passear` e Enquadramento da Cidade Atual:**
+  - Renomeado botão principal para `Passear` com ícone de passos, iniciando a exploração em terceira pessoa na cidade que o fiel está visualizando no mapa (com foco geográfico e centro de tela precisos).
+- **Recurso de Viagem Instantânea (`✈️ viajar`):**
+  - Botão integrado no HUD superior direito (e atalho `V`) permitindo viajar diretamente para qualquer uma das 5.570 cidades brasileiras com busca instantânea do IBGE e atalhos rápidos para santuários católicos (Aparecida/SP, Niquelândia/GO, Rio de Janeiro/RJ, etc.).
+  - Transição de voo com overlay cinematográfico e aterrissagem em frente à Igreja Matriz da comunidade de destino.
+- **Gravação Automática de Animação 3D do Boneco Andando:**
+  - Sistema de captura direta do canvas WebGL Three.js a 30 FPS em alta definição vertical (1080x1920).
+  - O boneco 3D caminha pelas ruas da paróquia movimentando pernas e braços com física fluida, enquanto a câmera em terceira pessoa realiza órbitas panorâmicas revelando a Igreja Matriz, calçadas e casario.
+  - Codificação MP4 nativa H.264 integrada no painel local via botão *"🎬 Gravar Animação 3D (Boneco Andando)"*.
+- **Fundos em Vídeo Dinâmico no Remotion (`<OffthreadVideo />`):**
+  - O renderizador Remotion suporta agora clipes de vídeo MP4 como plano de fundo de cada cena, permitindo intercalar tomadas 3D dinâmicas com capturas 4K do mapa.
+- **Captura do Mapa em Resolução Retina 4K (`deviceScaleFactor: 2`):**
+  - Resolução de captura das tomadas 2D aumentada para 2160x3840, eliminando borrões ou perda de nitidez em zooms.
+- **Modo Vídeo Limpo via URL (`clean=1`):**
+  - Ocultação instantânea de qualquer menu, HUD ou botão da interface durante gravações automatizadas de vídeo.
+
+## Estúdio Audiovisual Completo, Roteiros Livres e Sincronia de Legenda — versão 0.28.7
+
+- **Roteiro Livre com Divisão Inteligente em Cenas:**
+  - Modo autoral que permite escrever ou colar qualquer roteiro ou fala, com a IA organizando o ritmo, as cenas e efeitos visuais automaticamente.
+- **Personalização Visual por Cena (Fotos Próprias e Câmera Cinemática):**
+  - Upload de imagens e fotos locais para qualquer cena, mesclando adros, igrejas e eventos com as capturas do mapa.
+  - Seleção de efeitos de câmera por cena: *Zoom In*, *Zoom Out*, *Pan Lateral*, *Pulso Suave* e *Estático*.
+- **Configuração de Identidade da Marca (Branding):**
+  - `@` do Instagram configurável, CTA customizável e subtexto dinâmico.
+- **Sincronia Fina de Legenda sem Atraso:**
+  - Sincronização restrita ao tempo de fala aferido pelo `ffprobe` e slider interativo de ajuste fino (-400ms a +400ms).
+- **Timeline Interativa e Re-síntese de Voz:**
+  - Edição cena a cena com botão para regerar locução e legendas instantaneamente.
+
+## Quadro de Missões Lateral Colapsável e Validação Automática — versão 0.28.8
+
+- **Quadro de Missões Lateral Colapsável (`DailyMissionsBoard`):**
+  - Acoplamento à margem lateral esquerda do mapa com gaveta deslizante suave (`drawer-open` e `drawer-collapsed`).
+  - Alça suspensa permanente na lateral com contador dinâmico e status, permitindo recolher e expandir o painel com 1 clique.
+  - Tipografia de jogo aperfeiçoada com `-webkit-text-stroke: 1.5px #102738`, eliminando qualquer linha de varredura ou distorção visual no texto `10 MISSÕES DO DIA`.
+  - Botão de fechar (`X`) centralizado em círculo perfeito no canto superior direito.
+  - Rolagem (scroll) desobstruída e isolada do zoom do mapa, permitindo navegar por todas as missões e categorias com fluidez.
+- **Validação Automática de Missões pelo Sistema (Sem Marcação Manual):**
+  - Eliminação de checkboxes manuais: a conclusão e concessão de XP são regidas estritamente pelos eventos do sistema e do banco de dados.
+  - Reconhecimento automático de perfil e **Check-in Automático**: ao buscar o `@` na barra superior ou clicar na sua casa, o sistema valida o perfil e registra o check-in diário no PostgreSQL (+10 XP).
+  - Status em tempo real via `getUserMissionsStatusAction`: verificação de check-in, orações registradas, voto na semana, indicações de amigos, indicação de padre e bênção da matriz.
+
+## Quadro Suspenso de Missões Diárias e Guia "Como Funciona" — versão 0.28.7
+
+- **Quadro Suspenso de Missões Diárias (`DailyMissionsBoard`):**
+  - Widget flutuante suspenso sobre o mapa com layout inspirado no estilo viral de *Domine Com Seu Time*.
+  - Cabeçalho dinâmico com pílula de data (`QUINTA-FEIRA · 29/10`) e título com tipografia de jogo `10 MISSÕES DO DIA`.
+  - Agrupamento em três categorias: **Fáceis** (+10 a +15 XP), **Médias** (+20 a +35 XP) e **Difíceis / Especiais** (+100 a +500 XP).
+  - Bônus de conclusão geral: `✅ FEZ TODAS? +50 XP DE BÔNUS`.
+  - Ativação/minimização com um clique na tela ou pelo atalho `Missões` na barra de navegação superior.
+- **Manual Completo e Interativo "Como Funciona" (`HowItWorksGuide`):**
+  - Janela modal expandida com navegação por abas: *Visão Geral*, *Missões & XP*, *Níveis Litúrgicos*, *Casas & Palácios*, *Governança Cívica*, *Pároco & Matriz*, *Passeio 3D* e *LGPD & Regras*.
+  - Explicação aprofundada de todas as regras de pontuação, eleições semanais em cascata, poder de sugestão do Presidente da República, bênção sagrada da Matriz com pároco e controles do bonequinho em 3D.
+
+## Gamificação, Hierarquia Eclesiástica e Governança Cívica — versão 0.28.6
+
+- **Sistema de Níveis Pessoais e Papéis Litúrgicos:**
+  - Níveis 1 a 4 (*Leigo da Paróquia*), 5 a 9 (*Coroinha*), 10 a 19 (*Acólito*), 20 a 24 (*Cerimoniário*), 25 a 29 (*Ministro Extraordinário da Sagrada Comunhão*) e Nível 30+ (*Sacristão da Igreja*, reservado aos 5 maiores pontuadores da cidade).
+  - Tabela de XP equilibrada para incentivar a permanência diária e a evangelização sem exigências irreais.
+- **Mecânicas de Fé e Engajamento Social:**
+  - Check-in diário com bônus de consistência (+10 XP diário e +35 XP no 7º dia consecutivo).
+  - Intenções de oração diárias registradas no adro paroquial (+10 XP).
+  - Voto semanal democrático para o Presidente da República (+25 XP).
+  - Indicação de amigos por comentário (@amigo): +15 XP imediato e bônus de +100 XP quando o indicado constrói sua casa.
+  - Indicação e verificação de sacerdotes (@padre): +15 XP na menção e bônus máximo de +500 XP após homologação eclesiástica.
+- **Evolução Visual de Residências e Sobreposições Institucionais:**
+  - 5 Estágios Residenciais: *Casinha da Vila* (1-4), *Casa Colonial* (5-14), *Sobrado Paroquial* (15-24), *Solar da Fé* (25-29) e *Palacete do Sacristão* (30+).
+  - Sobreposições visuais exclusivas por mandato cívico:
+    - *Prefeito*: Palacete Municipal com brasão e bandeira da cidade.
+    - *Governador*: Palácio dos Governadores com pórtico cívico e bandeira estadual.
+    - *Presidente*: Palácio Presidencial da República com cúpula palaciana, espelho d'água e bandeira do Brasil.
+    - *Criador*: Castelo do Criador com muralhas de pedra, torres de ouro e a Grande Coroa Real.
+- **Presença do Pároco e Matriz Consagrada:**
+  - O Sacerdote reside diretamente na Igreja Matriz (não ocupa lotes residenciais comuns).
+  - Igrejas com pároco canônico aprovado recebem upgrade visual com Cruz Dourada Reluzente, aura celestial, estola pastoral, sinos em festa e bônus passivo de +10% XP a todos os paroquianos residentes.
+- **Governança Democrática em Cascata e Limitações de Poder:**
+  - Janela eleitoral de sexta a domingo para escolha popular do Presidente do Brasil.
+  - Cascata institucional: o Presidente nomeia os Governadores de cada UF; os Governadores nomeiam os Prefeitos dos municípios.
+  - O Presidente da República é a **única autoridade com o poder exclusivo de sugerir formalmente novas funcionalidades para o jogo**, despachadas diretamente com a AcutisTech pelo painel `/admin?view=proposals`.
+  - O Governador elege cidades turísticas de destaque e publica decretos estaduais.
+  - O Prefeito define a mensagem de acolhimento do município e aciona a Festa do Padroeiro com bandeirolas e celebração pública.
+- **Gestão Paroquial no Painel Administrativo (`/admin`):**
+  - Aba de Propostas Presidenciais (`view=proposals`) para aprovação ou rejeição com notas oficiais.
+  - Aba de Aprovação de Sacerdotes (`view=priests`) para conferência eclesiástica e concessão dos títulos pastorais.
+  - Botão de Apuração Eleitoral Semanal em cascata com recálculo automático de mandatos.
+
+## Estúdio de Vídeos com IA Generativa (Image-to-Video via fal.ai) — versão 0.29.0
+
+- **Integração Image-to-Video com fal.ai (Kling 1.6, MiniMax Hailuo e Wan 2.1):**
+  - O estúdio de criação local agora pode animar qualquer imagem de base (print do mapa, foto de igreja ou captura 3D do personagem) através de IA generativa de vídeo.
+  - A IA recebe o enquadramento estático e gera um clipe de vídeo cinematográfico em alta taxa de quadros, imaginando movimentações orgânicas, caminhadas, iluminação solar e enquadramentos de câmera vivos.
+  - Seletor de modelos com foco no **Kling 1.6 Standard**, garantindo preservação do estilo lúdico e 3D voxel sem distorções fotorrealistas.
+  - Pacing e roteirização adaptados para o ritmo de Reels e TikTok com cortes curtos de 3 a 5 segundos por cena.
+
+## Estúdio Audiovisual Local, Legendas CapCut e Áudio Multiplexado — versão 0.28.5
+
+- **Legendas Dinâmicas em Blocos sem Colisão (Estilo CapCut/Viral):**
+  - Eliminação definitiva de palavras coladas: substituição de alargamento horizontal excessivo por salto vertical (`translateY(-6px) scale(1.08)`), espaçamento expandido (`columnGap: 26px`), `whiteSpace: nowrap` e blocos de 1 a 2 palavras em formato vertical (Reels).
+  - Sanitização profunda de texto: inserção automática de espaços em pontuações e numerais colados, e remoção de parênteses dos dados eclesiásticos.
+  - Sincronização métrica de tempo pela quantidade de letras, iluminando em amarelo ouro (`#FFE600`) no ritmo da locução.
+  - Tipografia de alto impacto: caixa alta, contorno preto duplo pesado e salto elástico.
+- **Multiplexação Direta de Áudio com FFmpeg e Duração Dinâmica:**
+  - Injeção forçada do áudio da locução diretamente no arquivo MP4 pós-renderização via FFmpeg, garantindo 100% de audibilidade e volume alto sem depender de saídas virtuais do Chromium headless.
+  - Duração dinâmica ajustada via `calculateMetadata` no Remotion, renderizando a totalidade dos frames do roteiro sem truncar em 23 segundos.
+- **Estúdio de Divulgação Local Desacoplado (`http://localhost:3200`):**
+  - Painel autônomo sem necessidade de login para criação de vídeos promocionais em alta definição (Reels 9:16 e YouTube 16:9).
+  - Isolamento estrito de dependências de vídeo fora da base de produção (`video-studio/` ignorado no Git e no Docker de produção).
+- **Voz Neural em Português sem Custos (Edge-TTS):**
+  - Três perfis de locução de estúdio: *AcutisTech Institucional* (`pt-BR-AntonioNeural`), *Francisca Calorosa* (`pt-BR-FranciscaNeural`) e *Jovem Dinâmica* (`pt-BR-ThalitaNeural`).
+  - Duração dinâmica ajustada ao tempo de locução real aferido via `ffprobe`, garantindo ritmo natural e legendas em karaokê perfeitamente sincronizadas.
+  - Concatenação de áudio MP3 embutida diretamente na composição Remotion como Data URI offline.
+- **Roteiro Católico Hiperlocal e Efeitos Dinâmicos de Câmera:**
+  - Consulta automática ao banco PostgreSQL extraindo a Diocese/Arquidiocese canônica e amostragem de paróquias ativas reais da cidade.
+  - Captura automática do mapa Docker com aumento de luminosidade (0.86), saturação (1.15) e gradientes de topo/base.
+  - Zoom cinemático em direção à cidade (escala de 1.15 a 1.62).
+  - Marcador de Igreja Matriz dourado (`ChurchPinMarker`) com radar pulsante concêntrico e carrossel de paróquias com badges em glassmorphism translúcido.
+- **Exportação Direta em MP4:**
+  - Renderização acelerada via Remotion CLI e Chromium conteinerizado com flags de segurança e timeout estendido para cold start.
+
+- **Ilha do Criador (Oceano Atlântico ao sul do Rio Grande do Sul):**
+  - Território especial desvinculado de rankings paroquiais ou de contagem municipal (`lat -35.2, lon -51.8`).
+  - Abriga o **Santuário do Criador** e o **Castelo do Criador** da conta `@lucasgfr26` (Nível 99, 99.999 XP/Pontos), preservando cidades reais (como Niquelândia-GO) sem fundador inicial para os fiéis competirem livremente.
+  - **Construção do Castelo em SVG:** paredes em pedra nobre com escadaria, duas torres laterais com telhados cônicos dourados encimados por cruzes, pórtico em arco gótico, vitrais iluminados e a Grande Coroa Real com rubi e safiras no topo, sobre uma ilha de praia dourada e ondas concêntricas.
+- **Correção da Navegação em 3D (WalkMode):**
+  - Corrigida a sobreposição do diálogo modal *"A comunidade"* sobre a cena 3D, permitindo passear livremente pelo bairro e praça em terceira pessoa com W A S D, emotes e vestes imperiais.
+
+## Curadoria de Duplicações, Filtros Avançados e Exclusão Segura — versão 0.27.1
+
+- **Curadoria Instantânea de Duplicações Paroquiais (`view=duplicates` / `AdminDuplicates`):**
+  - Módulo de inteligência para detecção de paróquias com nomes similares no mesmo município (`pg_trgm` com similaridade de texto e normalização de termos litúrgicos).
+  - Alerta no painel principal com atalho direto para resolução.
+  - Ações de mesclagem e exclusão imediata (*"Manter esta (Apagar Opção B)"* ou *"Manter esta (Apagar Opção A)"*): migra fiéis, casas e solicitações atomicamente para a paróquia mantida e apaga permanentemente o registro duplicado do banco.
+  - Interface otimista instantânea: o card desaparece na hora ao clicar, a barra de progresso visual avança em tempo real e qualquer triplicata restante na mesma cidade é limpa ou reordenada de forma fluida.
+  - Salvaguarda de descarte (*"São paróquias diferentes (Ignorar alerta)"*) para evitar novos avisos de pares confirmados como distintos.
+- **Filtros por Estado (UF) e Cidade no Cadastro de Paróquias (`view=parishes` / `AdminParishes`):**
+  - Filtro por qualquer uma das 27 UFs do Brasil, município e busca textual por nome.
+  - Paginação rápida e listagem clara do número de fiéis/casas por paróquia.
+- **Exclusão Segura de Paróquias com Salvaguarda de Fiéis:**
+  - Se a paróquia **não tem moradores**, a exclusão é direta após confirmação.
+  - Se a paróquia **tem moradores cadastrados**, o sistema bloqueia a exclusão e exige a indicação de uma paróquia de destino no mesmo município para acolher os fiéis, transferindo-os automaticamente antes de excluir a paróquia antiga.
+- **Criação Rápida de Paróquias no Admin:**
+  - Cadastro lateral integrado com busca instantânea entre todos os 5.570 municípios do Brasil via IBGE (`MunicipalityInput`).
+
+## Modo Passear em 3D ("Bonequinho") e Papéis Litúrgicos/Civis — versão 0.25.0
+
+- **Navegação em terceira pessoa no bairro paroquial (`WalkMode` e `Walk3DScene`):** renderizado em Three.js sobre a malha real do município (`cachedTownLayout`), permitindo caminhar pelas ruas de asfalto, calçadas, quarteirões residenciais, postes de iluminação e na praça da Igreja Matriz com sua torre sineira e cruz dourada.
+- **Personagens Masculino e Feminino:** alternância dinâmica de gênero e 10 opções de vestes compostas e dignas, representando as missões da Igreja e as autoridades do jogo:
+  - *Leigo*, *Coroinha*, *Acólito*, *Cerimoniário*, *Ministro da Eucaristia*, *Sacristão*, *Prefeito*, *Governador*, *Presidente* e *Pároco/Padre*.
+- **Controles inspirados no estilo *Domine com seu time*:**
+  - `W A S D` ou setas para caminhar, arraste com o mouse para girar a câmera orbital em 360°, `Shift` para correr e `Esc` para retornar imediatamente ao mapa.
+  - Ações e emotes devocionais: `🙏 Orar (E)`, `🎉 Comemorar (C)` e `📣 Louvor (G)`.
+  - Barra de status superior com pílulas de identificação (`Cidade/UF`, `Paróquia`, `Total de Fiéis no Bairro`) e banner central de comandos.
+  - Painel de chat paroquial no canto inferior esquerdo, preparado para integração com chat global multi-usuário.
+- **Botões no mapa e pré-aquecimento:** acesso direto pelo botão `🧍 Bonequinho` no cabeçalho ou pelo modal de detalhes de qualquer paróquia. O Three.js e seus shaders são pré-carregados em segundo plano (`warmWalkAssets()`) durante tempo ocioso para inicialização instantânea sem travamentos.
+
+## Cidades Litorâneas e Território em Terra — versão 0.24.2
+
+- **Paróquias em terra firme nas cidades litorâneas:** cidades costeiras cujas sedes municipais ficam na margem d'água (como Recife, Olinda, Jaboatão dos Guararapes, Rio de Janeiro, Santos, Salvador, Natal) agora têm suas comunidades paroquiais e contornos automaticamente arrastados para o interior do território municipal em terra firme (`public/data/municipio-coastal-drags.json`), obedecendo à margem do município e impedindo que quarteirões, igrejas e casas fiquem em cima do mar.
+- **Confinamento municipal dinâmico (`clampTownToBoundary`):** conforme os limites municipais reais do IBGE são projetados, a malha paroquial é estritamente confinada ao polígono do município com margem de respiro, preservando a coerência visual das ruas, a ligação correta das rodovias e as sedes urbanas oficiais.
 
 ## Pré-carregamento (Boot Loader), Otimização de Rodovias e Hover Municipal — versão 0.24.1
 
@@ -15,6 +199,16 @@ Produto da **AcutisTech**, com uma base executável de mapa e administração. U
 - **Pílulas de status e badges estaduais:** barra de status no topo do mapa com indicador `DIA 0 · PRÉ-LANÇAMENTO` (pronto para iniciar a contagem oficial no Dia 1), contadores de casas e paróquias, destaque da última casa criada e pílulas estaduais na visão macro do Brasil.
 - **Território municipal IBGE e bairros paroquiais aprimorados:** carregamento em lote dos limites municipais reais (`/api/cities/boundaries`) ao aproximar o mapa (`zoom >= 5`), praças paroquiais com calçamento e caminhos radiais conectados à matriz, e selo `@username` sobre a casa selecionada.
 - **Otimização severa de desempenho do mapa:** substituição do cálculo `O(N²)` de escalas municipais (`buildTownScales`, ~8 milhões de iterações) por grade espacial `O(N)`, remoção da máscara SVG de tela cheia nas rodovias (`MapRoadLayer`), consolidação da renderização dos estados e supressão de eventos de hover durante o arraste (`isDragging`).
+
+## Estúdio Local de Vídeos e Divulgação (Remotion + VoiceStudio) — versão 0.27.2
+
+O projeto conta com a ferramenta local e independente `video-studio/` (mantida no `.gitignore` e `.dockerignore` para não sobrecarregar o build nem consumir recursos do servidor de produção):
+- **Painel Visual Web Local (Sem Login)**: Servido em `http://localhost:3200` com geração de roteiro por IA, edição de cenas, alternância entre 9:16 e 16:9 e renderização direta em MP4 com preview HTML5 e download.
+- **Captura Automática de Tela do Mapa**: Puppeteer headless apontando para o frontend do mapa no Docker (`http://web:3000/?cidade=<código>` ou `http://127.0.0.1:3100`), aguarda a malha vetorial SVG carregar, oculta as barras superiores de UI e gera o fundo de alta definição com efeito Ken Burns nas cenas do vídeo.
+- **Endpoint Docker Local Exclusivo**: Disponível sob o perfil `studio` no `compose.yaml` (`docker compose --profile studio up -d video-studio`), com Chromium, FFmpeg e fontes instaladas no próprio container Debian.
+- **Isolamento de Recursos**: Todo o processamento de renderização e modelos neurais roda na máquina local sem consumo de banda ou memória do servidor de produção.
+- **Remotion Studio**: Visualização em tempo real frame a frame (`npm run preview` em `video-studio/`).
+- **Renderização MP4 Direta**: Exportação de vídeos 9:16 (Reels/Shorts) e 16:9 (YouTube) via CLI (`npm run render`) ou pelo botão "Exportar Arquivo .MP4" no painel.
 
 ## Processamento de Comentários Instagram com IA — versão 0.23.0
 

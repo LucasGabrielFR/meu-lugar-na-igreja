@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {buildTownScales,convexOutline,regionFor,STATE_NAMES,REGIONS,mercatorLatitude,geographicPath} from '../src/lib/map-territories.mjs';
-import {estimateTownRadius} from '../src/lib/town-layout.mjs';
+import {buildTownScales,convexOutline,regionFor,STATE_NAMES,REGIONS,mercatorLatitude,geographicPath,clampTownToBoundary,computeTownAnchor} from '../src/lib/map-territories.mjs';
+import {estimateTownRadius,buildTownLayout} from '../src/lib/town-layout.mjs';
 import {buildRoadConnections} from '../src/lib/map-roads.mjs';
 test('metropolitan virtual territories remain separate without moving municipal seats',()=>{
   const municipalities=JSON.parse(readFileSync('public/data/municipios.json','utf8'));
@@ -40,3 +40,36 @@ test('buildTownScales spatial hash scales all 5570 municipalities in under 150ms
   assert.equal(Object.keys(scales).length,cities.length);
   assert.ok(elapsed<150,`Expected spatial hash buildTownScales to take <150ms, took ${elapsed.toFixed(1)}ms`);
 });
+
+test('coastal municipalities drag town anchors inland into land territory and obey municipal boundaries',()=>{
+  const seats=new Map(JSON.parse(readFileSync('public/data/municipio-sedes.json','utf8')).map(([code,lon,lat])=>[code,{lon,lat,y:mercatorLatitude(lat)}]));
+  const coastalDrags=JSON.parse(readFileSync('public/data/municipio-coastal-drags.json','utf8'));
+
+  // Recife (2611606): coastal seat on shoreline, dragged west onto land
+  const recifeSeat=seats.get(2611606);
+  assert.ok(recifeSeat);
+  const recifeAnchor=computeTownAnchor(2611606,recifeSeat,coastalDrags);
+  assert.ok(recifeAnchor.lon < recifeSeat.lon - 0.015, 'Recife must drag westward away from ocean');
+
+  // Olinda (2609600): coastal seat on shoreline, dragged onto land
+  const olindaSeat=seats.get(2609600);
+  assert.ok(olindaSeat);
+  const olindaAnchor=computeTownAnchor(2609600,olindaSeat,coastalDrags);
+  assert.ok(olindaAnchor.lon < olindaSeat.lon - 0.003, 'Olinda must drag westward onto land');
+
+  // Inland city: Camaragibe (2603454) or São Lourenço da Mata (2613701) remains at official seat
+  const camaragibeSeat=seats.get(2603454);
+  const camaragibeAnchor=computeTownAnchor(2603454,camaragibeSeat,coastalDrags);
+  assert.equal(camaragibeAnchor.lon, camaragibeSeat.lon);
+  assert.equal(camaragibeAnchor.lat, camaragibeSeat.lat);
+
+  // clampTownToBoundary guarantees the town footprint never exceeds municipal boundaries
+  const parishes=Array.from({length:68},(_,i)=>({id:i+1,slot:i}));
+  const layout=buildTownLayout(parishes,[]);
+  const scale=0.00003;
+  // Simulated boundary with east border at -34.859
+  const clamped=clampTownToBoundary({lon:-34.8711,lat:-8.0632,y:mercatorLatitude(-8.0632)},layout,scale,[-35.0167,7.95,-34.859,8.18]);
+  const townMaxLon=clamped.lon+Math.max(...layout.cells.map(c=>c.col*192+104))*scale;
+  assert.ok(townMaxLon <= -34.859, `Town max lon ${townMaxLon} must be <= boundary east border -34.859`);
+});
+

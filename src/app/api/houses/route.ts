@@ -17,8 +17,17 @@ export async function GET(request: Request) {
       uf: string;
       parish_id: number;
       parish_name: string;
+      level?: number;
+      role?: string;
+      xp?: number;
+      points?: number;
+      streak_days?: number;
+      last_checkin_at?: string | Date | null;
+      civil_role?: string | null;
+      has_approved_priest?: boolean;
     }>(
-      `SELECT h.id, h.username, h.display_name, h.city_code, m.name AS city_name, m.uf, h.parish_id, p.name AS parish_name
+      `SELECT h.id, h.username, h.display_name, h.city_code, m.name AS city_name, m.uf, h.parish_id, p.name AS parish_name,
+              h.level, h.role, h.xp, h.points, h.streak_days, h.last_checkin_at, h.civil_role, p.has_approved_priest
        FROM houses h
        JOIN parishes p ON p.id = h.parish_id
        JOIN cities c ON c.code = h.city_code
@@ -39,8 +48,17 @@ export async function GET(request: Request) {
     uf: string;
     parish_id: number;
     parish_name: string;
+    level?: number;
+    role?: string;
+    xp?: number;
+    points?: number;
+    streak_days?: number;
+    last_checkin_at?: string | Date | null;
+    civil_role?: string | null;
+    has_approved_priest?: boolean;
   }>(
-    `SELECT h.id, h.username, h.display_name, h.city_code, m.name AS city_name, m.uf, h.parish_id, p.name AS parish_name
+    `SELECT h.id, h.username, h.display_name, h.city_code, m.name AS city_name, m.uf, h.parish_id, p.name AS parish_name,
+            h.level, h.role, h.xp, h.points, h.streak_days, h.last_checkin_at, h.civil_role, p.has_approved_priest
      FROM houses h
      JOIN parishes p ON p.id = h.parish_id
      JOIN cities c ON c.code = h.city_code
