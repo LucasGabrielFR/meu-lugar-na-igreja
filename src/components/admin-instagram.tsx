@@ -88,6 +88,11 @@ export default async function AdminInstagram({result}:{result?:string}){
       <div style={{display:'flex',gap:12,flexWrap:'wrap',marginTop:16}}><form action={checkInstagram}><button className="outline-button" disabled={!configured||!!expired}>Atualizar dados da conta</button></form><form action={disconnectInstagram}><button className="outline-button">Desconectar do painel</button></form></div>
       <p className="field-note">Desconectar apaga o token desta aplicação. Para revogar o acesso também na Meta, remova o aplicativo em Apps e sites no Instagram. A assinatura do webhook existente não é alterada por esse botão.</p>
     </article>:<p>Nenhuma conta conectada pelo painel.</p>}
+    <article className="record" style={{marginTop:16}}>
+      <h3>Gamificação e Respostas Automáticas (Direct)</h3>
+      <p><strong>Gatilho ativo:</strong> Envio de &quot;Segui&quot; concede <strong>+100 pontos</strong> e <strong>+100 XP</strong> aos participantes.</p>
+      <p className="field-note">O webhook recebe as mensagens do Direct e responde automaticamente com a confirmação e pontuação acumulada.</p>
+    </article>
     <form action={connectInstagram}><button className="primary-button" disabled={!configured}>{connection?'Reconectar ou trocar conta':'Conectar Instagram'}</button></form>
     <p className="field-note">Permissões solicitadas: {INSTAGRAM_SCOPES.join(', ')}. Uma conta conectada por vez; a troca só ocorre após concluir a autorização.</p>
 

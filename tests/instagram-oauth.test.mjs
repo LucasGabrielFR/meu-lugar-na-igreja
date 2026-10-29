@@ -10,7 +10,7 @@ test('OAuth uses a fixed configured callback, minimal scopes and state without e
   const config=instagramConfig(env),state=newOAuthState(),url=new URL(instagramAuthorizationUrl(config,state));
   assert.equal(state.length,64);assert.equal(url.origin,'https://www.instagram.com');assert.equal(url.searchParams.get('state'),state);
   assert.equal(url.searchParams.get('redirect_uri'),'https://example.com/api/instagram/callback');
-  assert.equal(url.searchParams.get('scope'),'instagram_business_basic,instagram_business_manage_comments');
+  assert.equal(url.searchParams.get('scope'),'instagram_business_basic,instagram_business_manage_comments,instagram_business_manage_messages');
   assert.ok(!url.toString().includes(env.INSTAGRAM_APP_SECRET));
   for(const APP_URL of ['http://example.com','https://user:password@example.com','https://example.com/path','https://example.com/?redirect=other'])assert.throws(()=>instagramConfig({...env,APP_URL}));
   assert.throws(()=>instagramConfig({...env,INSTAGRAM_TOKEN_ENCRYPTION_KEY:'short'}));

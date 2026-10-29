@@ -29,6 +29,9 @@ export async function verifyInstagramWebhook(request,token){
   return new Response(params.get('hub.challenge'),{headers:{'Content-Type':'text/plain','Cache-Control':'no-store'}});
 }
 
+import {processIncomingDirectMessage} from './instagram-direct.mjs';
+import {getActiveInstagramToken} from './instagram-oauth.mjs';
+
 export async function receiveInstagramWebhook(request,client,secret,logger=console){
   const reject=(reason,status,message)=>{
     logger.warn('instagram_webhook_rejected',{reason,status});
@@ -51,6 +54,20 @@ export async function receiveInstagramWebhook(request,client,secret,logger=conso
   try{
     const receipt=await storeInstagramReceipt(client,body,payload);
     logger.info('instagram_webhook_received',{receipt_id:receipt.id,delivery_count:receipt.delivery_count,entries:payload.entry.length});
+
+    const token = await getActiveInstagramToken(client, process.env.INSTAGRAM_TOKEN_ENCRYPTION_KEY).catch(()=>null);
+    for (const entry of payload.entry) {
+      if (Array.isArray(entry.messaging)) {
+        for (const msgEvent of entry.messaging) {
+          try {
+            await processIncomingDirectMessage(client, msgEvent, token, process.env.INSTAGRAM_API_VERSION || 'v26.0', logger);
+          } catch (dmErr) {
+            logger.error?.('instagram_direct_processing_failed', dmErr);
+          }
+        }
+      }
+    }
+
     return Response.json({received:true});
   }catch{
     logger.error('instagram_webhook_persistence_failed');
