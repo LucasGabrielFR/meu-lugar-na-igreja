@@ -833,13 +833,16 @@ export default function Walk3DScene({
     sash.visible = Boolean(clothing.sash);
     playerGroup.add(sash);
 
-    // Head
-    const head = new THREE.Mesh(new THREE.BoxGeometry(3.2, 3.2, 3.2), skinMat);
+    // Head Group - encapsulates skull, face, eyes, hair, crown as a single unified rig
+    const head = new THREE.Group();
     head.position.y = 9.3;
-    head.castShadow = true;
     playerGroup.add(head);
 
-    // --- FACIAL FEATURES (on +Z face) ---
+    const skullMesh = new THREE.Mesh(new THREE.BoxGeometry(3.1, 3.1, 3.1), skinMat);
+    skullMesh.castShadow = true;
+    head.add(skullMesh);
+
+    // --- FACIAL FEATURES (all parented to head with local coordinates relative to center) ---
     const eyeWhiteMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
     const eyePupilMat = new THREE.MeshBasicMaterial({ color: 0x1e293b });
     const eyeHighlightMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
@@ -848,89 +851,90 @@ export default function Walk3DScene({
     const eyebrowMat = new THREE.MeshBasicMaterial({ color: hairColor });
 
     for (const side of [-1, 1]) {
-      const ex = side * 0.8;
+      const ex = side * 0.78;
+      // In local coordinates: head center is at (0, 0, 0). Front face is at z = 1.55.
       const eyeWhite = new THREE.Mesh(new THREE.BoxGeometry(0.65, 0.65, 0.08), eyeWhiteMat);
-      eyeWhite.position.set(ex, 9.4, 1.63);
-      playerGroup.add(eyeWhite);
+      eyeWhite.position.set(ex, 0.1, 1.59);
+      head.add(eyeWhite);
 
       const pupil = new THREE.Mesh(new THREE.BoxGeometry(0.38, 0.38, 0.1), eyePupilMat);
-      pupil.position.set(ex + side * 0.04, 9.38, 1.65);
-      playerGroup.add(pupil);
+      pupil.position.set(ex + side * 0.04, 0.08, 1.61);
+      head.add(pupil);
 
       const gleam = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.14, 0.12), eyeHighlightMat);
-      gleam.position.set(ex + 0.1, 9.52, 1.67);
-      playerGroup.add(gleam);
+      gleam.position.set(ex + 0.1, 0.22, 1.63);
+      head.add(gleam);
 
       const brow = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.18, 0.08), eyebrowMat);
-      brow.position.set(ex, 9.9, 1.64);
-      playerGroup.add(brow);
+      brow.position.set(ex, 0.6, 1.6);
+      head.add(brow);
 
       const blush = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.25, 0.06), blushMat);
-      blush.position.set(side * 1.15, 8.7, 1.62);
-      playerGroup.add(blush);
+      blush.position.set(side * 1.12, -0.6, 1.58);
+      head.add(blush);
     }
 
     const nose = new THREE.Mesh(new THREE.BoxGeometry(0.35, 0.35, 0.25), new THREE.MeshLambertMaterial({ color: 0xc48b59 }));
-    nose.position.set(0, 9.05, 1.72);
-    playerGroup.add(nose);
+    nose.position.set(0, -0.25, 1.68);
+    head.add(nose);
 
     const mouth = new THREE.Mesh(new THREE.BoxGeometry(0.85, 0.22, 0.08), mouthMat);
-    mouth.position.set(0, 8.42, 1.63);
-    playerGroup.add(mouth);
+    mouth.position.set(0, -0.88, 1.59);
+    head.add(mouth);
 
-    // Hair Container
+    // Hair Container (child of head)
     const hairGroup = new THREE.Group();
-    playerGroup.add(hairGroup);
+    head.add(hairGroup);
 
     const rebuildHair = (g: CharacterGender) => {
       while (hairGroup.children.length > 0) {
         hairGroup.remove(hairGroup.children[0]);
       }
       if (g === 'female') {
-        const hairBack = new THREE.Mesh(new THREE.BoxGeometry(3.5, 4.6, 1.8), hairMat);
-        hairBack.position.set(0, 9.3, -0.9);
+        const hairBack = new THREE.Mesh(new THREE.BoxGeometry(3.3, 4.4, 1.8), hairMat);
+        hairBack.position.set(0, 0, -0.9);
         hairGroup.add(hairBack);
 
-        const hairTop = new THREE.Mesh(new THREE.BoxGeometry(3.4, 0.8, 3.4), hairMat);
-        hairTop.position.set(0, 11.0, 0);
+        const hairTop = new THREE.Mesh(new THREE.BoxGeometry(3.3, 0.8, 3.3), hairMat);
+        hairTop.position.set(0, 1.7, 0);
         hairGroup.add(hairTop);
 
         for (const side of [-1, 1]) {
-          const lock = new THREE.Mesh(new THREE.BoxGeometry(0.5, 3.2, 0.8), hairMat);
-          lock.position.set(side * 1.7, 8.8, 0.8);
+          const lock = new THREE.Mesh(new THREE.BoxGeometry(0.5, 3.0, 0.8), hairMat);
+          lock.position.set(side * 1.62, -0.5, 0.8);
           hairGroup.add(lock);
         }
       } else {
-        const hairTop = new THREE.Mesh(new THREE.BoxGeometry(3.4, 1.0, 3.4), hairMat);
-        hairTop.position.set(0, 11.0, 0);
+        const hairTop = new THREE.Mesh(new THREE.BoxGeometry(3.3, 1.0, 3.3), hairMat);
+        hairTop.position.set(0, 1.7, 0);
         hairGroup.add(hairTop);
 
-        const hairBack = new THREE.Mesh(new THREE.BoxGeometry(3.3, 2.2, 1.0), hairMat);
-        hairBack.position.set(0, 9.8, -1.25);
+        const hairBack = new THREE.Mesh(new THREE.BoxGeometry(3.2, 2.2, 1.0), hairMat);
+        hairBack.position.set(0, 0.5, -1.2);
         hairGroup.add(hairBack);
 
         for (const side of [-1, 1]) {
           const sideburn = new THREE.Mesh(new THREE.BoxGeometry(0.4, 1.4, 1.2), hairMat);
-          sideburn.position.set(side * 1.62, 9.6, 0.2);
+          sideburn.position.set(side * 1.56, 0.3, 0.2);
           hairGroup.add(sideburn);
         }
       }
     };
     rebuildHair(currentConfig.gender);
 
-    // Coroa do Criador (Nível 99)
+    // Coroa do Criador (child of head)
     const crownGroup = new THREE.Group();
-    const crownGeo = new THREE.CylinderGeometry(1.9, 1.6, 1.1, 8);
+    const crownGeo = new THREE.CylinderGeometry(1.8, 1.5, 1.1, 8);
     const crownMat = new THREE.MeshLambertMaterial({ color: 0xf59e0b, emissive: 0xb45309, emissiveIntensity: 0.5 });
     const crown = new THREE.Mesh(crownGeo, crownMat);
-    crown.position.set(0, 11.8, 0);
+    crown.position.set(0, 2.5, 0);
     crownGroup.add(crown);
 
     const rubyMesh = new THREE.Mesh(new THREE.SphereGeometry(0.35, 8, 8), new THREE.MeshBasicMaterial({ color: 0xef4444 }));
-    rubyMesh.position.set(0, 12.0, 1.7);
+    rubyMesh.position.set(0, 2.7, 1.6);
     crownGroup.add(rubyMesh);
     crownGroup.visible = currentConfig.role === 'criador';
-    playerGroup.add(crownGroup);
+    head.add(crownGroup);
 
     // Prepare Lace Materials for Surplices
     const coroinhaLaceTex = createLaceTexture('coroinha');
@@ -950,12 +954,12 @@ export default function Walk3DScene({
       side: THREE.DoubleSide,
     });
 
-    // Arms & Hands (Pivoted cleanly at the shoulder Y = 7.3 to avoid any joint distortion)
+    // Arms & Hands (Pivoted cleanly at the shoulder Y = 7.3, X = ±2.38 for zero head clipping)
     const armGeo = new THREE.BoxGeometry(1.15, 3.6, 1.15);
     const handGeo = new THREE.BoxGeometry(0.95, 0.95, 0.95);
 
     const armL = new THREE.Group();
-    armL.position.set(-2.3, 7.3, 0);
+    armL.position.set(-2.38, 7.3, 0);
     playerGroup.add(armL);
 
     const armMeshL = new THREE.Mesh(armGeo, torsoMat);
@@ -967,7 +971,7 @@ export default function Walk3DScene({
     armL.add(handL);
 
     const armR = new THREE.Group();
-    armR.position.set(2.3, 7.3, 0);
+    armR.position.set(2.38, 7.3, 0);
     playerGroup.add(armR);
 
     const armMeshR = new THREE.Mesh(armGeo, torsoMat);
@@ -1023,34 +1027,55 @@ export default function Walk3DScene({
       sleeveLaceR.material = mat;
     }
 
-    // Legs & Shoes (Pivoted cleanly at the hip Y = 4.6 for natural kneeling & walking)
-    const legGeo = new THREE.BoxGeometry(1.4, 4.4, 1.4);
-    const shoeGeo = new THREE.BoxGeometry(1.5, 0.8, 2.1);
+    // Legs & Shoes - Two-segment anatomy (Thigh + Shin/Knee) for true upright kneeling
+    const thighGeo = new THREE.BoxGeometry(1.36, 2.3, 1.36);
+    const shinGeo = new THREE.BoxGeometry(1.32, 2.3, 1.32);
+    const shoeGeo = new THREE.BoxGeometry(1.45, 0.8, 2.0);
     const shoeMat = new THREE.MeshLambertMaterial({ color: 0x0f172a });
 
+    // Left Leg: Hip at Y = 4.6
     const legL = new THREE.Group();
     legL.position.set(-1.0, 4.6, 0);
     playerGroup.add(legL);
 
-    const legMeshL = new THREE.Mesh(legGeo, legsMat);
-    legMeshL.position.set(0, -2.2, 0);
-    legL.add(legMeshL);
+    const thighMeshL = new THREE.Mesh(thighGeo, legsMat);
+    thighMeshL.position.set(0, -1.15, 0);
+    legL.add(thighMeshL);
+
+    // Left Knee pivot at Y = -2.3
+    const kneeL = new THREE.Group();
+    kneeL.position.set(0, -2.3, 0);
+    legL.add(kneeL);
+
+    const shinMeshL = new THREE.Mesh(shinGeo, legsMat);
+    shinMeshL.position.set(0, -1.15, 0);
+    kneeL.add(shinMeshL);
 
     const shoeL = new THREE.Mesh(shoeGeo, shoeMat);
-    shoeL.position.set(0, -4.2, 0.28);
-    legL.add(shoeL);
+    shoeL.position.set(0, -2.1, 0.28);
+    kneeL.add(shoeL);
 
+    // Right Leg: Hip at Y = 4.6
     const legR = new THREE.Group();
     legR.position.set(1.0, 4.6, 0);
     playerGroup.add(legR);
 
-    const legMeshR = new THREE.Mesh(legGeo, legsMat);
-    legMeshR.position.set(0, -2.2, 0);
-    legR.add(legMeshR);
+    const thighMeshR = new THREE.Mesh(thighGeo, legsMat);
+    thighMeshR.position.set(0, -1.15, 0);
+    legR.add(thighMeshR);
+
+    // Right Knee pivot at Y = -2.3
+    const kneeR = new THREE.Group();
+    kneeR.position.set(0, -2.3, 0);
+    legR.add(kneeR);
+
+    const shinMeshR = new THREE.Mesh(shinGeo, legsMat);
+    shinMeshR.position.set(0, -1.15, 0);
+    kneeR.add(shinMeshR);
 
     const shoeR = new THREE.Mesh(shoeGeo, shoeMat);
-    shoeR.position.set(0, -4.2, 0.28);
-    legR.add(shoeR);
+    shoeR.position.set(0, -2.1, 0.28);
+    kneeR.add(shoeR);
 
     // ==========================================
     // ROLE SPECIFIC VESTMENTS & ACCESORIES
@@ -1334,8 +1359,10 @@ export default function Walk3DScene({
       leigoColMat.color.setHex(newClothing.torso);
       armMeshL.material = torsoMat;
       armMeshR.material = torsoMat;
-      legMeshL.material = legsMat;
-      legMeshR.material = legsMat;
+      thighMeshL.material = legsMat;
+      shinMeshL.material = legsMat;
+      thighMeshR.material = legsMat;
+      shinMeshR.material = legsMat;
       const isSurplice = newConfig.role === 'coroinha' || newConfig.role === 'cerimoniario';
       surpliceSleeveL.visible = isSurplice;
       surpliceSleeveR.visible = isSurplice;
@@ -1513,69 +1540,79 @@ export default function Walk3DScene({
       // Emotes read from ref
       const action = currentActionRef.current;
       if (action === 'pray') {
-        // Kneeling reverently on both knees ("ficar de joelhos")
-        playerGroup.position.y = -2.2;
+        // True Catholic Kneeling: Upright posture on knees (NOT sitting on heels!)
+        playerGroup.position.y = -2.25;
 
-        // Legs fold backwards along the floor
-        legL.rotation.set(-1.48, 0, 0);
-        legR.rotation.set(-1.48, 0, 0);
+        // Thighs stay upright / vertical
+        legL.rotation.set(-0.06, 0, 0);
+        legR.rotation.set(-0.06, 0, 0);
 
-        // Hands meet in reverent prayer in front of chest
-        armL.rotation.set(-0.85, -0.42, 0.42);
-        armR.rotation.set(-0.85, 0.42, -0.42);
+        // Lower legs fold backward 90 degrees along the floor
+        kneeL.rotation.set(-1.57, 0, 0);
+        kneeR.rotation.set(-1.57, 0, 0);
+
+        // Hands meet reverently in prayer directly in front of the chest
+        armL.rotation.set(-0.85, -0.36, 0.36);
+        armR.rotation.set(-0.85, 0.36, -0.36);
 
         // Reverent bow of head & subtle contemplation breath
         const breath = Math.sin(now * 0.003) * 0.03;
-        head.rotation.set(0.32 + breath, 0, 0);
-        torso.rotation.set(0.08, 0, 0);
+        head.rotation.set(0.22 + breath, 0, 0);
+        torso.rotation.set(0.04, 0, 0);
 
-        // Cassocks / batinas drape smoothly over kneeling form
-        padreSkirt.rotation.x = -0.28;
-        redSkirt.rotation.x = -0.28;
-        blackSkirt.rotation.x = -0.28;
-        acolitoSkirt.rotation.x = -0.28;
+        // Cassocks / batinas hang straight down around the upright kneeling legs
+        padreSkirt.rotation.x = -0.04;
+        redSkirt.rotation.x = -0.04;
+        blackSkirt.rotation.x = -0.04;
+        acolitoSkirt.rotation.x = -0.04;
       } else if (action === 'cheer') {
-        // Joyful jump in place with hands straight up to the sky ("dar um pulo com as mãos para cima")
+        // Joyful jump in place with hands held forward and high in triumphant praise
         const jumpPhase = Math.sin(now * 0.012);
         const jump = Math.max(0, jumpPhase * 2.3);
         playerGroup.position.y = jump;
 
+        kneeL.rotation.set(0, 0, 0);
+        kneeR.rotation.set(0, 0, 0);
+
         if (jump > 0.3) {
-          legL.rotation.set(0.4, 0, 0);
-          legR.rotation.set(-0.3, 0, 0);
+          legL.rotation.set(0.35, 0, 0);
+          legR.rotation.set(-0.25, 0, 0);
         } else {
           legL.rotation.set(0, 0, 0);
           legR.rotation.set(0, 0, 0);
         }
 
-        // Both arms raised high straight up into the sky in a triumphant praise V-shape:
+        // Arms raised FORWARD and UP in a triumphant celebratory V-shape in front of the body
+        // Zero risk of intersecting or clipping through the head
         const armWave = Math.sin(now * 0.014) * 0.08;
-        armL.rotation.set(-0.15, 0, 2.85 + armWave);
-        armR.rotation.set(-0.15, 0, -2.85 - armWave);
+        armL.rotation.set(-2.55, 0.15, 0.38 + armWave);
+        armR.rotation.set(-2.55, -0.15, -0.38 - armWave);
 
         // Head looking up to heaven and church steeple
-        head.rotation.set(-0.35, Math.sin(now * 0.008) * 0.15, 0);
-        torso.rotation.set(-0.06, 0, 0);
+        head.rotation.set(-0.25, Math.sin(now * 0.008) * 0.12, 0);
+        torso.rotation.set(-0.04, 0, 0);
 
         padreSkirt.rotation.x = 0;
         redSkirt.rotation.x = 0;
         blackSkirt.rotation.x = 0;
         acolitoSkirt.rotation.x = 0;
       } else if (action === 'praise') {
-        // Praise & Worship: arms swaying side to side ("com as mãos para um lado e para o outro")
+        // Praise & Worship: arms swaying side to side in front of the body
         playerGroup.position.y = 0;
         legL.rotation.set(0, 0, 0);
         legR.rotation.set(0, 0, 0);
+        kneeL.rotation.set(0, 0, 0);
+        kneeR.rotation.set(0, 0, 0);
 
         const sway = Math.sin(now * 0.005) * 0.45;
 
         // Torso and head sway rhythmically with the praise song
-        torso.rotation.set(0, 0, sway * 0.2);
-        head.rotation.set(-0.18, sway * 0.22, sway * 0.15);
+        torso.rotation.set(0, 0, sway * 0.12);
+        head.rotation.set(-0.15, sway * 0.15, sway * 0.08);
 
-        // Both arms raised high, swaying together in unison to the left and to the right
-        armL.rotation.set(-0.25, 0, 2.65 + sway * 0.7);
-        armR.rotation.set(-0.25, 0, -2.65 + sway * 0.7);
+        // Both arms held forward in front of the body, swaying left and right together in praise
+        armL.rotation.set(-1.3, sway * 0.35, 0.32 + sway * 0.28);
+        armR.rotation.set(-1.3, sway * 0.35, -0.32 + sway * 0.28);
 
         padreSkirt.rotation.x = 0;
         redSkirt.rotation.x = 0;
@@ -1592,14 +1629,19 @@ export default function Walk3DScene({
         acolitoSkirt.rotation.x = 0;
 
         if (isMoving) {
-          legL.rotation.set(Math.sin(walkTime) * 0.65, 0, 0);
-          legR.rotation.set(-Math.sin(walkTime) * 0.65, 0, 0);
+          const stride = Math.sin(walkTime);
+          legL.rotation.set(stride * 0.65, 0, 0);
+          legR.rotation.set(-stride * 0.65, 0, 0);
+          kneeL.rotation.set(stride > 0 ? stride * 0.35 : 0, 0, 0);
+          kneeR.rotation.set(-stride > 0 ? -stride * 0.35 : 0, 0, 0);
 
-          armL.rotation.set(-Math.sin(walkTime) * 0.6, 0, 0.08);
-          armR.rotation.set(Math.sin(walkTime) * 0.6, 0, -0.08);
+          armL.rotation.set(-stride * 0.6, 0, 0.08);
+          armR.rotation.set(stride * 0.6, 0, -0.08);
         } else {
           legL.rotation.set(0, 0, 0);
           legR.rotation.set(0, 0, 0);
+          kneeL.rotation.set(0, 0, 0);
+          kneeR.rotation.set(0, 0, 0);
 
           armL.rotation.set(0, 0, 0.08);
           armR.rotation.set(0, 0, -0.08);

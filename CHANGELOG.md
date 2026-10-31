@@ -6,11 +6,25 @@ Todas as mudanças relevantes serão registradas neste arquivo, seguindo [Keep a
 
 ## [0.29.2] - 2026-10-29
 
+### Fixed
+- **Rigging Unificado da Cabeça (Fim das Deformações Faciais)**:
+  - Unificação de todos os componentes faciais (olhos, pupilas, brilhos, sobrancelhas, bochechas, nariz e boca), além de cabelos e coroa, como filhos diretos da hierarquia `head`.
+  - Elimina completamente o deslocamento das feições em relação ao crânio quando o personagem reverencia ou olha para o céu.
+- **Cinemática de Braços Anti-Colisão (Gestos Frontais sem Penetração na Cabeça)**:
+  - Reconfiguração da física de movimentação dos braços para agir no espaço livre **à frente do corpo** (`rotation.x` negativo para o ar livre):
+    - **Comemoração (`cheer`)**: Braços projetados para a frente e erguidos em "V" triunfante no espaço aberto, com os ombros afastados lateralmente (`x = ±2.38`), evitando qualquer invasão na cabeça.
+    - **Louvor (`praise`)**: Mãos estendidas à frente na altura do peito/ombros, ondulando juntas suavemente em louvor ritmado sem colidir com as têmporas ou bochechas.
+- **Postura de Oração Ajoelhada Autêntica e Ereta (Ajoelhado sem Sentar)**:
+  - Segmentação anatômica das pernas em duas juntas: articulação do quadril (coxa) e articulação do joelho (canela e sapato).
+  - Ao orar (`pray`), os joelhos descem ao solo, as coxas permanecem verticais e eretas e apenas as canelas dobram 90° para trás rente ao chão, com as vestes caindo solenemente sobre as pernas, mantendo o fiel de joelhos diante do altar com postura nobre e sem parecer sentado nos calcanhares.
+
 ### Added
-- **Governança de Desenvolvimento EGM (Elephant-Goldfish Model)**:
-  - Criação da regra de desenvolvimento `.agents/rules/egm-development-flow.md` e atualização do `AGENTS.md` definindo o protocolo dos dois trilhos (*Dual-Track*).
-  - Trilho EGM obrigatório para features complexas, mudanças arquiteturais, integrações e schemas com ciclo estruturado (`/egm-brainstorm` -> `/egm-draft` -> `/egm-review` multi-lente com subagentes Goldfish de contexto zero -> aprovação).
-  - Trilho Rápido preservado para correções pontuais de bugs, fixes de estilo e ajustes cosméticos ágeis.
+- **Governança de Desenvolvimento EGM (Elephant-Goldfish Model com Consulta Prévia)**:
+  - Criação da regra de desenvolvimento `.agents/rules/egm-development-flow.md` e atualização do `AGENTS.md` definindo o protocolo de consulta prévia ao desenvolvedor.
+  - O agente avalia a complexidade: diante de uma funcionalidade de médio/grande porte ou alteração arquitetural, pergunta expressamente ao usuário se deseja utilizar o ciclo EGM (Elephant & Goldfish) ou o processo de desenvolvimento direto tradicional.
+  - Trilho EGM acionado sob demanda com ciclo estruturado (`/egm-brainstorm` -> `/egm-draft` -> `/egm-review` multi-lente com subagentes Goldfish de contexto zero -> aprovação).
+  - Trilho direto ágil preservado para correções pontuais de bugs, fixes cosméticos, ou quando o usuário optar por não utilizar o Elefante.
+
 
 ## [0.29.1] - 2026-10-29
 

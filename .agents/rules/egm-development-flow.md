@@ -3,10 +3,21 @@
 ## Trigger
 Sempre que for solicitada uma **nova feature**, **mudança estrutural/arquitetural**, **nova integração**, **alteração de banco de dados/schema** ou **fluxo de negócio complexo**.
 
-## Fast-Track Exception (Trilho Rápido)
-- Bug fixes pontuais, pequenos ajustes visuais/CSS, correções cosméticas ou pequenos patches de regras já existentes continuam no fluxo ágil direto, sem necessidade de overhead de especificação.
+## Protocolo de Consulta Prévia (Decisão do Usuário)
+Ao identificar que a tarefa se trata de uma funcionalidade de médio ou grande porte:
+1. **O agente DEVE perguntar ao usuário** se deseja utilizar o fluxo de especificação do **Elephant-Goldfish Model (EGM)** antes de agir.
+   - *Exemplo de pergunta*: "Esta funcionalidade tem impacto estrutural/relevante. Deseja utilizar o protocolo EGM (Elephant & Goldfish) com especificação formal e revisão por subagentes independentes, ou prefere o desenvolvimento tradicional direto?"
+2. **Se o usuário optar por SIM (usar EGM)**:
+   - Executar o pipeline completo do EGM descrito em **Ações do Trilho EGM**.
+3. **Se o usuário optar por NÃO (desenvolvimento padrão)**:
+   - Executar o processo normal ágil (planejamento sucinto em chat + implementação direta + validação Docker), sem o Elefante e sem os subagentes Goldfish.
 
-## Actions (Trilho EGM)
+## Fast-Track Automático (Sem Pergunta Prévia)
+- Para correções pontuais de bugs, pequenos ajustes visuais/CSS, correções cosméticas ou patches simples de regras já existentes, **não é necessário perguntar**: o agente segue direto no fluxo tradicional ágil.
+
+---
+
+## Ações do Trilho EGM (Quando Aprovado pelo Usuário)
 
 1. **Exploração & Conceituação (Elephant Context)**
    - O agente principal atua como o **Elefante**, mantendo o contexto histórico, objetivos de negócio e arquitetura do projeto.
@@ -37,4 +48,3 @@ Sempre que for solicitada uma **nova feature**, **mudança estrutural/arquitetur
    - Seguir rigorosamente as regras globais acopladas:
      - **Docker-First**: Rebuild obrigatório (`docker compose up --build -d`) e validação de funcionamento em container.
      - **Auto-Documentation**: Atualização atômica de `README.md` e `CHANGELOG.md` conforme Keep a Changelog.
-

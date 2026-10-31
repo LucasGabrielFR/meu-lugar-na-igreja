@@ -2,8 +2,16 @@
 
 Produto da **AcutisTech**, com uma base executável de mapa e administração. Um mapa contínuo ilustrado com cidades em arte isométrica, organizado por municípios e paróquias brasileiras, com participação integrada via comentários no Instagram, criação direta no mapa, navegação 3D em terceira pessoa pelas ruas do bairro paroquial e curadoria ativa com salvaguarda inteligente de moradores.
 
-## Modo Passear 3D nas Ruas, Paramentaria São Pedro, Rendas Nobres & Emotes — versão 0.29.1
+## Modo Passear 3D nas Ruas, Paramentaria São Pedro, Rigging Facial & Emotes — versão 0.29.2
 
+- **Rigging Unificado da Cabeça (Zero Deformações):**
+  - Todos os elementos faciais (olhos, pupilas, brilhos, sobrancelhas, bochechas, nariz e boca), cabelos e coroa passam a ser filhos da hierarquia unificada da cabeça (`head`).
+  - Movimentos de reverência ao orar e contemplação aos céus agora movem todo o crânio e feições juntos com rigidez e harmonia.
+- **Cinemática de Braços Anti-Colisão (Gestos Frontais):**
+  - **Comemoração (`cheer`)**: Braços erguidos no espaço frontal livre à frente do corpo e projetados para o alto em "V", sem encostar ou atravessar a cabeça.
+  - **Louvor (`praise`)**: Mãos à frente do tórax balançando suavemente no ar livre.
+- **Ajoelhamento Autêntico (`pray`):**
+  - Articulação dupla de membros inferiores (coxa no quadril e canela no joelho): os joelhos tocam o solo enquanto o tronco e as coxas permanecem eretos e solenes diante do altar, com as vestes descendo verticalmente sem passar a impressão de estar sentado nos calcanhares.
 - **Sobrepeliz do Cerimoniário de Alta Paramentaria (Estilo São Pedro Paramentaria):**
   - Desenvolvida com base nas peças autênticas de alfaiataria litúrgica: corpo de linho branco puro com pregas clássicas verticais (frente e verso), peitoral limpo e sóbrio (sem emblemas circulares artificiais).
   - Barrado nobre de renda barroca com flores e acantos vazados com transparência, contendo o **Monograma Mariano Coroado em Ouro Litúrgico** repetido em simetria com barra dobrada em branco e dourado.
